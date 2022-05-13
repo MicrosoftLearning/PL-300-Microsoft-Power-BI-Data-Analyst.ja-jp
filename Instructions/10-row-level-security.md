@@ -57,21 +57,21 @@ ms.locfileid: "139273637"
 
 1. Power BI Desktop を開くには、タスク バーにある Microsoft Power BI Desktop のショートカットをクリックします。
 
-    ![画像 8](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image1.png)
+    ![画像 8](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image1.png)
 
 1. 「はじめに」ウィンドウを閉じるには、ウィンドウの左上にある「**X**」をクリックします。
 
-    ![画像 7](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image2.png)
+    ![画像 7](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image2.png)
 
 1. スターター Power BI Desktop ファイルを開くには、「**ファイル**」リボン タブをクリックして、バックステージ ビューを開きます。
 
 1. **[レポートを開く]** を選択します。
 
-    ![画像 6](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image3.png)
+    ![画像 6](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image3.png)
 
 1. 「**レポートを参照**」をクリックします。
 
-    ![画像 5](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image4.png)
+    ![画像 5](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image4.png)
 
 1. **[開く]** ウィンドウで、**D:\PL300\Labs\12-row-level-security\Starter** フォルダーに移動します。
 
@@ -79,7 +79,7 @@ ms.locfileid: "139273637"
 
 1. **[開く]** をクリックします。
 
-    ![画像 4](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image5.png)
+    ![画像 4](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image5.png)
 
 1. 情報ウィンドウが開いている場合はすべて閉じます。
 
@@ -87,17 +87,17 @@ ms.locfileid: "139273637"
 
 1. **[名前を付けて保存]** を選択します。
 
-    ![図 3](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image6.png)
+    ![図 3](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image6.png)
 
 1. 変更を適用するかどうかを確認するメッセージが表示されたら、「**適用**」をクリックします。
 
-    ![画像 15](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image7.png)
+    ![画像 15](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image7.png)
 
 1. **[名前を付けて保存]** ウィンドウで、**D:\PL300\MySolution** フォルダーに移動します。
 
 1. **[保存]** をクリックします。
 
-    ![画像 2](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image8.png)
+    ![画像 2](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image8.png)
 
 ### <a name="task-2-enforce-row-level-security"></a>**タスク 2: 行レベルのセキュリティを適用する**
 
@@ -105,7 +105,7 @@ ms.locfileid: "139273637"
 
 1. データ ビューに切り替えます。
 
-    ![画像 5701](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image20.png)
+    ![画像 5701](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image20.png)
 
 2. **[フィールド]** ペインで、**Salesperson (Performance)** テーブルを選択します。
 
@@ -117,73 +117,73 @@ ms.locfileid: "139273637"
 
 5. 「**モデリング**」リボン タブの「**セキュリティ**」グループの内から、「**ロールの管理**」をクリックします。
 
-    ![画像 5700](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image21.png)
+    ![画像 5700](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image21.png)
 
 6. 「**ロールの管理**」ウィンドウで、「**作成**」をクリックします。
 
-    ![画像 5702](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image22.png)
+    ![画像 5702](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image22.png)
 
 7. ボックスで、選択したテキストをロールの名前:**Salespeople** に置き換えてから、**Enter** キーを押します。
 
-    ![画像 5703](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image23.png)
+    ![画像 5703](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image23.png)
 
 8. フィルターを割り当てるには、**Salesperson (Performance)** テーブルの省略記号 (…) 文字をクリックし、 **[フィルターの追加] \| [UPN]** を選択します。
 
-    ![画像 5704](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image24.png)
+    ![画像 5704](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image24.png)
 
 9. 「**テーブル フィルター DAX 式**」ボックスで、 **"Value"** を **USERPRINCIPALNAME()** に置き換えて式を変更します。
 
-    ![画像 11](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image25.png)
+    ![画像 11](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image25.png)
 
     "USERPRINCIPALNAME() は、認証されたユーザーの名前を返す Data Analysis Expressions (DAX) 関数です。*つまり、**Salesperson (Performance)** テーブルは、モデルをクエリするユーザーのユーザー プリンシパル名 (UPN) によってフィルター処理されます。"*
 
 10. **[保存]** をクリックします。
 
-    ![画像 5706](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image26.png)
+    ![画像 5706](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image26.png)
 
 11. セキュリティ ロールをテストするには、「**モデリング**」リボン タブの「**セキュリティ**」グループ内から、「**表示方法**」をクリックします。
 
-    ![画像 5708](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image27.png)
+    ![画像 5708](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image27.png)
 
 12. **[ロールとして表示]** ウィンドウで **[その他のユーザー]** 項目を選択してから、対応するボックスに「 **michael-blythe@adventureworks.com** 」と入力します。
 
 13. 「**営業担当者**」ロールを確認します。
 
-    ![画像 5709](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image28.png)
+    ![画像 5709](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image28.png)
 
     "この構成により、**Salespeople** ロールと、Michael Blythe の名前を借りたユーザーが使用されることになります。"
 
 14. **[OK]** をクリックします。
 
-    ![画像 5710](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image29.png)
+    ![画像 5710](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image29.png)
 
 15. レポート ページの上に、テストのセキュリティ コンテキストを説明する黄色のバナーが表示されていることに注目してください。
 
-    ![画像 13](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image30.png)
+    ![画像 13](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image30.png)
 
 16. テーブル ビジュアルでは、営業担当者 **Michael Blythe** のみが表示されていることに注目してください。
 
-    ![画像 5713](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image31.png)
+    ![画像 5713](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image31.png)
 
 17. テストを中止するには、黄色のバナーの右側にある「**表示を中止**」をクリックします。
 
-    ![画像 5712](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image32.png)
+    ![画像 5712](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image32.png)
 
     "Power BI Desktop ファイルが Power BI サービスに発行されるときに、発行後のタスクを完了して、セキュリティ プリンシパルを **Salespeople** ロールにマップする必要があります。"*このラボでは行いません。"*
 
 18. ロールを削除するには、「**モデリング**」リボン タブの「**セキュリティ**」グループ内から、「**ロールの管理**」をクリックします。
 
-    ![画像 16](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image33.png)
+    ![画像 16](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image33.png)
 
 19. 「**ロールの管理**」ウィンドウで、「**削除**」をクリックします。
 
-    ![画像 17](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image34.png)
+    ![画像 17](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image34.png)
 
 20. 削除の確認を求められたら、「**はい、削除します**」をクリックします。
 
 21. **[保存]** をクリックします。
 
-    ![画像 18](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image35.png)
+    ![画像 18](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image35.png)
 
 ### <a name="task-2-finish-up"></a>**タスク 2: 完了**
 
