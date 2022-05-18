@@ -59,7 +59,7 @@ ms.locfileid: "139273812"
 
 1. Microsoft Edge を開くには、タスク バーの Microsoft Edge プログラムのショートカットをクリックします。
 
-    ![画像 7](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image1.png)
+    ![画像 7](Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image1.png)
 
 1. Microsoft Edge ブラウザー ウィンドウで、**https://powerbi.com** に移動します。
 
@@ -67,7 +67,7 @@ ms.locfileid: "139273812"
 
 1. 「**サインイン**」 (右上隅) をクリックします。
 
-    ![画像 5](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image2.png)
+    ![画像 5](Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image2.png)
 
 1. 提供されたアカウントの詳細を入力します。
 
@@ -81,7 +81,7 @@ ms.locfileid: "139273812"
 
 1. Microsoft Edge ブラウザー ウィンドウの Power BI サービスの **[ナビゲーション]** ペインで、**[マイ ワークスペース]** を展開します。
 
-    ![画像 4](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image3.png)
+    ![画像 4](Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image3.png)
 
 1. Microsoft Edge ブラウザー ウィンドウを開いたままにします。
 
@@ -93,15 +93,15 @@ ms.locfileid: "139273812"
 
 1. Microsoft Edge ブラウザー ウィンドウの Power BI サービスの「**ナビゲーション**」ウィンドウで、「**マイ ワークスペース**」を展開します。
 
-    ![画像 8](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image4.png)
+    ![画像 8](Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image4.png)
 
 2. 「**ファイル**」タイルで、「**取得**」をクリックします。
 
-    ![画像 10](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image5.png)
+    ![画像 10](Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image5.png)
 
 3. 「**ローカル ファイル**」タイルをクリックします。
 
-    ![画像 11](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image6.png)
+    ![画像 11](Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image6.png)
 
 4. **[開く]** ウィンドウで、**D:\PL300\Labs\09-create-power-bi-dashboard\Solution** フォルダーに移動します。
 
@@ -117,15 +117,15 @@ ms.locfileid: "139273812"
 
     *重要:(前のラボで) Power BI Desktop を既に開いている場合は、そのインスタンスを閉じます。"*
 
-    ![画像 14](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image7.png)
+    ![画像 14](Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image7.png)
 
 2. 「はじめに」ウィンドウを閉じるには、ウィンドウの左上にある「**X**」をクリックします。
 
-    ![画像 13](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image8.png)
+    ![画像 13](Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image8.png)
 
 3. Power BI Desktop が Power BI サービスにサインインしていない場合は、右上の「**サインイン**」をクリックします。
 
-    ![画像 16](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image9.png)
+    ![画像 16](Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image9.png)
 
 4. Power BI サービスへのサインインに使用したのと同じアカウントを使用して、サインイン プロセスを完了します。
 
@@ -133,23 +133,23 @@ ms.locfileid: "139273812"
 
 6. **[保存]** を選択します。
 
-    ![画像 12](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image10.png)
+    ![画像 12](Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image10.png)
 
 7. **[名前を付けて保存]** ウィンドウで、**D:\PL300\MySolution** フォルダーに移動します。
 
 8. **[ファイル名]** ボックスに「**Sales Exploration**」と入力します。
 
-    ![画像 1](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image11.png)
+    ![画像 1](Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image11.png)
 
 9. 「**販売分析**」データセットへのライブ接続を作成するには、「**ホーム**」リボン タブの「**データ**」グループ内から「**Power BI データセット**」をクリックします。
 
-    ![画像 15](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image12.png)
+    ![画像 15](Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image12.png)
 
 10. **[レポートを作成するデータセットの選択]** ウィンドウで、**Sales Analysis** データセットを選択します。
 
 11. **Create** をクリックしてください。
 
-    ![画像 17](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image13.png)
+    ![画像 17](Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image13.png)
 
 12. Power BI Desktop ファイルを保存します。
 
@@ -165,13 +165,13 @@ ms.locfileid: "139273812"
 
 1. **ページ 1** の名前を **散布図** に変更します。
 
-    ![画像 67](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image14.png)
+    ![画像 67](Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image14.png)
 
 2. レポート ページに **散布図** ビジュアルを追加してから、ページ全体に表示されるように再配置およびサイズ変更します。
 
-    ![画像 18](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image15.png)
+    ![画像 18](Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image15.png)
 
-    ![画像 75](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image16.png)
+    ![画像 75](Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image16.png)
 
 3. 次のフィールドをビジュアル ウェル/領域に追加します。
 
@@ -187,7 +187,7 @@ ms.locfileid: "139273812"
 
     - 再生軸: **Date \| Quarter**
 
-    ![画像 39](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image17.png)
+    ![画像 39](Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image17.png)
 
     " **[再生軸]** ウェルまたは領域にフィールドを追加すると、チャートをアニメーション化できます。"
 
@@ -195,11 +195,11 @@ ms.locfileid: "139273812"
 
 5. フィルター カードで、**Bikes** でフィルター処理します。
 
-    ![画像 40](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image18.png)
+    ![画像 40](Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image18.png)
 
 6. グラフをアニメーション化するには、左下隅の **[再生]** をクリックします。
 
-    ![画像 41](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image19.png)
+    ![画像 41](Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image19.png)
 
 7. **FY2018 Q1** から **FY2020 Q4** までのアニメーション サイクル全体を確認します。
 
@@ -225,13 +225,13 @@ ms.locfileid: "139273812"
 
 1. 新しいページを追加して、ページの名前を **予測** に変更します。
 
-    ![画像 66](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image20.png)
+    ![画像 66](Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image20.png)
 
 2. レポート ページに **折れ線グラフ** ビジュアルを追加してから、ページ全体に表示されるように配置してサイズを変更します。
 
-    ![画像 19](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image21.png)
+    ![画像 19](Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image21.png)
 
-    ![画像 74](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image22.png)
+    ![画像 74](Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image22.png)
 
   
 
@@ -241,13 +241,13 @@ ms.locfileid: "139273812"
 
     - 値: **Sales \| Sales** 
 
-    ![画像 46](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image23.png)
+    ![画像 46](Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image23.png)
 
 4. **[フィルター]** ペインで、**Date \| Year** フィールドを **[このページでのフィルター]** ウェルまたは領域に追加します。
 
 5. フィルター カードで、**FY2019** および **FY2020** の 2 年でフィルター処理します。
 
-    ![画像 47](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image24.png)
+    ![画像 47](Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image24.png)
 
     *タイム ラインで予測する場合は、正確で安定した予測を生成するために、少なくとも 2 サイクル (年) のデータが必要になります。*
 
@@ -255,21 +255,21 @@ ms.locfileid: "139273812"
 
 6. また、**Product \| Category** フィールドを **[このページでのフィルター]** ウェルまたは領域に追加して、**Bikes** でフィルター処理します。
 
-    ![画像 48](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image25.png)
+    ![画像 48](Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image25.png)
 
 7. 予測を追加するには、**[視覚化]** ペインの下にある **[分析]** ペインを選択します。
 
-    ![画像 20](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image26.png)
+    ![画像 20](Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image26.png)
 
 8. **[予測]** セクションを展開します。
 
-    ![画像 50](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image27.png)
+    ![画像 50](Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image27.png)
 
     " **[予測]** セクションが使用できない場合は、ビジュアルが正しく構成されていないことが原因の可能性があります。*予測は、軸には date 型のフィールドが 1 つあり、存在する値フィールドは 1 つだけという、2 つの条件が満たされている場合にのみ使用できます。"*
 
 9. **[追加]** をクリックします。
 
-    ![画像 51](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image28.png)
+    ![画像 51](Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image28.png)
 
 10. 次の予測プロパティを構成します。
 
@@ -281,7 +281,7 @@ ms.locfileid: "139273812"
 
 11. **[Apply]** をクリックします。
 
-    ![画像 52](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image29.png)
+    ![画像 52](Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image29.png)
 
 12. 折れ線ビジュアルで、予測が履歴データを超過して 1 か月延長されていることに注目してください。
 
@@ -304,6 +304,6 @@ ms.locfileid: "139273812"
 
 3. ファイルをワークスペースに発行するには、**[ホーム]** リボン タブの **[共有]** グループ内から、**[発行]** をクリックします。
 
-    ![画像 23](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image46.png)
+    ![画像 23](Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image46.png)
 
 4.  Power BI Desktop を閉じます。
