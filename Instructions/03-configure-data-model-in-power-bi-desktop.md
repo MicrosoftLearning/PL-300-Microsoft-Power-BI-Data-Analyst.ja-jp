@@ -60,21 +60,21 @@ ms.locfileid: "139273652"
 
 1. Power BI Desktop を開くには、タスク バーにある Microsoft Power BI Desktop のショートカットをクリックします。
 
-    ![画像 12](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image1.png)
+    ![画像 12](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image1.png)
 
 1. 「はじめに」ウィンドウを閉じるには、ウィンドウの左上にある「**X**」をクリックします。
 
-    ![画像 11](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image2.png)
+    ![画像 11](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image2.png)
 
 1. スターター Power BI Desktop ファイルを開くには、「**ファイル**」リボン タブをクリックして、バックステージ ビューを開きます。
 
 1. **[レポートを開く]** を選択します。
 
-    ![画像 10](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image3.png)
+    ![画像 10](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image3.png)
 
 1. 「**レポートを参照**」をクリックします。
 
-    ![画像 8](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image4.png)
+    ![画像 8](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image4.png)
 
 1. **[開く]** ウィンドウで、**D:\PL300\Labs\03-configure-data-model-in-power-bi-desktop\Starter** フォルダーに移動します。
 
@@ -82,7 +82,7 @@ ms.locfileid: "139273652"
 
 1. **[開く]** をクリックします。
 
-    ![画像 7](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image5.png)
+    ![画像 7](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image5.png)
 
 1. 情報ウィンドウが開いている場合はすべて閉じます。
 
@@ -90,17 +90,17 @@ ms.locfileid: "139273652"
 
 1. **[名前を付けて保存]** を選択します。
 
-    ![画像 5](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image6.png)
+    ![画像 5](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image6.png)
 
 1. 変更を適用するかどうかを確認するメッセージが表示されたら、「**適用**」をクリックします。
 
-    ![画像 15](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image7.png)
+    ![画像 15](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image7.png)
 
 1. **[名前を付けて保存]** ウィンドウで、**D:\PL300\MySolution** フォルダーに移動します。
 
 1. **[保存]** をクリックします。
 
-    ![図 3](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image8.png)
+    ![図 3](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image8.png)
 
 ### <a name="task-2-create-model-relationships"></a>**タスク 2: モデル リレーションシップを作成する**
 
@@ -108,7 +108,7 @@ ms.locfileid: "139273652"
 
 1. Power BI Desktop で、左側の **[モデル ビュー]** アイコンをクリックします。
 
-    ![画像 1](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image9.png)
+    ![画像 1](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image9.png)
 
 2. 7 つのテーブルがすべて表示されていない場合は、水平方向に右へスクロールし、テーブルをドラッグして、すべてを同時に表示できるように、より近づけて配置します。
 
@@ -118,15 +118,15 @@ ms.locfileid: "139273652"
 
 3. レポート ビューに戻るには、左側の **[レポート ビュー]** アイコンをクリックします。
 
-    ![画像 327](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image10.png)
+    ![画像 327](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image10.png)
 
 4. すべてのテーブル フィールドを表示するには、**[フィールド]** ペインで何も表示されていない領域を右クリックし、**[すべて展開]** を選択します。
 
-    ![画像 328](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image11.png)
+    ![画像 328](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image11.png)
 
 5. テーブル ビジュアルを作成するには、**[フィールド]** ペインの **Product** テーブルにある、**Category** フィールドをオンにします。
 
-    ![画像 329](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image12.png)
+    ![画像 329](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image12.png)
 
     "このラボでは、フィールドを参照するために簡略表記を使用します。*次のようになります。**Product \| Category**。この例では、**Product** はテーブル名、**Category** はフィールド名です。"*
 
@@ -134,27 +134,27 @@ ms.locfileid: "139273652"
 
 7. テーブル ビジュアルに 4 つの製品カテゴリが一覧表示され、それぞれの Sales 値が同じで、Total も同じであることに注意してください。
 
-    ![画像 330](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image13.png)
+    ![画像 330](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image13.png)
 
     *問題は、このテーブルが異なる複数のテーブルのフィールドに基づいていることです。各製品カテゴリには、そのカテゴリの売上が表示されることが想定されています。ただし、これらのテーブル間にはモデルのリレーションシップがないため、**Sales** テーブルはフィルタリングされません。そこで、リレーションシップを追加してテーブル間のフィルターを反映します。"*
 
 8. **[モデリング]** リボン タブの **[リレーションシップ]** グループの中から、**[リレーションシップの管理]** をクリックします。
 
-    ![画像 331](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image14.png)
+    ![画像 331](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image14.png)
 
 9. **[リレーションシップの管理]** ウィンドウで、リレーションシップがまだ定義されていないことを確認します。
 
 10. リレーションシップを作成するには、**[新規]** をクリックします。
 
-    ![画像 332](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image15.png)
+    ![画像 332](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image15.png)
 
 11. **[リレーションシップの作成]** ウィンドウの最初のドロップダウン リストで、**Product** テーブルを選択します。
 
-    ![画像 333](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image16.png)
+    ![画像 333](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image16.png)
 
 12. 2 番目のドロップダウンリスト (**Product** テーブル グリッドの下) で、**Sales** テーブルを選択します。
 
-    ![画像 334](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image17.png)
+    ![画像 334](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image17.png)
 
 13. 各テーブルの **ProductKey** 列が自動的に選択されていることに注意してください。
 
@@ -174,21 +174,21 @@ ms.locfileid: "139273652"
 
 17. **[OK]** をクリックします。
 
-    ![画像 335](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image18.png)
+    ![画像 335](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image18.png)
 
 18. **[リレーションシップの管理]** ウィンドウで、新しいリレーションシップが表示されていることを確認し、**[閉じる]** をクリックします。
 
-    ![画像 336](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image19.png)
+    ![画像 336](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image19.png)
 
 19. レポートでは、テーブル ビジュアルが更新され、製品カテゴリごとに異なる値が表示されていることを確認します。
 
-    ![画像 337](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image20.png)
+    ![画像 337](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image20.png)
 
     ***Product** テーブルに適用されたフィルターが、**Sales** テーブルに反映されるようになりました。*
 
 20. モデル ビューに切り替えて、2 つのテーブルの間にコネクタがあることを確認します(テーブルが互いに隣接しているかどうかは問題になりません)。
 
-    ![画像 338](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image21.png)
+    ![画像 338](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image21.png)
 
 21. この図では、**1** および*****インジケーターで表されるカーディナリティーを解釈できることに注意してください。
 
@@ -200,7 +200,7 @@ ms.locfileid: "139273652"
 
 23. 別の方法を使用して新しいリレーションシップを作成するには、**Reseller** テーブルから、**ResellerKey** 列を **Sales** テーブルの **ResellerKey** 列にドラッグします。
 
-    ![画像 339](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image22.png)
+    ![画像 339](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image22.png)
 
     *ヒント:列をドラッグしたくない場合があります。このような状況が発生した場合は、別の列を選択し、もう一度ドラッグする列を選択して、もう一度やり直してください。図に新しいリレーションシップが追加されていることを確認します。"*
 
@@ -214,7 +214,7 @@ ms.locfileid: "139273652"
 
 25. 図では、**Sales** テーブルが図の中央に配置され、関連するテーブルがその周りに配置されるようにテーブルを配置します。 切断されたテーブルを横に配置します。
 
-    ![画像 340](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image23.png)
+    ![画像 340](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image23.png)
 
 26. Power BI Desktop ファイルを保存します。
 
@@ -230,11 +230,11 @@ ms.locfileid: "139273652"
 
 2. 階層を作成するには、**[フィールド]** ペインで **Category** 列を右クリックし、次に **[階層の作成]** を選択します。
 
-    ![画像 341](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image24.png)
+    ![画像 341](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image24.png)
 
 3. **[プロパティ]** ペイン (**[フィールド]** ペインの左側) で、**[名前]** ボックスのテキストを **Products** に置き換えます。
 
-    ![画像 344](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image25.png)
+    ![画像 344](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image25.png)
 
 4. 階層に 2 つ目のレベルを追加するには、「**プロパティ**」ウィンドウの「**階層**」ドロップダウン リストで「**サブカテゴリ**」を選択します (ウィンドウ内で下にスクロールする必要がある場合があります)。
 
@@ -242,17 +242,17 @@ ms.locfileid: "139273652"
 
 6. 階層の設計を完了するには、**[レベルの変更を適用します]** をクリックします。
 
-    ![画像 343](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image26.png)
+    ![画像 343](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image26.png)
 
     *ヒント: **[レベル変更の適用]** をクリックすることを忘れないでください。この手順を見落とすことはよくある間違いです。"*
 
 7. **[フィールド]** ペインで、**Products** 階層に注目します。
 
-    ![画像 347](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image27.png)
+    ![画像 347](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image27.png)
 
 8. 階層レベルを表示するには、**Products** 階層を展開します。
 
-    ![画像 346](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image28.png)
+    ![画像 346](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image28.png)
 
 9. 列を表示フォルダーに整理するには、**[フィールド]** ペインで、最初に **Background Color Format** 列を選択します。
 
@@ -260,11 +260,11 @@ ms.locfileid: "139273652"
 
 11. **[プロパティ]** ペインの **[フォルダーの表示]** ボックスに「**Formatting**」と入力します。
 
-    ![画像 348](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image29.png)
+    ![画像 348](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image29.png)
 
 12. **[フィールド]** ペインで、2 つの列がフォルダー内に表示されるようになったことを確認します。
 
-    ![画像 349](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image30.png)
+    ![画像 349](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image30.png)
 
     *表示フォルダーは、特に多数のフィールドで構成されるテーブルを整理するのに最適な方法です。*
 
@@ -280,13 +280,13 @@ ms.locfileid: "139273652"
 
     - リージョン
 
-    ![画像 350](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image31.png)
+    ![画像 350](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image31.png)
 
 2. **Country** 列 (**Country** 階層レベルではありません) を選択します。
 
 3. 「**プロパティ**」ウィンドウで「**詳細**」セクション (ウィンドウの下部) を展開し、「**データ カテゴリ**」ドロップダウン リストから「**国/地域**」を選択します。
 
-    ![画像 352](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image32.png)
+    ![画像 352](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image32.png)
 
     "データ分類によってレポート デザイナーにヒントを提供できます。*この場合、列を国または地域に分類すると、マップ ビジュアライゼーションをレンダリングするときに、Power BI はより正確な情報を得られます。"*
 
@@ -300,7 +300,7 @@ ms.locfileid: "139273652"
 
     - Reseller
 
-    ![画像 351](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image33.png)
+    ![画像 351](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image33.png)
 
 2. 次の 4 つのレベルを持つ **Geography** という名前の 2 番目の階層を作成します。
 
@@ -312,7 +312,7 @@ ms.locfileid: "139273652"
 
     - Reseller
 
-    ![画像 353](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image34.png)
+    ![画像 353](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image34.png)
 
 3. 次の 3 つの列を分類します。
 
@@ -330,7 +330,7 @@ ms.locfileid: "139273652"
 
 2. **[プロパティ]** ペインの **[説明]** ボックスに、次のように入力します。**Based on standard cost**
 
-    ![画像 358](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image35.png)
+    ![画像 358](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image35.png)
 
     "説明は、テーブル、列、階層、またはメジャーに適用できます。***[フィールド]** ペインでレポート作成者がフィールドの上にカーソルを置いたとき、説明のテキストがヒントに表示されます。* "
 
@@ -338,7 +338,7 @@ ms.locfileid: "139273652"
 
 4. **[プロパティ]** ペインの **[書式設定]** セクションで、**[桁区切り記号]** を **[オン]** にスライドします。
 
-    ![画像 357](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image36.png)
+    ![画像 357](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image36.png)
 
 5. **Unit Price** 列を選択します。
 
@@ -346,7 +346,7 @@ ms.locfileid: "139273652"
 
 7. **[詳細]** グループ (下にスクロールして見つける必要がある場合があります) の **[集計の方法]** のドロップダウン リストで、**[平均]** を選択します。
 
-    ![画像 354](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image37.png)
+    ![画像 354](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image37.png)
 
     "*既定では、数値型の列は、値を合計して集計されます。この既定の動作は、レートを表す **Unit Price** のような列には適していません。既定の集計を平均に設定すると、有用な結果が得られます。"*
 
@@ -386,7 +386,7 @@ ms.locfileid: "139273652"
 
 3. **[プロパティ]** ペインで、**[非表示]** プロパティを **[オン]** にスライドします。
 
-    ![画像 355](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image38.png)
+    ![画像 355](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image38.png)
 
     *列はリレーションシップによって使用されるか、行レベルのセキュリティ構成または計算ロジックで使用されるため、非表示に設定されました。*
 
@@ -402,7 +402,7 @@ ms.locfileid: "139273652"
 
 5. **[プロパティ]** ペインの **[書式設定]** セクションで、**[小数点以下の桁数]** プロパティを **0** (ゼロ) に設定します。
 
-    ![画像 356](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image39.png)
+    ![画像 356](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image39.png)
 
 ## <a name="exercise-3-review-the-model-interface"></a>**演習 3: モデル インターフェイスを確認する**
 
@@ -430,7 +430,7 @@ ms.locfileid: "139273652"
 
 3. **Sales \| OrderDate** フィールドを展開し、日付階層が表示されることを確認します。
 
-    ![画像 359](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image40.png)
+    ![画像 359](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image40.png)
 
     "**Targets \| TargetMonth** フィールドも同様の階層を提供します。*これらの階層は自分で作成したものではありません。自動的に作成されました。ただし、問題があります。Adventure Works の会計年度は、毎年 7 月 1 日に始まります。ただし、この自動的に作成された日付階層では、日付階層の年は毎年 1 月 1 日に始まります。"*
 
@@ -440,23 +440,23 @@ ms.locfileid: "139273652"
 
 5. 左側の **[オプションと設定]** を選択してから、**[オプション]** を選択します。
 
-    ![画像 360](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image41.png)
+    ![画像 360](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image41.png)
 
 6. **[オプション]** ウィンドウの左側にある **[現在のファイル]** グループで、**[データの読み込み]** を選択します。
 
-    ![画像 361](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image42.png)
+    ![画像 361](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image42.png)
 
 7. **[タイム インテリジェンス]** セクションで、**[自動の日付/時刻]** チェック ボックスをオフにします。
 
-    ![画像 362](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image43.png)
+    ![画像 362](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image43.png)
 
 8. **[OK]** をクリックします。
 
-    ![画像 9](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image44.png)
+    ![画像 9](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image44.png)
 
 9. **[フィールド]** ペインで、日付階層がなくなっていることを確認します。
 
-    ![画像 363](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image45.png)
+    ![画像 363](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image45.png)
 
 
 
