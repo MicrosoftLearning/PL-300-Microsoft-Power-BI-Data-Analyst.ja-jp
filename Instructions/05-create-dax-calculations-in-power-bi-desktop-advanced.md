@@ -7,8 +7,9 @@ ms.sourcegitcommit: 3520e7d016e94549d408464207c1b91cd47867c2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/05/2022
-ms.locfileid: "139273336"
+ms.locfileid: '139273336'
 ---
+
 # <a name="create-dax-calculations-in-power-bi-desktop-part-2"></a>**Power BI Desktop で DAX 計算を作成する (パート 2)**
 
 **このラボの推定所要時間: 45 分**
@@ -31,19 +32,19 @@ ms.locfileid: "139273336"
 
 3. Power BI Desktop でデータをモデル化する
 
-5. Power BI Desktop での DAX 計算の作成、パート 1
+4. Power BI Desktop での DAX 計算の作成、パート 1
 
-6. **Power BI Desktop で DAX 計算を作成する (パート 2)**
+5. **Power BI Desktop で DAX 計算を作成する (パート 2)**
 
-7. Power BI Desktop でレポートを設計する (パート 1)
+6. Power BI Desktop でレポートを設計する (パート 1)
 
-8. Power BI Desktop でレポートを設計する (パート 2)
+7. Power BI Desktop でレポートを設計する (パート 2)
 
-9. Power BI ダッシュボードを作成する
+8. Power BI ダッシュボードを作成する
 
-10. Power BI Desktop でデータ分析を実行する
+9. Power BI Desktop でデータ分析を実行する
 
-11. 行レベルのセキュリティを実行する
+10. 行レベルのセキュリティを実行する
 
 ## <a name="exercise-1-work-with-filter-context"></a>**演習 1:フィルター コンテキストを操作する**
 
@@ -53,25 +54,25 @@ ms.locfileid: "139273336"
 
 このタスクではこのラボ用の環境を設定します。
 
-*重要:前のラボから続行している場合 (かつそのラボを正常に完了した場合) は、このタスクを実行しないで、次のタスクから続けてください。"*
+_重要:前のラボから続行している場合 (かつそのラボを正常に完了した場合) は、このタスクを実行しないで、次のタスクから続けてください。"_
 
 1. Power BI Desktop を開くには、タスク バーにある Microsoft Power BI Desktop のショートカットをクリックします。
 
-    ![画像 12](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image1.png)
+   ![画像 12](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image1.png)
 
 1. 「はじめに」ウィンドウを閉じるには、ウィンドウの左上にある「**X**」をクリックします。
 
-    ![画像 11](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image2.png)
+   ![画像 11](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image2.png)
 
 1. スターター Power BI Desktop ファイルを開くには、「**ファイル**」リボン タブをクリックして、バックステージ ビューを開きます。
 
 1. **[レポートを開く]** を選択します。
 
-    ![画像 10](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image3.png)
+   ![画像 10](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image3.png)
 
 1. 「**レポートを参照**」をクリックします。
 
-    ![画像 9](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image4.png)
+   ![画像 9](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image4.png)
 
 1. **[開く]** ウィンドウで、**D:\PL300\Labs\06-create-dax-calculations-in-power-bi-desktop-advanced\Starter** フォルダーに移動します。
 
@@ -79,7 +80,7 @@ ms.locfileid: "139273336"
 
 1. **[開く]** をクリックします。
 
-    ![画像 8](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image5.png)
+   ![画像 8](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image5.png)
 
 1. 情報ウィンドウが開いている場合はすべて閉じます。
 
@@ -87,63 +88,61 @@ ms.locfileid: "139273336"
 
 1. **[名前を付けて保存]** を選択します。
 
-    ![画像 7](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image6.png)
+   ![画像 7](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image6.png)
 
 1. 変更を適用するかどうかを確認するメッセージが表示されたら、「**適用**」をクリックします。
 
-    ![画像 6](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image7.png)
+   ![画像 6](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image7.png)
 
 1. **[名前を付けて保存]** ウィンドウで、**D:\PL300\MySolution** フォルダーに移動します。
 
 1. **[保存]** をクリックします。
 
-    ![画像 2](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image8.png)
+   ![画像 2](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image8.png)
 
 ### <a name="task-2-create-a-matrix-visual"></a>**タスク 2: 行列の視覚エフェクトを作成する**
 
 このタスクでは、新しいメジャーのテストをサポートするマトリックス ビジュアルを作成します。
 
-1. Power BI Desktop のレポート ビューで、新しいレポート ページを作成します。
+1. Power BI Desktop のレポート ビューで、新しいレポート ページを作成します。必要に応じて、ページ名を **[ページ 3]** に変更します。
 
-    ![画像 1](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image9.png)
+   ![画像 1](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image9.png)
 
 2. **[ページ 3]** で、行列の視覚エフェクトを追加します。
 
-    ![画像 13](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image10.png)
+   ![画像 13](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image10.png)
 
 3. ページ全体に合わせて行列の視覚エフェクトのサイズを変更します。
 
 4. 行列の視覚エフェクトのフィールドを構成するには、 **[フィールド]** ペインから **Region \| Regions** 階層をドラッグして、視覚エフェクト内にドロップします。
 
-    "このラボでは、フィールドまたは階層を参照するために簡略表記を使用します。*次のようになります。**Region \| Regions**。この例では、**Region** はテーブル名、**Regions** は階層名です。"*
+   "このラボでは、フィールドまたは階層を参照するために簡略表記を使用します。_次のようになります。**Region \| Regions**。この例では、**Region** はテーブル名、**Regions** は階層名です。"_
 
 5. **Sales \| Sales** フィールドも追加します。
 
 6. 階層全体を展開するには、行列の視覚エフェクトの右上にある 2 つに分かれた矢印アイコンを 2 回クリックします。
 
-    ![画像 47](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image11.png)
+   ![画像 47](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image11.png)
 
-    "**Regions** 階層には、**Group**、**Country**、**Region** のレベルがあることを思い出してください。"
+   "**Regions** 階層には、**Group**、**Country**、**Region** のレベルがあることを思い出してください。"
 
-7. 視覚エフェクトを書式設定するには、**[視覚化]** ペインの下にある **[書式]** ペインを選択します。
-
-    ![画像 14](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image12.png)
+7. 視覚エフェクトを書式設定するには、**[視覚化]** ペインの上にある **[書式]** ペインを選択します。
 
 8. **[検索]** ボックスに「**階段状**」と入力します。
 
-    ![画像 15](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image13.png)
+   ![画像 15](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image13.png)
 
 9. **[階段状レイアウト]** プロパティを **[オフ]** に設定します。
 
-    ![画像 49](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image14.png)
+   ![画像 49](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image14.png)
 
 10. マトリックス ビジュアルに 4 つの列ヘッダーができたことを確認します。
 
     ![画像 50](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image15.png)
 
-    "Adventure Works では、販売地域はグループ、国、地域に分類されます。*すべての国 (米国を除く) には地域が 1 つだけあり、その国にちなんだ名前が付けられています。米国は非常に大きな販売地域であるため、5 つの販売地域に分かれています。"*
+    "Adventure Works では、販売地域はグループ、国、地域に分類されます。_すべての国 (米国を除く) には地域が 1 つだけあり、その国にちなんだ名前が付けられています。米国は非常に大きな販売地域であるため、5 つの販売地域に分かれています。"_
 
-    *この演習ではいくつかのメジャーを作成し、行列の視覚エフェクトに追加してテストします。*
+    _この演習ではいくつかのメジャーを作成し、行列の視覚エフェクトに追加してテストします。_
 
 ### <a name="task-3-manipulate-filter-context"></a>**タスク 3: フィルター コンテキストを操作する**
 
@@ -151,7 +150,7 @@ ms.locfileid: "139273336"
 
 1. 次の式に基づいて、**Sales** テーブルにメジャーを追加します。
 
-    "利便性のために、このラボのすべての DAX 定義は、**D:\PL300\Labs\06-create-dax-calculations-in-power-bi-desktop-advanced\Assets\Snippets.txt** ファイルからコピーできます。"
+   "利便性のために、このラボのすべての DAX 定義は、**D:\PL300\Labs\06-create-dax-calculations-in-power-bi-desktop-advanced\Assets\Snippets.txt** ファイルからコピーできます。"
 
 
     **DAX**
@@ -172,29 +171,29 @@ ms.locfileid: "139273336"
 
 2. 「**Sales All Region**」メジャーをマトリックス ビジュアルに追加します。
 
-    ![画像 52](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image16.png)
+   ![画像 52](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image16.png)
 
 3. **Sales All Region** メジャーによって、各地域、国 (小計)、およびグループ (小計) のすべての地域売上の合計が計算されていることがわかります。
 
-    "新しいメジャーはまだ有用な結果を提供していません。 *"グループ、国、または地域の販売をこの値で割ると、"総計の割合" と呼ばれる有用な比率が生成されます。"*
+   "新しいメジャーはまだ有用な結果を提供していません。 _"グループ、国、または地域の販売をこの値で割ると、"総計の割合" と呼ばれる有用な比率が生成されます。"_
 
 4. 「**フィールド**」ウィンドウで、「**Sales All Region**」メジャーが選択されていることを確認し (選択すると、背景は濃い灰色になります)、数式バーでメジャー名と数式を次の数式に置き換えます。
 
-    *ヒント:既存の数式を置き換えるには、まずスニペットをコピーします。次に、数式バー内をクリックし、**Ctrl + A** キーを押してすべてのテキストを選択します。次に、**Ctrl + V** キーを押してスニペットを貼り付け、選択したテキストを上書きします。次に、**Enter** キーを押します。*
+   _ヒント:既存の数式を置き換えるには、まずスニペットをコピーします。次に、数式バー内をクリックし、**Ctrl + A** キーを押してすべてのテキストを選択します。次に、**Ctrl + V** キーを押してスニペットを貼り付け、選択したテキストを上書きします。次に、**Enter** キーを押します。_
 
 
     **DAX**
 
 
     ```
-    Sales % All Region =  
-    ‎DIVIDE(  
-    ‎ SUM(Sales[Sales]),  
-    ‎ CALCULATE(  
-    ‎ SUM(Sales[Sales]),  
-    ‎ REMOVEFILTERS(Region)  
-    ‎ )  
-    ‎)
+    Sales % All Region =
+    DIVIDE(
+     SUM(Sales[Sales]),
+     CALCULATE(
+     SUM(Sales[Sales]),
+     REMOVEFILTERS(Region)
+     )
+    )
     ```
 
 
@@ -206,7 +205,7 @@ ms.locfileid: "139273336"
 
 7. 行列の視覚エフェクトで、**Sales % All Region** メジャーの値を確認します。
 
-    ![画像 53](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image17.png)
+   ![画像 53](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image17.png)
 
 8. 次の式に基づいて、**Sales** テーブルにもう 1 つのメジャーを追加し、パーセンテージとして書式設定します。
 
@@ -214,20 +213,19 @@ ms.locfileid: "139273336"
     **DAX**
 
     ```
-    Sales % Country =  
-    ‎DIVIDE(  
-    ‎ SUM(Sales[Sales]),  
-    ‎ CALCULATE(  
-    ‎ SUM(Sales[Sales]),  
-    ‎ REMOVEFILTERS(Region[Region])  
-    ‎ )  
-    ‎)
+    Sales % Country =
+    DIVIDE(
+     SUM(Sales[Sales]),
+     CALCULATE(
+     SUM(Sales[Sales]),
+     REMOVEFILTERS(Region[Region])
+     )
+    )
     ```
-
 
 9. **Sales % Country** の数式は、**Sales % All Region** の数式とは若干異なることにお気付きでしょうか。
 
-    "異なるのは、分母でのフィルター コンテキストの変更が、**Region** テーブルのすべての列ではなく、**Region** テーブルの **Region** 列に対するフィルターを削除することで行われている点です。*これは、グループまたは国の列に適用されているすべてのフィルターが保持されることを意味します。これにより、国の割合として売上を表す結果が得られます。"*
+   "異なるのは、分母でのフィルター コンテキストの変更が、**Region** テーブルのすべての列ではなく、**Region** テーブルの **Region** 列に対するフィルターを削除することで行われている点です。_これは、グループまたは国の列に適用されているすべてのフィルターが保持されることを意味します。これにより、国の割合として売上を表す結果が得られます。"_
 
 10. 行列の視覚エフェクトに **Sales % Country** メジャーを追加します。
 
@@ -235,7 +233,7 @@ ms.locfileid: "139273336"
 
     ![画像 54](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image18.png)
 
-    "米国だけに複数の地域があることを思い出してください。*他のすべての国には地域が 1 つしかなく、すべて 100% になるのはそのためです。"*
+    "米国だけに複数の地域があることを思い出してください。_他のすべての国には地域が 1 つしかなく、すべて 100% になるのはそのためです。"_
 
 12. 視覚エフェクトでのこのメジャーの読みやすさを向上させるために、**Sales % Country** メジャーを次の改良された数式で上書きします。
 
@@ -244,17 +242,17 @@ ms.locfileid: "139273336"
 
 
     ```
-    Sales % Country =  
-    ‎IF(  
-    ‎ ISINSCOPE(Region[Region]),  
-    ‎ DIVIDE(  
-    ‎ SUM(Sales[Sales]),  
-    ‎ CALCULATE(  
-    ‎ SUM(Sales[Sales]),  
-    ‎ REMOVEFILTERS(Region[Region])  
-    ‎ )  
-    ‎ )  
-    ‎)
+    Sales % Country =
+    IF(
+     ISINSCOPE(Region[Region]),
+     DIVIDE(
+     SUM(Sales[Sales]),
+     CALCULATE(
+     SUM(Sales[Sales]),
+     REMOVEFILTERS(Region[Region])
+     )
+     )
+    )
     ```
 
 
@@ -271,17 +269,17 @@ ms.locfileid: "139273336"
 
 
     ```
-    Sales % Group =  
-    ‎DIVIDE(  
-    ‎ SUM(Sales[Sales]),  
-    ‎ CALCULATE(  
-    ‎ SUM(Sales[Sales]),  
-    ‎ REMOVEFILTERS(  
-    ‎ Region[Region],  
-    ‎ Region[Country]  
-    ‎ )  
-    ‎ )  
-    ‎)
+    Sales % Group =
+    DIVIDE(
+     SUM(Sales[Sales]),
+     CALCULATE(
+     SUM(Sales[Sales]),
+     REMOVEFILTERS(
+     Region[Region],
+     Region[Country]
+     )
+     )
+    )
     ```
 
 
@@ -296,23 +294,22 @@ ms.locfileid: "139273336"
 
 
     ```
-    Sales % Group =  
-    ‎IF(  
-    ‎ ISINSCOPE(Region[Region])  
-    ‎ || ISINSCOPE(Region[Country]),  
-    ‎ DIVIDE(  
-    ‎ SUM(Sales[Sales]),  
-    ‎ CALCULATE(  
-    ‎ SUM(Sales[Sales]),  
-    ‎ REMOVEFILTERS(  
-    ‎ Region[Region],  
-    ‎ Region[Country]  
-    ‎ )  
-    ‎ )  
-    ‎ )  
-    ‎)
+    Sales % Group =
+    IF(
+     ISINSCOPE(Region[Region])
+     || ISINSCOPE(Region[Country]),
+     DIVIDE(
+     SUM(Sales[Sales]),
+     CALCULATE(
+     SUM(Sales[Sales]),
+     REMOVEFILTERS(
+     Region[Region],
+     Region[Country]
+     )
+     )
+     )
+    )
     ```
-
 
 17. **Sales % Group** メジャーによって、地域または国がスコープ内にある場合にのみ値が返されるようになったことがわかります。
 
@@ -322,7 +319,7 @@ ms.locfileid: "139273336"
 
 19. Power BI Desktop ファイルを保存します。
 
-    "**Sales** テーブルに追加されたメジャーによって、階層ナビゲーションを実現するためにフィルター コンテキストが変更されました。*小計の計算を実現するためのパターンでは、フィルター コンテキストから一部の列を削除する必要があり、総計を得るためにはすべての列を削除する必要があることに注意してください。"*
+    "**Sales** テーブルに追加されたメジャーによって、階層ナビゲーションを実現するためにフィルター コンテキストが変更されました。_小計の計算を実現するためのパターンでは、フィルター コンテキストから一部の列を削除する必要があり、総計を得るためにはすべての列を削除する必要があることに注意してください。"_
 
 ## <a name="exercise-2-work-with-time-intelligence"></a>**演習 2:タイム インテリジェンスを使用する**
 
@@ -341,8 +338,8 @@ ms.locfileid: "139273336"
 
 
     ```
-    Sales YTD =  
-    ‎TOTALYTD(SUM(Sales[Sales]), 'Date'[Date], "6-30")
+    Sales YTD =
+    TOTALYTD(SUM(Sales[Sales]), 'Date'[Date], "6-30")
     ```
 
 
@@ -354,11 +351,11 @@ ms.locfileid: "139273336"
 
 4. 年内の売上の値が累積されていることがわかります。
 
-    ![画像 59](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image21.png)
+   ![画像 59](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image21.png)
 
-    "TOTALYTD() 関数によって、フィルター操作 (具体的には、時間フィルター操作) が実行されます。*たとえば、2017 年 9 月 (会計年度の 3 番目の月) の YTD 売上を計算する場合は、**Date** テーブルのすべてのフィルターが削除され、年度の開始日 (2017 年 7 月 1 日) に始まりコンテキスト内の日付期間の最後の日付 (2017 年 9 月 30 日) まで続く日付の新しいフィルターに置き換えられます。"*
+   "TOTALYTD() 関数によって、フィルター操作 (具体的には、時間フィルター操作) が実行されます。_たとえば、2017 年 9 月 (会計年度の 3 番目の月) の YTD 売上を計算する場合は、**Date** テーブルのすべてのフィルターが削除され、年度の開始日 (2017 年 7 月 1 日) に始まりコンテキスト内の日付期間の最後の日付 (2017 年 9 月 30 日) まで続く日付の新しいフィルターに置き換えられます。"_
 
-    "一般的な時間フィルター操作をサポートするために、DAX では多くのタイム インテリジェンス関数が利用できることに注意してください。"
+   "一般的な時間フィルター操作をサポートするために、DAX では多くのタイム インテリジェンス関数が利用できることに注意してください。"
 
 ### <a name="task-2-create-a-yoy-growth-measure"></a>**タスク 2:YoY 成長メジャーを作成する**
 
@@ -371,18 +368,18 @@ ms.locfileid: "139273336"
 
 
     ```
-    Sales YoY Growth =  
-    ‎VAR SalesPriorYear =  
-    ‎ CALCULATE(  
-    ‎ SUM(Sales[Sales]),  
-    ‎ PARALLELPERIOD(  
-    ‎ 'Date'[Date],  
-    ‎ -12,  
-    ‎ MONTH  
-    ‎ )  
-    ‎ )  
-    ‎RETURN  
-    ‎ SalesPriorYear
+    Sales YoY Growth =
+    VAR SalesPriorYear =
+     CALCULATE(
+     SUM(Sales[Sales]),
+     PARALLELPERIOD(
+     'Date'[Date],
+     -12,
+     MONTH
+     )
+     )
+    RETURN
+     SalesPriorYear
     ```
 
 
@@ -396,9 +393,9 @@ ms.locfileid: "139273336"
 
 4. **2018 年 7 月** の「**Sales YoY Growth**」メジャー値が **2017 年 7 月** の「**Sales**」値であることに注意してください。
 
-    ![画像 61](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image22.png)
+   ![画像 61](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image22.png)
 
-    *これで数式の "難しい部分" をテストできたので、成長の結果を計算する最終的な数式で、メジャーを上書きすることができます。*
+   _これで数式の "難しい部分" をテストできたので、成長の結果を計算する最終的な数式で、メジャーを上書きすることができます。_
 
 5. メジャーを完成させるには、次の数式で **Sales YoY Growth** を上書きして、小数点以下 2 桁のパーセンテージとして書式設定します。
 
@@ -407,35 +404,34 @@ ms.locfileid: "139273336"
 
 
     ```
-    Sales YoY Growth =  
-    ‎VAR SalesPriorYear =  
-    ‎ CALCULATE(  
-    ‎ SUM(Sales[Sales]),  
-    ‎ PARALLELPERIOD(  
-    ‎ 'Date'[Date],  
-    ‎ -12,  
-    ‎ MONTH  
-    ‎ )  
-    ‎ )  
-    ‎RETURN  
-    ‎ DIVIDE(  
-    ‎ (SUM(Sales[Sales]) - SalesPriorYear),  
-    ‎ SalesPriorYear  
-    ‎ )
+    Sales YoY Growth =
+    VAR SalesPriorYear =
+     CALCULATE(
+     SUM(Sales[Sales]),
+     PARALLELPERIOD(
+     'Date'[Date],
+     -12,
+     MONTH
+     )
+     )
+    RETURN
+     DIVIDE(
+     (SUM(Sales[Sales]) - SalesPriorYear),
+     SalesPriorYear
+     )
     ```
-
 
 6. この数式の **RETURN** 句では、変数が 2 回参照されていることがわかります。
 
 7. **2018 年 7 月** の YoY 成長が **392.83%** であることを確認します。
 
-    ![画像 62](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image23.png)
+   ![画像 62](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image23.png)
 
-    "つまり、2018 年 7 月の売上高 (2,411,559 ドル) は、前年同期の売上高 (489,328 ドル) から 400% 近く (ほぼ 4 倍) 改善したことになります。"
+   "つまり、2018 年 7 月の売上高 (2,411,559 ドル) は、前年同期の売上高 (489,328 ドル) から 400% 近く (ほぼ 4 倍) 改善したことになります。"
 
 8. モデル ビューで、2 つの新しいメジャーを **Time Intelligence** という名前の表示フォルダーに配置します。
 
-    ![画像 63](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image24.png)
+   ![画像 63](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image24.png)
 
 ### <a name="task-3-finish-up"></a>**タスク 3: 完了**
 
@@ -443,11 +439,11 @@ ms.locfileid: "139273336"
 
 1. レポート作成用にソリューションをクリーン アップするには、左下の「**ページ 2**」タブを右クリックし、ページの「**削除**」を選択します。
 
-    ![画像 17](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image25.png)
+   ![画像 17](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image25.png)
 
 2. ページを削除するよう求められたら、**[削除]** をクリックします。
 
-    ![画像 18](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image26.png)
+   ![画像 18](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image26.png)
 
 3. **[ページ 3]** も削除します。
 
@@ -457,4 +453,4 @@ ms.locfileid: "139273336"
 
 6. 次のラボを開始する場合は、Power BI Desktop を開いたままにしておきます。
 
-    "「**Power BI Desktop でレポートを設計する (パート 1)** 」ラボでは、データ モデルに基づいてレポートを作成します。
+   "「**Power BI Desktop でレポートを設計する (パート 1)** 」ラボでは、データ モデルに基づいてレポートを作成します。
