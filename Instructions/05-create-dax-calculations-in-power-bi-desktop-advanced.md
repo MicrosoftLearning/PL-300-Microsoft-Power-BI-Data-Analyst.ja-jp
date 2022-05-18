@@ -57,21 +57,21 @@ ms.locfileid: "139273336"
 
 1. Power BI Desktop を開くには、タスク バーにある Microsoft Power BI Desktop のショートカットをクリックします。
 
-    ![画像 12](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image1.png)
+    ![画像 12](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image1.png)
 
 1. 「はじめに」ウィンドウを閉じるには、ウィンドウの左上にある「**X**」をクリックします。
 
-    ![画像 11](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image2.png)
+    ![画像 11](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image2.png)
 
 1. スターター Power BI Desktop ファイルを開くには、「**ファイル**」リボン タブをクリックして、バックステージ ビューを開きます。
 
 1. **[レポートを開く]** を選択します。
 
-    ![画像 10](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image3.png)
+    ![画像 10](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image3.png)
 
 1. 「**レポートを参照**」をクリックします。
 
-    ![画像 9](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image4.png)
+    ![画像 9](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image4.png)
 
 1. **[開く]** ウィンドウで、**D:\PL300\Labs\06-create-dax-calculations-in-power-bi-desktop-advanced\Starter** フォルダーに移動します。
 
@@ -79,7 +79,7 @@ ms.locfileid: "139273336"
 
 1. **[開く]** をクリックします。
 
-    ![画像 8](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image5.png)
+    ![画像 8](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image5.png)
 
 1. 情報ウィンドウが開いている場合はすべて閉じます。
 
@@ -87,17 +87,17 @@ ms.locfileid: "139273336"
 
 1. **[名前を付けて保存]** を選択します。
 
-    ![画像 7](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image6.png)
+    ![画像 7](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image6.png)
 
 1. 変更を適用するかどうかを確認するメッセージが表示されたら、「**適用**」をクリックします。
 
-    ![画像 6](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image7.png)
+    ![画像 6](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image7.png)
 
 1. **[名前を付けて保存]** ウィンドウで、**D:\PL300\MySolution** フォルダーに移動します。
 
 1. **[保存]** をクリックします。
 
-    ![画像 2](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image8.png)
+    ![画像 2](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image8.png)
 
 ### <a name="task-2-create-a-matrix-visual"></a>**タスク 2: 行列の視覚エフェクトを作成する**
 
@@ -105,11 +105,11 @@ ms.locfileid: "139273336"
 
 1. Power BI Desktop のレポート ビューで、新しいレポート ページを作成します。
 
-    ![画像 1](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image9.png)
+    ![画像 1](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image9.png)
 
 2. **[ページ 3]** で、行列の視覚エフェクトを追加します。
 
-    ![画像 13](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image10.png)
+    ![画像 13](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image10.png)
 
 3. ページ全体に合わせて行列の視覚エフェクトのサイズを変更します。
 
@@ -121,25 +121,25 @@ ms.locfileid: "139273336"
 
 6. 階層全体を展開するには、行列の視覚エフェクトの右上にある 2 つに分かれた矢印アイコンを 2 回クリックします。
 
-    ![画像 47](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image11.png)
+    ![画像 47](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image11.png)
 
     "**Regions** 階層には、**Group**、**Country**、**Region** のレベルがあることを思い出してください。"
 
 7. 視覚エフェクトを書式設定するには、**[視覚化]** ペインの下にある **[書式]** ペインを選択します。
 
-    ![画像 14](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image12.png)
+    ![画像 14](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image12.png)
 
 8. **[検索]** ボックスに「**階段状**」と入力します。
 
-    ![画像 15](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image13.png)
+    ![画像 15](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image13.png)
 
 9. **[階段状レイアウト]** プロパティを **[オフ]** に設定します。
 
-    ![画像 49](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image14.png)
+    ![画像 49](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image14.png)
 
 10. マトリックス ビジュアルに 4 つの列ヘッダーができたことを確認します。
 
-    ![画像 50](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image15.png)
+    ![画像 50](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image15.png)
 
     "Adventure Works では、販売地域はグループ、国、地域に分類されます。*すべての国 (米国を除く) には地域が 1 つだけあり、その国にちなんだ名前が付けられています。米国は非常に大きな販売地域であるため、5 つの販売地域に分かれています。"*
 
@@ -172,7 +172,7 @@ ms.locfileid: "139273336"
 
 2. 「**Sales All Region**」メジャーをマトリックス ビジュアルに追加します。
 
-    ![画像 52](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image16.png)
+    ![画像 52](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image16.png)
 
 3. **Sales All Region** メジャーによって、各地域、国 (小計)、およびグループ (小計) のすべての地域売上の合計が計算されていることがわかります。
 
@@ -206,7 +206,7 @@ ms.locfileid: "139273336"
 
 7. 行列の視覚エフェクトで、**Sales % All Region** メジャーの値を確認します。
 
-    ![画像 53](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image17.png)
+    ![画像 53](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image17.png)
 
 8. 次の式に基づいて、**Sales** テーブルにもう 1 つのメジャーを追加し、パーセンテージとして書式設定します。
 
@@ -233,7 +233,7 @@ ms.locfileid: "139273336"
 
 11. 米国の地域のみが 100% ではない値を生成することがわかります。
 
-    ![画像 54](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image18.png)
+    ![画像 54](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image18.png)
 
     "米国だけに複数の地域があることを思い出してください。*他のすべての国には地域が 1 つしかなく、すべて 100% になるのはそのためです。"*
 
@@ -262,7 +262,7 @@ ms.locfileid: "139273336"
 
 13. **Sales % Country** メジャーによって、地域がスコープ内にある場合にのみ値が返されるようになったことがわかります。
 
-    ![画像 55](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image19.png)
+    ![画像 55](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image19.png)
 
 14. 次の式に基づいて、**Sales** テーブルにもう 1 つのメジャーを追加し、パーセンテージとして書式設定します。
 
@@ -318,7 +318,7 @@ ms.locfileid: "139273336"
 
 18. モデル ビューで、3 つの新しいメジャーを **Ratios** という名前の表示フォルダーに配置します。
 
-    ![画像 56](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image20.png)
+    ![画像 56](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image20.png)
 
 19. Power BI Desktop ファイルを保存します。
 
@@ -354,7 +354,7 @@ ms.locfileid: "139273336"
 
 4. 年内の売上の値が累積されていることがわかります。
 
-    ![画像 59](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image21.png)
+    ![画像 59](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image21.png)
 
     "TOTALYTD() 関数によって、フィルター操作 (具体的には、時間フィルター操作) が実行されます。*たとえば、2017 年 9 月 (会計年度の 3 番目の月) の YTD 売上を計算する場合は、**Date** テーブルのすべてのフィルターが削除され、年度の開始日 (2017 年 7 月 1 日) に始まりコンテキスト内の日付期間の最後の日付 (2017 年 9 月 30 日) まで続く日付の新しいフィルターに置き換えられます。"*
 
@@ -396,7 +396,7 @@ ms.locfileid: "139273336"
 
 4. **2018 年 7 月** の「**Sales YoY Growth**」メジャー値が **2017 年 7 月** の「**Sales**」値であることに注意してください。
 
-    ![画像 61](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image22.png)
+    ![画像 61](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image22.png)
 
     *これで数式の "難しい部分" をテストできたので、成長の結果を計算する最終的な数式で、メジャーを上書きすることができます。*
 
@@ -429,13 +429,13 @@ ms.locfileid: "139273336"
 
 7. **2018 年 7 月** の YoY 成長が **392.83%** であることを確認します。
 
-    ![画像 62](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image23.png)
+    ![画像 62](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image23.png)
 
     "つまり、2018 年 7 月の売上高 (2,411,559 ドル) は、前年同期の売上高 (489,328 ドル) から 400% 近く (ほぼ 4 倍) 改善したことになります。"
 
 8. モデル ビューで、2 つの新しいメジャーを **Time Intelligence** という名前の表示フォルダーに配置します。
 
-    ![画像 63](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image24.png)
+    ![画像 63](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image24.png)
 
 ### <a name="task-3-finish-up"></a>**タスク 3: 完了**
 
@@ -443,11 +443,11 @@ ms.locfileid: "139273336"
 
 1. レポート作成用にソリューションをクリーン アップするには、左下の「**ページ 2**」タブを右クリックし、ページの「**削除**」を選択します。
 
-    ![画像 17](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image25.png)
+    ![画像 17](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image25.png)
 
 2. ページを削除するよう求められたら、**[削除]** をクリックします。
 
-    ![画像 18](https://raw.githubusercontent.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/Main/Instructions/Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image26.png)
+    ![画像 18](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image26.png)
 
 3. **[ページ 3]** も削除します。
 
