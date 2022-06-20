@@ -2,12 +2,12 @@
 lab:
   title: Power BI Desktop で DAX 計算を作成する (パート 2)
   module: Module 5 - Create Model Calculations using DAX in Power BI
-ms.openlocfilehash: 80cfdfcfcb2072277760670c549cebaaca434cb9
-ms.sourcegitcommit: 3520e7d016e94549d408464207c1b91cd47867c2
+ms.openlocfilehash: 01d7f76dff212103ec9d08e6fe284356be9887f5
+ms.sourcegitcommit: d88b7941fe3805f0bc2979ea864c5483ec289c75
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2022
-ms.locfileid: "139273336"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "146071619"
 ---
 # <a name="create-dax-calculations-in-power-bi-desktop-part-2"></a>**Power BI Desktop で DAX 計算を作成する (パート 2)**
 
@@ -53,7 +53,7 @@ ms.locfileid: "139273336"
 
 このタスクではこのラボ用の環境を設定します。
 
-*重要:前のラボから続行している場合 (かつそのラボを正常に完了した場合) は、このタスクを実行しないで、次のタスクから続けてください。"*
+*重要:前のラボから継続している (および、そのラボを正常に完了した) 場合は、このタスクを完了させず、次のタスクから続行してください。*
 
 1. Power BI Desktop を開くには、タスク バーにある Microsoft Power BI Desktop のショートカットをクリックします。
 
@@ -73,7 +73,7 @@ ms.locfileid: "139273336"
 
     ![画像 9](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image4.png)
 
-1. **[開く]** ウィンドウで、**D:\PL300\Labs\06-create-dax-calculations-in-power-bi-desktop-advanced\Starter** フォルダーに移動します。
+1. **[開く]** ウィンドウで、**D:\PL300\Labs\05-create-dax-calculations-in-power-bi-desktop-advanced\Starter** フォルダーに移動します。
 
 1. **Sales Analysis** ファイルを選択します。
 
@@ -125,13 +125,11 @@ ms.locfileid: "139273336"
 
     "**Regions** 階層には、**Group**、**Country**、**Region** のレベルがあることを思い出してください。"
 
-7. 視覚エフェクトを書式設定するには、**[視覚化]** ペインの下にある **[書式]** ペインを選択します。
+7. 視覚エフェクトを書式設定するには、 **[視覚化]** ペインにある **[書式]** ペインを選択します。
 
     ![画像 14](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image12.png)
 
 8. **[検索]** ボックスに「**階段状**」と入力します。
-
-    ![画像 15](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image13.png)
 
 9. **[階段状レイアウト]** プロパティを **[オフ]** に設定します。
 
@@ -151,7 +149,7 @@ ms.locfileid: "139273336"
 
 1. 次の式に基づいて、**Sales** テーブルにメジャーを追加します。
 
-    "利便性のために、このラボのすべての DAX 定義は、**D:\PL300\Labs\06-create-dax-calculations-in-power-bi-desktop-advanced\Assets\Snippets.txt** ファイルからコピーできます。"
+    *"利便性のために、このラボのすべての DAX 定義は、**D:\PL300\Labs\05-create-dax-calculations-in-power-bi-desktop-advanced\Assets\Snippets.txt** ファイルからコピーできます。"*
 
 
     **DAX**

@@ -2,12 +2,12 @@
 lab:
   title: Power BI Desktop にデータを読み込む
   module: Module 3 - Clean, Transform, and Load Data in Power BI
-ms.openlocfilehash: 8a19b8b1b243cc4c04bee3375f161098287dbf9d
-ms.sourcegitcommit: 3520e7d016e94549d408464207c1b91cd47867c2
+ms.openlocfilehash: 8e8373127cbc8023c0c299e3b2c75b4a82986308
+ms.sourcegitcommit: d88b7941fe3805f0bc2979ea864c5483ec289c75
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2022
-ms.locfileid: "139273834"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "146071892"
 ---
 # <a name="load-data-in-power-bi-desktop"></a>**Power BI Desktop でデータを読み込む**
 
@@ -54,7 +54,7 @@ ms.locfileid: "139273834"
 
 このタスクではこのラボ用の環境を設定します。
 
-*重要:前のラボから続行している場合 (かつそのラボを正常に完了した場合) は、このタスクを実行しないで、次のタスクから続けてください。"*
+*重要:前のラボから継続している (および、そのラボを正常に完了した) 場合は、このタスクを完了させず、次のタスクから続行してください。*
 
 1. Power BI Desktop を開くには、タスク バーにある Microsoft Power BI Desktop のショートカットをクリックします。
 
@@ -130,7 +130,7 @@ ms.locfileid: "139273834"
 
     "次に、クエリ行をフィルター処理し、営業担当者である従業員のみを取得します。"
 
-4. 特定の列を見つけるには、**[ホーム]** リボン タブの **[列の管理]** グループ内から、**[列の選択]** の下矢印をクリックし、**[列に移動]** を選択します。
+4. 特定の列を見つけるには、 **[ホーム]** リボン タブの **[列の管理]** の下矢印をクリックし、 **[列の選択]** の下矢印をクリックして、 **[列に移動]** を選択します。
 
     ![画像 88](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image13.png)
 
@@ -156,7 +156,7 @@ ms.locfileid: "139273834"
 
     "作成した変換ごとに、追加のステップ ロジックが生成されます。*ステップを編集または削除することができます。クエリ変換のその段階でクエリ結果をプレビューするステップを選択することもできます。"*
 
-10. 列を削除するには、「**ホーム**」リボン タブの「**列の管理**」グループ内から「**列の選択**」アイコンをクリックします。
+10. 列を削除するには、 **[ホーム]** リボン タブの **[列の管理]** グループをクリックし、 **[列の選択]** アイコンをクリックします。
 
     ![画像 99](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image18.png)
 
@@ -216,7 +216,7 @@ ms.locfileid: "139273834"
 
 23. 前の手順を使用して、**EmailAddress** 列の名前を **UPN** に変更します。
 
-    "UPN は、User Principal Name の頭字語です。*この列の値は、「**Power BI Desktop でデータをモデル化する (パート 2)** 」ラボで行レベルのセキュリティを構成するときに使用されます。"*
+    *UPN は、User Principal Name の頭字語です。*
 
 24. 左下のステータス バーで、クエリに 5 列と 18 行が含まれているかどうかを確認します。
 
@@ -349,7 +349,6 @@ ms.locfileid: "139273834"
     ![画像 2](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image38.png)
 
   
-‎ 
 
 6. **Business Type** 列ヘッダーを右クリックして、「**値の置換**」を選択します。
 
@@ -648,7 +647,7 @@ ms.locfileid: "139273834"
 
     ![画像 5690](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image70.png)
 
-2. **ColorFormats** クエリをマージするには、「**ホーム**」リボン タブの「**結合**」グループ内から、「**クエリのマージ**」をクリックします。
+2. **ColorFormats** クエリをマージするには、 **[ホーム]** リボン タブの **[結合]** の下矢印をクリックして、 **[クエリのマージ]** をクリックします。
 
     ![画像 5654](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image71.png)
 
@@ -748,4 +747,4 @@ ms.locfileid: "139273834"
 
 5. 次のラボを開始する場合は、Power BI Desktop を開いたままにしておきます。
 
-    "データ モデルのテーブルとリレーションシップは、「**Power BI Desktop でデータをモデル化する (パート 1)** 」ラボで構成します。"
+    *"データ モデルのテーブルとリレーションシップは、「**Power BI Desktop でデータをモデル化する**」ラボで構成します。"*

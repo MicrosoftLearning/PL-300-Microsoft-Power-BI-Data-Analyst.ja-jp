@@ -2,12 +2,12 @@
 lab:
   title: Power BI Desktop でレポートを設計する (パート 2)
   module: Module 7 - Create Reports
-ms.openlocfilehash: 13dbd8523318739a7e005f1023ab2ae8b32ce8a1
-ms.sourcegitcommit: 3520e7d016e94549d408464207c1b91cd47867c2
+ms.openlocfilehash: 113abb71cee132e348d3513f171efe6cec317046
+ms.sourcegitcommit: f09183b2093a7f8de629f89b54d70bcad85598b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2022
-ms.locfileid: "139273822"
+ms.lasthandoff: 06/07/2022
+ms.locfileid: "146109735"
 ---
 # <a name="design-a-report-in-power-bi-desktop-part-2"></a>**Power BI Desktop でレポートを設計する (パート 2)**
 
@@ -63,7 +63,7 @@ ms.locfileid: "139273822"
 
     ![画像 12](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image1.png)
 
-1. Microsoft Edge ブラウザー ウィンドウで、**https://powerbi.com** に移動します。
+1. Microsoft Edge ブラウザー ウィンドウで、**https://powerbi.microsoft.com** に移動します。
 
     *ヒント:Microsoft Edge のお気に入りバーで、Power BI サービスのお気に入りを使用することもできます。"*
 
@@ -117,7 +117,7 @@ ms.locfileid: "139273822"
 
     ![画像 6](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image8.png)
 
-8. **[開く]** ウィンドウで、**D:\PL300\Labs\08-design-report-in-power-bi-desktop-enhanced\Starter** フォルダーに移動します。
+8. **[開く]** ウィンドウで、**D:\PL300\Labs\07-design-report-in-power-bi-desktop-enhanced\Starter** フォルダーに移動します。
 
 9. **Sales Analysis** ファイルを選択します。
 
@@ -245,7 +245,7 @@ ms.locfileid: "139273822"
 
     - Sales \| Profit Margin
 
-12. ビジュアルの書式オプションを構成し、**[グリッド]** セクションで、**[文字のサイズ]** プロパティを **[20pt]** に設定します。
+12. ビジュアルの書式オプションを構成し、 **[値]** セクションで、 **[文字のサイズ]** プロパティを **[20pt]** に設定します。
 
     "ドリル スルー ページの設計はほぼ完了です。*次の演習では、条件付き書式を使用してページを拡張します。"*
 
@@ -307,11 +307,11 @@ ms.locfileid: "139273822"
 
 9. **[色]** フィールドの背景色の条件付き書式を構成します。
 
-10. 「**背景色 - 色**」ウィンドウの「**書式設定**」ドロップダウン リストで、「**フィールド値**」を選択します。
+10. **[背景色 -- 色]** ウィンドウの **[書式設定スタイル]** ドロップダウン リストで、 **[フィールド値]** を選択します。
 
-    ![画像 113](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image35.png)
+    
 
-11. **[フィールドに基づく]** ドロップダウン リストで、**Product \| Formatting \| Background Color Format** を選択します。
+11. **[基準にするフィールド]** ドロップダウン リストで、 **[製品] \| [書式設定] \| [背景の書式]** を選択します。
 
     ![画像 114](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image36.png)
 
@@ -401,15 +401,15 @@ ms.locfileid: "139273822"
 
 2. **Year** スライサーの真下にボタンを配置します。
 
-3. ボタンを選択し、 **[ボタンの書式設定]** ペインで、 **[ボタン テキスト]** プロパティを **[オン]** にします。
+3. ボタンを選択し、 **[ボタンの書式設定]** ペインで、 **[全般]** をクリックし、 **[タイトル]** プロパティを **[オン]** にします。
 
     ![画像 126](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image49.png)
 
-4. **[ボタン テキスト]** セクションを展開し、**[ボタン テキスト]** ボックスに「**Bar Chart**」と入力します。
+4. **[タイトル]** セクションを展開し、 **[テキスト]** ボックスに「**Bar Chart**」と入力します。
 
 5. **[背景]** セクションを展開してから、補完的な色を使用して背景色を設定します。
 
-6. **[アクション]** プロパティを **[オン]** に変更します (リストの一番下近くにあります)。
+6. **[ボタン]** をクリックし、 **[アクション]** プロパティを **[オン]** にします。
 
     ![画像 127](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image50.png)
 
@@ -471,7 +471,7 @@ ms.locfileid: "139273822"
 
 このタスクでは、Power BI サービスのレポートを探索します。
 
-1. Microsoft Edge ブラウザー ウィンドウの Power BI サービスの「**ナビゲーション**」ウィンドウで、**販売分析** レポートをクリックします。
+1. Microsoft Edge ブラウザー ウィンドウの Power BI サービスの **[ナビゲーション]** ペインで、 **[個人用ワークスペース]** を選択してから、 **[売上分析]** レポートを選択します。
 
 2. ドリルスルー レポートをテストするには、 **[概要]** ページの **[Quantity by Category]\(カテゴリ別数量\)** ビジュアルで **[Clothing]** バーを右クリックし、 **[ドリルスルー] \| [製品の詳細]** を選択します。
 

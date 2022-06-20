@@ -2,12 +2,12 @@
 lab:
   title: Power BI Desktop での DAX 計算の作成、パート 1
   module: Module 5 - Create Model Calculations using DAX in Power BI
-ms.openlocfilehash: 27cbc5c39cdc89c2a54422bbe3468cd13c553ddc
-ms.sourcegitcommit: 3520e7d016e94549d408464207c1b91cd47867c2
+ms.openlocfilehash: 3bbdf3dfb4b302a9b3c28005976ff34764c1c542
+ms.sourcegitcommit: d88b7941fe3805f0bc2979ea864c5483ec289c75
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2022
-ms.locfileid: "139273716"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "146071705"
 ---
 # <a name="create-dax-calculations-in-power-bi-desktop-part-1"></a>**Power BI Desktop で DAX 計算を作成する (パート 1)**
 
@@ -55,7 +55,7 @@ ms.locfileid: "139273716"
 
 このタスクではこのラボ用の環境を設定します。
 
-*重要:前のラボから続行している場合 (かつそのラボを正常に完了した場合) は、このタスクを実行しないで、次のタスクから続けてください。"*
+*重要:前のラボから継続している (および、そのラボを正常に完了した) 場合は、このタスクを完了させず、次のタスクから続行してください。*
 
 1. Power BI Desktop を開くには、タスク バーにある Microsoft Power BI Desktop のショートカットをクリックします。
 
@@ -75,7 +75,7 @@ ms.locfileid: "139273716"
 
     ![画像 47](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image4.png)
 
-1. **[開く]** ウィンドウで、**D:\PL300\Labs\05-create-dax-calculations-in-power-bi-desktop\Starter** フォルダーに移動します。
+1. **[開く]** ウィンドウで、**D:\PL300\Labs\04-create-dax-calculations-in-power-bi-desktop\Starter** フォルダーに移動します。
 
 1. **Sales Analysis** ファイルを選択します。
 
@@ -113,7 +113,7 @@ ms.locfileid: "139273716"
 
     ![画像 4](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image10.png)
 
-    "利便性のために、このラボのすべての DAX 定義は、**D:\PL300\Labs\05-create-dax-calculations-in-power-bi-desktop\Assets\Snippets.txt** にあるスニペット ファイルからコピーできます。"
+    *"利便性のために、このラボのすべての DAX 定義は、**D:\PL300\Labs\04-create-dax-calculations-in-power-bi-desktop\Assets\Snippets.txt** にあるスニペット ファイルからコピーできます。"*
 
     "計算テーブルを作成するには、最初にテーブル名を入力し、その後に等号 (=) と、テーブルが返される DAX 式を入力します。*データ モデル内に既に存在しているテーブル名は使用できないことに注意してください。"*
 
@@ -141,7 +141,7 @@ ms.locfileid: "139273716"
 
     ![画像 2](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image12.png)
 
-8. 削除するかどうかを確認するメッセージが表示されたら、**[削除]** をクリックします。
+8. 削除するかどうかを確認するメッセージが表示されたら、 **[OK]** をクリックします。
 
     ![図 3](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image13.png)
 
@@ -208,7 +208,7 @@ ms.locfileid: "139273716"
 
 このタスクでは、別の期間によるフィルター処理とグループ化を有効にする列を追加します。 また、計算列を作成して、他の列の並べ替え順序の制御も行います。
 
-"利便性のために、このラボのすべての DAX 定義は、**D:\PL300\Labs\05-create-dax-calculations-in-power-bi-desktop\Assets\Snippets.txt** にあるスニペット ファイルからコピーできます。"
+*"利便性のために、このラボのすべての DAX 定義は、**D:\PL300\Labs\04-create-dax-calculations-in-power-bi-desktop\Assets\Snippets.txt** にあるスニペット ファイルからコピーできます。"*
 
 1. **[テーブル ツール]** コンテキスト リボンの **[計算]** グループ内から、**[新しい列]** をクリックします。
 
@@ -375,7 +375,7 @@ ms.locfileid: "139273716"
 
     ![画像 27](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image35.png)
 
-    "「**Power BI Desktop でのデータのモデル化 (パート 2)** 」ラボでは、**Unit Price** 列を **Average** で要約するように設定しました。*行列の視覚エフェクトに表示される結果は、月単位の平均単価 (単価値の合計を単価の数で割ったもの) です。"*
+    "「**Power BI Desktop でデータをモデル化する**」ラボでは、**Unit Price** 列を **平均** で要約するように設定しました。*行列の視覚エフェクトに表示される結果は、月単位の平均単価 (単価値の合計を単価の数で割ったもの) です。"*
 
 2. ビジュアル フィールド ウィンドウ (「**視覚化**」ウィンドウの下) の「**値**」フィールドのウェル/領域に、「**Unit Price**」が一覧表示されていることに注目してください。
 
@@ -473,9 +473,96 @@ ms.locfileid: "139273716"
 
     ![画像 39](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image43.png)
 
+### <a name="task-2-create-additional-measures"></a>**タスク 2:追加のメジャーを作成する**
+
+このタスクでは、より複雑な数式を使用する追加のメジャーを作成します。
+
+1. レポート ビューで、**[ページ 1]** を選択します。
+
+    ![画像 40](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image44.png)
+
+2. テーブルの視覚エフェクトを確認すると、**Target** 列の合計に気付きます。
+
+    ![画像 41](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image45.png)
+
+    
+
+3. テーブル ビジュアルを選択し、「**視覚化**」ウィンドウで「**Target**」フィールドを削除します。
+
+    ![画像 42](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image46.png)
+
+4. **Targets \| Target** 列の名前を、**Targets \| TargetAmount** に変更します。
+
+    *ヒント:レポート ビューで列の名前を変更するには、いくつかの方法があります。 **[フィールド]** ペインで、列を右クリックしてから **[名前の変更]** を選択するか、列をダブルクリックするか、または **F2** キーを押します。*
+
+    "***Target** という名前のメジャーを作成しようとしています。同じテーブル内に、同じ名前を持つ列とメジャーを持つことはできません。* "
+
+5. **Targets** テーブルに対して、次のメジャーを作成します。
 
 
-### <a name="task-2-finish-up"></a>**タスク 2: 完了**
+    **DAX**
+
+
+    ```
+    Target =
+
+    IF(
+
+    HASONEVALUE('Salesperson (Performance)'[Salesperson]),
+
+    SUM(Targets[TargetAmount])
+
+    )
+    ```
+
+
+    *HASONEVALUE() 関数によって、**Salesperson** 列内の単一の値がフィルター処理されているかどうかがテストされます。true の場合は、式によって (その販売員のみの) 目標金額の合計が返されます。false の場合は、空白が返されます。*
+
+6. **Target** メジャーを、小数点以下 0 桁に書式設定します。
+
+    *ヒント: **[メジャー ツール]** コンテキスト リボンを使用できます。*
+
+7. **TargetAmount** 列を非表示にします。
+
+    *ヒント: **[フィールド]** ペインで列を右クリックして **[非表示]** を選択することができます。*
+
+8. テーブルの視覚エフェクトに **Target** メジャーを追加します。
+
+9. **Target** 列の合計が空白になっていることがわかります。
+
+    ![画像 43](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image47.png)
+
+10. スニペットのファイル定義を使用して、**Targets** テーブルに対して次の 2 つのメジャーを作成します。
+
+    - Variance
+
+    - Variance Margin
+
+11. **Variance** メジャーを、小数点以下 0 桁に書式設定します。
+
+12. **Variance Margin** メジャーを、小数点以下 2 桁のパーセンテージとして書式設定します。
+
+13. テーブルの視覚エフェクトに、**Variance** メジャーと **Variance Margin** メジャーを追加します。
+
+14. すべての列と行が表示されるように、テーブル ビジュアルのサイズを変更します。
+
+    ![画像 44](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image48.png)
+
+    "すべての営業担当者が目標を達成していないように見えますが、テーブル ビジュアルはまだ特定の期間でフィルタリングされていないことに注意してください。*「**Power BI Desktop でレポートをデザインする (パート 1)** 」のラボでは、ユーザーが選択した期間でフィルター処理を行う販売実績レポートを生成します。"*
+
+15. **[フィールド]** ペインの右上隅で、ペインを折りたたんでから展開します。
+
+    ![画像 45](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image49.png)
+
+    *"ペインを折りたたんで再び開くと、内容がリセットされます。"*
+
+16. 一覧の先頭に **[Targets]** テーブルが表示されるようになったことがわかります。
+
+    ![画像 46](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image50.png)
+
+    *表示されるメジャーのみを含むテーブルは、自動的に一覧の先頭に表示されます。*
+
+### <a name="task-3-finish-up"></a>**タスク 3: 完了**
 
 このタスクでは、ラボを完了します。
 

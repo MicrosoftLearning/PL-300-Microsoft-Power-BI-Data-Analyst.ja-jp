@@ -2,12 +2,12 @@
 lab:
   title: Power BI ダッシュボードを作成する
   module: Module 8 - Create Dashboards
-ms.openlocfilehash: 777dc5fb86f71c926a347c736896834fdf2baed2
-ms.sourcegitcommit: 3520e7d016e94549d408464207c1b91cd47867c2
+ms.openlocfilehash: 2ddb086b004fca3fa322e10570f9163342514808
+ms.sourcegitcommit: f09183b2093a7f8de629f89b54d70bcad85598b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2022
-ms.locfileid: "139273811"
+ms.lasthandoff: 06/07/2022
+ms.locfileid: "146109913"
 ---
 # <a name="create-a-power-bi-dashboard"></a>**Power BI ダッシュボードを作成する**
 
@@ -61,7 +61,7 @@ ms.locfileid: "139273811"
 
     ![画像 42](Linked_image_Files/09-create-power-bi-dashboard_image2.png)
 
-2. Microsoft Edge ブラウザー ウィンドウで、**https://powerbi.com** に移動します。
+2. Microsoft Edge ブラウザー ウィンドウで、**https://powerbi.microsoft.com** に移動します。
 
     *ヒント:Microsoft Edge のお気に入りバーで、Power BI サービスのお気に入りを使用することもできます。"*
 
@@ -115,7 +115,7 @@ ms.locfileid: "139273811"
 
     ![画像 34](Linked_image_Files/09-create-power-bi-dashboard_image9.png)
 
-8. **[開く]** ウィンドウで、**D:\PL300\Labs\09-create-power-bi-dashboard\Starter** フォルダーに移動します。
+8. **[開く]** ウィンドウで、**D:\PL300\Labs\08-create-power-bi-dashboard\Starter** フォルダーに移動します。
 
 9. **Sales Analysis** ファイルを選択します。
 
@@ -159,11 +159,11 @@ ms.locfileid: "139273811"
 
     ![画像 5](Linked_image_Files/09-create-power-bi-dashboard_image16.png)
 
-4. **[開く]** ウィンドウで、**D:\PL300\Labs\08-design-report-in-power-bi-desktop-enhanced\Solution** フォルダーに移動します。
+4. **[開く]** ウィンドウで、**D:\PL300\Labs\08-create-power-bi-dashboard\Solution** フォルダーに移動します。
 
 5. **Sales Analysis.pbix** ファイルを選択し、「**開く**」をクリックします。
 
-6. データセットを置き換えるメッセージが表示されたら、「**置換**」をクリックします。
+6. データセットを置き換えるメッセージが表示されたら、 **[置き換える]** をクリックします。
 
 ### <a name="task-4-create-a-dashboard"></a>**タスク 4: ダッシュボードを作成する**
 
@@ -181,7 +181,7 @@ ms.locfileid: "139273811"
 
 4. ダッシュボードを作成して視覚化をピン留めするには、**[Sales and Profit Margin by Month]\(月別の売上と利益率\)** (列/行) 視覚化にカーソルを合わせます。
 
-5. 右上隅にあるプッシュピンをクリックします。
+5. 右下隅にあるプッシュピンをクリックします。
 
     ![画像 43](Linked_image_Files/09-create-power-bi-dashboard_image18.png)
 
@@ -193,7 +193,7 @@ ms.locfileid: "139273811"
 
     ![画像 1](Linked_image_Files/09-create-power-bi-dashboard_image20.png)
 
-8. **ナビゲーション** ペインを開き、**[Sales Monitoring](売上モニタリング)** ダッシュボードを開きます。
+8. **[ナビゲーション]** ペインを開き、 **[個人用ワークスペース]** を選択して、 **[売上モニタリング]** ダッシュボードを開きます。
 
     ![画像 44](Linked_image_Files/09-create-power-bi-dashboard_image21.png)
 
@@ -337,7 +337,7 @@ ms.locfileid: "139273811"
 
 2. 更新が完了したら、Power BI Desktop ファイルを保存します。
 
-3. ファイルをワークスペースに発行するには、**[ホーム]** リボン タブの **[共有]** グループ内から、**[発行]** をクリックします。
+3. ファイルをワークスペースに発行するには、 **[ホーム]** リボン タブの **[共有]** グループ内から、 **[発行]** をクリックします。次に **[選択]** をクリックして発行します。
 
     ![画像 59](Linked_image_Files/09-create-power-bi-dashboard_image48.png)
 
@@ -351,11 +351,11 @@ ms.locfileid: "139273811"
 
 ## <a name="exercise-3-review-the-dashboard"></a>**演習 3: ダッシュボードを確認する**
 
-この演習では、ダッシュボードを確認して、更新された売上を確認し、アラートがトリガーされたことを確認します。
+この演習では、ダッシュボードを確認して、売上が最新の情報に更新されたことに注目します。
 
 ### <a name="task-1-review-the-dashboard"></a>**タスク 1: ダッシュボードを確認する**
 
-このタスクでは、ダッシュボードを確認して、更新された売上を確認し、アラートがトリガーされたことを確認します。
+このタスクでは、ダッシュボードを確認して、売上が最新の情報に更新されたことに注目します。
 
 1. Microsoft Edge ブラウザー ウィンドウで、Power BI サービスの **[Sales Monitoring]\(売上モニタリング\)** ダッシュボードを確認します。
 
@@ -367,22 +367,6 @@ ms.locfileid: "139273811"
 
     ![画像 33](Linked_image_Files/09-create-power-bi-dashboard_image50.png)
 
-    " **[Sales YTD]** タイル上のアラートもトリガーされます。"*しばらくすると、現在の売上が構成済みのしきい値を超えたことがアラートによって通知されます。"*
+    
 
-4. **[Sales YTD](売上 YTD)** タイルが **$37M** に更新されていることに注目してください。
-
-5. **[Sales YTD](売上 YTD)** タイルにアラート通知アイコンが表示されていることを確認します。
-
-    "通知が表示されない場合は、**F5** を押してブラウザーをもう一度読み込む必要があります。*それでも通知が表示されない場合は、もう少し待ってください。"*
-
-    ![画像 35](Linked_image_Files/09-create-power-bi-dashboard_image51.png)
-
-    *アラート通知がダッシュボード タイルに表示され、電子メールで配信したり、Apple Watch などのモバイル アプリに通知をプッシュしたりすることができます。*
-
-6. ウェブ ページの右上隅にある「**通知**」アイコンをクリックします。
-
-    ![画像 58](Linked_image_Files/09-create-power-bi-dashboard_image52.png)
-
-7. **[すべての通知]** ペインで、アラート通知の詳細を確認します。
-
-8. ウィンドウを閉じるには、「**閉じる**」をクリックします。
+4. ウィンドウを閉じるには、「**閉じる**」をクリックします。

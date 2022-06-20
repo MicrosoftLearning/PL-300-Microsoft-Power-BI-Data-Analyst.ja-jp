@@ -2,12 +2,12 @@
 lab:
   title: Power BI Desktop でレポートを設計する (パート 1)
   module: Module 7 - Create Reports
-ms.openlocfilehash: 9aa794d25d2eb2ec611315a7ec6ac472e9a3a141
-ms.sourcegitcommit: 3520e7d016e94549d408464207c1b91cd47867c2
+ms.openlocfilehash: 952409822e622f744edcaef603bea5058670c3e8
+ms.sourcegitcommit: 40a8c8608a0adde23300c2b6833db02193f36dfe
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2022
-ms.locfileid: "139273832"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "146072497"
 ---
 # <a name="design-a-report-in-power-bi-desktop-part-1"></a>**Power BI Desktop でレポートを設計する (パート 1)**
 
@@ -59,7 +59,7 @@ ms.locfileid: "139273832"
 
     ![画像 65](Linked_image_Files/07-design-report-in-power-bi-desktop_image1.png)
 
-1. Microsoft Edge ブラウザー ウィンドウで、**https://powerbi.com** に移動します。
+1. Microsoft Edge ブラウザー ウィンドウで、**https://powerbi.microsoft.com** に移動します。
 
     *ヒント:Microsoft Edge のお気に入りバーで、Power BI サービスのお気に入りを使用することもできます。"*
 
@@ -115,7 +115,7 @@ ms.locfileid: "139273832"
 
 このタスクでは、スターター レポートを開いてこのラボ用の環境を設定します。
 
-*重要:前のラボから続行している場合 (かつそのラボを正常に完了した場合) は、このタスクを実行しないで、次のタスクから続けてください。"*
+*重要:前のラボから継続している (および、そのラボを正常に完了した) 場合は、このタスクを完了させず、次のタスクから続行してください。*
 
 1. Power BI Desktop を開くには、タスク バーにある Microsoft Power BI Desktop のショートカットをクリックします。
 
@@ -141,7 +141,7 @@ ms.locfileid: "139273832"
 
     ![画像 30](Linked_image_Files/07-design-report-in-power-bi-desktop_image7.png)
 
-8. **[開く]** ウィンドウで、**D:\PL300\Labs\07-design-report-in-power-bi-desktop\Starter** フォルダーに移動します。
+8. **[開く]** ウィンドウで、**D:\PL300\Labs\06-design-report-in-power-bi-desktop\Starter** フォルダーに移動します。
 
 9. **Sales Analysis** ファイルを選択します。
 
@@ -230,21 +230,6 @@ ms.locfileid: "139273832"
 
     ![画像 21](Linked_image_Files/07-design-report-in-power-bi-desktop_image22.png)
 
-17. スライサーの書式を設定するには、**[視覚化]** ペインの下にある **[書式]** ペインを開きます。
-
-    ![画像 50](Linked_image_Files/07-design-report-in-power-bi-desktop_image23.png)
-
-18. **[選択範囲のコントロール]** グループを展開します。
-
-    ![画像 23](Linked_image_Files/07-design-report-in-power-bi-desktop_image24.png)
-
-19. 「 **「すべて選択」オプションを表示**」を「**オン**」に設定します。
-
-    ![画像 24](Linked_image_Files/07-design-report-in-power-bi-desktop_image25.png)
-
-20. **Region** スライサーで、最初の項目が **[すべて選択]** になっていることを確認します。
-
-    "この項目を選択すると、すべての項目が選択されるか、すべての項目が選択解除されます。*これにより、レポート ユーザーが必要なスライサー項目を設定しやすくなります。"*
 
 21. レポート ページの空いている領域をクリックして、スライサーの選択を解除します。
 
@@ -262,13 +247,13 @@ ms.locfileid: "139273832"
 
     - Sales \| Sales
 
-25. ビジュアル フィールド ウィンドウで (「**フィールド**」ウィンドウではなく ビジュアル フィールド ウィンドウは「**視覚化**」ウィンドウの下にあります)、フィールドが「**共有軸**」および「**列の値**」ウェル/領域に割り当てられていることに注目してください。
+25. ビジュアル フィールド ウィンドウで ( **[フィールド]** ウィンドウではなくビジュアル フィールド ウィンドウは **[視覚化]** ウィンドウの下にあります)、フィールドが **[X 軸]** および **[列の Y 軸]** ウェル/領域に割り当てられていることに注目してください。
 
     ![画像 27](Linked_image_Files/07-design-report-in-power-bi-desktop_image28.png)
 
     "ビジュアルをビジュアルにドラッグすると、既定のウェル/領域に追加されます。*精度を高めるには、次に行うように、フィールドをウェル/領域に直接ドラッグできます。"*
 
-26. **[フィールド]** ペインから、**Sales \| Profit Margin** を **[線の値]** ウェル/領域にドラッグします。
+26. **[フィールド]** ペインから、**Sales \| Profit Margin** を **[線の Y 軸]** ウェル/領域にドラッグします。
 
     ![画像 28](Linked_image_Files/07-design-report-in-power-bi-desktop_image29.png)
 
@@ -276,7 +261,7 @@ ms.locfileid: "139273832"
 
     "1 年の最後の月である 2020 年 6 月は、売上が (まだ) ありません。*既定で、売上が空の月は視覚化によって除去されています。次に、すべての月が表示されるように視覚化を構成します。"*
 
-28. ビジュアル フィールド ウィンドウの「**共有軸**」ウェル/領域で、「**Month**」フィールドの下向き矢印をクリックし、「**データのないアイテムを表示**」を選択します。
+28. ビジュアル フィールド ウィンドウの **[X 軸]** ウェル/領域で、 **[Month]** フィールドの下向き矢印をクリックし、 **[データのないアイテムを表示]** を選択します。
 
     ![画像 52](Linked_image_Files/07-design-report-in-power-bi-desktop_image30.png)
 
@@ -320,7 +305,7 @@ ms.locfileid: "139273832"
 
     ![図 3](Linked_image_Files/07-design-report-in-power-bi-desktop_image35.png)
 
-39. 「**データの色**」グループを展開し、「**既定の色**」プロパティを適切な色に設定します (縦棒グラフや折れ線グラフを補完する色)。
+39. **[バー]** 、 **[色]** グループの順に展開し、 **[既定の色]** プロパティを適切な色に設定します (縦棒グラフや折れ線グラフを補完する色)。
 
 40. **[データ ラベル]** プロパティを **[オン]** に設定します。
 
@@ -347,11 +332,10 @@ ms.locfileid: "139273832"
     ![画像 43](Linked_image_Files/07-design-report-in-power-bi-desktop_image39.png)
 
   
-‎ 
 
 3. **Region \| Region** フィールドに基づくスライサーを追加します。
 
-4. 「**書式設定**」ウィンドウを使用して、(「**選択コントロール**」グループの) “すべて選択” オプションを有効にします。
+4. **[書式]** ペインを使用して、[すべて選択] オプションを有効にします ( **[選択]** グループ)。
 
 5. スライサーのサイズを変更してレポート ページの左側に配置し、ページの高さの約半分になるようにします。
 
@@ -445,7 +429,7 @@ ms.locfileid: "139273832"
 
 1. 視覚化の書式を設定します。
 
-    - **[データ ラベル]** グループで、**[テキスト サイズ]** プロパティを **28 pt** に増やします
+    - **[吹き出しの値]** グループで、 **[テキスト サイズ]** プロパティを **28 pt** に増やします
 
     - **[背景]** グループで、**[色]** を明るい灰色に設定します
 
