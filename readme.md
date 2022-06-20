@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 8876507a0ec5ecb2e4e3d048285d075202550f05
-ms.sourcegitcommit: 3520e7d016e94549d408464207c1b91cd47867c2
+ms.openlocfilehash: 585b145f177e4e0792054e11f83911c0fad49430
+ms.sourcegitcommit: 9f66e4932aaf188d3be327646561dc7fe8e5c7a5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2022
-ms.locfileid: "139504256"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "143996845"
 ---
 # <a name="pl-300-microsoft-power-bi-data-analyst"></a>PL-300: Microsoft Power BI Data Analyst
 
@@ -12,7 +12,7 @@ ms.locfileid: "139504256"
 
 - **あなたは MCT ですか?** - [MCT 向けの GitHub ユーザー ガイド](https://microsoftlearning.github.io/MCT-User-Guide/)をご覧ください
 - **ラボの手順を手動で作成する必要がありますか?** - 手順は、[MicrosoftLearning/Docker-Build](https://github.com/MicrosoftLearning/Docker-Build) リポジトリで確認できます
-- **どのラボがどのモジュールと一緒に行くのか、リフレクサーが必要ですか?** - [GitHub ページ](https://microsoftlearning.github.io/DA-100-Analyzing-Data-with-Power-BI/)をチェックアウトする
+- **どのラボがどのモジュールと一緒に行くのか、リフレクサーが必要ですか?** - [GitHub ページ](https://microsoftlearning.github.io/PL-300-Microsoft-Power-BI-Data-Analyst/)をチェックアウトする
 
 ## <a name="what-are-we-doing"></a>ここでの内容
 
@@ -28,11 +28,11 @@ ms.locfileid: "139504256"
 
 - すべての配信について、トレーナーは最新の Azure サービスをサポートするために行われた可能性がある変更を GitHub で確認し、配信用の最新のファイルを取得することをお勧めします。
 
-## <a name="what-about-changes-to-the-student-handbook"></a>学生ハンドブックの変更について
+## <a name="what-about-changes-to-the-student-handbook"></a>受講者ハンドブックの変更については?
 
-- 学生ハンドブックは四半期ごとに見直され、必要に応じて、通常の MOC リリース チャネルを通じて更新されます。
+- 受講者ハンドブックは四半期ごとに見直し、必要があれば通常の MOC リリースの手順を通して更新します。
 
-## <a name="how-do-i-contribute"></a>投稿方法
+## <a name="how-do-i-contribute"></a>貢献するには?
 
 - すべての MCT は、GitHub repro のコードまたはコンテンツに pull request を送信できます。Microsoft とコース作成者は、必要に応じてコンテンツとラボ コードの変更をトリアージして追加します。
 
@@ -40,6 +40,6 @@ ms.locfileid: "139504256"
 
 ## <a name="notes"></a>Notes
 
-### <a name="classroom-materials"></a>教室向け素材
+### <a name="classroom-materials"></a>コース資料
 
 MCT とパートナーが、これらの資料にアクセスし、学生に個別に提供することを強く推奨します。  進行中のクラスの一部としてラボ ステップにアクセスできるように、学生に直接 GitHub を指示するには、学生がコースの一部として別の UI にもアクセスする必要がありますが、これは混乱の原因となります。 個別のラボの手順を受け取る理由を学生に説明すると、クラウドベースのインターフェイスとプラットフォームが常に変化しているという性質を強調できます。 GitHub 上のファイルにアクセスするための Microsoft Learning サポートと GitHub サイトのナビゲーションのサポートは、このコースを教える MCT のみに限定されています。
