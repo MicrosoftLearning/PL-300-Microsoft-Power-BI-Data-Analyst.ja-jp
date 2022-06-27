@@ -678,9 +678,9 @@ if [TotalProductCost] = null then [OrderQuantity] * [StandardCost] else [TotalPr
 
 9. **ColorFormats** 列を展開して、次の 2 つの列を含めます。
 
-   - 背景色の書式
+   - Background Color Format
 
-   - フォントの色の書式
+   - Font Color Format
 
    ![画像 5694](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image77.png)
 
