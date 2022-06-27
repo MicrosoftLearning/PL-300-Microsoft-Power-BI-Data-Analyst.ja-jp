@@ -562,7 +562,7 @@ if [TotalProductCost] = null then [OrderQuantity] * [StandardCost] else [TotalPr
 
     ![画像 5678](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image58.png)
 
-12. 「**列を追加**」リボンタブの「**全般**」グループ内から、「**例からの列**」アイコンをクリックし、選択範囲からをクリックします。
+12. 「**列を追加**」リボンタブの「**全般**」グループ内から、「**例からの列**」アイコンをクリックします。
 
     ![画像 5675](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image59.png)
 
