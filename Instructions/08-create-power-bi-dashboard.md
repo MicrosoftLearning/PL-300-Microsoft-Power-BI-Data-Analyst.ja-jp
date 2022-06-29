@@ -290,11 +290,11 @@ _重要:「**Power BI Desktop でレポートを設計する (パート 2)** 」
 
    ![画像 20](Linked_image_Files/09-create-power-bi-dashboard_image38.png)
 
-4. **[Sales YTD](売上 YTD)** タイルにサブタイトルが表示されていることに注意してください。
+4. **[Sales YTD]** タイルにサブタイトルが表示されていることに注意してください。
 
    ![画像 21](Linked_image_Files/09-create-power-bi-dashboard_image39.png)
 
-5. **[Sales, Profit Margin](売上、利益率)** タイルのタイル詳細を編集します。
+5. **[Sales, Profit Margin]** タイルの[詳細を編集]を開きます。
 
 6. **[タイルの詳細]** ペインの **[機能]** セクションで、**[最終更新日時の表示]** をオンにします。
 
