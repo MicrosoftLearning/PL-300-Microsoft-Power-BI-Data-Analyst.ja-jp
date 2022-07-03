@@ -1,13 +1,13 @@
 ---
 lab:
   title: Power BI Desktop でデータ分析を実行する
-  module: Module 10 - Perform Advanced Analytics
-ms.openlocfilehash: 083abd0da7c0423a40985602d8db09d752f064cd
-ms.sourcegitcommit: 3520e7d016e94549d408464207c1b91cd47867c2
+  module: Module 9 - Identify Patterns and Trends
+ms.openlocfilehash: e58af011b5603e4cd6e5def7c4353156fc67c879
+ms.sourcegitcommit: 6853b027da7f5e739951c3eef54f4cd458854c66
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2022
-ms.locfileid: "139273812"
+ms.lasthandoff: 06/12/2022
+ms.locfileid: "146274805"
 ---
 # <a name="perform-data-analysis-in-power-bi-desktop"></a>**Power BI Desktop でデータ分析を実行する**
 
@@ -61,11 +61,11 @@ ms.locfileid: "139273812"
 
     ![画像 7](Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image1.png)
 
-1. Microsoft Edge ブラウザー ウィンドウで、**https://powerbi.com** に移動します。
+1. Microsoft Edge ブラウザー ウィンドウで、**https://powerbi.microsoft.com** に移動します。
 
     *ヒント:Microsoft Edge のお気に入りバーで、Power BI サービスのお気に入りを使用することもできます。"*
 
-1. 「**サインイン**」 (右上隅) をクリックします。
+1. **[サインイン]** (右上隅) をクリックします。
 
     ![画像 5](Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image2.png)
 
@@ -77,7 +77,7 @@ ms.locfileid: "139273812"
 
 1. サインイン プロセスを完了します。
 
-1. Microsoft Edge からサインインを維持するかどうかを確認するメッセージが表示されたら、「**はい**」をクリックします。
+1. Microsoft Edge からサインインを維持するかどうかを確認するメッセージが表示されたら、**[はい]** をクリックします。
 
 1. Microsoft Edge ブラウザー ウィンドウの Power BI サービスの **[ナビゲーション]** ペインで、**[マイ ワークスペース]** を展開します。
 
@@ -89,25 +89,25 @@ ms.locfileid: "139273812"
 
 このタスクでは、データセットを作成してこのラボ用の環境を設定します。
 
-*重要:「**Power BI ダッシュボードを作成する**」のラボで既にデータセットを発行している場合は、次のタスクから続行します。"*
+"重要: **[Power BI ダッシュボードを作成する]** ラボで既にデータセットを発行している場合は、次のタスクから続行します。"
 
-1. Microsoft Edge ブラウザー ウィンドウの Power BI サービスの「**ナビゲーション**」ウィンドウで、「**マイ ワークスペース**」を展開します。
+1. Microsoft Edge ブラウザー ウィンドウの Power BI サービスの **[ナビゲーション]** ウィンドウで、下部にある **[データの取得]** をクリックします。
 
     ![画像 8](Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image4.png)
 
-2. 「**ファイル**」タイルで、「**取得**」をクリックします。
+2. **[ファイル]** タイルで、**[取得]** をクリックします。
 
     ![画像 10](Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image5.png)
 
-3. 「**ローカル ファイル**」タイルをクリックします。
+3. **[ローカル ファイル]** タイルをクリックします。
 
     ![画像 11](Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image6.png)
 
-4. **[開く]** ウィンドウで、**D:\PL300\Labs\09-create-power-bi-dashboard\Solution** フォルダーに移動します。
+4. **[開く]** ウィンドウで、**D:\PL300\Labs\08-create-power-bi-dashboard\Solution** フォルダーに移動します。
 
-5. **Sales Analysis.pbix** ファイルを選択し、「**開く**」をクリックします。
+5. "**Sales Analysis.pbix**" ファイルを選択し、**[開く]** をクリックします。
 
-6. データセットを置き換えるメッセージが表示されたら、「**置換**」をクリックします。
+6. データセットを置き換えるメッセージが表示されたら、 **[置き換える]** をクリックします。
 
 ### <a name="task-3-create-the-report"></a>**タスク 3: レポートを作成する**
 
@@ -119,17 +119,17 @@ ms.locfileid: "139273812"
 
     ![画像 14](Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image7.png)
 
-2. 「はじめに」ウィンドウを閉じるには、ウィンドウの左上にある「**X**」をクリックします。
+2. [はじめに] ウィンドウを閉じるには、ウィンドウの左上にある **[X]** をクリックします。
 
     ![画像 13](Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image8.png)
 
-3. Power BI Desktop が Power BI サービスにサインインしていない場合は、右上の「**サインイン**」をクリックします。
+3. Power BI Desktop が Power BI サービスにサインインしていない場合は、右上の **[サインイン]** をクリックします。
 
     ![画像 16](Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image9.png)
 
 4. Power BI サービスへのサインインに使用したのと同じアカウントを使用して、サインイン プロセスを完了します。
 
-5. ファイルを保存するには、「**ファイル**」リボン タブをクリックして、バックステージ ビューを開きます。
+5. ファイルを保存するには、**[ファイル]** リボン タブをクリックして、バックステージ ビューを開きます。
 
 6. **[保存]** を選択します。
 
@@ -137,11 +137,11 @@ ms.locfileid: "139273812"
 
 7. **[名前を付けて保存]** ウィンドウで、**D:\PL300\MySolution** フォルダーに移動します。
 
-8. **[ファイル名]** ボックスに「**Sales Exploration**」と入力します。
+8. **[ファイル名]** ボックスに「**Sales Exploration**」と入力し、 **[保存]** をクリックします。
 
     ![画像 1](Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image11.png)
 
-9. 「**販売分析**」データセットへのライブ接続を作成するには、「**ホーム**」リボン タブの「**データ**」グループ内から「**Power BI データセット**」をクリックします。
+9. "**Sales Analysis**" データセットへのライブ接続を作成するには、**[ホーム]** リボン タブの **[データ]** グループ内から **[Power BI データセット]** をクリックします。
 
     ![画像 15](Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image12.png)
 
@@ -153,7 +153,7 @@ ms.locfileid: "139273812"
 
 12. Power BI Desktop ファイルを保存します。
 
-    "次に、4 つのレポート ページを作成し、各ページで異なるビジュアルを操作して、データの分析および調査を行います。"
+    *次に、2 つのレポート ページを作成し、各ページで異なるビジュアルを操作して、データの分析および調査を行います。*
 
 ## <a name="exercise-2-create-a-scatter-chart"></a>**演習 2:散布図を作成する**
 
@@ -177,11 +177,13 @@ ms.locfileid: "139273812"
 
     このラボでは、フィールドを参照するために簡略表記を使用します。 次のようになります。**Reseller** **\|** **Business Type**. この例では、**Reseller** がテーブル名、**Business Type** がフィールド名です。
 
-    - 凡例: **Reseller \| Business Type**
+    
 
     - X 軸: **Sales \| Sales** 
 
     - Y 軸: **Sales \| Profit Margin**
+
+    - 凡例: **Reseller \| Business Type**
 
     - サイズ:**Sales \| Quantity**
 
@@ -237,9 +239,9 @@ ms.locfileid: "139273812"
 
 3. 次のフィールドをビジュアル ウェル/領域に追加します。
 
-    - 軸: **Date \| Date**
+    - X 軸: **Date \| Date**
 
-    - 値: **Sales \| Sales** 
+    - Y 軸: **Sales \| Sales** 
 
     ![画像 46](Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image23.png)
 
@@ -263,21 +265,25 @@ ms.locfileid: "139273812"
 
 8. **[予測]** セクションを展開します。
 
-    ![画像 50](Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image27.png)
+
 
     " **[予測]** セクションが使用できない場合は、ビジュアルが正しく構成されていないことが原因の可能性があります。*予測は、軸には date 型のフィールドが 1 つあり、存在する値フィールドは 1 つだけという、2 つの条件が満たされている場合にのみ使用できます。"*
 
-9. **[追加]** をクリックします。
+9. **[予測]** オプションを **[オン]** にします。
 
     ![画像 51](Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image28.png)
 
 10. 次の予測プロパティを構成します。
 
+    - 単位: 月
+
     - 予測の長さ: 1 か月
 
+    - 季節性: 365
+    
     - 信頼区間: 80%
 
-    - 季節性: 365
+
 
 11. **[Apply]** をクリックします。
 
@@ -302,7 +308,7 @@ ms.locfileid: "139273812"
 
 2. Power BI Desktop ファイルを保存します。
 
-3. ファイルをワークスペースに発行するには、**[ホーム]** リボン タブの **[共有]** グループ内から、**[発行]** をクリックします。
+3. ファイルを **[マイ ワークスペース]** に発行するには、 **[ホーム]** リボン タブの **[共有]** グループ内から、 **[発行]** をクリックします。次に **[選択]** をクリックして発行します。
 
     ![画像 23](Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image46.png)
 

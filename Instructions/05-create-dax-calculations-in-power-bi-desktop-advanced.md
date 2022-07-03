@@ -2,12 +2,12 @@
 lab:
   title: Power BI Desktop で DAX 計算を作成する (パート 2)
   module: Module 5 - Create Model Calculations using DAX in Power BI
-ms.openlocfilehash: 01d7f76dff212103ec9d08e6fe284356be9887f5
-ms.sourcegitcommit: d88b7941fe3805f0bc2979ea864c5483ec289c75
+ms.openlocfilehash: 064f5bb2c313448f7d15b01bd0e69a84aa85811f
+ms.sourcegitcommit: 9ea1e7e21b9b3c718030c94b1693d153a2010ec7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "146071619"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "146650200"
 ---
 # <a name="create-dax-calculations-in-power-bi-desktop-part-2"></a>**Power BI Desktop で DAX 計算を作成する (パート 2)**
 
@@ -23,7 +23,7 @@ ms.locfileid: "146071619"
 
 ### <a name="lab-story"></a>**ラボのストーリー**
 
-このラボは、データの準備に始まり、レポートおよびダッシュボードとして発行するまでの完全なストーリーとして設計されたラボ シリーズの 1 つです。 ラボは任意の順序で完了できます。 しかしながら、複数のラボに取り組む場合は、最初の 10 のラボについては、次の順序で行うことをお勧めします。
+このラボは、データの準備に始まり、レポートおよびダッシュボードとして発行するまでの完全なストーリーとして設計されたラボ シリーズの 1 つです。 ラボは任意の順序で完了できます。 しかしながら、複数のラボに取り組む場合は、次の順序で行うことをお勧めします。
 
 1. Power BI Desktop でのデータの準備
 
@@ -59,17 +59,17 @@ ms.locfileid: "146071619"
 
     ![画像 12](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image1.png)
 
-1. 「はじめに」ウィンドウを閉じるには、ウィンドウの左上にある「**X**」をクリックします。
+1. [はじめに] ウィンドウを閉じるには、ウィンドウの左上にある **[X]** をクリックします。
 
     ![画像 11](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image2.png)
 
-1. スターター Power BI Desktop ファイルを開くには、「**ファイル**」リボン タブをクリックして、バックステージ ビューを開きます。
+1. スターター Power BI Desktop ファイルを開くには、**[ファイル]** リボン タブをクリックして、バックステージ ビューを開きます。
 
 1. **[レポートを開く]** を選択します。
 
     ![画像 10](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image3.png)
 
-1. 「**レポートを参照**」をクリックします。
+1. **[レポートを参照]** をクリックします。
 
     ![画像 9](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image4.png)
 
@@ -83,13 +83,13 @@ ms.locfileid: "146071619"
 
 1. 情報ウィンドウが開いている場合はすべて閉じます。
 
-1. ファイルのコピーを作成するには、「**ファイル**」リボン タブをクリックして、バックステージ ビューを開きます。
+1. ファイルのコピーを作成するには、**[ファイル]** リボン タブをクリックして、バックステージ ビューを開きます。
 
 1. **[名前を付けて保存]** を選択します。
 
     ![画像 7](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image6.png)
 
-1. 変更を適用するかどうかを確認するメッセージが表示されたら、「**適用**」をクリックします。
+1. 変更を適用するかどうかを確認するメッセージが表示されたら、**[適用]** をクリックします。
 
     ![画像 6](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image7.png)
 
@@ -168,7 +168,7 @@ ms.locfileid: "146071619"
 
     "この数式では、メジャーは、変更されたフィルター コンテキストの **Sales** 列の合計を評価します。これにより、**Region** テーブルの列に適用されているフィルターがすべて削除されます。
 
-2. 「**Sales All Region**」メジャーをマトリックス ビジュアルに追加します。
+2. **Sales All Region** メジャーをマトリックス ビジュアルに追加します。
 
     ![画像 52](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image16.png)
 
@@ -176,7 +176,7 @@ ms.locfileid: "146071619"
 
     "新しいメジャーはまだ有用な結果を提供していません。 *"グループ、国、または地域の販売をこの値で割ると、"総計の割合" と呼ばれる有用な比率が生成されます。"*
 
-4. 「**フィールド**」ウィンドウで、「**Sales All Region**」メジャーが選択されていることを確認し (選択すると、背景は濃い灰色になります)、数式バーでメジャー名と数式を次の数式に置き換えます。
+4. **[フィールド]** ウィンドウで、**Sales All Region** メジャーが選択されていることを確実にし (選択すると、背景は濃い灰色になります)、数式バーでメジャー名と数式を次の数式に置き換えます。
 
     *ヒント:既存の数式を置き換えるには、まずスニペットをコピーします。次に、数式バー内をクリックし、**Ctrl + A** キーを押してすべてのテキストを選択します。次に、**Ctrl + V** キーを押してスニペットを貼り付け、選択したテキストを上書きします。次に、**Enter** キーを押します。*
 
@@ -330,7 +330,7 @@ ms.locfileid: "146071619"
 
 このタスクでは、売上の YTD メジャーを作成します。
 
-1. レポート ビューの「**ページ 2**」で、行にグループ化された年と月を含むさまざまなメジャーを表示するマトリックス ビジュアルに注目します。
+1. レポート ビューの **[ページ 2]** で、行にグループ化された年と月を含むさまざまなメジャーを表示するマトリックス ビジュアルに注目します。
 
 2. 次の式に基づいて、**Sales** テーブルにメジャーを追加します。小数点以下 0 桁に書式設定します。
 
@@ -344,7 +344,7 @@ ms.locfileid: "146071619"
     ```
 
 
-    "TOTALYTD() 関数では、指定した日付列に対して式 (この場合は **Sales** 列の合計) が評価されます。*「**Power BI Desktop で DAX 計算を作成する (パート 1)** 」ラボでそうだったように、日付列は、日付テーブルとしてマークされている日付テーブルに属している必要があります。"*
+    "TOTALYTD() 関数を使用すると、指定した日付列に対して式 (この場合は **Sales** 列の合計) が評価されます。**[Power BI Desktop で DAX 計算を作成する (パート 1)]** ラボでそうだったように、日付列は、日付テーブルとしてマークされている日付テーブルに属している必要があります。"
 
     "この関数には、年度の最後の日付を表す、省略可能な 3 番目の引数を指定することもできます。*この日付を指定しない場合は、12 月 31 日が年度の最後の日付になります。Adventure Works では、6 月が年度の最後の月なので、"6-30" が使用されます。"*
 
@@ -392,7 +392,7 @@ ms.locfileid: "146071619"
 
 3. 新しいメジャーは、最初の 12 か月間は空白を返します (会計年度の 2017 年以前には売上が記録されていないため)。
 
-4. **2018 年 7 月** の「**Sales YoY Growth**」メジャー値が **2017 年 7 月** の「**Sales**」値であることに注意してください。
+4. **2018 年 7 月** の **Sales YoY Growth** メジャー値が **2017 年 7 月** の **Sales** 値であることに注意してください。
 
     ![画像 61](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image22.png)
 
@@ -439,7 +439,7 @@ ms.locfileid: "146071619"
 
 このタスクでは、ラボを完了します。
 
-1. レポート作成用にソリューションをクリーン アップするには、左下の「**ページ 2**」タブを右クリックし、ページの「**削除**」を選択します。
+1. レポート作成の準備ができたソリューションをクリーンアップするには、左下の **[ページ 2]** タブを右クリックし、**[ページの削除]** を選択します。
 
     ![画像 17](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image25.png)
 
@@ -455,4 +455,4 @@ ms.locfileid: "146071619"
 
 6. 次のラボを開始する場合は、Power BI Desktop を開いたままにしておきます。
 
-    "「**Power BI Desktop でレポートを設計する (パート 1)** 」ラボでは、データ モデルに基づいてレポートを作成します。
+    "**[Power BI Desktop でレポートを設計する (パート 1)]** ラボでは、データ モデルに基づいてレポートを作成します。"
