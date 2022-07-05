@@ -2,12 +2,12 @@
 lab:
   title: Power BI Desktop でレポートを設計する (パート 1)
   module: Module 7 - Create Reports
-ms.openlocfilehash: 952409822e622f744edcaef603bea5058670c3e8
-ms.sourcegitcommit: 40a8c8608a0adde23300c2b6833db02193f36dfe
+ms.openlocfilehash: 426892501790aaecbe21ed2e7f9161c4490c9e3b
+ms.sourcegitcommit: 9ea1e7e21b9b3c718030c94b1693d153a2010ec7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "146072497"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "146650218"
 ---
 # <a name="design-a-report-in-power-bi-desktop-part-1"></a>**Power BI Desktop でレポートを設計する (パート 1)**
 
@@ -23,7 +23,7 @@ ms.locfileid: "146072497"
 
 ### <a name="lab-story"></a>**ラボのストーリー**
 
-このラボは、データの準備に始まり、レポートおよびダッシュボードとして発行するまでの完全なストーリーとして設計されたラボ シリーズの 1 つです。 ラボは任意の順序で完了できます。 しかしながら、複数のラボに取り組む場合は、最初の 10 のラボについては、次の順序で行うことをお勧めします。
+このラボは、データの準備に始まり、レポートおよびダッシュボードとして発行するまでの完全なストーリーとして設計されたラボ シリーズの 1 つです。 ラボは任意の順序で完了できます。 ただし、複数のラボに取り組む場合は、次の順序で行うことをお勧めします。
 
 1. Power BI Desktop でのデータの準備
 
@@ -63,7 +63,7 @@ ms.locfileid: "146072497"
 
     *ヒント:Microsoft Edge のお気に入りバーで、Power BI サービスのお気に入りを使用することもできます。"*
 
-1. 「**サインイン**」 (右上隅) をクリックします。
+1. **[サインイン]** (右上隅にあります) をクリックします。
 
     ![画像 63](Linked_image_Files/07-design-report-in-power-bi-desktop_image2.png)
 
@@ -75,7 +75,7 @@ ms.locfileid: "146072497"
 
 1. サインイン プロセスを完了します。
 
-1. Microsoft Edge からサインインを維持するかどうかを確認するメッセージが表示されたら、「**はい**」をクリックします。
+1. Microsoft Edge からサインインを維持するかどうかを確認するメッセージが表示されたら、**[はい]** をクリックします。
 
 1. Microsoft Edge ブラウザー ウィンドウを開いたままにします。
 
@@ -121,23 +121,23 @@ ms.locfileid: "146072497"
 
     ![画像 48](Linked_image_Files/07-design-report-in-power-bi-desktop_image3.png)
 
-2. 「はじめに」ウィンドウを閉じるには、ウィンドウの左上にある「**X**」をクリックします。
+2. 作業の開始ウィンドウを閉じるには、ウィンドウの左上にある **[X]** をクリックします。
 
     ![画像 47](Linked_image_Files/07-design-report-in-power-bi-desktop_image4.png)
 
-3. Power BI サービスにサインインするには、右上の「**サインイン**」をクリックします。
+3. Power BI サービスにサインインするには、右上の **[サインイン]** をクリックします。
 
     ![画像 66](Linked_image_Files/07-design-report-in-power-bi-desktop_image5.png)
 
 4. Power BI サービスへのサインインに使用したのと同じアカウントを使用して、サインイン プロセスを完了します。
 
-5. スターター Power BI Desktop ファイルを開くには、「**ファイル**」リボン タブをクリックして、バックステージ ビューを開きます。
+5. スターター Power BI Desktop ファイルを開くには、**[ファイル]** リボン タブをクリックして、バックステージ ビューを開きます。
 
 6. **[レポートを開く]** を選択します。
 
     ![画像 31](Linked_image_Files/07-design-report-in-power-bi-desktop_image6.png)
 
-7. 「**レポートを参照**」をクリックします。
+7. **[レポートを参照]** をクリックします。
 
     ![画像 30](Linked_image_Files/07-design-report-in-power-bi-desktop_image7.png)
 
@@ -151,13 +151,13 @@ ms.locfileid: "146072497"
 
 11. 情報ウィンドウが開いている場合はすべて閉じます。
 
-12. ファイルのコピーを作成するには、「**ファイル**」リボン タブをクリックして、バックステージ ビューを開きます。
+12. ファイルのコピーを作成するには、**[ファイル]** リボン タブをクリックして、バックステージ ビューを開きます。
 
 13. **[名前を付けて保存]** を選択します。
 
     ![画像 8](Linked_image_Files/07-design-report-in-power-bi-desktop_image9.png)
 
-14. 変更を適用するかどうかを確認するメッセージが表示されたら、「**適用**」をクリックします。
+14. 変更の適用が求められたら、**[適用]** をクリックします。
 
     ![画像 5](Linked_image_Files/07-design-report-in-power-bi-desktop_image10.png)
 
@@ -173,13 +173,13 @@ ms.locfileid: "146072497"
 
 ![ロゴ、2 つのスライサー、3 つのビジュアルで構成されているページ 1 のイメージ。](Linked_image_Files/07-design-report-in-power-bi-desktop_image12.png)
 
-1. Power BI Desktop でページの名前を変更するには、左下の「**ページ 1**」を右クリックし、「**名前の変更**」を選択します。
+1. Power BI Desktop でページの名前を変更するには、左下で **[ページ 1]** を右クリックし、**[名前の変更]** を選択します。
 
     ![画像 36](Linked_image_Files/07-design-report-in-power-bi-desktop_image13.png)
 
     *ヒント:ページ名をダブルクリックして名前を変更することもできます。"*
 
-2. ページの名前を「**Overview**」に変更して、**Eenter** キーを押します。
+2. ページの名前を **[概要]** に変更して、**Enter** キーを押します。
 
     ![画像 37](Linked_image_Files/07-design-report-in-power-bi-desktop_image14.png)
 
@@ -327,7 +327,7 @@ ms.locfileid: "146072497"
 
     ![画像 42](Linked_image_Files/07-design-report-in-power-bi-desktop_image38.png)
 
-2. ページの名前を「**Profit**」に変更します。
+2. ページの名前を **[Profit]** に変更します。
 
     ![画像 43](Linked_image_Files/07-design-report-in-power-bi-desktop_image39.png)
 
@@ -349,7 +349,7 @@ ms.locfileid: "146072497"
 
     ![画像 46](Linked_image_Files/07-design-report-in-power-bi-desktop_image42.png)
 
-8. 次の 5 つの **Sales** テーブル フィールドを「**値**」ウェル/領域に追加します。
+8. 次の 5 つの **Sales** テーブル フィールドを **[値]** ウェル/領域に追加します。
 
     - Orders (**Counts** フォルダーから)
 
@@ -363,7 +363,7 @@ ms.locfileid: "146072497"
 
     ![画像 55](Linked_image_Files/07-design-report-in-power-bi-desktop_image43.png)
 
-9. 「**フィルター**」ウィンドウ (「**視覚化**」ウィンドウの左側) で、「**このページでフィルター**」ウェル/領域を確認します (下にスクロールする必要がある場合があります)。
+9. **[フィルター]** ウィンドウ (**[視覚化]** ウィンドウの左側) で、**[このページでのフィルター]** ウェル/領域を確認します (下にスクロールする必要があるかもしれません)。
 
     ![画像 57](Linked_image_Files/07-design-report-in-power-bi-desktop_image44.png)
 
@@ -375,7 +375,7 @@ ms.locfileid: "146072497"
 
     " **[フィルター]** ペインにフィールドを追加すると、スライサーと同じ結果を得ることができます。*1 つの違いは、レポート ページのスペースを取らない点です。もう 1 つの違いは、より洗練されたフィルター処理要件を達成するように構成できることです。"*
 
-12. 「**このページのフィルター**」ウェル/領域に、次の各「**Product**」テーブル フィールドを追加し、それぞれを折りたたみ、「**カテゴリ**」カードの真下にします。
+12. **[カテゴリ]** カード直下で、**[このページでのフィルター]** ウェル/領域に次の各 **Product** テーブル フィールドを追加して、それぞれを折りたたみます。
 
     - Subcategory
 
@@ -395,13 +395,13 @@ ms.locfileid: "146072497"
 
 ![3 つのビジュアルで構成されたページ 3 のイメージ。](Linked_image_Files/07-design-report-in-power-bi-desktop_image47.png)
 
-1. 新しいページを作成し、名前を「**My Performance**」に変更します。
+1. 新しいページを作成し、名前を **"My Performance"** に変更します。
 
 1. 行レベルのセキュリティ フィルターのパフォーマンスをシミュレートするには、**Salesperson (Performance) \| Salesperson** フィールドを、[フィルター] ペインの [ページ レベル フィルター] にドラッグします。
     
     ![フィルター ウィンドウの Salesperson フィールドの画像。](Linked_image_Files/07-design-report-in-power-bi-desktop_image999.png) 
 
-1. 「**Michael Blythe**」を選択します。 「**マイ パフォーマンス**」レポート ページの日付は、Michael Blythe のみのデータを表示するためにフィルター処理されています。
+1. **[Michael Blythe]** を選択します。 **[My Performance]** レポート ページの日付は、Michael Blythe のみのデータを表示するためにフィルター処理されています。
 
 1. **Date \| Year** フィールドに基づくドロップダウン スライサーを追加し、サイズと位置を変更してページの左上隅に配置します。
 
@@ -475,7 +475,7 @@ ms.locfileid: "146072497"
 
     ![画像 67](Linked_image_Files/07-design-report-in-power-bi-desktop_image59.png)
 
-4. 「**Power BI に発行**」ウィンドウで、「**マイ ワークスペース**」が選択されていることを確認します。
+4. **[Power BI に発行]** ウィンドウで、**[マイ ワークスペース]** が選択されていることを確認します。
 
 5. レポートを発行するには、**[選択]** をクリックします。
 
@@ -497,7 +497,7 @@ ms.locfileid: "146072497"
 
 このタスクでは、Power BI に発行されたレポートを探索します。
 
-1. Microsoft Edge ブラウザー ウィンドウの Power BI サービスの「**ナビゲーション**」ウィンドウ (左側、折りたたまれている場合があります) で、「**マイ ワークスペース**」を展開します。
+1. Microsoft Edge ブラウザー ウィンドウの Power BI サービスの **[ナビゲーション]** ウィンドウ (左側にあり、折りたたまれている場合があります) で、**[マイ ワークスペース]** を展開します。
 
     ![画像 93](Linked_image_Files/07-design-report-in-power-bi-desktop_image62.png)
 
@@ -511,7 +511,7 @@ ms.locfileid: "146072497"
 
 3. レポートを開くには、**販売分析** レポートをクリックします。
 
-4. 左側の「**ページ**」ウィンドウで、「**概要**」ページを選択します。 
+4. 左側の **[ページ]** ウィンドウで、**[概要]** ページを選択します。 
 
 5. **Regions** スライサーで、**Ctrl** キーを押しながら複数の地域を選択します。
 
@@ -533,7 +533,7 @@ ms.locfileid: "146072497"
 
 11. クロスフィルターを取り消すには、縦棒と折れ線のグラフで、視覚化の空いている領域をクリックします。
 
-12. マップ ビジュアルの上にカーソルを移動し、右上の「**フォーカス モード**」アイコンをクリックします。
+12. マップ ビジュアルの上にカーソルを移動し、右上の **[フォーカス モード]** アイコンをクリックします。
 
     ![画像 96](Linked_image_Files/07-design-report-in-power-bi-desktop_image65.png)
 
@@ -555,9 +555,9 @@ ms.locfileid: "146072497"
 
     ![画像 84](Linked_image_Files/07-design-report-in-power-bi-desktop_image68.png)
 
-18. **Region** スライサーは、「**概要**」ページの **Region** スライサーとは異なる選択を行うことに注目してください。
+18. **Region** スライサーは、**[概要]** ページの **[Region]** スライサーとは異なる選択を行うことに注目してください。
 
-    "スライサーが同期されていません。*「**Power BI Desktop でレポートをデザインする (パート 2)** 」ラボで、レポートのデザインを変更して、ページ間で同期されるようにします。"*
+    "スライサーが同期されていません。「**Power BI Desktop でレポートをデザインする (パート 2)**」ラボで、レポートのデザインを変更して、ページ間で同期されるようにします。"
 
 19. **[フィルター]** ペイン (右側にあります) でフィルター カードを展開し、フィルターをいくつか適用します。
 
@@ -585,10 +585,10 @@ ms.locfileid: "146072497"
 
 このタスクでは、ラボを完了します。
 
-1. ワークスペースに戻るには、ウィンドウのウェブ ページのバナーで、「**マイ ワークスペース**」をクリックします。
+1. ワークスペースに戻るには、ウィンドウの Web ページのバナーで、**[マイ ワークスペース]** をクリックします。
 
     ![画像 99](Linked_image_Files/07-design-report-in-power-bi-desktop_image72.png)
 
 2. Microsoft Edge ブラウザー ウィンドウを開いたままにします。
 
-    "「**Power BI Desktop でレポートをデザインする (パート 2)** 」ラボでは、高度な機能を使用してレポートのデザインを強化します。"
+    "「**Power BI Desktop でレポートをデザインする (パート 2)**」ラボでは、高度な機能を使用してレポートのデザインを向上させます。"

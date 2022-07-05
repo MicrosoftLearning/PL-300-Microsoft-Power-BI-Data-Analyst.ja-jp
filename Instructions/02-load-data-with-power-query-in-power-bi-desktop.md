@@ -2,12 +2,12 @@
 lab:
   title: Power BI Desktop にデータを読み込む
   module: Module 3 - Clean, Transform, and Load Data in Power BI
-ms.openlocfilehash: 8e8373127cbc8023c0c299e3b2c75b4a82986308
-ms.sourcegitcommit: d88b7941fe3805f0bc2979ea864c5483ec289c75
+ms.openlocfilehash: aced37b7bfdd2ccf94a9d3e7bdb8f8ff7013c125
+ms.sourcegitcommit: 9ea1e7e21b9b3c718030c94b1693d153a2010ec7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "146071892"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "146650227"
 ---
 # <a name="load-data-in-power-bi-desktop"></a>**Power BI Desktop でデータを読み込む**
 
@@ -23,7 +23,7 @@ ms.locfileid: "146071892"
 
 ### <a name="lab-story"></a>**ラボのストーリー**
 
-このラボは、データの準備に始まり、レポートおよびダッシュボードとして発行するまでの完全なストーリーとして設計されたラボ シリーズの 1 つです。 ラボは任意の順序で完了できます。 しかしながら、複数のラボに取り組む場合は、最初の 10 のラボについては、次の順序で行うことをお勧めします。
+このラボは、データの準備に始まり、レポートおよびダッシュボードとして発行するまでの完全なストーリーとして設計されたラボ シリーズの 1 つです。 ラボは任意の順序で完了できます。 ただし、複数のラボに取り組む場合は、次の順序で行うことをお勧めします。
 
 1. Power BI Desktop でのデータの準備
 
@@ -60,17 +60,17 @@ ms.locfileid: "146071892"
 
     ![画像 8](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image1.png)
 
-1. 「はじめに」ウィンドウを閉じるには、ウィンドウの左上にある「**X**」をクリックします。
+1. 作業の開始ウィンドウを閉じるには、ウィンドウの左上にある **[X]** をクリックします。
 
     ![画像 7](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image2.png)
 
-1. スターター Power BI Desktop ファイルを開くには、「**ファイル**」リボン タブをクリックして、バックステージ ビューを開きます。
+1. スターター Power BI Desktop ファイルを開くには、**[ファイル]** リボン タブをクリックして、バックステージ ビューを開きます。
 
 1. **[レポートを開く]** を選択します。
 
     ![画像 10](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image3.png)
 
-1. 「**レポートを参照**」をクリックします。
+1. **[レポートを参照]** をクリックします。
 
     ![画像 11](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image4.png)
 
@@ -88,17 +88,17 @@ ms.locfileid: "146071892"
 
     "このメッセージは、クエリが、モデル テーブルとしての読み込みに適用されていないことを警告しています。*クエリは、このラボの後半で適用します。"*
 
-1. 警告メッセージを閉じるには、黄色い警告メッセージの右側にある「**X**」をクリックします。
+1. 警告メッセージを閉じるには、黄色い警告メッセージの右にある **[X]** をクリックします。
 
     ![画像 13](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image6.png)
 
-1. ファイルのコピーを作成するには、「**ファイル**」リボン タブをクリックして、バックステージ ビューを開きます。
+1. ファイルのコピーを作成するには、**[ファイル]** リボン タブをクリックして、バックステージ ビューを開きます。
 
 1. **[名前を付けて保存]** を選択します。
 
     ![画像 18](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image7.png)
 
-1. 変更を適用するかどうかを確認するメッセージが表示されたら、「**後で適用**」をクリックします。
+1. 変更の適用が求められたら、**[後で適用]** をクリックします。
 
     ![画像 22](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image8.png)
 
@@ -108,7 +108,7 @@ ms.locfileid: "146071892"
 
     ![画像 15](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image9.png)
 
-1. **Power Query エディター** ウィンドウを開くには、「**ホーム**」リボン タブの「**クエリ**」グループで、「**データの変換**」アイコンをクリックします。
+1. **Power Query エディター** ウィンドウを開くには、**[ホーム]** リボン タブの **[クエリ]** グループで、**[データの変換]** アイコンをクリックします。
 
     ![画像 20](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image10.png)
 
@@ -116,7 +116,7 @@ ms.locfileid: "146071892"
 
 このタスクでは、**Salesperson** クエリを構成します。
 
-1. 「**Power Query エディター**」ウィンドウの「**クエリ**」ウィンドウで、「**DimEmployee**」クエリを選択します。
+1. **[Power Query エディター]** ウィンドウの **[クエリ]** ウィンドウで、**[DimEmployee]** クエリを選択します。
 
     ![画像 1](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image11.png)
 
@@ -160,7 +160,7 @@ ms.locfileid: "146071892"
 
     ![画像 99](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image18.png)
 
-11. 「**列の選択**」ウィンドウで、すべての列のチェックを外す場合は、「 **(すべての列を選択)** 」の項目をオフにします。
+11. **[列の選択]** ウィンドウですべての列のチェックを外す場合は、**[(すべての列を選択)]** の項目をオフにします。
 
     ![画像 102](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image19.png)
 
@@ -182,7 +182,7 @@ ms.locfileid: "146071892"
 
     ![画像 104](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image20.png)
 
-14. 「**適用されるステップ**」リストで、別のクエリ手順が追加されていることに注目してください。
+14. **[適用されるステップ]** リストで、別のクエリ手順が追加されていることに注目してください。
 
     ![画像 112](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image21.png)
 
@@ -192,15 +192,15 @@ ms.locfileid: "146071892"
 
     ![画像 116](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image22.png)
 
-17. 選択列ヘッダーのいずれかを右クリックし、コンテキスト メニューの「**列のマージ**」を選択します。
+17. 選択列ヘッダーのいずれかを右クリックし、コンテキスト メニューで **[列のマージ]** を選択します。
 
     ![画像 117](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image23.png)
 
     "多くの一般的な変換を適用することができます。そのためには、列ヘッダーを右クリックし、コンテキスト メニューから選択します。*ただし、リボンではより多くの変換を使用できます。"*
 
-18. 「**列の結合**」ウィンドウの「**区切り記号**」ボックスの一覧で、「**スペース**」を選択します。
+18. **[列の結合]** ウィンドウの **[区切り記号]** ボックスの一覧で、**[スペース]** を選択します。
 
-19. 「**新しい列名**」ボックスで、テキストを **Salesperson** に置き換えます。
+19. **[新しい列名]** ボックスで、テキストを **"Salesperson"** に置き換えます。
 
     ![画像 119](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image24.png)
 
@@ -232,13 +232,13 @@ ms.locfileid: "146071892"
 
     ![画像 5639](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image27.png)
 
-2. 「**クエリの設定**」ウィンドウで、クエリの名前を **SalespersonRegion** に変更します。
+2. **[クエリの設定]** ウィンドウで、クエリの名前を **"SalespersonRegion"** に変更します。
 
 3. 最後の 2 つの列を削除するために、まず **DimEmployee** 列ヘッダーを選択します。
 
 4. **Ctrl** キーを押しながら、**DimSalesTerritory** 列ヘッダーを選択します。
 
-5. 選択した列ヘッダーのいずれかを右クリックし、コンテキスト メニューで「**列を削除**」を選択します。
+5. 選択した列ヘッダーのいずれかを右クリックし、コンテキスト メニューで **[列を削除]** を選択します。
 
     ![画像 5640](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image28.png)
 
@@ -256,7 +256,7 @@ ms.locfileid: "146071892"
 
     ![画像 5643](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image30.png)
 
-2. クエリの名前を「**Product**」に変更します。
+2. クエリの名前を **"Product"** に変更します。
 
 3. **FinishedGoodsFlag** 列を見つけ、列をフィルタリングして、完成品 (つまり、TRUE) である製品を取得します。
 
@@ -322,7 +322,7 @@ ms.locfileid: "146071892"
 
     ![画像 5653](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image36.png)
 
-2. クエリの名前を「**Reseller**」に変更します。
+2. クエリの名前を **"Reseller"** に変更します。
 
 3. 以下を除くすべての列を削除します。
 
@@ -350,13 +350,13 @@ ms.locfileid: "146071892"
 
   
 
-6. **Business Type** 列ヘッダーを右クリックして、「**値の置換**」を選択します。
+6. **[Business Type]** 列ヘッダーを右クリックして、**[値の置換]** を選択します。
 
     ![画像 4](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image39.png)
 
 7. **[値の置換]** ウィンドウで、次の値を構成します。
 
-    - **[検索する値]** ボックスに「**Ware House**」と入力します
+    - **[検索する値]** ボックスに「**Ware House**」と入力します
 
     - **[置換後]** ボックスに「**Warehouse**」と入力します
 
@@ -388,7 +388,7 @@ ms.locfileid: "146071892"
 
     ![画像 5659](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image43.png)
 
-2. クエリの名前を「**Region**」に変更します。
+2. クエリの名前を **"Region"** に変更します。
 
 3. **SalesTerritoryAlternateKey** 列にフィルターを適用して、値 0 (ゼロ) を削除します。
 
@@ -424,7 +424,7 @@ ms.locfileid: "146071892"
 
     ![画像 5663](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image46.png)
 
-2. クエリの名前を「**Sales**」に変更します。
+2. クエリの名前を **"Sales"** に変更します。
 
 3. 以下を除くすべての列を削除します。
 
@@ -450,19 +450,19 @@ ms.locfileid: "146071892"
 
     - DimProduct
 
-    "「**Power BI Desktop でデータを準備する**」ラボで、**FactResellerSales** 行のごく一部で **TotalProductCost** 値が不足していたことを思い出してください。*不足している値の修正を支援するために、製品の標準原価列を取得するための **DimProduct** 列が含まれています。"*
+    "「**Power BI Desktop でのデータの準備**」ラボで、**FactResellerSales** 行のごく一部で **TotalProductCost** 値が不足していたことを思い出してください。**DimProduct** 列は、不足している値の修正を支援するために、製品の標準原価列を取得するために含まれています。"
 
 4. **DimProduct** 列を展開し、すべての列のチェックを外してから **StandardCost** 列のみを含めます。
 
-5. カスタム列を作成するには、「**列を追加**」リボン タブの「**全般**」グループから、「**カスタム列**」をクリックします。
+5. カスタム列を作成するには、**[列を追加]** リボン タブの **[全般]** グループから **[カスタム列]** をクリックします。
 
     ![画像 5664](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image47.png)
 
-6. 「**カスタム列**」ウィンドウの「**新しい列名**」ボックスで、テキストを **Cost** に置き換えます。
+6. **[カスタム列]** ウィンドウの **[新しい列名]** ボックスで、テキストを **Cost** に置き換えます。
 
     ![画像 5665](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image48.png)
 
-7. 「**カスタム列の式**」ボックスに、次の式 (等号記号の後) を入力します。
+7. **[カスタム列の式]** ボックスに、次の式 (等号記号の後) を入力します。
 
 8. 利便性のために、式は、**D:\PL300\Labs\02-load-data-with-power-query-in-power-bi-desktop\Assets\Snippets.txt** ファイルからコピーできます。"
 
@@ -493,13 +493,13 @@ ms.locfileid: "146071892"
 
     - **SalesAmount** を **Sales** に
 
-12. 列のデータ型を変更するには、列名の左側にある **Quantity** 列ヘッダーで「**1.2**」アイコンをクリックし、「**整数**」を選択します。
+12. 列のデータ型を変更するには、列名の左側にある **[Quantity]** 列ヘッダーで **[1.2]** アイコンをクリックし、**[整数]** を選択します。
 
     ![画像 5667](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image50.png)
 
     "正しいデータ型を構成することが重要です。*列に数値が含まれていて、数学計算を実行する予定がある場合は、正しい型を選択することも重要です。"*
 
-13. 次の 3 つの列のデータ型を「**固定小数点数**」に変更します。
+13. 次の 3 つの列のデータ型を **[固定小数点数]** に変更します。
 
     - Unit Price
 
@@ -525,13 +525,13 @@ ms.locfileid: "146071892"
 
     ![画像 5672](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image53.png)
 
-2. クエリの名前を「**Targets**」に変更します。
+2. クエリの名前を **"Targets"** に変更します。
 
 3. 12 か月の列 (**M01**-**M12**) のピボットを解除するには、まず **Year** および **EmployeeID** の列ヘッダーを複数選択します。
 
     ![画像 5673](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image54.png)
 
-4. 選択した列ヘッダーのいずれかを右クリックし、コンテキスト メニューで「**他の列のピボット解除**」を選択します。
+4. 選択した列ヘッダーのいずれかを右クリックし、コンテキスト メニューで **[その他の列のピボット解除]** を選択します。
 
     ![画像 5674](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image55.png)
 
@@ -549,11 +549,11 @@ ms.locfileid: "146071892"
 
     "次に、変換を適用して日付列を作成します。*日付は、**Year** および **MonthNumber** 列から取得されます。列を作成するには、 **[例からの列]** 機能を使用します。"*
 
-8. **MonthNumber** 列の値を準備するには、**MonthNumber** 列ヘッダーを右クリックしてから、「**値の置換**」を選択します。
+8. **[MonthNumber]** 列の値を準備するには、**[MonthNumber]** 列ヘッダーを右クリックしてから、**[値の置換]** を選択します。
 
     ![画像 5676](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image56.png)
 
-9. 「**値の置換**」ウィンドウの「**検索する値**」ボックスに、「**M**」と入力します。
+9. **[値の置換]** ウィンドウの **[検索する値]** ボックスに、「**M**」と入力します。
 
     ![画像 5677](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image57.png)
 
@@ -563,13 +563,13 @@ ms.locfileid: "146071892"
 
     ![画像 5678](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image58.png)
 
-12. 「**列を追加**」リボンタブの「**全般**」グループ内から、「**例からの列**」アイコンをクリックします。
+12. **[列を追加]** リボンタブの **[全般]** グループ内から、**[例からの列]** アイコンをクリックします。
 
     ![画像 5675](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image59.png)
 
 13. 最初の行は年 **2017** と月番号 **7** であることに注意してください。
 
-14. **Column1** 列の最初のグリッド セルに、「**7/1/2017**」と入力してから、**Enter** キーを押します。
+14. **[Column1]** 列の最初のグリッド セルに、「**7/1/2017**」と入力してから、**Enter** キーを押します。
 
     "この仮想マシンでは米国の地域設定を使用しているため、この日付は実際には "July 1, 2017" になります。"
 
@@ -587,7 +587,7 @@ ms.locfileid: "146071892"
 
     ![画像 5680](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image61.png)
 
-19. 新しい列を追加するには、「**OK**」をクリックします。
+19. 新しい列を追加するには、**[OK]** をクリックします。
 
     ![画像 5681](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image62.png)
 
@@ -603,7 +603,7 @@ ms.locfileid: "146071892"
 
     - **TargetMonth** を日付に
 
-22. **Target** 値に 1000 を掛けるには、**Target** 列ヘッダーを選択し、「**変換**」リボン タブの「**数値の列**」グループ内で「**標準**」をクリックし、「**乗算**」を選択します。
+22. **Target** 値に 1000 を掛けるには、**[Target]** 列ヘッダーを選択し、**[変換]** リボン タブの **[数値の列]** グループ内で **[標準]** をクリックし、**[乗算]** を選択します。
 
     *ターゲット値は千単位で格納されていることを思い出してください。*
 
@@ -631,7 +631,7 @@ ms.locfileid: "146071892"
 
 2. 最初の行に列名が含まれていることに注目してください。
 
-3. 「**ホーム**」リボン タブの「**変換**」グループ内で、「**先頭行をヘッダーとして使用**」をクリックします。
+3. **[ホーム]** リボン タブの **[変換]** グループ内で、**[最初の行をヘッダーとして使用]** をクリックします。
 
     ![画像 5688](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image68.png)
 
@@ -653,7 +653,7 @@ ms.locfileid: "146071892"
 
     "クエリをマージすることで、異なるデータ ソース (SQL Server と CSV ファイル) のデータを統合できます。"
 
-3. 「**マージ**」ウィンドウの **Product** クエリ グリッドで、**Color** 列ヘッダーを選択します。
+3. **[マージ]** ウィンドウの **Product** クエリ グリッドで、**[Color]** 列ヘッダーを選択します。
 
     ![画像 5655](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image72.png)
 
@@ -663,7 +663,7 @@ ms.locfileid: "146071892"
 
 5. **ColorFormats** クエリ グリッドで、**Color** 列ヘッダーを選択します。
 
-6. 「**プライバシー レベル**」ウィンドウが開いたら、2 つのデータ ソースそれぞれに対して、対応するドロップダウン リストで、「**組織**」を選択します。
+6. **[プライバシー レベル]** ウィンドウが開いたら、2 つのデータ ソースのそれぞれに対応するドロップダウン リストで、**[組織]** を選択します。
 
     ![画像 5691](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image74.png)
 
@@ -701,7 +701,7 @@ ms.locfileid: "146071892"
 
     ![画像 322](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image80.png)
 
-3. 「**クエリのプロパティ**」ウィンドウで、「**レポートへの読み込みを有効にする**」チェックボックスをオフにします。
+3. **[クエリのプロパティ]** ウィンドウで、**[レポートへの読み込みを有効にする]** チェックボックスをオフにします。
 
     ![画像 323](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image81.png)
 
@@ -739,7 +739,7 @@ ms.locfileid: "146071892"
 
     *これで、読み込みが有効なすべてのクエリが、データ モデルに読み込まれるようになりました。*
 
-3. 「**フィールド**」ウィンドウ (右側) で、データ モデルに読み込まれた 7 つのテーブルに注目します。
+3. **[フィールド]** ウィンドウ (右側にあります) で、データ モデルに読み込まれた 7 つのテーブルに注目します。
 
     ![図 3](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image84.png)
 
@@ -747,4 +747,4 @@ ms.locfileid: "146071892"
 
 5. 次のラボを開始する場合は、Power BI Desktop を開いたままにしておきます。
 
-    *"データ モデルのテーブルとリレーションシップは、「**Power BI Desktop でデータをモデル化する**」ラボで構成します。"*
+    "データ モデルのテーブルとリレーションシップは、「**Power BI Desktop でデータをモデル化する**」ラボの中で構成します。"
