@@ -38,7 +38,7 @@ ms.locfileid: "143996845"
 
 - バグ、変更、改善、アイデアを送信できます。  新しい Power BI 機能を先に見つけたら、  新しいデモを送信してください!
 
-## <a name="notes"></a>Notes
+## <a name="notes"></a>注
 
 ### <a name="classroom-materials"></a>コース資料
 
