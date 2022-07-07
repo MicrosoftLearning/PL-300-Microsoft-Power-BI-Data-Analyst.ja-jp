@@ -156,7 +156,7 @@ ms.locfileid: "146650227"
 
     "作成した変換ごとに、追加のステップ ロジックが生成されます。*ステップを編集または削除することができます。クエリ変換のその段階でクエリ結果をプレビューするステップを選択することもできます。"*
 
-10. 列を削除するには、 **[ホーム]** リボン タブの **[列の管理]** グループをクリックし、 **[列の選択]** アイコンをクリックします。
+10. 列の削除するには、 **[ホーム]** リボン タブの **[列の管理]** グループをクリックし、 **[列の選択]** アイコンをクリックします。
 
     ![画像 99](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image18.png)
 
@@ -182,7 +182,7 @@ ms.locfileid: "146650227"
 
     ![画像 104](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image20.png)
 
-14. **[適用されるステップ]** リストで、別のクエリ手順が追加されていることに注目してください。
+14. **[適用するステップ]** リストで、別のクエリ手順が追加されていることに注目してください。
 
     ![画像 112](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image21.png)
 
@@ -238,7 +238,7 @@ ms.locfileid: "146650227"
 
 4. **Ctrl** キーを押しながら、**DimSalesTerritory** 列ヘッダーを選択します。
 
-5. 選択した列ヘッダーのいずれかを右クリックし、コンテキスト メニューで **[列を削除]** を選択します。
+5. 選択した列ヘッダーのいずれかを右クリックし、コンテキスト メニューで **[列の削除]** を選択します。
 
     ![画像 5640](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image28.png)
 
@@ -368,9 +368,9 @@ ms.locfileid: "146650227"
 
 9. 次の 4 つの列の名前を変更します。
 
-    - **BusinessType** を **Business Type** に (スペースを含む)
+    - **BusinessType** から **Business Type** に変更 (スペースを追加)
 
-    - **ResellerName** を **Reseller** に
+    - **ResellerName** を **Reseller** に変更
 
     - **StateProvinceName** を **State-Province** に
 
