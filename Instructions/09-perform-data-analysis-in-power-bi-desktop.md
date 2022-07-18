@@ -2,12 +2,12 @@
 lab:
   title: Power BI Desktop でデータ分析を実行する
   module: Module 9 - Identify Patterns and Trends
-ms.openlocfilehash: e58af011b5603e4cd6e5def7c4353156fc67c879
-ms.sourcegitcommit: 6853b027da7f5e739951c3eef54f4cd458854c66
+ms.openlocfilehash: 42ec8ac1a9fd160fe2181ae8d966d85d04b9b82d
+ms.sourcegitcommit: 9ea1e7e21b9b3c718030c94b1693d153a2010ec7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/12/2022
-ms.locfileid: "146274805"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "147015331"
 ---
 # <a name="perform-data-analysis-in-power-bi-desktop"></a>**Power BI Desktop でデータ分析を実行する**
 
@@ -25,7 +25,7 @@ ms.locfileid: "146274805"
 
 ### <a name="lab-story"></a>**ラボのストーリー**
 
-このラボは、データの準備に始まり、レポートおよびダッシュボードとして発行するまでの完全なストーリーとして設計されたラボ シリーズの 1 つです。 ラボは任意の順序で完了できます。 しかしながら、複数のラボに取り組む場合は、最初の 10 のラボについては、次の順序で行うことをお勧めします。
+このラボは、データの準備に始まり、レポートおよびダッシュボードとして発行するまでの完全なストーリーとして設計されたラボ シリーズの 1 つです。 ラボは任意の順序で完了できます。 ただし、複数のラボに取り組む場合は、次の順序で行うことをお勧めします。
 
 1. Power BI Desktop でのデータの準備
 
@@ -137,7 +137,7 @@ ms.locfileid: "146274805"
 
 7. **[名前を付けて保存]** ウィンドウで、**D:\PL300\MySolution** フォルダーに移動します。
 
-8. **[ファイル名]** ボックスに「**Sales Exploration**」と入力し、 **[保存]** をクリックします。
+8. **[ファイル名]** ボックスに「**Sales Exploration**」と入力し、**[保存]** をクリックします。
 
     ![画像 1](Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image11.png)
 

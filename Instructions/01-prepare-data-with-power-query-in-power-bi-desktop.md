@@ -2,12 +2,12 @@
 lab:
   title: Power BI Desktop でのデータの準備
   module: Module 2 - Get Data in Power BI
-ms.openlocfilehash: c44eb33136e3d429a44f6e091897388f4eed4135
-ms.sourcegitcommit: 6853b027da7f5e739951c3eef54f4cd458854c66
+ms.openlocfilehash: 56cc5b93dfb545367ae8f5fe3996a9318203f151
+ms.sourcegitcommit: 9ea1e7e21b9b3c718030c94b1693d153a2010ec7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/12/2022
-ms.locfileid: "146274816"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "147015349"
 ---
 # <a name="prepare-data-in-power-bi-desktop"></a>**Power BI Desktop でのデータの準備**
 
@@ -29,7 +29,7 @@ ms.locfileid: "146274816"
 
 ### <a name="lab-story"></a>**ラボのストーリー**
 
-このラボは、データの準備に始まり、レポートおよびダッシュボードとして発行するまでの完全なストーリーとして設計されたラボ シリーズの 1 つです。 ラボは任意の順序で完了できます。 しかしながら、複数のラボに取り組む場合は、最初の 10 のラボについては、次の順序で行うことをお勧めします。
+このラボは、データの準備に始まり、レポートおよびダッシュボードとして発行するまでの完全なストーリーとして設計されたラボ シリーズの 1 つです。 ラボは任意の順序で完了できます。 ただし、複数のラボに取り組む場合は、次の順序で行うことをお勧めします。
 
 1. **Power BI Desktop でのデータの準備**
 
@@ -123,7 +123,7 @@ ms.locfileid: "146274816"
 
     ![画像 19](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image11.png)
 
-2. **[SQL Server データベース]** ウィンドウの **[サーバー]** ボックスに「**localhost**」と入力します。
+2. **[SQL Server Database]** ウィンドウの **[サーバー]** ボックスに、「**localhost**」と入力します。
 
     ![画像 21](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image12.png)
 
@@ -193,7 +193,7 @@ ms.locfileid: "146274816"
 
 5. 最後の 5 列に、**[テーブル]** または **[値]** のリンクが含まれていることに注意してください。
 
-    この 5 列は、データベース内の他のテーブルとのリレーションシップを表しています。 これらはテーブルを結合するために使用できます。 「**Power BI Desktop にデータを読み込む**」ラボでテーブルを結合します。
+    この 5 列は、データベース内の他のテーブルとのリレーションシップを表しています。 これらはテーブルを結合するために使用できます。 「**Power BI Desktop へのデータの読み込み**」のラボでテーブルを結合します。
 
 6. 列の品質を評価するには、**[表示]** リボン タブの **[データ プレビュー]** グループ内から、**[列の品質]** をオンにします。
 
@@ -215,7 +215,7 @@ ms.locfileid: "146274816"
 
     ![画像 43](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image26.png)
 
-    個別のカウントと一意のカウントが同じ場合は、列に一意の値が含まれていることを意味します。 モデリングの際、一部のモデル テーブルに一意の列を含めることが重要です。 これらの一意の列を使用して、一対多のリレーションシップを作成できます。これは、「**Power BI Desktop でデータをモデル化する**」ラボで行います。
+    個別のカウントと一意のカウントが同じ場合は、列に一意の値が含まれていることを意味します。 モデリングの際、一部のモデル テーブルに一意の列を含めることが重要です。 これらの一意の列を使用して、一対多のリレーションシップを作成できます。これは、「**Power BI Desktop でデータをモデル化する**」のラボで行います。
 
 11. **[クエリ]** ペインで、**DimEmployeeSalesTerritory** クエリを選択します。
 
@@ -263,7 +263,7 @@ ms.locfileid: "146274816"
 
     ![画像 52](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image32.png)
 
-    **[DimSalesTerritory]** テーブルには、**Corporate HQ** (本社) を含む販売地域ごとに 1 行が含まれています。 地域は国に割り当てられ、国はグループに割り当てられています。 「**Power BI Desktop でデータをモデル化する**」ラボでは、地域、国、またはグループ レベルでの分析をサポートする階層を作成します。
+    **[DimSalesTerritory]** テーブルには、**Corporate HQ** (本社) を含む販売地域ごとに 1 行が含まれています。 地域は国に割り当てられ、国はグループに割り当てられています。 「**Power BI Desktop でデータをモデル化する**」のラボでは、地域、国、またはグループ レベルでの分析をサポートする階層を作成します。
 
 23. **[クエリ]** ペインで、**[FactResellerSales]** クエリを選択します。
 
@@ -313,7 +313,7 @@ ms.locfileid: "146274816"
 
     アイコンは、列のデータ型を表します。 **123** は整数で、**ABC** はテキストです。
 
-    多くの変換を適用して、「**Power BI Desktop にデータを読み込む**」ラボの 3 つの列 (**[Date]**、**[EmployeeKey]**、**[TargetAmount]**) のみで構成される異なる形状の結果を実現します。
+    多くの変換を適用して、「**Power BI Desktop でデータを読み込む**」のラボで **Date**、**EmployeeKey**、**TargetAmount** の 3 つの列のみで構成される異なる形状の結果を実現します。
 
 ### <a name="task-6-get-additional-data-from-a-csv-file"></a>**タスク 6: CSV ファイルから追加データを取得する**
 
@@ -323,7 +323,7 @@ ms.locfileid: "146274816"
 
     ![画像 75](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image39.png)
 
-    **ColorFormats** CSV ファイルには、商品の色ごとに 1 行が含まれています。 各行には、背景とフォントの色を書式設定するための 16 進コードが記録されます。 このデータは、「**Power BI Desktop にデータを読み込む**」ラボで **DimProduct** クエリ データと統合します。
+    **ColorFormats** CSV ファイルには、商品の色ごとに 1 行が含まれています。 各行には、背景とフォントの色を書式設定するための 16 進コードが記録されます。 このデータは、「**Power BI Desktop でデータを読み込む**」のラボで **DimProduct** クエリ データと統合します。
 
 ### <a name="task-7-finish-up"></a>**タスク 7: 完了**
 

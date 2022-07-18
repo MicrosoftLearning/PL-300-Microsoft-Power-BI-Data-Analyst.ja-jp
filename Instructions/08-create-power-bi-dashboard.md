@@ -2,12 +2,12 @@
 lab:
   title: Power BI ダッシュボードを作成する
   module: Module 8 - Create Dashboards
-ms.openlocfilehash: 2ddb086b004fca3fa322e10570f9163342514808
-ms.sourcegitcommit: f09183b2093a7f8de629f89b54d70bcad85598b6
+ms.openlocfilehash: 0f8abb8670c71f5063dc28032daa321bf4b742f9
+ms.sourcegitcommit: 9ea1e7e21b9b3c718030c94b1693d153a2010ec7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "146109913"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "147015358"
 ---
 # <a name="create-a-power-bi-dashboard"></a>**Power BI ダッシュボードを作成する**
 
@@ -23,7 +23,7 @@ ms.locfileid: "146109913"
 
 ### <a name="lab-story"></a>**ラボのストーリー**
 
-このラボは、データの準備に始まり、レポートおよびダッシュボードとして発行するまでの完全なストーリーとして設計されたラボ シリーズの 1 つです。 ラボは任意の順序で完了できます。 しかしながら、複数のラボに取り組む場合は、最初の 10 のラボについては、次の順序で行うことをお勧めします。
+このラボは、データの準備に始まり、レポートおよびダッシュボードとして発行するまでの完全なストーリーとして設計されたラボ シリーズの 1 つです。 ラボは任意の順序で完了できます。 ただし、複数のラボに取り組む場合は、次の順序で行うことをお勧めします。
 
 1. Power BI Desktop でのデータの準備
 
@@ -65,7 +65,7 @@ ms.locfileid: "146109913"
 
     *ヒント:Microsoft Edge のお気に入りバーで、Power BI サービスのお気に入りを使用することもできます。"*
 
-3. 「**サインイン**」 (右上隅) をクリックします。
+3. **[サインイン]** (右上隅) をクリックします。
 
     ![画像 41](Linked_image_Files/09-create-power-bi-dashboard_image3.png)
 
@@ -77,7 +77,7 @@ ms.locfileid: "146109913"
 
 6. サインイン プロセスを完了します。
 
-7. Microsoft Edge からサインインを維持するかどうかを確認するメッセージが表示されたら、「**はい**」をクリックします。
+7. Microsoft Edge からサインインを維持するかどうかを確認するメッセージが表示されたら、**[はい]** をクリックします。
 
 8. Microsoft Edge ブラウザー ウィンドウの Power BI サービスの **[ナビゲーション]** ペインで、**[マイ ワークスペース]** を展開します。
 
@@ -95,23 +95,23 @@ ms.locfileid: "146109913"
 
     ![画像 39](Linked_image_Files/09-create-power-bi-dashboard_image5.png)
 
-2. 「はじめに」ウィンドウを閉じるには、ウィンドウの左上にある「**X**」をクリックします。
+2. [はじめに] ウィンドウを閉じるには、ウィンドウの左上にある **[X]** をクリックします。
 
     ![画像 38](Linked_image_Files/09-create-power-bi-dashboard_image6.png)
 
-3. Power BI Desktop が Power BI サービスにサインインしていない場合は、右上の「**サインイン**」をクリックします。
+3. Power BI Desktop が Power BI サービスにサインインしていない場合は、右上の **[サインイン]** をクリックします。
 
     ![画像 37](Linked_image_Files/09-create-power-bi-dashboard_image7.png)
 
 4. Power BI サービスへのサインインに使用したのと同じアカウントを使用して、サインイン プロセスを完了します。
 
-5. スターター Power BI Desktop ファイルを開くには、「**ファイル**」リボン タブをクリックして、バックステージ ビューを開きます。
+5. スターター Power BI Desktop ファイルを開くには、**[ファイル]** リボン タブをクリックして、バックステージ ビューを開きます。
 
 6. **[レポートを開く]** を選択します。
 
     ![画像 36](Linked_image_Files/09-create-power-bi-dashboard_image8.png)
 
-7. 「**レポートを参照**」をクリックします。
+7. **[レポートを参照]** をクリックします。
 
     ![画像 34](Linked_image_Files/09-create-power-bi-dashboard_image9.png)
 
@@ -125,13 +125,13 @@ ms.locfileid: "146109913"
 
 11. 情報ウィンドウが開いている場合はすべて閉じます。
 
-12. ファイルのコピーを作成するには、「**ファイル**」リボン タブをクリックして、バックステージ ビューを開きます。
+12. ファイルのコピーを作成するには、**[ファイル]** リボン タブをクリックして、バックステージ ビューを開きます。
 
 13. **[名前を付けて保存]** を選択します。
 
     ![画像 29](Linked_image_Files/09-create-power-bi-dashboard_image11.png)
 
-14. 変更を適用するかどうかを確認するメッセージが表示されたら、「**適用**」をクリックします。
+14. 変更を適用するかどうかを確認するメッセージが表示されたら、**[適用]** をクリックします。
 
     ![画像 10](Linked_image_Files/09-create-power-bi-dashboard_image12.png)
 
@@ -145,23 +145,23 @@ ms.locfileid: "146109913"
 
 このタスクでは、データセットを作成してこのラボ用の環境を設定します。
 
-*重要:「**Power BI Desktop でレポートを設計する (パート 2)** 」のラボでレポートを既に発行している場合は、次のタスクから続行してください。"*
+*重要: 「**Power BI Desktop でレポートを設計する (パート 2)**」のラボでレポートを既に発行している場合は、次のタスクから続行してください。*
 
-1. Microsoft Edge ブラウザー ウィンドウの Power BI サービスの「**ナビゲーション**」ウィンドウで、「**マイ ワークスペース**」を展開します。
+1. Microsoft Edge ブラウザー ウィンドウの Power BI サービスの **[ナビゲーション]** ウィンドウで、**[マイ ワークスペース]** を展開します。
 
     ![画像 8](Linked_image_Files/09-create-power-bi-dashboard_image14.png)
 
-2. 「**ファイル**」タイルで、「**取得**」をクリックします。
+2. **[ファイル]** タイルで、**[取得]** をクリックします。
 
     ![画像 2](Linked_image_Files/09-create-power-bi-dashboard_image15.png)
 
-3. 「**ローカル ファイル**」タイルをクリックします。
+3. **[ローカル ファイル]** タイルをクリックします。
 
     ![画像 5](Linked_image_Files/09-create-power-bi-dashboard_image16.png)
 
 4. **[開く]** ウィンドウで、**D:\PL300\Labs\08-create-power-bi-dashboard\Solution** フォルダーに移動します。
 
-5. **Sales Analysis.pbix** ファイルを選択し、「**開く**」をクリックします。
+5. "**Sales Analysis.pbix**" ファイルを選択し、**[開く]** をクリックします。
 
 6. データセットを置き換えるメッセージが表示されたら、 **[置き換える]** をクリックします。
 
@@ -185,7 +185,7 @@ ms.locfileid: "146109913"
 
     ![画像 43](Linked_image_Files/09-create-power-bi-dashboard_image18.png)
 
-6. **[ダッシュボードにピン留めする]** ウィンドウで、**[ダッシュボード名]** ボックスに「**Sales Monitoring**」(売上モニタリング) と入力します。
+6. **[ダッシュボードにピン留め]** ウィンドウの **[ダッシュボード名]** ボックスに、「**売上モニタリング**」と入力します。
 
     ![図 3](Linked_image_Files/09-create-power-bi-dashboard_image19.png)
 
@@ -221,7 +221,7 @@ ms.locfileid: "146109913"
 
     ![画像 14](Linked_image_Files/09-create-power-bi-dashboard_image25.png)
 
-    "「**Power BI Desktop で DAX 計算を作成する (パート 2)** 」のラボで **[Sales YTD]** メジャーを追加したことが思い出されるかもしれません。"*このメジャーはタイム インテリジェンス式であり、結果を生成するには **Date** テーブルにフィルターを適用する必要があります。"*
+    *「**Power BI Desktop で DAX 計算を作成する (パート 2)**」のラボで **[売上 YTD]** メジャーを追加したことが思い出されるかもしれません。このメジャーはタイム インテリジェンス式であり、結果を生成するには **[Date]** テーブルにフィルターを適用する必要があります。*
 
 16. 質問を **in year FY2020** (FY2020 年度の) で拡張します。
 
@@ -243,13 +243,13 @@ ms.locfileid: "146109913"
 
     ![画像 16](Linked_image_Files/09-create-power-bi-dashboard_image30.png)
 
-21. 会社のロゴを追加するには、メニュー バーの「**編集**」をクリックし、「**タイルの追加**」をクリックします。
+21. 会社のロゴを追加するには、メニュー バーの **[編集]** をクリックし、**[タイルの追加]** をクリックします。
 
     ![画像 46](Linked_image_Files/09-create-power-bi-dashboard_image31.png)
 
     *この手法を使用してダッシュボード タイルを追加すると、Web コンテンツ、画像、リッチな書式設定のテキスト ボックス、ビデオ (YouTube または Vimeo リンクを使用) などのメディアを使用してダッシュボードを装飾できます。*
 
-22. 右側にある「**タイルの追加**」ウィンドウで「**画像**」タイルを選択します。
+22. 右側にある **[タイルの追加]** ウィンドウで **[画像]** タイルを選択します。
 
     ![画像 47](Linked_image_Files/09-create-power-bi-dashboard_image32.png)
 
@@ -281,7 +281,7 @@ ms.locfileid: "146109913"
 
     ![画像 50](Linked_image_Files/09-create-power-bi-dashboard_image36.png)
 
-2. (右側にある) **[タイルの詳細]** ペインで、**[サブタイトル]** ボックスに「**FY2020**」と入力します。
+2. **[タイルの詳細]** ウィンドウ (右側) の **[サブタイトル]** ボックスに「**FY2020**」と入力します。
 
     ![画像 19](Linked_image_Files/09-create-power-bi-dashboard_image37.png)
 
@@ -329,9 +329,9 @@ ms.locfileid: "146109913"
 
 ### <a name="task-2-refresh-the-power-bi-desktop-file"></a>**タスク 2: Power BI Desktop ファイルを最新の情報に更新する**
 
-このタスクでは、**Sales Analysis** Power BI Desktop ファイルを開き、データの更新を実行し、そのファイルを「**販売分析**」ワークスペースにアップロードします。
+このタスクでは、**Sales Analysis** Power BI Desktop ファイルを開き、データの更新を実行して、そのファイルを **[販売分析]** ワークスペースにアップロードします。
 
-1. メジャーを作成するには、「**フィールド**」ウィンドウで「**Sales**」テーブルを右クリックし、「**データの更新**」を選択します。
+1. Power BI Desktop ファイルの **[フィールド]** ペインで、**[売上]** テーブルを右クリックして **[データの更新]** を選択します。
 
     ![画像 55](Linked_image_Files/09-create-power-bi-dashboard_image47.png)
 
@@ -369,4 +369,4 @@ ms.locfileid: "146109913"
 
     
 
-4. ウィンドウを閉じるには、「**閉じる**」をクリックします。
+4. ウィンドウを閉じるには、**[閉じる]** をクリックします。
