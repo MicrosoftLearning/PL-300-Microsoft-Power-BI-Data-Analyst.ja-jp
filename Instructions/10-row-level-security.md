@@ -30,7 +30,7 @@ ms.locfileid: "146650110"
 
 3. Power BI Desktop でデータをモデル化する
 
-5. Power BI Desktop での DAX 計算の作成、パート 1
+5. Power BI Desktop で DAX 計算を作成する (パート 1)
 
 6. Power BI Desktop で DAX 計算を作成する (パート 2)
 

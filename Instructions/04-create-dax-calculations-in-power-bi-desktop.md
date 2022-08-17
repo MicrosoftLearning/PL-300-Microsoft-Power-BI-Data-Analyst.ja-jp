@@ -1,6 +1,6 @@
 ---
 lab:
-  title: Power BI Desktop での DAX 計算の作成、パート 1
+  title: Power BI Desktop で DAX 計算を作成する (パート 1)
   module: Module 5 - Create Model Calculations using DAX in Power BI
 ms.openlocfilehash: 743fdd6a85236a40008fcdb3b466c61c617a55fb
 ms.sourcegitcommit: 9ea1e7e21b9b3c718030c94b1693d153a2010ec7
