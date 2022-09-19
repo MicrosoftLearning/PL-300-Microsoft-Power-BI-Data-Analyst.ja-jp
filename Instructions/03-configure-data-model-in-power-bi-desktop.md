@@ -2,18 +2,14 @@
 lab:
   title: Power BI Desktop でデータをモデル化する
   module: Module 4 - Design a Data Model in Power BI
-ms.openlocfilehash: 1617d6a1a50e37a5dc7d9094eaa86057b2ddeee2
-ms.sourcegitcommit: 9ea1e7e21b9b3c718030c94b1693d153a2010ec7
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "147015367"
 ---
+
+
 # <a name="model-data-in-power-bi-desktop"></a>**Power BI Desktop でデータをモデル化する**
 
 **このラボの推定所要時間: 45 分**
 
-このラボでは、データ モデルの開発を開始します。 テーブル間のリレーションシップを作成してから、データ モデルのわかりやすさと使いやすさを向上させるために、テーブルと列のプロパティを構成します。 また、階層を作成し、クイック メジャーを作成します。
+In this lab you will commence developing the data model. It will involve creating relationships between tables, and then configuring table and column properties to improve the friendliness and usability of the data model. You will also create hierarchies and create quick measures.
 
 このラボでは、次の作業を行う方法について説明します。
 
@@ -26,7 +22,7 @@ ms.locfileid: "147015367"
 
 ### <a name="lab-story"></a>**ラボのストーリー**
 
-このラボは、データの準備に始まり、レポートおよびダッシュボードとして発行するまでの完全なストーリーとして設計されたラボ シリーズの 1 つです。 ラボは任意の順序で完了できます。 ただし、複数のラボに取り組む場合は、次の順序で行うことをお勧めします。
+This lab is one of many in a series of labs that was designed as a complete story from data preparation to publication as reports and dashboards. You can complete the labs in any order. However, if you intend to work through multiple labs, for the first 10 labs, we suggest you do them in the following order:
 
 1. Power BI Desktop でのデータの準備
 
@@ -72,7 +68,7 @@ ms.locfileid: "147015367"
 
     ![画像 10](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image3.png)
 
-1. **[レポートの参照]** をクリックします。
+1. **[レポートを参照]** をクリックします。
 
     ![画像 8](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image4.png)
 
@@ -162,15 +158,15 @@ ms.locfileid: "147015367"
 
 14. **[カーディナリティ]** のドロップダウン リストで、**[一対多(1:*)]** が選択されていることを確認します。
 
-    "このカーディナリティは、**Product** テーブルの **ProductKey** 列に一意の値が含まれていることが Power BI によって認識されているため、自動的に検出されました。*一対多リレーションシップは最も一般的なカーディナリティで、このラボで作成するすべてのリレーションシップがこの種類になります。*
+    "このカーディナリティは、**Product** テーブルの **ProductKey** 列に一意の値が含まれていることが Power BI によって認識されているため、自動的に検出されました。*一対多リレーションシップは最も一般的なカーディナリティで、このラボで作成するすべてのリレーションシップがこの種類になります。多対多のカーディナリティについては、「**Power BI Desktop でデータをモデル化する (パート 2)** 」のラボで扱います。"*
 
 15. **[クロス フィルターの方向]** のドロップダウンリストで、**[単一]** が選択されていることを確認します。
 
-    "単一というフィルターの方向は、フィルターが "一の側" から "多の側" に反映されることを意味します。*この場合、**Product** テーブルに適用されたフィルターは **Sales** テーブルに伝達されますが、逆方向には伝達されません。*
+    "単一というフィルターの方向は、フィルターが "一の側" から "多の側" に反映されることを意味します。*この場合、**Product** テーブルに適用されたフィルターは **Sales** テーブルに伝達しますが、逆方向には伝達しません。双方向のリレーションシップについては、「**Power BI Desktop でデータをモデル化する (パート 2)** 」のラボで扱います。"*
 
-16. **[このリレーションシップをアクティブにする]** がオンになっていることに注意してください。
+16. 「**このリレーションシップをアクティブにする**」がオンになっていることを確認します。
 
-    "アクティブなリレーションシップは、フィルターを伝達します。*リレーションシップを非アクティブとしてマークして、フィルターが伝達しないようにすることができます。テーブル間に複数のリレーションシップ パスがある場合、非アクティブなリレーションシップが存在する可能性があります。この場合、モデルの計算で特殊な関数を使用して、それらをアクティブ化することができます。*
+    "アクティブなリレーションシップは、フィルターを伝達します。*リレーションシップを非アクティブとしてマークして、フィルターが伝達しないようにすることができます。テーブル間に複数のリレーションシップ パスがある場合、非アクティブなリレーションシップが存在する可能性があります。この場合、モデル計算は特別な関数を使用してアクティブ化できます。非アクティブなリレーションシップについては、「**Power BI Desktop でデータをモデル化する (パート 2)** 」のラボで扱います。"*
 
 17. **[OK]** をクリックします。
 
@@ -210,10 +206,11 @@ ms.locfileid: "147015367"
 
     - **Salesperson \| EmployeeKey** から **Sales \| EmployeeKey**
 
-25. 図では、**Sales** テーブルが図の中央に配置され、関連するテーブルがその周りに配置されるようにテーブルを配置します。 切断されたテーブルを横に配置します。
+    "このラボでは、テーブル **SalespersonRegion** と **Targets** は接続しないままにします。*営業担当者と地域の間には多対多のリレーションシップがあり、「**Power BI Desktop でのデータのモデル化 (パート 2)** 」のラボでは、この高度なシナリオを使用して作業します。"*
+
+25. In the diagram, arrange the tables so that the <bpt id="p1">**</bpt>Sales<ept id="p1">**</ept> table is positioned in the center of the diagram, and the related tables are arranged about it. Position the disconnected tables to the side.
 
     ![画像 340](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image23.png)
-
 
 26. Power BI Desktop ファイルを保存します。
 
@@ -313,7 +310,13 @@ ms.locfileid: "147015367"
 
     ![画像 353](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image34.png)
 
-3. **[Country-Region]** 、 **[State-Province]** 、および **[City]** 列 (階層レベルではない) の **[データ カテゴリ]** を **[国/地域]** 、 **[都道府県]** 、 **[市区町村]** にそれぞれ設定します。 
+3. 次の 3 つの列を分類します。
+
+    - **Country-Region** を **[国/地域]** として
+
+    - **State-Province** を **[都道府県]** として
+
+    - **City** を **[市区町村]** として
 
 ### <a name="task-4-configure-the-sales-table"></a>**タスク 4: Sales テーブルを構成する**
 
@@ -329,13 +332,13 @@ ms.locfileid: "147015367"
 
 3. **Quantity** 列を選択します。
 
-4. **「プロパティ」** ペインの **「書式設定」** セクションで、**「桁区切り記号」** を **「はい」** にスライドします。
+4. **[プロパティ]** ペインの **[書式設定]** セクションで、**[桁区切り記号]** を **[オン]** にスライドします。
 
     ![画像 357](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image36.png)
 
 5. **Unit Price** 列を選択します。
 
-6. **[プロパティ]** ペインの **[書式設定]** セクションで、 **[小数点以下の桁数]** プロパティを **2** に設定します。
+6. **[プロパティ]** ペインの **[書式設定]** セクションで、**[小数点以下の桁数]** プロパティを **2** にスライドします。
 
 7. **[詳細]** グループ (下にスクロールして見つける必要がある場合があります) の **[集計の方法]** のドロップダウン リストで、**[平均]** を選択します。
 
@@ -345,7 +348,7 @@ ms.locfileid: "147015367"
 
 ### <a name="task-5-bulk-update-properties"></a>**タスク 5: プロパティを一括更新する**
 
-このタスクでは、1 回の一括更新で複数の列を更新します。 この方法を使用して列を非表示にし、列の値を書式設定します。
+In this task you will update multiple columns using single bulk updates. You will use this approach to hide columns, and format column values.
 
 1. **[フィールド]** ウィンドウで、**Product \| ProductKey** 列を選択します。
 
@@ -377,13 +380,13 @@ ms.locfileid: "147015367"
 
     - Targets \| EmployeeID
 
-3. **[プロパティ]** ペインで、 **[非表示]** プロパティを **[はい]** にスライドします。
+3. **[プロパティ]** ペインで、**[非表示]** プロパティを **[オン]** にスライドします。
 
     ![画像 355](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image38.png)
 
     *列はリレーションシップによって使用されるか、行レベルのセキュリティ構成または計算ロジックで使用されるため、非表示に設定されました。*
 
-    *「**Power BI Desktop で DAX 計算を作成する (パート 1)**」 ラボでは、**SalesOrderNumber** を計算に使用します。*
+    "「**Power BI Desktop でデータをモデル化する (パート 2)** 」のラボでは、**UPN** 列を使用して、行レベルのセキュリティを定義します。*「**Power BI Desktop で DAX 計算を作成する (パート 1)** 」のラボでは、**SalesOrderNumber** を計算に使用します。"*
 
 4. 次の 3 列を複数選択します。
 
@@ -452,193 +455,8 @@ ms.locfileid: "147015367"
     ![画像 363](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image45.png)
 
 
-## <a name="exercise-4-create-quick-measures"></a>**演習 4: クイック メジャーを作成する**
 
-この演習では、2 つのクイック メジャーを作成します。
-
-### <a name="task-1-create-quick-measures"></a>**タスク 1: クイック メジャーを作成する**
-
-このタスクでは、利益と利益率を計算する 2 つのクイック メジャーを作成します。
-
-1. **[フィールド]** ペインで **Sales** テーブルを右クリックして、**[新しいクイック メジャー]** を選択します。
-
-    ![画像 366](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image46.png)
-
-2. **[クイック メジャー]** ウィンドウの **[計算]** ボックスの一覧で、**[数学演算]** グループ内から **[減算]** を選択します。
-
-    ![画像 367](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image47.png)
-
-3. **[クイック メジャー]** ウィンドウの **[フィールド]** ウィンドウで、**Sales** テーブルを展開します。
-
-4. **Sales** フィールドを **[基準値]** ボックスにドラッグします。
-
-5. **Cost** フィールドを **[減算する値]** ボックスにドラッグします。
-
-    ![画像 368](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image48.png)
-
-6. **[OK]** をクリックします。
-
-    ![画像 369](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image49.png)
-
-    *クイック メジャーによって計算式が作成されます。シンプルで一般的な計算を簡単かつ迅速に作成できます。「**Power BI Desktop で DAX 計算を作成する (パート 1)**」 ラボでは、このツールを使用せずにメジャーを作成します。*
-
-7. **[フィールド]** ウィンドウの **Sales** テーブル内で、新しいメジャーに注目します。
-
-    ![画像 370](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image50.png)
-
-    *メジャーには、電卓アイコンが付いています。*
-
-8. メジャーの名前を変更するには、それを右クリックして **[名前の変更]** を選択します。
-
-    ![画像 371](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image51.png)
-
-    *ヒント:フィールドの名前を変更するには、それをダブルクリックするか、それを選択して **F2** キーを押してもかまいません。*
-
-9. メジャーの名前を **Profit** に変更してから、**Enter** キーを押します。
-
-10. **Sales** テーブルで、次の要件に基づいて 2 番目のクイック メジャーを追加します。
-
-    - **[除算]** 数学演算を使用します
-
-    - **[分子]** を **Sales \| Profit** フィールドに設定します
-
-    - **[分母]** を **Sales \| Sales** フィールドに設定します
-
-    - メジャーの名前を **Profit Margin** に変更します
-
-    ![画像 372](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image52.png)
-
-    ![画像 373](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image53.png)
-
-11. **Profit Margin** メジャーを確実に選択してから、**[メジャー ツール]** コンテキスト リボンで、形式を小数点以下 2 桁の **[パーセント]** に設定します。
-
-    ![画像 374](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image54.png)
-
-12. 2 つのメジャーをテストするには、最初にレポート ページでテーブル ビジュアルを選択します。
-
-13. **[フィールド]** ペインで、2 つのメジャーをオンにします。
-
-    ![画像 375](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image55.png)
-
-14. 右側のガイドをクリックしてドラッグし、テーブル ビジュアルを広げます。
-
-    ![画像 376](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image56.png)
-
-15. メジャーが適切にフォーマットされた適切な結果を生成することを確認します。
-
-    ![画像 378](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image57.png)
-
-### <a name="task-2-create-a-many-to-many-relationship"></a>**タスク 2: 多対多リレーションシップを作成する**
-
-このタスクでは、**Salesperson** テーブルと **Sales** テーブルの間に多対多のリレーションシップを作成します。
-
-1. Power BI Desktop のレポート ビューの **[フィールド]** ペインで、次の 2 つのフィールドをオンにしてテーブル ビジュアルを作成します。
-
-    - Salesperson \| Salesperson
-
-    - Sales \| Sales
-
-    "このラボでは、フィールドを参照するために簡略表記を使用します。*次のようになります。**Salesperson \| Salesperson** 。この例では、**Salesperson** はテーブル名、**Salesperson** はフィールド名です。*
-
-    ![画像 1](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image9.png)
-
-    *このテーブルには、各営業担当者の売上が表示されます。しかし、営業担当者と営業の間には別のリレーションシップもあります。営業担当者により、担当する地域の数は 1 つ、2 つ、またはそれより多い可能性もあります。さらに、1 つの営業地域に複数の営業担当者が割り当てられている場合もあります。*
-
-    *パフォーマンス管理の観点からは、営業担当者の (割り当てられた担当地域に基づく) 売上を分析し、売上目標と比較する必要があります。次の演習では、この分析をサポートするリレーションシップを作成します。*
-
-2. Michael Blythe の売上が約 900 万ドルであることにご注意ください。
-
-3. モデル ビューに切り替えます。
-
-    ![画像 10](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image10.png)
-
-4. **SalespersonRegion** テーブルをドラッグして、**Region** テーブルと **Salesperson** テーブルの間に配置します。
-
-5. ドラッグ アンド ドロップ手法を使用して、次の 2 つのモデル リレーションシップを作成します。
-
-    - **Salesperson \| EmployeeKey** から **SalespersonRegion \| EmployeeKey**
-
-    - **Region \| SalesTerritoryKey** から **SalespersonRegion \| SalesTerritoryKey**
-
-    ***SalespersonRegion** テーブルは、ブリッジ テーブルと考えることができます。*
-
-6. レポート ビューに切り替えて、ビジュアルが更新されていない (Michael Blythe の売上結果が変更されていない) ことを確認します。
-
-7. モデル ビューに戻り、**Salesperson** テーブルからのリレーションシップ フィルターの方向 (矢印の向き) をたどります。
-
-    ***Salesperson** テーブルによって **Sales** テーブルがフィルター処理されると考えます。また、**SalespersonRegion** テーブルにフィルターが適用されますが、**Region** テーブルには引き続き反映されていません (矢印が間違った方向を指しています)。*
-
-    ![画像 380](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image11.png)
-
-8. **Region** テーブルと **SalespersonRegion** テーブル間のリレーションシップを編集するには、リレーションシップをダブルクリックします。
-
-9. **[リレーションシップの編集]** ウィンドウの **[クロス フィルターの方向]** ドロップダウン リストで、 **[両方]** を選択します。
-
-10. **[両方向にセキュリティ フィルターを適用する]** チェック ボックスをオンにします。
-
-    ![画像 381](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image12.png)
-
-11. **[OK]** をクリックします。
-
-    ![画像 335](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image13.png)
-
-12. リレーションシップの矢印の向きが両方になっていることにご注意ください。
-
-    ![画像 382](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image14.png)
-
-13. レポート ビューに切り替えると、販売の値が依然として変更されていないことがわかります。
-
-    *この問題は、今度は、**Salesperson** テーブルと **Sales** テーブルの間に 2 つのフィルター伝播パスが可能であるという事実に関連します。この曖昧さは、"テーブル数最小" の評価に基づいて内部的に解決されます。明確にするため、モデルの設計にはこの種の曖昧さが存在しないようにする必要があります。この問題には、このラボの後のパートで対処するか、「**Power BI Desktop で DAX 計算を作成する (パート 1)**」 ラボを完了することによって対処します。*
-
-14. モデル ビューに切り替えます。
-
-15. ブリッジ テーブルを介してフィルターの伝達を強制するには、**Salesperson** テーブルと **Sales** テーブルのリレーションシップを編集 (ダブルクリック) します。
-
-16. **[リレーションシップの編集]** ウィンドウで、**[このリレーションシップをアクティブにする]** チェック ボックスをオフにします。
-
-    ![画像 383](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image15.png)
-
-17. **[OK]** をクリックします。
-
-    ![画像 5696](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image16.png)
-
-    *フィルターの伝播が、アクティブなパスのみを進むようになります。*
-
-18. 図で、非アクティブなリレーションシップは破線で表されていることにご注意ください。
-
-    ![画像 5697](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image17.png)
-
-19. レポート ビューに切り替えて、Michael Blythe の売上が今度は約 2,200 万ドルになっていることを確認します。
-
-    ![画像 5698](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image18.png)
-
-20. また、各営業担当者の売上がテーブル合計を上回る場合もあります。
-
-    *地域の売上実績が 2 重、3 重などにカウントされるため、これは多対多のリレーションシップではよくあることです。もう 1 人の営業担当者 Brian Welcker がリストに含まれるものとします。彼の売上金額は合計売上金額と同じです。彼は営業部長なので、これは正しい結果です。彼の売上は、すべての地域の売上によって測定されます。*
-
-    *多対多リレーションシップは現在機能していますが、営業担当者による販売を分析することはできません (リレーションシップが非アクティブだからです)。「**Power BI Desktop で DAX 計算を作成する (パート 1)**」 ラボで、営業担当者に割り当てられた販売地域での売上分析ができる計算テーブルを (実績分析のために) 導入すると、リレーションシップをもう一度アクティブにすることができます。*
-
-21. モデリング ビューに切り替えて、図で **Salesperson** テーブルを選択します。
-
-22. **[プロパティ]** ペインの **[名前]** ボックスで、テキストを "**Salesperson (Performance)**" に置き換えます。
-
-    *名前が変更されたテーブルは、その目的を反映するようになりました。これは、担当営業地域の売上に基づいて営業担当者の実績を報告および分析するために使用されます。*
-
-### <a name="task-3-relate-the-targets-table"></a>**タスク 3: Targets テーブルを関連付ける**
-
-このタスクでは **Targets** テーブルにリレーションシップを作成します。
-
-1. **Salesperson (Performance) \| EmployeeID** 列と **Targets \| EmployeeID** 列からのリレーションシップを作成します。
-
-2. レポート ビューで、**Targets \| Target** フィールドをテーブル ビジュアルに追加します。
-
-3. テーブル ビジュアルのサイズを変更し、すべての列が表示されるようにします。
-
-    ![画像 5699](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image19.png)
-
-    *売上と目標を視覚化することが可能になりましたが、2 つの点において注意が必要です。第 1 に、期間に対するフィルターがないため、目標には将来の目標金額も含まれます。第 2 に、目標は加算できないため、合計が表示されないようにする必要があります。これらは、ビジュアルの書式設定を使用して無効にするか、計算ロジックを使用して削除できます。「**Power BI Desktop で DAX 計算を作成する (パート 2)**」のラボでは、2 番目の方法に従って、複数の営業担当者をフィルター処理すると BLANK が返される目標メジャーを作成します。*
-
-### <a name="task-4-finish-up"></a>**タスク 4: 仕上げ**
+### <a name="task-2-finish-up"></a>**タスク 2: 完了**
 
 このタスクでは、ラボを完了します。
 
@@ -647,3 +465,5 @@ ms.locfileid: "147015367"
 2. クエリの適用を確認するメッセージが表示された場合は、**[後で適用]** をクリックします。
 
 3. 次のラボを開始する場合は、Power BI Desktop を開いたままにしておきます。
+
+    *「**Power BI Desktop でデータをモデル化する (パート 2)** 」のラボでは、多対多のリレーションシップと行レベルのセキュリティを構成することによってデータ モデルを強化します。*

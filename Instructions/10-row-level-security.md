@@ -1,28 +1,25 @@
 ---
 lab:
   title: 行レベルのセキュリティを実行する
-  module: Module 12 - Row-Level Security
-ms.openlocfilehash: f47cc7c54428589aaa9d6b37afd9ee4d11c5884e
-ms.sourcegitcommit: 9ea1e7e21b9b3c718030c94b1693d153a2010ec7
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "146650110"
+  module: Module 13 - Row-Level Security
 ---
+
+
 # <a name="enforce-row-level-security"></a>**行レベルのセキュリティを適用する**
 
 **このラボの推定所要時間: 45 分**
 
-このラボでは、営業担当者が確実に自分の担当地域の売上データだけを分析できるように、行レベルのセキュリティも適用します。
+In this lab you will create a many-to-many relationship between the <bpt id="p1">**</bpt>Salesperson<ept id="p1">**</ept> table and the <bpt id="p2">**</bpt>Sales<ept id="p2">**</ept> table. You will also enforce row-level security to ensure that a salesperson can only analyze sales data for their assigned region(s).
 
 このラボでは、次の作業を行う方法について説明します。
 
+- 多対多リレーションシップを構成する
 
 - 行レベルのセキュリティを適用する
 
 ### <a name="lab-story"></a>**ラボのストーリー**
 
-このラボは、データの準備に始まり、レポートおよびダッシュボードとして発行するまでの完全なストーリーとして設計されたラボ シリーズの 1 つです。 ラボは任意の順序で完了できます。 しかしながら、複数のラボに取り組む場合は、次の順序で行うことをお勧めします。
+This lab is one of many in a series of labs that was designed as a complete story from data preparation to publication as reports and dashboards. You can complete the labs in any order. However, if you intend to work through multiple labs, for the first 10 labs, we suggest you do them in the following order:
 
 1. Power BI Desktop でのデータの準備
 
@@ -72,7 +69,7 @@ ms.locfileid: "146650110"
 
     ![画像 5](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image4.png)
 
-1. **[開く]** ウィンドウで、**D:\PL300\Labs\10-row-level-security\Starter** フォルダーに移動します。
+1. **[開く]** ウィンドウで、**D:\PL300\Labs\12-row-level-security\Starter** フォルダーに移動します。
 
 1. **Sales Analysis** ファイルを選択します。
 
@@ -150,7 +147,7 @@ ms.locfileid: "146650110"
 
     ![画像 5709](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image28.png)
 
-    "この構成により、**Salespeople** ロールと、Michael Blythe の名前を借りたユーザーが使用されることになります。"
+    "この構成により、**Salespeople** ロールと、Michael Blythe の名前を借りたユーザーが使用されることになります。"**
 
 14. **[OK]** をクリックします。
 
@@ -184,7 +181,7 @@ ms.locfileid: "146650110"
 
     ![画像 18](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image35.png)
 
-### <a name="task-3-finish-up"></a>**タスク 3: 完了**
+### <a name="task-2-finish-up"></a>**タスク 2: 完了**
 
 このタスクでは、ラボを完了します。
 
