@@ -1,14 +1,10 @@
 ---
 lab:
-  title: Power BI Desktop での DAX 計算の作成、パート 1
+  title: Power BI Desktop で DAX 計算を作成する (パート 1)
   module: Module 5 - Create Model Calculations using DAX in Power BI
-ms.openlocfilehash: 27cbc5c39cdc89c2a54422bbe3468cd13c553ddc
-ms.sourcegitcommit: 3520e7d016e94549d408464207c1b91cd47867c2
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2022
-ms.locfileid: "139273716"
 ---
+
+
 # <a name="create-dax-calculations-in-power-bi-desktop-part-1"></a>**Power BI Desktop で DAX 計算を作成する (パート 1)**
 
 **このラボの推定所要時間: 45 分**
@@ -25,7 +21,7 @@ ms.locfileid: "139273716"
 
 ### <a name="lab-story"></a>**ラボのストーリー**
 
-このラボは、データの準備に始まり、レポートおよびダッシュボードとして発行するまでの完全なストーリーとして設計されたラボ シリーズの 1 つです。 ラボは任意の順序で完了できます。 しかしながら、複数のラボに取り組む場合は、最初の 10 のラボについては、次の順序で行うことをお勧めします。
+This lab is one of many in a series of labs that was designed as a complete story from data preparation to publication as reports and dashboards. You can complete the labs in any order. However, if you intend to work through multiple labs, for the first 10 labs, we suggest you do them in the following order:
 
 1. Power BI Desktop でのデータの準備
 
@@ -49,29 +45,29 @@ ms.locfileid: "139273716"
 
 ## <a name="exercise-1-create-calculated-tables"></a>**演習 1:計算テーブルを作成する**
 
-この演習では、2 つの計算テーブルを作成します。 1 つ目は、**Sales** テーブルとの間の直接的なリレーションシップを実現する、**Salesperson** テーブルです。 2 つ目は、**Date** テーブルです。
+In this exercise you will create two calculated tables. The first will be the <bpt id="p1">**</bpt>Salesperson<ept id="p1">**</ept> table, to allow a direct relationship between it and the <bpt id="p2">**</bpt>Sales<ept id="p2">**</ept> table. The second will be the <bpt id="p1">**</bpt>Date<ept id="p1">**</ept> table.
 
 ### <a name="task-1-get-started"></a>**タスク 1: 開始する**
 
 このタスクではこのラボ用の環境を設定します。
 
-*重要:前のラボから続行している場合 (かつそのラボを正常に完了した場合) は、このタスクを実行しないで、次のタスクから続けてください。"*
+*重要:前のラボから継続している (および、そのラボを正常に完了した) 場合は、このタスクを完了させず、次のタスクから続行してください。*
 
 1. Power BI Desktop を開くには、タスク バーにある Microsoft Power BI Desktop のショートカットをクリックします。
 
     ![画像 50](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image1.png)
 
-1. 「はじめに」ウィンドウを閉じるには、ウィンドウの左上にある「**X**」をクリックします。
+1. [はじめに] ウィンドウを閉じるには、ウィンドウの左上にある **[X]** をクリックします。
 
     ![画像 49](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image2.png)
 
-1. スターター Power BI Desktop ファイルを開くには、「**ファイル**」リボン タブをクリックして、バックステージ ビューを開きます。
+1. スターター Power BI Desktop ファイルを開くには、**[ファイル]** リボン タブをクリックして、バックステージ ビューを開きます。
 
 1. **[レポートを開く]** を選択します。
 
     ![画像 48](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image3.png)
 
-1. 「**レポートを参照**」をクリックします。
+1. **[レポートを参照]** をクリックします。
 
     ![画像 47](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image4.png)
 
@@ -85,13 +81,13 @@ ms.locfileid: "139273716"
 
 1. 情報ウィンドウが開いている場合はすべて閉じます。
 
-1. ファイルのコピーを作成するには、「**ファイル**」リボン タブをクリックして、バックステージ ビューを開きます。
+1. ファイルのコピーを作成するには、**[ファイル]** リボン タブをクリックして、バックステージ ビューを開きます。
 
 1. **[名前を付けて保存]** を選択します。
 
     ![画像 34](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image6.png)
 
-1. 変更を適用するかどうかを確認するメッセージが表示されたら、「**適用**」をクリックします。
+1. 変更を適用するかどうかを確認するメッセージが表示されたら、**[適用]** をクリックします。
 
     ![画像 25](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image7.png)
 
@@ -113,7 +109,7 @@ ms.locfileid: "139273716"
 
     ![画像 4](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image10.png)
 
-    "利便性のために、このラボのすべての DAX 定義は、**D:\PL300\Labs\05-create-dax-calculations-in-power-bi-desktop\Assets\Snippets.txt** にあるスニペット ファイルからコピーできます。"
+    "利便性のために、このラボのすべての DAX 定義は、**D:\PL300\Labs\05-create-dax-calculations-in-power-bi-desktop\Assets\Snippets.txt** にあるスニペット ファイルからコピーできます。"**
 
     "計算テーブルを作成するには、最初にテーブル名を入力し、その後に等号 (=) と、テーブルが返される DAX 式を入力します。*データ モデル内に既に存在しているテーブル名は使用できないことに注意してください。"*
 
@@ -121,7 +117,7 @@ ms.locfileid: "139273716"
 
     "このテーブル定義では、**Salesperson (Performance)** テーブルのコピーが作成されます。*コピーされるのはデータのみで、表示や書式設定などのモデル プロパティはコピーされません。"*
 
-    *ヒント:数式が長くて複雑な場合は特に、直感的で読みやすい形式で数式をレイアウトするために、「空白」 (改行やタブなど) を入力することをお勧めします。復帰を入力するには、**Shift + Enter** キーを押します。"空白" は省略できます。"*
+    *ヒント: 数式が長くて複雑な場合は特に、直感的で読みやすい形式で数式をレイアウトするために、"空白" (改行やタブなど) を入力することをお勧めします。復帰を入力するには、**Shift + Enter** キーを押します。"空白" は省略可能です。*
 
 3. **[フィールド]** ペインで、テーブル アイコンが青色の網掛けになっていることがわかります (計算テーブルを示します)。
 
@@ -145,7 +141,7 @@ ms.locfileid: "139273716"
 
     ![図 3](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image13.png)
 
-9. **Salesperson** テーブルで、次の列を複数選択し、非表示にします (**Is Hidden** プロパティを **[はい]** に設定します)。
+9. **Salesperson** テーブルで、次の列を複数選択し、非表示にします (**Is Hidden**プロパティを **[はい]** に設定します)。
 
     - EmployeeID
 
@@ -157,7 +153,7 @@ ms.locfileid: "139273716"
 
 11. **[プロパティ]** ペインの **[説明]** ボックスに、次のように入力します。**売上に関連する営業担当者**
 
-    "ユーザーがカーソルをテーブルまたはフィールドの上に置くと、説明が **[フィールド]** ウィンドウにヒントとして表示されることを思い出すかもしれません。"
+    "ユーザーがカーソルをテーブルまたはフィールドの上に置くと、説明が **[フィールド]** ウィンドウにヒントとして表示されることを思い出すかもしれません。"**
 
 12. **Salesperson (Performance)** テーブルに対しては、次の説明を設定します。**地域に関連する営業担当者**
 
@@ -206,9 +202,9 @@ ms.locfileid: "139273716"
 
 ### <a name="task-4-create-calculated-columns"></a>**タスク 4:** **計算列を作成する**
 
-このタスクでは、別の期間によるフィルター処理とグループ化を有効にする列を追加します。 また、計算列を作成して、他の列の並べ替え順序の制御も行います。
+In this task you will add additional columns to enable filtering and grouping by different time periods. You will also create a calculated column to control the sort order of other columns.
 
-"利便性のために、このラボのすべての DAX 定義は、**D:\PL300\Labs\05-create-dax-calculations-in-power-bi-desktop\Assets\Snippets.txt** にあるスニペット ファイルからコピーできます。"
+"利便性のために、このラボのすべての DAX 定義は、**D:\PL300\Labs\05-create-dax-calculations-in-power-bi-desktop\Assets\Snippets.txt** にあるスニペット ファイルからコピーできます。"**
 
 1. **[テーブル ツール]** コンテキスト リボンの **[計算]** グループ内から、**[新しい列]** をクリックします。
 
@@ -254,11 +250,11 @@ ms.locfileid: "139273716"
 
     ![画像 51](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image23.png)
 
-8. 「**フィールド**」ウィンドウの **Date** テーブル内から「**年**」フィールドを「**行**」ウェル/領域にドラッグします。
+8. **[フィールド]** ウィンドウの **[Date]** テーブル内から **[年]** フィールドを **[行]** ウェル/領域にドラッグします。
 
     ![画像 17](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image24.png)
 
-9. 「**月**」フィールドを「**年**」フィールドのすぐ下にある「**行**」ウェル/領域にドラッグします。
+9. **[月]** フィールドを **[年]** フィールドのすぐ下にある **[行]** ウェル/領域にドラッグします。
 
     ![画像 18](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image25.png)
 
@@ -306,16 +302,16 @@ ms.locfileid: "139273716"
 
 ### <a name="task-5-complete-the-date-table"></a>**タスク 5:** **Date テーブルを完成させる**
 
-このタスクでは、列を非表示にして階層を作成することにより、**Date** テーブルの設計を完了します。 その後、**Sales** テーブルと **Targets** テーブルに対するリレーションシップを作成します。
+In this task you will complete the design of the <bpt id="p1">**</bpt>Date<ept id="p1">**</ept> table by hiding a column and creating a hierarchy. You will then create relationships to the <bpt id="p1">**</bpt>Sales<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Targets<ept id="p2">**</ept> tables.
 
 1. モデル ビューに切り替えます。
 
-2. **Date** テーブルで、**MonthKey** 列を非表示にします (**Is Hidden** を **[はい]** に設定します)。
+2. **Date** テーブルで、**MonthKey** 列を非表示にします (**Is Hidden**を **[はい]** に設定します)。
 
-3. 右側の「**フィールド**」画面で **Date** テーブルを選択し、**Year** 列で右クリックし、「**階層の作成**」を選択します。 
+3. 右側の **[フィールド]** 画面で **[Date]** テーブルを選択し、**[Year]** 列で右クリックし、**[階層の作成]** を選択します。 
 
-4. 新しく作成した階層を右クリックして「**名前を変更**」をクリックし、「**Fiscal**」という名前に変更します。 
-5. 次の 2 つの残りのフィールドを Fiscal 階層に追加します。これを行うには、「フィールド」画面でこれらを選択してから右クリックし、 **[階層に追加]**  ->  **[Fiscal]** の順に選択します。
+4. 新しく作成した階層を右クリックして **[名前を変更]** をクリックし、「**Fiscal**」という名前に変更します。 
+5. 次の 2 つの残りのフィールドを Fiscal 階層に追加します。これを行うには、「フィールド」画面でこれらを選択してから右クリックし、**[階層に追加]** -> **[Fiscal]** の順に選択します。
     
     - Quarter
 
@@ -357,9 +353,9 @@ ms.locfileid: "139273716"
 
 6. Power BI Desktop ファイルを保存します。
 
-    "これで、このテーブルによって日付 (タイム) が定義されていることが Power BI Desktop に認識されるようになりました。*タイム インテリジェンスの計算を利用する場合に重要です。タイム インテリジェンス計算については、「**Power BI Desktop で DAX 計算を作成する (パート 2)** 」ラボで扱います。"*
+    *Power BI Desktop では、このテーブルで日付 (時刻) が定義されていることを把握できるようになりました。このことは、タイムインテリジェンスの計算に依存する場合に重要です。「**Power BI Desktop で DAX 計算を作成する (パート 2)**」のラボでは、タイム インテリジェンスの計算に取り組みます。*
 
-    "データ ソースに日付テーブルがない場合は、日付テーブルに対してこの設計方法が適しています。*データ ウェアハウスをお持ちの場合は、データ モデルで日付ロジックを「再定義」するのではなく、日付ディメンション テーブルから日付データをロードするのが適切です。"*
+    *データ ソースに日付テーブルがない場合は、日付テーブルに対してこの設計方法が適しています。データ ウェアハウスをお持ちの場合は、データ モデルで日付ロジックを "再定義" するのではなく、日付ディメンション テーブルから日付データをロードするのが適切です。*
 
 ## <a name="exercise-2-create-measures"></a>**演習 2:メジャーを作成する**
 
@@ -367,7 +363,7 @@ ms.locfileid: "139273716"
 
 ### <a name="task-1-create-simple-measures"></a>**タスク 1:シンプルなメジャーを作成する**
 
-このタスクでは、単純なメジャーを作成します。 単純なメジャーは、単一の列の値を集計するか、テーブルの行をカウントします。
+In this task you will create simple measures. Simple measures aggregate values in a single column or count rows of a table.
 
 1. レポート ビューの **[ページ 2]** の **[フィールド]** ペインで、**Sales \| Unit Price** フィールドを行列の視覚エフェクトにドラッグします。
 
@@ -403,7 +399,7 @@ ms.locfileid: "139273716"
     ```
 
 
-6. 「**Avg Price**」メジャーをマトリックス ビジュアルに追加します。
+6. **[Avg Price]** メジャーをマトリックス ビジュアルに追加します。
 
 7. **Unit Price** 列と同じ結果が生成されることがわかります (ただし、書式設定は異なります)。
 
@@ -411,7 +407,7 @@ ms.locfileid: "139273716"
 
     ![画像 32](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image39.png)
 
-    "メジャーの集計動作を変更することはできません。"
+    "メジャーの集計動作を変更することはできません。"**
 
 9. スニペットのファイル定義を使用して、**Sales** テーブルに対して次の 5 つのメジャーを作成します。
 
@@ -427,7 +423,7 @@ ms.locfileid: "139273716"
 
     "**Orders** メジャーで使用される DISTINCTCOUNT() 関数では、各注文が 1 回だけカウントされます (重複は無視されます)。***Order Lines** メジャーで使用される COUNTROWS() 関数は、テーブルに対して動作します。"*
 
-    "この場合、注文数は、**SalesOrderNumber** 列の一意の値をカウントすることによって計算されますが、注文の行の数は、単純にテーブルの行の数になります (各行が 1 つの注文の 1 行になります)。"
+    "この場合、注文数は、**SalesOrderNumber** 列の一意の値をカウントすることによって計算されますが、注文の行の数は、単純にテーブルの行の数になります (各行が 1 つの注文の 1 行になります)。"**
 
 10. モデル ビューに切り替えて、価格の 4 つのメジャーを複数選択します。**Avg Price**、**Max Price**、**Median Price**、および **Min Price** です。
 
@@ -443,7 +439,7 @@ ms.locfileid: "139273716"
 
     "これで、レポート作成者が **Unit Price** 列を使用できなくなりました。*モデルに追加した価格メジャーを使用する必要があります。この設計方法では、レポート作成者が不適切に (たとえば、価格を合計して) 価格を集計することができなくなります。"*
 
-13. 「**Order Lines**」メジャーと「**Orders**」メジャーを複数選択し、次の要件を設定します。
+13. **[Order Lines]** メジャーと **[Orders]** メジャーを複数選択して、次の要件を設定します。
 
     - 桁区切り記号を使用するように書式を設定する
 
@@ -451,7 +447,7 @@ ms.locfileid: "139273716"
 
     ![画像 36](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image41.png)
 
-14. レポート ビューにある、マトリックス ビジュアルの「**値**」ウェル/領域で、「**Unit Price**」フィールドの「**X**」をクリックして削除します。
+14. レポート ビューにある、マトリックス ビジュアルの **[値]** ウェル/領域で、**[Unit Price]** フィールドの **[X]** をクリックして削除します。
 
     ![画像 38](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image42.png)
 
@@ -483,4 +479,4 @@ ms.locfileid: "139273716"
 
 2. 次のラボを開始する場合は、Power BI Desktop を開いたままにしておきます。
 
-    "「**Power BI Desktop で DAX 計算を作成する (パート 2)** 」ラボでは、DAX を使用して、より高度な計算でデータ モデルを強化します。"
+    "「**Power BI Desktop で DAX 計算を作成する (パート 2)**」ラボでは、DAX を使用して、より高度な計算でデータ モデルを強化します。"**

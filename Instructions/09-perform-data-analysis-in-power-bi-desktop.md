@@ -2,13 +2,9 @@
 lab:
   title: Power BI Desktop でデータ分析を実行する
   module: Module 10 - Perform Advanced Analytics
-ms.openlocfilehash: 083abd0da7c0423a40985602d8db09d752f064cd
-ms.sourcegitcommit: 3520e7d016e94549d408464207c1b91cd47867c2
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2022
-ms.locfileid: "139273812"
 ---
+
+
 # <a name="perform-data-analysis-in-power-bi-desktop"></a>**Power BI Desktop でデータ分析を実行する**
 
 **このラボの推定所要時間: 45 分**
@@ -25,7 +21,7 @@ ms.locfileid: "139273812"
 
 ### <a name="lab-story"></a>**ラボのストーリー**
 
-このラボは、データの準備に始まり、レポートおよびダッシュボードとして発行するまでの完全なストーリーとして設計されたラボ シリーズの 1 つです。 ラボは任意の順序で完了できます。 しかしながら、複数のラボに取り組む場合は、最初の 10 のラボについては、次の順序で行うことをお勧めします。
+This lab is one of many in a series of labs that was designed as a complete story from data preparation to publication as reports and dashboards. You can complete the labs in any order. However, if you intend to work through multiple labs, for the first 10 labs, we suggest you do them in the following order:
 
 1. Power BI Desktop でのデータの準備
 
@@ -33,7 +29,7 @@ ms.locfileid: "139273812"
 
 3. Power BI Desktop でデータをモデル化する
 
-5. Power BI Desktop での DAX 計算の作成、パート 1
+5. Power BI Desktop で DAX 計算を作成する (パート 1)
 
 6. Power BI Desktop で DAX 計算を作成する (パート 2)
 
@@ -65,7 +61,7 @@ ms.locfileid: "139273812"
 
     *ヒント:Microsoft Edge のお気に入りバーで、Power BI サービスのお気に入りを使用することもできます。"*
 
-1. 「**サインイン**」 (右上隅) をクリックします。
+1. **[サインイン]** (右上隅) をクリックします。
 
     ![画像 5](Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image2.png)
 
@@ -77,7 +73,7 @@ ms.locfileid: "139273812"
 
 1. サインイン プロセスを完了します。
 
-1. Microsoft Edge からサインインを維持するかどうかを確認するメッセージが表示されたら、「**はい**」をクリックします。
+1. Microsoft Edge からサインインを維持するかどうかを確認するメッセージが表示されたら、**[はい]** をクリックします。
 
 1. Microsoft Edge ブラウザー ウィンドウの Power BI サービスの **[ナビゲーション]** ペインで、**[マイ ワークスペース]** を展開します。
 
@@ -89,17 +85,17 @@ ms.locfileid: "139273812"
 
 このタスクでは、データセットを作成してこのラボ用の環境を設定します。
 
-*重要:「**Power BI ダッシュボードを作成する**」のラボで既にデータセットを発行している場合は、次のタスクから続行します。"*
+"重要: **[Power BI ダッシュボードを作成する]** ラボで既にデータセットを発行している場合は、次のタスクから続行します。"**
 
-1. Microsoft Edge ブラウザー ウィンドウの Power BI サービスの「**ナビゲーション**」ウィンドウで、「**マイ ワークスペース**」を展開します。
+1. Microsoft Edge ブラウザー ウィンドウの Power BI サービスの **[ナビゲーション]** ウィンドウで、下部にある **[データの取得]** をクリックします。
 
     ![画像 8](Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image4.png)
 
-2. 「**ファイル**」タイルで、「**取得**」をクリックします。
+2. **[ファイル]** タイルで、**[取得]** をクリックします。
 
     ![画像 10](Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image5.png)
 
-3. 「**ローカル ファイル**」タイルをクリックします。
+3. **[ローカル ファイル]** タイルをクリックします。
 
     ![画像 11](Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image6.png)
 
@@ -119,17 +115,17 @@ ms.locfileid: "139273812"
 
     ![画像 14](Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image7.png)
 
-2. 「はじめに」ウィンドウを閉じるには、ウィンドウの左上にある「**X**」をクリックします。
+2. [はじめに] ウィンドウを閉じるには、ウィンドウの左上にある **[X]** をクリックします。
 
     ![画像 13](Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image8.png)
 
-3. Power BI Desktop が Power BI サービスにサインインしていない場合は、右上の「**サインイン**」をクリックします。
+3. Power BI Desktop が Power BI サービスにサインインしていない場合は、右上の **[サインイン]** をクリックします。
 
     ![画像 16](Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image9.png)
 
 4. Power BI サービスへのサインインに使用したのと同じアカウントを使用して、サインイン プロセスを完了します。
 
-5. ファイルを保存するには、「**ファイル**」リボン タブをクリックして、バックステージ ビューを開きます。
+5. ファイルを保存するには、**[ファイル]** リボン タブをクリックして、バックステージ ビューを開きます。
 
 6. **[保存]** を選択します。
 
@@ -141,7 +137,7 @@ ms.locfileid: "139273812"
 
     ![画像 1](Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image11.png)
 
-9. 「**販売分析**」データセットへのライブ接続を作成するには、「**ホーム**」リボン タブの「**データ**」グループ内から「**Power BI データセット**」をクリックします。
+9. "**Sales Analysis**" データセットへのライブ接続を作成するには、**[ホーム]** リボン タブの **[データ]** グループ内から **[Power BI データセット]** をクリックします。
 
     ![画像 15](Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image12.png)
 
@@ -153,7 +149,7 @@ ms.locfileid: "139273812"
 
 12. Power BI Desktop ファイルを保存します。
 
-    "次に、4 つのレポート ページを作成し、各ページで異なるビジュアルを操作して、データの分析および調査を行います。"
+    "次に、4 つのレポート ページを作成し、各ページで異なるビジュアルを操作して、データの分析および調査を行います。"**
 
 ## <a name="exercise-2-create-a-scatter-chart"></a>**演習 2:散布図を作成する**
 
@@ -163,11 +159,11 @@ ms.locfileid: "139273812"
 
 このタスクでは、アニメーション化できる散布図を作成します。
 
-1. **ページ 1** の名前を **散布図** に変更します。
+1. **ページ 1** の名前を**散布図**に変更します。
 
     ![画像 67](Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image14.png)
 
-2. レポート ページに **散布図** ビジュアルを追加してから、ページ全体に表示されるように再配置およびサイズ変更します。
+2. レポート ページに**散布図**ビジュアルを追加してから、ページ全体に表示されるように再配置およびサイズ変更します。
 
     ![画像 18](Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image15.png)
 
@@ -175,7 +171,7 @@ ms.locfileid: "139273812"
 
 3. 次のフィールドをビジュアル ウェル/領域に追加します。
 
-    このラボでは、フィールドを参照するために簡略表記を使用します。 次のようになります。**Reseller** **\|** **Business Type**. この例では、**Reseller** がテーブル名、**Business Type** がフィールド名です。
+    The labs use a shorthand notation to reference a field. It will look like this: <bpt id="p1">**</bpt>Reseller<ept id="p1">**</ept> <bpt id="p2">**</bpt><ph id="ph1">\|</ph><ept id="p2">**</ept> <bpt id="p3">**</bpt>Business Type<ept id="p3">**</ept>. In this example, <bpt id="p1">**</bpt>Reseller<ept id="p1">**</ept> is the table name and <bpt id="p2">**</bpt>Business Type<ept id="p2">**</ept> is the field name.
 
     - 凡例: **Reseller \| Business Type**
 
@@ -189,7 +185,7 @@ ms.locfileid: "139273812"
 
     ![画像 39](Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image17.png)
 
-    " **[再生軸]** ウェルまたは領域にフィールドを追加すると、チャートをアニメーション化できます。"
+    " **[再生軸]** ウェルまたは領域にフィールドを追加すると、チャートをアニメーション化できます。"**
 
 4. **[フィルター]** ペインで、**Product \| Category** フィールドを **[このページでのフィルター]** ウェルまたは領域に追加します。
 
@@ -203,7 +199,7 @@ ms.locfileid: "139273812"
 
 7. **FY2018 Q1** から **FY2020 Q4** までのアニメーション サイクル全体を確認します。
 
-    "散布図では、メジャーの値を同時に把握できます。この場合、注文数量、売上収益、および利益率です。"
+    "散布図では、メジャーの値を同時に把握できます。この場合、注文数量、売上収益、および利益率です。"**
 
     "各バブルが、販売店の業種を表します。*バブル サイズの変化は、注文量の増減を反映しています。水平方向の移動は売上収益の増加または減少を表し、垂直方向の移動は収益性の上昇または低下を表します。"*
 
@@ -223,11 +219,11 @@ ms.locfileid: "139273812"
 
 このタスクでは、予測を作成して、売上収益の将来の可能性を判断します。
 
-1. 新しいページを追加して、ページの名前を **予測** に変更します。
+1. 新しいページを追加して、ページの名前を**予測**に変更します。
 
     ![画像 66](Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image20.png)
 
-2. レポート ページに **折れ線グラフ** ビジュアルを追加してから、ページ全体に表示されるように配置してサイズを変更します。
+2. レポート ページに**折れ線グラフ** ビジュアルを追加してから、ページ全体に表示されるように配置してサイズを変更します。
 
     ![画像 19](Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image21.png)
 
@@ -298,7 +294,7 @@ ms.locfileid: "139273812"
 
 このタスクでは、ラボを完了します。
 
-1. **散布図** ページを選択します。
+1. **散布図**ページを選択します。
 
 2. Power BI Desktop ファイルを保存します。
 

@@ -2,18 +2,14 @@
 lab:
   title: 行レベルのセキュリティを実行する
   module: Module 13 - Row-Level Security
-ms.openlocfilehash: b4b468b1c34d0cb562edd9ec407b07c9ee2efa1d
-ms.sourcegitcommit: 3520e7d016e94549d408464207c1b91cd47867c2
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2022
-ms.locfileid: "139273637"
 ---
+
+
 # <a name="enforce-row-level-security"></a>**行レベルのセキュリティを適用する**
 
 **このラボの推定所要時間: 45 分**
 
-このラボでは、**Salesperson** テーブルと **Sales** テーブルの間に多対多のリレーションシップを作成します。 また、営業担当者が確実に自分の担当地域の売上データだけを分析できるように、行レベルのセキュリティも適用します。
+In this lab you will create a many-to-many relationship between the <bpt id="p1">**</bpt>Salesperson<ept id="p1">**</ept> table and the <bpt id="p2">**</bpt>Sales<ept id="p2">**</ept> table. You will also enforce row-level security to ensure that a salesperson can only analyze sales data for their assigned region(s).
 
 このラボでは、次の作業を行う方法について説明します。
 
@@ -23,7 +19,7 @@ ms.locfileid: "139273637"
 
 ### <a name="lab-story"></a>**ラボのストーリー**
 
-このラボは、データの準備に始まり、レポートおよびダッシュボードとして発行するまでの完全なストーリーとして設計されたラボ シリーズの 1 つです。 ラボは任意の順序で完了できます。 しかしながら、複数のラボに取り組む場合は、最初の 10 のラボについては、次の順序で行うことをお勧めします。
+This lab is one of many in a series of labs that was designed as a complete story from data preparation to publication as reports and dashboards. You can complete the labs in any order. However, if you intend to work through multiple labs, for the first 10 labs, we suggest you do them in the following order:
 
 1. Power BI Desktop でのデータの準備
 
@@ -31,7 +27,7 @@ ms.locfileid: "139273637"
 
 3. Power BI Desktop でデータをモデル化する
 
-5. Power BI Desktop での DAX 計算の作成、パート 1
+5. Power BI Desktop で DAX 計算を作成する (パート 1)
 
 6. Power BI Desktop で DAX 計算を作成する (パート 2)
 
@@ -59,17 +55,17 @@ ms.locfileid: "139273637"
 
     ![画像 8](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image1.png)
 
-1. 「はじめに」ウィンドウを閉じるには、ウィンドウの左上にある「**X**」をクリックします。
+1. [はじめに] ウィンドウを閉じるには、ウィンドウの左上にある **[X]** をクリックします。
 
     ![画像 7](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image2.png)
 
-1. スターター Power BI Desktop ファイルを開くには、「**ファイル**」リボン タブをクリックして、バックステージ ビューを開きます。
+1. スターター Power BI Desktop ファイルを開くには、**[ファイル]** リボン タブをクリックして、バックステージ ビューを開きます。
 
 1. **[レポートを開く]** を選択します。
 
     ![画像 6](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image3.png)
 
-1. 「**レポートを参照**」をクリックします。
+1. **[レポートを参照]** をクリックします。
 
     ![画像 5](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image4.png)
 
@@ -83,13 +79,13 @@ ms.locfileid: "139273637"
 
 1. 情報ウィンドウが開いている場合はすべて閉じます。
 
-1. ファイルのコピーを作成するには、「**ファイル**」リボン タブをクリックして、バックステージ ビューを開きます。
+1. ファイルのコピーを作成するには、**[ファイル]** リボン タブをクリックして、バックステージ ビューを開きます。
 
 1. **[名前を付けて保存]** を選択します。
 
     ![図 3](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image6.png)
 
-1. 変更を適用するかどうかを確認するメッセージが表示されたら、「**適用**」をクリックします。
+1. 変更を適用するかどうかを確認するメッセージが表示されたら、**[適用]** をクリックします。
 
     ![画像 15](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image7.png)
 
@@ -115,11 +111,11 @@ ms.locfileid: "139273637"
 
 4. レポート ビューに切り替えます。
 
-5. 「**モデリング**」リボン タブの「**セキュリティ**」グループの内から、「**ロールの管理**」をクリックします。
+5. **[モデリング]** リボン タブの **[セキュリティ]** グループ内から、**[ロールの管理]** をクリックします。
 
     ![画像 5700](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image21.png)
 
-6. 「**ロールの管理**」ウィンドウで、「**作成**」をクリックします。
+6. **[ロールの管理]** ウィンドウで、**[作成]** をクリックします。
 
     ![画像 5702](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image22.png)
 
@@ -131,7 +127,7 @@ ms.locfileid: "139273637"
 
     ![画像 5704](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image24.png)
 
-9. 「**テーブル フィルター DAX 式**」ボックスで、 **"Value"** を **USERPRINCIPALNAME()** に置き換えて式を変更します。
+9. **[テーブル フィルター DAX 式]** ボックスで、"**Value**" を **USERPRINCIPALNAME()** に置き換えて式を変更します。
 
     ![画像 11](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image25.png)
 
@@ -141,17 +137,17 @@ ms.locfileid: "139273637"
 
     ![画像 5706](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image26.png)
 
-11. セキュリティ ロールをテストするには、「**モデリング**」リボン タブの「**セキュリティ**」グループ内から、「**表示方法**」をクリックします。
+11. セキュリティ ロールをテストするには、**[モデリング]** リボン タブの **[セキュリティ]** グループ内から、**[表示方法]** をクリックします。
 
     ![画像 5708](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image27.png)
 
-12. **[ロールとして表示]** ウィンドウで **[その他のユーザー]** 項目を選択してから、対応するボックスに「 **michael-blythe@adventureworks.com** 」と入力します。
+12. **[ロールとして表示]** ウィンドウで **[その他のユーザー]** 項目を選択してから、対応するボックスに「**michael-blythe@adventureworks.com**」と入力します。
 
-13. 「**営業担当者**」ロールを確認します。
+13. **[営業担当者]** ロールを確認します。
 
     ![画像 5709](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image28.png)
 
-    "この構成により、**Salespeople** ロールと、Michael Blythe の名前を借りたユーザーが使用されることになります。"
+    "この構成により、**Salespeople** ロールと、Michael Blythe の名前を借りたユーザーが使用されることになります。"**
 
 14. **[OK]** をクリックします。
 
@@ -165,21 +161,21 @@ ms.locfileid: "139273637"
 
     ![画像 5713](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image31.png)
 
-17. テストを中止するには、黄色のバナーの右側にある「**表示を中止**」をクリックします。
+17. テストを中止するには、黄色のバナーの右側にある **[表示の停止]** をクリックします。
 
     ![画像 5712](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image32.png)
 
     "Power BI Desktop ファイルが Power BI サービスに発行されるときに、発行後のタスクを完了して、セキュリティ プリンシパルを **Salespeople** ロールにマップする必要があります。"*このラボでは行いません。"*
 
-18. ロールを削除するには、「**モデリング**」リボン タブの「**セキュリティ**」グループ内から、「**ロールの管理**」をクリックします。
+18. ロールを削除するには、**[モデリング]** リボン タブの **[セキュリティ]** グループ内から、**[ロールの管理]** をクリックします。
 
     ![画像 16](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image33.png)
 
-19. 「**ロールの管理**」ウィンドウで、「**削除**」をクリックします。
+19. **[ロールの管理]** ウィンドウで、**[削除]** をクリックします。
 
     ![画像 17](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image34.png)
 
-20. 削除の確認を求められたら、「**はい、削除します**」をクリックします。
+20. 削除の確認を求められたら、**[はい、削除します]** をクリックします。
 
 21. **[保存]** をクリックします。
 

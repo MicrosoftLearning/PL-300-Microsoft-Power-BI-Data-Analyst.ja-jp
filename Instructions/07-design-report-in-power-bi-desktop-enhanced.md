@@ -2,18 +2,14 @@
 lab:
   title: Power BI Desktop でレポートを設計する (パート 2)
   module: Module 7 - Create Reports
-ms.openlocfilehash: 13dbd8523318739a7e005f1023ab2ae8b32ce8a1
-ms.sourcegitcommit: 3520e7d016e94549d408464207c1b91cd47867c2
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2022
-ms.locfileid: "139273822"
 ---
+
+
 # <a name="design-a-report-in-power-bi-desktop-part-2"></a>**Power BI Desktop でレポートを設計する (パート 2)**
 
 **このラボの推定所要時間: 45 分**
 
-このラボでは、高度なデザイン機能を使用して、**販売分析** を強化します。
+このラボでは、高度なデザイン機能を使用して、**販売分析**を強化します。
 
 このラボでは、次の作業を行う方法について説明します。
 
@@ -27,7 +23,7 @@ ms.locfileid: "139273822"
 
 ### <a name="lab-story"></a>**ラボのストーリー**
 
-このラボは、データの準備に始まり、レポートおよびダッシュボードとして発行するまでの完全なストーリーとして設計されたラボ シリーズの 1 つです。 ラボは任意の順序で完了できます。 しかしながら、複数のラボに取り組む場合は、最初の 10 のラボについては、次の順序で行うことをお勧めします。
+This lab is one of many in a series of labs that was designed as a complete story from data preparation to publication as reports and dashboards. You can complete the labs in any order. However, if you intend to work through multiple labs, for the first 10 labs, we suggest you do them in the following order:
 
 1. Power BI Desktop でのデータの準備
 
@@ -35,7 +31,7 @@ ms.locfileid: "139273822"
 
 3. Power BI Desktop でデータをモデル化する
 
-5. Power BI Desktop での DAX 計算の作成、パート 1
+5. Power BI Desktop で DAX 計算を作成する (パート 1)
 
 6. Power BI Desktop で DAX 計算を作成する (パート 2)
 
@@ -67,7 +63,7 @@ ms.locfileid: "139273822"
 
     *ヒント:Microsoft Edge のお気に入りバーで、Power BI サービスのお気に入りを使用することもできます。"*
 
-1. 「**サインイン**」 (右上隅) をクリックします。
+1. **[サインイン]** (右上隅にあります) をクリックします。
 
     ![画像 11](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image2.png)
 
@@ -79,7 +75,7 @@ ms.locfileid: "139273822"
 
 1. サインイン プロセスを完了します。
 
-1. Microsoft Edge からサインインを維持するかどうかを確認するメッセージが表示されたら、「**はい**」をクリックします。
+1. Microsoft Edge からサインインを維持するかどうかを確認するメッセージが表示されたら、**[はい]** をクリックします。
 
 1. Microsoft Edge ブラウザー ウィンドウの Power BI サービスの **[ナビゲーション]** ペインで、**[マイ ワークスペース]** を展開します。
 
@@ -97,23 +93,23 @@ ms.locfileid: "139273822"
 
     ![画像 10](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image4.png)
 
-2. 「はじめに」ウィンドウを閉じるには、ウィンドウの左上にある「**X**」をクリックします。
+2. 作業の開始ウィンドウを閉じるには、ウィンドウの左上にある **[X]** をクリックします。
 
     ![画像 9](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image5.png)
 
-3. Power BI サービスにサインインするには、右上の「**サインイン**」をクリックします。
+3. Power BI サービスにサインインするには、右上の **[サインイン]** をクリックします。
 
     ![画像 8](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image6.png)
 
 4. Power BI サービスへのサインインに使用したのと同じアカウントを使用して、サインイン プロセスを完了します。
 
-5. スターター Power BI Desktop ファイルを開くには、「**ファイル**」リボン タブをクリックして、バックステージ ビューを開きます。
+5. スターター Power BI Desktop ファイルを開くには、**[ファイル]** リボン タブをクリックして、バックステージ ビューを開きます。
 
 6. **[レポートを開く]** を選択します。
 
     ![画像 7](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image7.png)
 
-7. 「**レポートを参照**」をクリックします。
+7. **[レポートを参照]** をクリックします。
 
     ![画像 6](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image8.png)
 
@@ -127,13 +123,13 @@ ms.locfileid: "139273822"
 
 11. 情報ウィンドウが開いている場合はすべて閉じます。
 
-12. ファイルのコピーを作成するには、「**ファイル**」リボン タブをクリックして、バックステージ ビューを開きます。
+12. ファイルのコピーを作成するには、**[ファイル]** リボン タブをクリックして、バックステージ ビューを開きます。
 
 13. **[名前を付けて保存]** を選択します。
 
     ![画像 4](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image10.png)
 
-14. 変更を適用するかどうかを確認するメッセージが表示されたら、「**適用**」をクリックします。
+14. 変更の適用が求められたら、**[適用]** をクリックします。
 
     ![図 3](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image11.png)
 
@@ -145,11 +141,11 @@ ms.locfileid: "139273822"
 
 ### <a name="task-3-sync-slicers"></a>**タスク 3: スライサーを同期する**
 
-このタスクでは、「**Year**」と「**Region**」スライサーを同期します。
+このタスクでは、**[Year]** スライサーと **[Region]** スライサーを同期します。
 
-"「**Power BI Desktop でレポートを設計する (パート 1)** 」のラボで作成したレポートの開発を継続します。"
+"「**Power BI Desktop でレポートをデザインする (パート 1)**」ラボで作成したレポートを引き続き開発します。"**
 
-1. Power BI Desktop の **[概要]** ページで、**[年]** スライサーを **FY2018** に設定します。
+1. Power BI Desktop の **[概要]** ページで、**[年]** スライサーを **FY2018**に設定します。
 
 2. **[My Performance]** ページに移動すると、**[Year]** スライサーの値が異なっていることがわかります。
 
@@ -179,7 +175,7 @@ ms.locfileid: "139273822"
 
 ## <a name="exercise-2-configure-drill-through"></a>**演習 2:ドリルスルーを構成する**
 
-この演習では、新しいページを作成し、ドリル スルー ページとして構成します。 設計が完了すると、ページは次のようになります。
+In this exercise you will create a new page and configure it as a drill through page. When you’ve completed the design, the page will look like the following:
 
 ![カード ビジュアルとテーブル ビジュアルで構成される新しいページのイメージ。](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image17.png)
 
@@ -187,7 +183,7 @@ ms.locfileid: "139273822"
 
 このタスクでは、新しいページを作成し、ドリル スルー ページとして構成します。
 
-1. 「**Product Details**」という名前の新しいレポート ページを追加します。
+1. **"Product Details"** という名前の新しいレポート ページを追加します。
 
     ![画像 95](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image18.png)
 
@@ -213,7 +209,7 @@ ms.locfileid: "139273822"
 
     "フィールドがドリル スルー ウェルまたは領域に追加されると、ボタンが自動的に追加されます。*これを使うと、レポート ユーザーがドリルスルー元のページに戻ることができます。"*
 
-6. ページに **カード** ビジュアルを追加し、サイズを変更して、ボタンの右側に配置し、ページの残りの幅を埋めるようにします。
+6. ページに**カード** ビジュアルを追加し、サイズを変更して、ボタンの右側に配置し、ページの残りの幅を埋めるようにします。
 
     ![画像 13](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image23.png)
 
@@ -227,7 +223,7 @@ ms.locfileid: "139273822"
 
 9. **[背景色]** プロパティを灰色の薄い網掛けに設定します。
 
-10. ページに「**テーブル**」ビジュアルを追加し、サイズを変更して、カード ビジュアルの下に配置し、ページ上の残りの領域を埋めます。
+10. ページに **[テーブル]** ビジュアルを追加し、サイズを変更して、カード ビジュアルの下に配置し、ページ上の残りの領域を埋めます。
 
     ![画像 14](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image26.png)
 
@@ -251,7 +247,7 @@ ms.locfileid: "139273822"
 
 ## <a name="exercise-3-add-conditional-formatting"></a>**演習 3: 条件付き書式を追加する**
 
-この演習では、条件付き書式を使用してドリル スルー ページを拡張します。 設計が完了すると、ページは次のようになります。
+In this exercise you will enhance the drill through page with conditional formatting. When you’ve completed the design, the page will look like the following:
 
 ![色付きの値とアイコンが表示されている、更新されたページのイメージ。](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image28.png)
 
@@ -265,7 +261,7 @@ ms.locfileid: "139273822"
 
     ![画像 107](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image29.png)
 
-3. 「**アイコン - Profit Margin**」ウィンドウの「**アイコン レイアウト**」ドロップダウン リストで、「**データの右**」を選択します。
+3. **[アイコン - Profit Margin]** ウィンドウの **[アイコン レイアウト]** ドロップダウン リストで、**[データの右側]** を選択します。
 
     ![画像 108](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image30.png)
 
@@ -295,7 +291,7 @@ ms.locfileid: "139273822"
 
     ![画像 110](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image32.png)
 
-    "ルールは次のように解釈できます。利益率の値が 0 未満の場合は赤いひし形を表示します。それ以外の場合は、値が 0 以上の場合は、緑の円を表示します。"
+    "ルールは次のように解釈できます。利益率の値が 0 未満の場合は赤いひし形を表示します。それ以外の場合は、値が 0 以上の場合は、緑の円を表示します。"**
 
 7. **[OK]** をクリックします。
 
@@ -321,11 +317,11 @@ ms.locfileid: "139273822"
 
 13. 前の手順を繰り返し、**Product \| Formatting \| Font Color Format** フィールドを使用して、 **[Color]** フィールドのフォント色の条件付き書式を設定します
 
-    "背景とフォントの色は、「**Power BI Desktop でのデータの準備**」のラボの **ColorFormats.csv** ファイルから取得し、「**Power BI Desktop にデータを読み込む**」のラボの **Product** クエリに統合したことを思い出すかもしれません。"
+    "背景とフォントの色を、「**Power BI Desktop でのデータの準備**」ラボで **ColorFormats.csv** ファイルから取得し、「**Power BI Desktop にデータを読み込む**」ラボで **Product** クエリに統合したことを思い出すかもしれません。"**
 
 ## <a name="exercise-4-add-bookmarks-and-buttons"></a>**演習 4: ブックマークとボタンを追加する**
 
-この演習では、「**マイ パフォーマンス**」ページをボタンで拡張し、レポート ユーザーが表示するビジュアル タイプを選択できるようにします。 設計が完了すると、ページは次のようになります。
+In this exercise you will enhance the <bpt id="p1">**</bpt>My Performance<ept id="p1">**</ept> page with buttons, allowing the report user to select the visual type to display. When you’ve completed the design, the page will look like the following:
 
 ![更新されたページ 3 のイメージ。2 つのボタンが表示され、ビジュアルが 2 つだけになっています。](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image38.png)
 
@@ -339,11 +335,11 @@ ms.locfileid: "139273822"
 
     ![画像 118](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image39.png)
 
-3. **[表示]** リボン タブの **[ペインを表示する]** グループ内の **[選択]** をクリックします。
+3. **[表示]** リボン タブの **[ペインを表示する]** グループ内の **[選択項目]** をクリックします。
 
     ![画像 119](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image40.png)
 
-4. **[選択]** ペインで、**[Sales and Target by Month]\(月別売上高と目標\)** 項目の横にある視覚化を非表示にするには、目のアイコンをクリックします。
+4. **[選択項目]** ペインで、**[Sales and Target by Month]\(月別売上高と目標\)** 項目の横にある視覚化を非表示にするには、目のアイコンをクリックします。
 
     ![画像 120](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image41.png)
 
@@ -353,7 +349,7 @@ ms.locfileid: "139273822"
 
 6. ブックマークの名前を変更するには、ブックマークをダブルクリックします。
 
-7. 表示されているグラフが横棒グラフの場合は、ブックマークの名前を「**Bar Chart ON**」に変更します。それ以外の場合は、ブックマークの名前を「**Column Chart ON**」に変更します。
+7. 表示されているグラフが横棒グラフの場合は、ブックマークの名前を **[Bar Chart ON]** に変更します。それ以外の場合は、ブックマークの名前を **[Column Chart ON]** に変更します。
 
 8. ブックマークを編集するには、**[ブックマーク]** ペインでブックマークにカーソルを合わせて省略記号をクリックしてから **[データ]** を選択します。
 
@@ -361,29 +357,29 @@ ms.locfileid: "139273822"
 
     " **[データ]** オプションを無効にすると、ブックマークで現在のフィルターの状態が使用されなくなります。*これが重要である理由は、そのようにしないと、現在 **[Year]** スライサーによって適用されているフィルターがブックマークによって永久にロックされるからです。"*
 
-9. ブックマークを更新するには、省略記号をもう一度クリックし、「**更新**」を選択します。
+9. ブックマークを更新するには、省略記号をもう一度クリックし、**[更新]** を選択します。
 
     ![画像 18](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image44.png)
 
     *次の手順では、2 つ目のブックマークを作成および構成して、2 つ目の視覚化を表示します。*
 
-10. **[選択]** ペインで、2 つの **[Sales and Target by Month]\(月別売上高と目標\)** 項目の表示を切り替えます。
+10. **[選択項目]** ペインで、2 つの **[Sales and Target by Month]\(月別売上高と目標\)** 項目の表示を切り替えます。
 
     *つまり、表示されている視覚化を非表示にし、非表示の視覚化を表示します。*
 
     ![画像 122](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image45.png)
 
-11. 2 つ目のブックマークを作成し、適切な名前を付けます (「**Column Chart ON**」または「**Bar Chart ON**」)。
+11. 2 つ目のブックマークを作成し、適切な名前を付けます (**[Column Chart ON]** または **[Bar Chart ON]**)。
 
     ![画像 123](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image46.png)
 
 12. 2 つ目のブックマークを構成してフィルターを無視し (**[データ]** オプションをオフ)、ブックマークを更新します。
 
-13. 「**選択**」ウィンドウで、両方のビジュアルを表示するには、非表示のビジュアルを表示するだけです。
+13. **[選択項目]** ウィンドウで両方のビジュアルを表示するには、非表示のビジュアルを表示するだけです。
 
 14. 両方の視覚化のサイズと位置を変更して、マルチカード視覚化の下のページ全体に表示し、互いに完全に重なり合うようにします。
 
-    *ヒント:隠れているビジュアルを選択するには、 **[選択]** ペインで選択します。"*
+    *ヒント:隠れているビジュアルを選択するには、 **[選択項目]** ペインで選択します。"*
 
     ![画像 124](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image47.png)
 
@@ -447,13 +443,13 @@ ms.locfileid: "139273822"
 
     ![画像 21](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image52.png)
 
-6. 「**Power BI に発行**」ウィンドウで、「**マイ ワークスペース**」が選択されていることを確認します。
+6. **[Power BI に発行]** ウィンドウで、**[マイ ワークスペース]** が選択されていることを確認します。
 
 7. レポートを発行するには、**[選択]** をクリックします。
 
     ![画像 20](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image53.png)
 
-8. データセットを置き換えるメッセージが表示されたら、「**置換**」をクリックします。
+8. データセットの置換を求めるメッセージが表示されたら、**[置換]** をクリックします。
 
 9. 発行が成功したら、**[了解]** をクリックします。
 
@@ -471,7 +467,7 @@ ms.locfileid: "139273822"
 
 このタスクでは、Power BI サービスのレポートを探索します。
 
-1. Microsoft Edge ブラウザー ウィンドウの Power BI サービスの「**ナビゲーション**」ウィンドウで、**販売分析** レポートをクリックします。
+1. Microsoft Edge ブラウザー ウィンドウの Power BI サービスの「**ナビゲーション**」ウィンドウで、**販売分析**レポートをクリックします。
 
 2. ドリルスルー レポートをテストするには、 **[概要]** ページの **[Quantity by Category]\(カテゴリ別数量\)** ビジュアルで **[Clothing]** バーを右クリックし、 **[ドリルスルー] \| [製品の詳細]** を選択します。
 
@@ -489,7 +485,7 @@ ms.locfileid: "139273822"
 
 このタスクでは、ラボを完了します。
 
-1. ワークスペースに戻るには、ウィンドウのウェブ ページのバナーで、「**マイ ワークスペース**」をクリックします。
+1. ワークスペースに戻るには、ウィンドウの Web ページのバナーで、**[マイ ワークスペース]** をクリックします。
 
     ![画像 23](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image56.png)
 

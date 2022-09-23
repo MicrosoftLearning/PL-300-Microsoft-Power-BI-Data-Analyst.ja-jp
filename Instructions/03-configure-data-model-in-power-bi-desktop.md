@@ -1,19 +1,15 @@
 ---
 lab:
-  title: Power BI Desktop でデータをモデル化する (パート 1)
+  title: Power BI Desktop でデータをモデル化する
   module: Module 4 - Design a Data Model in Power BI
-ms.openlocfilehash: cbec1e2dc3bb7738b2e78de88e30b1d56cb79b60
-ms.sourcegitcommit: 3520e7d016e94549d408464207c1b91cd47867c2
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2022
-ms.locfileid: "139273652"
 ---
-# <a name="model-data-in-power-bi-desktop-part-1"></a>**Power BI Desktop でデータをモデル化する (パート 1)**
+
+
+# <a name="model-data-in-power-bi-desktop"></a>**Power BI Desktop でデータをモデル化する**
 
 **このラボの推定所要時間: 45 分**
 
-このラボでは、データ モデルの開発を開始します。 テーブル間のリレーションシップを作成してから、データ モデルのわかりやすさと使いやすさを向上させるために、テーブルと列のプロパティを構成します。 また、階層を作成し、クイック メジャーを作成します。
+In this lab you will commence developing the data model. It will involve creating relationships between tables, and then configuring table and column properties to improve the friendliness and usability of the data model. You will also create hierarchies and create quick measures.
 
 このラボでは、次の作業を行う方法について説明します。
 
@@ -26,7 +22,7 @@ ms.locfileid: "139273652"
 
 ### <a name="lab-story"></a>**ラボのストーリー**
 
-このラボは、データの準備に始まり、レポートおよびダッシュボードとして発行するまでの完全なストーリーとして設計されたラボ シリーズの 1 つです。 ラボは任意の順序で完了できます。 しかしながら、複数のラボに取り組む場合は、最初の 10 のラボについては、次の順序で行うことをお勧めします。
+This lab is one of many in a series of labs that was designed as a complete story from data preparation to publication as reports and dashboards. You can complete the labs in any order. However, if you intend to work through multiple labs, for the first 10 labs, we suggest you do them in the following order:
 
 1. Power BI Desktop でのデータの準備
 
@@ -34,7 +30,7 @@ ms.locfileid: "139273652"
 
 3. **Power BI Desktop でデータをモデル化する**
 
-5. Power BI Desktop での DAX 計算の作成、パート 1
+5. Power BI Desktop で DAX 計算を作成する (パート 1)
 
 6. Power BI Desktop で DAX 計算を作成する (パート 2)
 
@@ -62,17 +58,17 @@ ms.locfileid: "139273652"
 
     ![画像 12](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image1.png)
 
-1. 「はじめに」ウィンドウを閉じるには、ウィンドウの左上にある「**X**」をクリックします。
+1. [はじめに] ウィンドウを閉じるには、ウィンドウの左上にある **[X]** をクリックします。
 
     ![画像 11](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image2.png)
 
-1. スターター Power BI Desktop ファイルを開くには、「**ファイル**」リボン タブをクリックして、バックステージ ビューを開きます。
+1. スターター Power BI Desktop ファイルを開くには、**[ファイル]** リボン タブをクリックして、バックステージ ビューを開きます。
 
 1. **[レポートを開く]** を選択します。
 
     ![画像 10](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image3.png)
 
-1. 「**レポートを参照**」をクリックします。
+1. **[レポートを参照]** をクリックします。
 
     ![画像 8](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image4.png)
 
@@ -86,13 +82,13 @@ ms.locfileid: "139273652"
 
 1. 情報ウィンドウが開いている場合はすべて閉じます。
 
-1. ファイルのコピーを作成するには、「**ファイル**」リボン タブをクリックして、バックステージ ビューを開きます。
+1. ファイルのコピーを作成するには、**[ファイル]** リボン タブをクリックして、バックステージ ビューを開きます。
 
 1. **[名前を付けて保存]** を選択します。
 
     ![画像 5](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image6.png)
 
-1. 変更を適用するかどうかを確認するメッセージが表示されたら、「**適用**」をクリックします。
+1. 変更の適用が求められたら、**[適用]** をクリックします。
 
     ![画像 15](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image7.png)
 
@@ -114,7 +110,7 @@ ms.locfileid: "139273652"
 
     *ヒント:ウィンドウの最下部にあるズーム コントロールも使用できます。"*
 
-    "モデル ビューでは、各テーブルとリレーションシップ (テーブル間のコネクタ) を表示できます。*この時点では、リレーションシップはありません。「**Power BI Desktop でのデータの準備**」のラボで、データ読み込みリレーションシップのオプションを無効にしたためです。"*
+    *モデル ビューでは、各テーブルとリレーションシップ (テーブル間のコネクタ) を表示できます。この時点では、リレーションシップはありません。「**Power BI Desktop でデータを準備する**」のラボで、データ読み込みリレーションシップのオプションを無効にしたためです。*
 
 3. レポート ビューに戻るには、左側の **[レポート ビュー]** アイコンをクリックします。
 
@@ -212,7 +208,7 @@ ms.locfileid: "139273652"
 
     "このラボでは、テーブル **SalespersonRegion** と **Targets** は接続しないままにします。*営業担当者と地域の間には多対多のリレーションシップがあり、「**Power BI Desktop でのデータのモデル化 (パート 2)** 」のラボでは、この高度なシナリオを使用して作業します。"*
 
-25. 図では、**Sales** テーブルが図の中央に配置され、関連するテーブルがその周りに配置されるようにテーブルを配置します。 切断されたテーブルを横に配置します。
+25. In the diagram, arrange the tables so that the <bpt id="p1">**</bpt>Sales<ept id="p1">**</ept> table is positioned in the center of the diagram, and the related tables are arranged about it. Position the disconnected tables to the side.
 
     ![画像 340](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image23.png)
 
@@ -226,7 +222,7 @@ ms.locfileid: "139273652"
 
 このタスクでは、**Product** テーブルを構成します。
 
-1. モデル ビューの「**フィールド**」ウィンドウで、必要に応じて **Product** テーブルを展開してすべてのフィールドを表示します。
+1. モデル ビューの **[フィールド]** ペインで、必要に応じて **Product** テーブルを展開してすべてのフィールドを表示します。
 
 2. 階層を作成するには、**[フィールド]** ペインで **Category** 列を右クリックし、次に **[階層の作成]** を選択します。
 
@@ -236,7 +232,7 @@ ms.locfileid: "139273652"
 
     ![画像 344](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image25.png)
 
-4. 階層に 2 つ目のレベルを追加するには、「**プロパティ**」ウィンドウの「**階層**」ドロップダウン リストで「**サブカテゴリ**」を選択します (ウィンドウ内で下にスクロールする必要がある場合があります)。
+4. 階層に 2 番目のレベルを追加するには、**[プロパティ]** ペインで、**[階層]** ドロップダウン リストで **[サブカテゴリ]** を選択します。(ウィンドウ内で下にスクロールする必要がある場合があります)。
 
 5. 階層に 3 番目のレベルを追加するには、**[階層]** のドロップダウン リストで **[Product]** を選択します。
 
@@ -258,7 +254,7 @@ ms.locfileid: "139273652"
 
 10. **Ctrl** キーを押しながら、**[Font Color Format]** 列を選択します。
 
-11. **[プロパティ]** ペインの **[フォルダーの表示]** ボックスに「**Formatting**」と入力します。
+11. **[プロパティ]** ウィンドウの **[表示フォルダー]** ボックスに、「**書式設定**」と入力します。
 
     ![画像 348](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image29.png)
 
@@ -284,7 +280,7 @@ ms.locfileid: "139273652"
 
 2. **Country** 列 (**Country** 階層レベルではありません) を選択します。
 
-3. 「**プロパティ**」ウィンドウで「**詳細**」セクション (ウィンドウの下部) を展開し、「**データ カテゴリ**」ドロップダウン リストから「**国/地域**」を選択します。
+3. **[プロパティ]** ペインで、ペインの最下部にある **[詳細]** セクションを展開し、次に **[データ カテゴリ]** のドロップダウン リストで **[国/地域]** を選択します。
 
     ![画像 352](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image32.png)
 
@@ -352,7 +348,7 @@ ms.locfileid: "139273652"
 
 ### <a name="task-5-bulk-update-properties"></a>**タスク 5: プロパティを一括更新する**
 
-このタスクでは、1 回の一括更新で複数の列を更新します。 この方法を使用して列を非表示にし、列の値を書式設定します。
+In this task you will update multiple columns using single bulk updates. You will use this approach to hide columns, and format column values.
 
 1. **[フィールド]** ウィンドウで、**Product \| ProductKey** 列を選択します。
 
@@ -434,7 +430,7 @@ ms.locfileid: "139273652"
 
     "**Targets \| TargetMonth** フィールドも同様の階層を提供します。*これらの階層は自分で作成したものではありません。自動的に作成されました。ただし、問題があります。Adventure Works の会計年度は、毎年 7 月 1 日に始まります。ただし、この自動的に作成された日付階層では、日付階層の年は毎年 1 月 1 日に始まります。"*
 
-    "この自動動作をオフにすることにします。*「**Power BI Desktop での DAX 計算の作成 (パート 1)** 」のラボでは、DAX を使用して日付テーブルを作成し、Adventure Works 社のカレンダーを定義するように構成します。"*
+    *この自動動作をオフにすることにします。「**Power BI Desktop で DAX 計算を作成する (パート 1)**」 ラボでは、DAX を使用して日付テーブルを作成し、Adventure Works 社のカレンダーを定義するように構成します。*
 
 4. 自動日時をオフにするには、**[ファイル]** リボン タブをクリックして Backstage ビューを開きます。
 
@@ -446,7 +442,7 @@ ms.locfileid: "139273652"
 
     ![画像 361](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image42.png)
 
-7. **[タイム インテリジェンス]** セクションで、**[自動の日付/時刻]** チェック ボックスをオフにします。
+7. **[タイム インテリジェンス]** セクションで、**[新しいファイルの自動の日付/時刻]** チェック ボックスをオフにします。
 
     ![画像 362](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image43.png)
 

@@ -2,13 +2,9 @@
 lab:
   title: Power BI Desktop で DAX 計算を作成する (パート 2)
   module: Module 5 - Create Model Calculations using DAX in Power BI
-ms.openlocfilehash: 80cfdfcfcb2072277760670c549cebaaca434cb9
-ms.sourcegitcommit: 3520e7d016e94549d408464207c1b91cd47867c2
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2022
-ms.locfileid: "139273336"
 ---
+
+
 # <a name="create-dax-calculations-in-power-bi-desktop-part-2"></a>**Power BI Desktop で DAX 計算を作成する (パート 2)**
 
 **このラボの推定所要時間: 45 分**
@@ -23,7 +19,7 @@ ms.locfileid: "139273336"
 
 ### <a name="lab-story"></a>**ラボのストーリー**
 
-このラボは、データの準備に始まり、レポートおよびダッシュボードとして発行するまでの完全なストーリーとして設計されたラボ シリーズの 1 つです。 ラボは任意の順序で完了できます。 しかしながら、複数のラボに取り組む場合は、最初の 10 のラボについては、次の順序で行うことをお勧めします。
+This lab is one of many in a series of labs that was designed as a complete story from data preparation to publication as reports and dashboards. You can complete the labs in any order. However, if you intend to work through multiple labs, for the first 10 labs, we suggest you do them in the following order:
 
 1. Power BI Desktop でのデータの準備
 
@@ -31,7 +27,7 @@ ms.locfileid: "139273336"
 
 3. Power BI Desktop でデータをモデル化する
 
-5. Power BI Desktop での DAX 計算の作成、パート 1
+5. Power BI Desktop で DAX 計算を作成する (パート 1)
 
 6. **Power BI Desktop で DAX 計算を作成する (パート 2)**
 
@@ -53,23 +49,23 @@ ms.locfileid: "139273336"
 
 このタスクではこのラボ用の環境を設定します。
 
-*重要:前のラボから続行している場合 (かつそのラボを正常に完了した場合) は、このタスクを実行しないで、次のタスクから続けてください。"*
+*重要:前のラボから継続している (および、そのラボを正常に完了した) 場合は、このタスクを完了させず、次のタスクから続行してください。*
 
 1. Power BI Desktop を開くには、タスク バーにある Microsoft Power BI Desktop のショートカットをクリックします。
 
     ![画像 12](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image1.png)
 
-1. 「はじめに」ウィンドウを閉じるには、ウィンドウの左上にある「**X**」をクリックします。
+1. [はじめに] ウィンドウを閉じるには、ウィンドウの左上にある **[X]** をクリックします。
 
     ![画像 11](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image2.png)
 
-1. スターター Power BI Desktop ファイルを開くには、「**ファイル**」リボン タブをクリックして、バックステージ ビューを開きます。
+1. スターター Power BI Desktop ファイルを開くには、**[ファイル]** リボン タブをクリックして、バックステージ ビューを開きます。
 
 1. **[レポートを開く]** を選択します。
 
     ![画像 10](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image3.png)
 
-1. 「**レポートを参照**」をクリックします。
+1. **[レポートを参照]** をクリックします。
 
     ![画像 9](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image4.png)
 
@@ -83,13 +79,13 @@ ms.locfileid: "139273336"
 
 1. 情報ウィンドウが開いている場合はすべて閉じます。
 
-1. ファイルのコピーを作成するには、「**ファイル**」リボン タブをクリックして、バックステージ ビューを開きます。
+1. ファイルのコピーを作成するには、**[ファイル]** リボン タブをクリックして、バックステージ ビューを開きます。
 
 1. **[名前を付けて保存]** を選択します。
 
     ![画像 7](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image6.png)
 
-1. 変更を適用するかどうかを確認するメッセージが表示されたら、「**適用**」をクリックします。
+1. 変更を適用するかどうかを確認するメッセージが表示されたら、**[適用]** をクリックします。
 
     ![画像 6](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image7.png)
 
@@ -123,7 +119,7 @@ ms.locfileid: "139273336"
 
     ![画像 47](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image11.png)
 
-    "**Regions** 階層には、**Group**、**Country**、**Region** のレベルがあることを思い出してください。"
+    "**Regions** 階層には、**Group**、**Country**、**Region**のレベルがあることを思い出してください。"**
 
 7. 視覚エフェクトを書式設定するには、**[視覚化]** ペインの下にある **[書式]** ペインを選択します。
 
@@ -151,7 +147,7 @@ ms.locfileid: "139273336"
 
 1. 次の式に基づいて、**Sales** テーブルにメジャーを追加します。
 
-    "利便性のために、このラボのすべての DAX 定義は、**D:\PL300\Labs\06-create-dax-calculations-in-power-bi-desktop-advanced\Assets\Snippets.txt** ファイルからコピーできます。"
+    "利便性のために、このラボのすべての DAX 定義は、**D:\PL300\Labs\06-create-dax-calculations-in-power-bi-desktop-advanced\Assets\Snippets.txt** ファイルからコピーできます。"**
 
 
     **DAX**
@@ -168,9 +164,9 @@ ms.locfileid: "139273336"
 
     "REMOVEFILTERS() 関数では、アクティブなフィルターが削除されます。*引数を指定しないことも、テーブル、列、または複数の列を引数として指定することもできます。"*
 
-    "この数式では、メジャーは、変更されたフィルター コンテキストの **Sales** 列の合計を評価します。これにより、**Region** テーブルの列に適用されているフィルターがすべて削除されます。
+    "この数式では、メジャーは、変更されたフィルター コンテキストの **Sales** 列の合計を評価します。これにより、**Region** テーブルの列に適用されているフィルターがすべて削除されます。**
 
-2. 「**Sales All Region**」メジャーをマトリックス ビジュアルに追加します。
+2. **Sales All Region** メジャーをマトリックス ビジュアルに追加します。
 
     ![画像 52](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image16.png)
 
@@ -178,7 +174,7 @@ ms.locfileid: "139273336"
 
     "新しいメジャーはまだ有用な結果を提供していません。 *"グループ、国、または地域の販売をこの値で割ると、"総計の割合" と呼ばれる有用な比率が生成されます。"*
 
-4. 「**フィールド**」ウィンドウで、「**Sales All Region**」メジャーが選択されていることを確認し (選択すると、背景は濃い灰色になります)、数式バーでメジャー名と数式を次の数式に置き換えます。
+4. **[フィールド]** ウィンドウで、**Sales All Region** メジャーが選択されていることを確実にし (選択すると、背景は濃い灰色になります)、数式バーでメジャー名と数式を次の数式に置き換えます。
 
     *ヒント:既存の数式を置き換えるには、まずスニペットをコピーします。次に、数式バー内をクリックし、**Ctrl + A** キーを押してすべてのテキストを選択します。次に、**Ctrl + V** キーを押してスニペットを貼り付け、選択したテキストを上書きします。次に、**Enter** キーを押します。*
 
@@ -332,7 +328,7 @@ ms.locfileid: "139273336"
 
 このタスクでは、売上の YTD メジャーを作成します。
 
-1. レポート ビューの「**ページ 2**」で、行にグループ化された年と月を含むさまざまなメジャーを表示するマトリックス ビジュアルに注目します。
+1. レポート ビューの **[ページ 2]** で、行にグループ化された年と月を含むさまざまなメジャーを表示するマトリックス ビジュアルに注目します。
 
 2. 次の式に基づいて、**Sales** テーブルにメジャーを追加します。小数点以下 0 桁に書式設定します。
 
@@ -346,7 +342,7 @@ ms.locfileid: "139273336"
     ```
 
 
-    "TOTALYTD() 関数では、指定した日付列に対して式 (この場合は **Sales** 列の合計) が評価されます。*「**Power BI Desktop で DAX 計算を作成する (パート 1)** 」ラボでそうだったように、日付列は、日付テーブルとしてマークされている日付テーブルに属している必要があります。"*
+    "TOTALYTD() 関数を使用すると、指定した日付列に対して式 (この場合は **Sales** 列の合計) が評価されます。**[Power BI Desktop で DAX 計算を作成する (パート 1)]** ラボでそうだったように、日付列は、日付テーブルとしてマークされている日付テーブルに属している必要があります。"**
 
     "この関数には、年度の最後の日付を表す、省略可能な 3 番目の引数を指定することもできます。*この日付を指定しない場合は、12 月 31 日が年度の最後の日付になります。Adventure Works では、6 月が年度の最後の月なので、"6-30" が使用されます。"*
 
@@ -358,7 +354,7 @@ ms.locfileid: "139273336"
 
     "TOTALYTD() 関数によって、フィルター操作 (具体的には、時間フィルター操作) が実行されます。*たとえば、2017 年 9 月 (会計年度の 3 番目の月) の YTD 売上を計算する場合は、**Date** テーブルのすべてのフィルターが削除され、年度の開始日 (2017 年 7 月 1 日) に始まりコンテキスト内の日付期間の最後の日付 (2017 年 9 月 30 日) まで続く日付の新しいフィルターに置き換えられます。"*
 
-    "一般的な時間フィルター操作をサポートするために、DAX では多くのタイム インテリジェンス関数が利用できることに注意してください。"
+    "一般的な時間フィルター操作をサポートするために、DAX では多くのタイム インテリジェンス関数が利用できることに注意してください。"**
 
 ### <a name="task-2-create-a-yoy-growth-measure"></a>**タスク 2:YoY 成長メジャーを作成する**
 
@@ -388,13 +384,13 @@ ms.locfileid: "139273336"
 
     "**Sales YoY Growth** メジャーの数式では、変数が宣言されます。*変数を使用すると、数式のロジックを簡略化できる場合があります。また、数式内で式を複数回評価する必要がある場合に効率性が向上します (YoY 成長のロジックではこれが該当します)。変数は一意の名前で宣言されます。その後、メジャー式を **RETURN** キーワードの後の出力にする必要があります。"*
 
-    "**SalesPriorYear** 変数には、変更されたコンテキストで **Sales** 列の合計を計算する式が代入されます。そこでは、PARALLELPERIOD() 関数を使用して、フィルター コンテキストの各日付が 12 か月前にシフトされます。"
+    "**SalesPriorYear** 変数には、変更されたコンテキストで **Sales** 列の合計を計算する式が代入されます。そこでは、PARALLELPERIOD() 関数を使用して、フィルター コンテキストの各日付が 12 か月前にシフトされます。"**
 
 2. 行列の視覚エフェクトに **Sales YoY Growth** メジャーを追加します。
 
 3. 新しいメジャーは、最初の 12 か月間は空白を返します (会計年度の 2017 年以前には売上が記録されていないため)。
 
-4. **2018 年 7 月** の「**Sales YoY Growth**」メジャー値が **2017 年 7 月** の「**Sales**」値であることに注意してください。
+4. **2018 年 7 月**の **Sales YoY Growth** メジャー値が **2017 年 7 月**の **Sales** 値であることに注意してください。
 
     ![画像 61](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image22.png)
 
@@ -427,11 +423,11 @@ ms.locfileid: "139273336"
 
 6. この数式の **RETURN** 句では、変数が 2 回参照されていることがわかります。
 
-7. **2018 年 7 月** の YoY 成長が **392.83%** であることを確認します。
+7. **2018 年 7 月**の YoY 成長が **392.83%** であることを確認します。
 
     ![画像 62](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image23.png)
 
-    "つまり、2018 年 7 月の売上高 (2,411,559 ドル) は、前年同期の売上高 (489,328 ドル) から 400% 近く (ほぼ 4 倍) 改善したことになります。"
+    "つまり、2018 年 7 月の売上高 (2,411,559 ドル) は、前年同期の売上高 (489,328 ドル) から 400% 近く (ほぼ 4 倍) 改善したことになります。"**
 
 8. モデル ビューで、2 つの新しいメジャーを **Time Intelligence** という名前の表示フォルダーに配置します。
 
@@ -441,7 +437,7 @@ ms.locfileid: "139273336"
 
 このタスクでは、ラボを完了します。
 
-1. レポート作成用にソリューションをクリーン アップするには、左下の「**ページ 2**」タブを右クリックし、ページの「**削除**」を選択します。
+1. レポート作成用にソリューションをクリーン アップするには、左下の「**ページ 2**」タブを右クリックし、「**ページの削除**」を選択します。
 
     ![画像 17](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image25.png)
 
@@ -457,4 +453,4 @@ ms.locfileid: "139273336"
 
 6. 次のラボを開始する場合は、Power BI Desktop を開いたままにしておきます。
 
-    "「**Power BI Desktop でレポートを設計する (パート 1)** 」ラボでは、データ モデルに基づいてレポートを作成します。
+    "**[Power BI Desktop でレポートを設計する (パート 1)]** ラボでは、データ モデルに基づいてレポートを作成します。"**

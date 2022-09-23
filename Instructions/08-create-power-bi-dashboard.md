@@ -2,13 +2,9 @@
 lab:
   title: Power BI ダッシュボードを作成する
   module: Module 8 - Create Dashboards
-ms.openlocfilehash: 777dc5fb86f71c926a347c736896834fdf2baed2
-ms.sourcegitcommit: 3520e7d016e94549d408464207c1b91cd47867c2
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2022
-ms.locfileid: "139273811"
 ---
+
+
 # <a name="create-a-power-bi-dashboard"></a>**Power BI ダッシュボードを作成する**
 
 **このラボの推定所要時間: 45 分**
@@ -17,13 +13,13 @@ ms.locfileid: "139273811"
 
 このラボでは、次の作業を行う方法について説明します。
 
-- ダッシュボードに視覚化をピン留めする
+- ダッシュボードに視覚化をピン留め
 
 - Q&A を使用してダッシュボード タイルを作成する
 
 ### <a name="lab-story"></a>**ラボのストーリー**
 
-このラボは、データの準備に始まり、レポートおよびダッシュボードとして発行するまでの完全なストーリーとして設計されたラボ シリーズの 1 つです。 ラボは任意の順序で完了できます。 しかしながら、複数のラボに取り組む場合は、最初の 10 のラボについては、次の順序で行うことをお勧めします。
+This lab is one of many in a series of labs that was designed as a complete story from data preparation to publication as reports and dashboards. You can complete the labs in any order. However, if you intend to work through multiple labs, for the first 10 labs, we suggest you do them in the following order:
 
 1. Power BI Desktop でのデータの準備
 
@@ -31,7 +27,7 @@ ms.locfileid: "139273811"
 
 3. Power BI Desktop でデータをモデル化する
 
-5. Power BI Desktop での DAX 計算の作成、パート 1
+5. Power BI Desktop で DAX 計算を作成する (パート 1)
 
 6. Power BI Desktop で DAX 計算を作成する (パート 2)
 
@@ -47,7 +43,7 @@ ms.locfileid: "139273811"
 
 ## <a name="exercise-1-create-a-dashboard"></a>**演習 1: ダッシュボードを作成する**
 
-この演習では、**売上モニタリング** ダッシュボードを作成します。 完成したダッシュボードは次のようになります。
+In this exercise you will create the <bpt id="p1">**</bpt>Sales Monitoring<ept id="p1">**</ept> dashboard. The completed dashboard will look like the following:
 
 ![3 つのタイルで構成されている、完成したダッシュボードのイメージ。](Linked_image_Files/09-create-power-bi-dashboard_image1.png)
 
@@ -65,7 +61,7 @@ ms.locfileid: "139273811"
 
     *ヒント:Microsoft Edge のお気に入りバーで、Power BI サービスのお気に入りを使用することもできます。"*
 
-3. 「**サインイン**」 (右上隅) をクリックします。
+3. **[サインイン]** (右上隅) をクリックします。
 
     ![画像 41](Linked_image_Files/09-create-power-bi-dashboard_image3.png)
 
@@ -77,7 +73,7 @@ ms.locfileid: "139273811"
 
 6. サインイン プロセスを完了します。
 
-7. Microsoft Edge からサインインを維持するかどうかを確認するメッセージが表示されたら、「**はい**」をクリックします。
+7. Microsoft Edge からサインインを維持するかどうかを確認するメッセージが表示されたら、**[はい]** をクリックします。
 
 8. Microsoft Edge ブラウザー ウィンドウの Power BI サービスの **[ナビゲーション]** ペインで、**[マイ ワークスペース]** を展開します。
 
@@ -95,23 +91,23 @@ ms.locfileid: "139273811"
 
     ![画像 39](Linked_image_Files/09-create-power-bi-dashboard_image5.png)
 
-2. 「はじめに」ウィンドウを閉じるには、ウィンドウの左上にある「**X**」をクリックします。
+2. [はじめに] ウィンドウを閉じるには、ウィンドウの左上にある **[X]** をクリックします。
 
     ![画像 38](Linked_image_Files/09-create-power-bi-dashboard_image6.png)
 
-3. Power BI Desktop が Power BI サービスにサインインしていない場合は、右上の「**サインイン**」をクリックします。
+3. Power BI Desktop が Power BI サービスにサインインしていない場合は、右上の **[サインイン]** をクリックします。
 
     ![画像 37](Linked_image_Files/09-create-power-bi-dashboard_image7.png)
 
 4. Power BI サービスへのサインインに使用したのと同じアカウントを使用して、サインイン プロセスを完了します。
 
-5. スターター Power BI Desktop ファイルを開くには、「**ファイル**」リボン タブをクリックして、バックステージ ビューを開きます。
+5. スターター Power BI Desktop ファイルを開くには、**[ファイル]** リボン タブをクリックして、バックステージ ビューを開きます。
 
 6. **[レポートを開く]** を選択します。
 
     ![画像 36](Linked_image_Files/09-create-power-bi-dashboard_image8.png)
 
-7. 「**レポートを参照**」をクリックします。
+7. **[レポートを参照]** をクリックします。
 
     ![画像 34](Linked_image_Files/09-create-power-bi-dashboard_image9.png)
 
@@ -125,13 +121,13 @@ ms.locfileid: "139273811"
 
 11. 情報ウィンドウが開いている場合はすべて閉じます。
 
-12. ファイルのコピーを作成するには、「**ファイル**」リボン タブをクリックして、バックステージ ビューを開きます。
+12. ファイルのコピーを作成するには、**[ファイル]** リボン タブをクリックして、バックステージ ビューを開きます。
 
 13. **[名前を付けて保存]** を選択します。
 
     ![画像 29](Linked_image_Files/09-create-power-bi-dashboard_image11.png)
 
-14. 変更を適用するかどうかを確認するメッセージが表示されたら、「**適用**」をクリックします。
+14. 変更を適用するかどうかを確認するメッセージが表示されたら、**[適用]** をクリックします。
 
     ![画像 10](Linked_image_Files/09-create-power-bi-dashboard_image12.png)
 
@@ -145,17 +141,17 @@ ms.locfileid: "139273811"
 
 このタスクでは、データセットを作成してこのラボ用の環境を設定します。
 
-*重要:「**Power BI Desktop でレポートを設計する (パート 2)** 」のラボでレポートを既に発行している場合は、次のタスクから続行してください。"*
+*重要: 「**Power BI Desktop でレポートを設計する (パート 2)**」のラボでレポートを既に発行している場合は、次のタスクから続行してください。*
 
-1. Microsoft Edge ブラウザー ウィンドウの Power BI サービスの「**ナビゲーション**」ウィンドウで、「**マイ ワークスペース**」を展開します。
+1. Microsoft Edge ブラウザー ウィンドウの Power BI サービスの **[ナビゲーション]** ウィンドウで、**[マイ ワークスペース]** を展開します。
 
     ![画像 8](Linked_image_Files/09-create-power-bi-dashboard_image14.png)
 
-2. 「**ファイル**」タイルで、「**取得**」をクリックします。
+2. **[ファイル]** タイルで、**[取得]** をクリックします。
 
     ![画像 2](Linked_image_Files/09-create-power-bi-dashboard_image15.png)
 
-3. 「**ローカル ファイル**」タイルをクリックします。
+3. **[ローカル ファイル]** タイルをクリックします。
 
     ![画像 5](Linked_image_Files/09-create-power-bi-dashboard_image16.png)
 
@@ -167,7 +163,7 @@ ms.locfileid: "139273811"
 
 ### <a name="task-4-create-a-dashboard"></a>**タスク 4: ダッシュボードを作成する**
 
-このタスクでは、**売上モニタリング** ダッシュボードを作成します。 レポートからビジュアルをピン留めし、画像データの URI に基づいてタイルを追加し、Q&A を使用してタイルを作成します。
+In this task you will create the <bpt id="p1">**</bpt>Sales Monitoring<ept id="p1">**</ept> dashboard. You will pin a visual from the report, and add a tile based on an image data URI, and use Q&amp;A to create a tile.
 
 1. Microsoft Edge ブラウザー ウィンドウで、Power BI サービス内の **[販売分析]** レポートを開きます。
 
@@ -177,7 +173,7 @@ ms.locfileid: "139273811"
 
 3. **[リージョン]** スライサーを **[すべて選択]** に設定します。
 
-    *視覚化をダッシュボードにピン留めすると、現在のフィルター コンテキストが使用されます。ピン留めした後は、フィルター コンテキストを変更できません。時間ベースのフィルターの場合、相対日付スライサー (または、相対時間ベースの質問を使用した Q&A) を使用することをお勧めします。"*
+    *視覚化をダッシュボードにピン留めと、現在のフィルター コンテキストが使用されます。ピン留めした後は、フィルター コンテキストを変更できません。時間ベースのフィルターの場合、相対日付スライサー (または、相対時間ベースの質問を使用した Q&A) を使用することをお勧めします。"*
 
 4. ダッシュボードを作成して視覚化をピン留めするには、**[Sales and Profit Margin by Month]\(月別の売上と利益率\)** (列/行) 視覚化にカーソルを合わせます。
 
@@ -185,11 +181,11 @@ ms.locfileid: "139273811"
 
     ![画像 43](Linked_image_Files/09-create-power-bi-dashboard_image18.png)
 
-6. **[ダッシュボードにピン留めする]** ウィンドウで、**[ダッシュボード名]** ボックスに「**Sales Monitoring**」(売上モニタリング) と入力します。
+6. **[ダッシュボードにピン留め]** ウィンドウの **[ダッシュボード名]** ボックスに、「**売上モニタリング**」と入力します。
 
     ![図 3](Linked_image_Files/09-create-power-bi-dashboard_image19.png)
 
-7. **[ピン留めする]** をクリックします。
+7. **[ピン留め]** をクリックします。
 
     ![画像 1](Linked_image_Files/09-create-power-bi-dashboard_image20.png)
 
@@ -205,7 +201,7 @@ ms.locfileid: "139273811"
 
     ![画像 7](Linked_image_Files/09-create-power-bi-dashboard_image23.png)
 
-    "Q&A 機能を使用して質問することができ、Power BI はビジュアルを使用して応答します。"
+    "Q&A 機能を使用して質問することができ、Power BI はビジュアルを使用して応答します。"**
 
 11. 青色のボックスの Q&A ボックスの下にある、おすすめの質問のいずれかをクリックします。
 
@@ -221,7 +217,7 @@ ms.locfileid: "139273811"
 
     ![画像 14](Linked_image_Files/09-create-power-bi-dashboard_image25.png)
 
-    "「**Power BI Desktop で DAX 計算を作成する (パート 2)** 」のラボで **[Sales YTD]** メジャーを追加したことが思い出されるかもしれません。"*このメジャーはタイム インテリジェンス式であり、結果を生成するには **Date** テーブルにフィルターを適用する必要があります。"*
+    *「**Power BI Desktop で DAX 計算を作成する (パート 2)**」のラボで **[売上 YTD]** メジャーを追加したことが思い出されるかもしれません。このメジャーはタイム インテリジェンス式であり、結果を生成するには **[Date]** テーブルにフィルターを適用する必要があります。*
 
 16. 質問を **in year FY2020** (FY2020 年度の) で拡張します。
 
@@ -231,11 +227,11 @@ ms.locfileid: "139273811"
 
     ![画像 13](Linked_image_Files/09-create-power-bi-dashboard_image27.png)
 
-18. 応答をダッシュボードにピン留めするには、右上隅にある **[ビジュアルをピン留めする]** をクリックします。
+18. 応答をダッシュボードにピン留めには、右上隅にある **[ビジュアルをピン留め]** をクリックします。
 
     ![画像 15](Linked_image_Files/09-create-power-bi-dashboard_image28.png)
 
-19. ダッシュボードにタイルをピン留めするように求めるメッセージが表示されたら、**[ピン留めする]** をクリックします。
+19. ダッシュボードにタイルをピン留めように求めるメッセージが表示されたら、**[ピン留め]** をクリックします。
 
     ![画像 17](Linked_image_Files/09-create-power-bi-dashboard_image29.png)
 
@@ -243,13 +239,13 @@ ms.locfileid: "139273811"
 
     ![画像 16](Linked_image_Files/09-create-power-bi-dashboard_image30.png)
 
-21. 会社のロゴを追加するには、メニュー バーの「**編集**」をクリックし、「**タイルの追加**」をクリックします。
+21. 会社のロゴを追加するには、メニュー バーの **[編集]** をクリックし、**[タイルの追加]** をクリックします。
 
     ![画像 46](Linked_image_Files/09-create-power-bi-dashboard_image31.png)
 
     *この手法を使用してダッシュボード タイルを追加すると、Web コンテンツ、画像、リッチな書式設定のテキスト ボックス、ビデオ (YouTube または Vimeo リンクを使用) などのメディアを使用してダッシュボードを装飾できます。*
 
-22. 右側にある「**タイルの追加**」ウィンドウで「**画像**」タイルを選択します。
+22. 右側にある **[タイルの追加]** ウィンドウで **[画像]** タイルを選択します。
 
     ![画像 47](Linked_image_Files/09-create-power-bi-dashboard_image32.png)
 
@@ -281,7 +277,7 @@ ms.locfileid: "139273811"
 
     ![画像 50](Linked_image_Files/09-create-power-bi-dashboard_image36.png)
 
-2. (右側にある) **[タイルの詳細]** ペインで、**[サブタイトル]** ボックスに「**FY2020**」と入力します。
+2. **[タイルの詳細]** ウィンドウ (右側) の **[サブタイトル]** ボックスに「**FY2020**」と入力します。
 
     ![画像 19](Linked_image_Files/09-create-power-bi-dashboard_image37.png)
 
@@ -311,7 +307,7 @@ ms.locfileid: "139273811"
 
 ## <a name="exercise-2-refresh-the-dataset"></a>**演習 2:データセットを最新の情報に更新する**
 
-この演習では、最初に 2020 年 6 月の受注データを **AdventureWorksDW2020** データベースに読み込みます。 次に、Power BI Desktop ファイルを開き、データ更新を実行し、ワークスペースにファイルをアップロードします。
+In this exercise you will first load sales order data for June 2020 into the <bpt id="p1">**</bpt>AdventureWorksDW2020<ept id="p1">**</ept> database. You will then open your Power BI Desktop file, perform a data refresh, and then upload the file to your workspace.
 
 ### <a name="task-1-update-the-lab-database"></a>**タスク 1: ラボ データベースを更新する**
 
@@ -325,13 +321,13 @@ ms.locfileid: "139273811"
 
 3. キーを押して閉じるように求められたら、**Enter** をもう一度押します。
 
-    "**AdventureWorksDW2020** データベースに、2020 年 6 月に行われた販売注文が含まれるようになりました。"
+    "**AdventureWorksDW2020** データベースに、2020 年 6 月に行われた販売注文が含まれるようになりました。"**
 
 ### <a name="task-2-refresh-the-power-bi-desktop-file"></a>**タスク 2: Power BI Desktop ファイルを最新の情報に更新する**
 
-このタスクでは、**Sales Analysis** Power BI Desktop ファイルを開き、データの更新を実行し、そのファイルを「**販売分析**」ワークスペースにアップロードします。
+このタスクでは、**Sales Analysis** Power BI Desktop ファイルを開き、データの更新を実行して、そのファイルを **[販売分析]** ワークスペースにアップロードします。
 
-1. メジャーを作成するには、「**フィールド**」ウィンドウで「**Sales**」テーブルを右クリックし、「**データの更新**」を選択します。
+1. Power BI Desktop ファイルの **[フィールド]** ペインで、**[売上]** テーブルを右クリックして **[データの更新]** を選択します。
 
     ![画像 55](Linked_image_Files/09-create-power-bi-dashboard_image47.png)
 
@@ -359,11 +355,11 @@ ms.locfileid: "139273811"
 
 1. Microsoft Edge ブラウザー ウィンドウで、Power BI サービスの **[Sales Monitoring]\(売上モニタリング\)** ダッシュボードを確認します。
 
-2. **[Sales, Profit Margin](売上、利益率)** タイルのサブタイトルで、データが **今** 更新されたことに注目します。
+2. **[Sales, Profit Margin](売上、利益率)** タイルのサブタイトルで、データが**今**更新されたことに注目します。
 
-3. **2020 年 6 月** の列があることにも注目してください。
+3. **2020 年 6 月**の列があることにも注目してください。
 
-    "2020 年 6 月のデータがない場合は、**F5** キーを押して Web ブラウザーをもう一度読み込む必要があります。"
+    "2020 年 6 月のデータがない場合は、**F5** キーを押して Web ブラウザーをもう一度読み込む必要があります。"**
 
     ![画像 33](Linked_image_Files/09-create-power-bi-dashboard_image50.png)
 
