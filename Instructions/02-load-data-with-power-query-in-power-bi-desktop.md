@@ -1,19 +1,14 @@
 ---
 lab:
   title: Power BI Desktop にデータを読み込む
-  module: Module 3 - Clean, Transform, and Load Data in Power BI
-ms.openlocfilehash: aced37b7bfdd2ccf94a9d3e7bdb8f8ff7013c125
-ms.sourcegitcommit: 9ea1e7e21b9b3c718030c94b1693d153a2010ec7
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "146650227"
+  module: 'Module 3 - Clean, Transform, and Load Data in Power BI'
 ---
+
 # <a name="load-data-in-power-bi-desktop"></a>**Power BI Desktop でデータを読み込む**
 
 **このラボの推定所要時間: 45 分**
 
-このラボでは、前のラボで作成した各クエリに変換を適用します。 その後、クエリを適用し、それぞれテーブルとしてデータ モデルに読み込みます。
+In this lab you will commence apply transformations to each of the queries created in the previous lab. You will then apply the queries to load each as a table to the data model.
 
 このラボでは、次の作業を行う方法について説明します。
 
@@ -23,7 +18,7 @@ ms.locfileid: "146650227"
 
 ### <a name="lab-story"></a>**ラボのストーリー**
 
-このラボは、データの準備に始まり、レポートおよびダッシュボードとして発行するまでの完全なストーリーとして設計されたラボ シリーズの 1 つです。 ラボは任意の順序で完了できます。 ただし、複数のラボに取り組む場合は、次の順序で行うことをお勧めします。
+This lab is one of many in a series of labs that was designed as a complete story from data preparation to publication as reports and dashboards. You can complete the labs in any order. However, if you intend to work through multiple labs, for the first 10 labs, we suggest you do them in the following order:
 
 1. Power BI Desktop でのデータの準備
 
@@ -32,7 +27,7 @@ ms.locfileid: "146650227"
 3. Power BI Desktop でデータをモデル化する
 
 
-5. Power BI Desktop での DAX 計算の作成、パート 1
+5. Power BI Desktop で DAX 計算を作成する (パート 1)
 
 6. Power BI Desktop で DAX 計算を作成する (パート 2)
 
@@ -60,7 +55,7 @@ ms.locfileid: "146650227"
 
     ![画像 8](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image1.png)
 
-1. 作業の開始ウィンドウを閉じるには、ウィンドウの左上にある **[X]** をクリックします。
+1. [はじめに] ウィンドウを閉じるには、ウィンドウの左上にある **[X]** をクリックします。
 
     ![画像 7](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image2.png)
 
@@ -128,9 +123,9 @@ ms.locfileid: "146650227"
 
     ![画像 87](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image12.png)
 
-    "次に、クエリ行をフィルター処理し、営業担当者である従業員のみを取得します。"
+    "次に、クエリ行をフィルター処理し、営業担当者である従業員のみを取得します。"**
 
-4. 特定の列を見つけるには、 **[ホーム]** リボン タブの **[列の管理]** の下矢印をクリックし、 **[列の選択]** の下矢印をクリックして、 **[列に移動]** を選択します。
+4. 特定の列を見つけるには、**[ホーム]** リボン タブの **[列の管理]** グループ内から、**[列の選択]** の下矢印をクリックし、**[列に移動]** を選択します。
 
     ![画像 88](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image13.png)
 
@@ -156,7 +151,7 @@ ms.locfileid: "146650227"
 
     "作成した変換ごとに、追加のステップ ロジックが生成されます。*ステップを編集または削除することができます。クエリ変換のその段階でクエリ結果をプレビューするステップを選択することもできます。"*
 
-10. 列の削除するには、 **[ホーム]** リボン タブの **[列の管理]** グループをクリックし、 **[列の選択]** アイコンをクリックします。
+10. 列を削除するには、「**ホーム**」リボン タブの「**列の管理**」グループ内から「**列の選択**」アイコンをクリックします。
 
     ![画像 99](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image18.png)
 
@@ -216,7 +211,7 @@ ms.locfileid: "146650227"
 
 23. 前の手順を使用して、**EmailAddress** 列の名前を **UPN** に変更します。
 
-    *UPN は、User Principal Name の頭字語です。*
+    "UPN は、User Principal Name の頭字語です。*この列の値は、「**Power BI Desktop でデータをモデル化する (パート 2)** 」ラボで行レベルのセキュリティを構成するときに使用されます。"*
 
 24. 左下のステータス バーで、クエリに 5 列と 18 行が含まれているかどうかを確認します。
 
@@ -256,7 +251,7 @@ ms.locfileid: "146650227"
 
     ![画像 5643](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image30.png)
 
-2. クエリの名前を **"Product"** に変更します。
+2. クエリの名前を「**Product**」に変更します。
 
 3. **FinishedGoodsFlag** 列を見つけ、列をフィルタリングして、完成品 (つまり、TRUE) である製品を取得します。
 
@@ -280,7 +275,7 @@ ms.locfileid: "146650227"
 
 7. すべての列をオフにするには、**[(すべての列の選択)]** 項目をオフにします。
 
-8. **EnglishProductSubcategoryName** および **DimProductCategory** 列を確認します。
+8. **EnglishProductSubcategoryName** および ** DimProductCategory** 列を確認します。
 
     ![画像 5646](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image32.png)
 
@@ -322,7 +317,7 @@ ms.locfileid: "146650227"
 
     ![画像 5653](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image36.png)
 
-2. クエリの名前を **"Reseller"** に変更します。
+2. クエリの名前を「**Reseller**」に変更します。
 
 3. 以下を除くすべての列を削除します。
 
@@ -349,8 +344,9 @@ ms.locfileid: "146650227"
     ![画像 2](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image38.png)
 
   
+‎ 
 
-6. **[Business Type]** 列ヘッダーを右クリックして、**[値の置換]** を選択します。
+6. **Business Type** 列ヘッダーを右クリックして、「**値の置換**」を選択します。
 
     ![画像 4](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image39.png)
 
@@ -370,7 +366,7 @@ ms.locfileid: "146650227"
 
     - **BusinessType** から **Business Type** に変更 (スペースを追加)
 
-    - **ResellerName** を **Reseller** に変更
+    - **ResellerName** を **Reseller** に
 
     - **StateProvinceName** を **State-Province** に
 
@@ -388,7 +384,7 @@ ms.locfileid: "146650227"
 
     ![画像 5659](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image43.png)
 
-2. クエリの名前を **"Region"** に変更します。
+2. クエリの名前を「**Region**」に変更します。
 
 3. **SalesTerritoryAlternateKey** 列にフィルターを適用して、値 0 (ゼロ) を削除します。
 
@@ -424,7 +420,7 @@ ms.locfileid: "146650227"
 
     ![画像 5663](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image46.png)
 
-2. クエリの名前を **"Sales"** に変更します。
+2. クエリの名前を「**Sales**」に変更します。
 
 3. 以下を除くすべての列を削除します。
 
@@ -450,7 +446,7 @@ ms.locfileid: "146650227"
 
     - DimProduct
 
-    "「**Power BI Desktop でのデータの準備**」ラボで、**FactResellerSales** 行のごく一部で **TotalProductCost** 値が不足していたことを思い出してください。**DimProduct** 列は、不足している値の修正を支援するために、製品の標準原価列を取得するために含まれています。"
+    "「**Power BI Desktop でのデータの準備**」ラボで、**FactResellerSales** 行のごく一部で **TotalProductCost** 値が不足していたことを思い出してください。**DimProduct** 列は、不足している値の修正を支援するために、製品の標準原価列を取得するために含まれています。"**
 
 4. **DimProduct** 列を展開し、すべての列のチェックを外してから **StandardCost** 列のみを含めます。
 
@@ -525,7 +521,7 @@ ms.locfileid: "146650227"
 
     ![画像 5672](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image53.png)
 
-2. クエリの名前を **"Targets"** に変更します。
+2. クエリの名前を「**Targets**」に変更します。
 
 3. 12 か月の列 (**M01**-**M12**) のピボットを解除するには、まず **Year** および **EmployeeID** の列ヘッダーを複数選択します。
 
@@ -571,11 +567,11 @@ ms.locfileid: "146650227"
 
 14. **[Column1]** 列の最初のグリッド セルに、「**7/1/2017**」と入力してから、**Enter** キーを押します。
 
-    "この仮想マシンでは米国の地域設定を使用しているため、この日付は実際には "July 1, 2017" になります。"
+    "この仮想マシンでは米国の地域設定を使用しているため、この日付は実際には "July 1, 2017" になります。"**
 
 15. グリッド セルは予測値を使用して更新されることに注目してください。
 
-    "この機能では、**Year** と **MonthNumber** 列の値を組み合わせることを正確に予測しています。"
+    "この機能では、**Year** と **MonthNumber** 列の値を組み合わせることを正確に予測しています。"**
 
 16. クエリ グリッドの上に表示される数式にも注目してください。
 
@@ -647,11 +643,11 @@ ms.locfileid: "146650227"
 
     ![画像 5690](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image70.png)
 
-2. **ColorFormats** クエリをマージするには、 **[ホーム]** リボン タブの **[結合]** の下矢印をクリックして、 **[クエリのマージ]** をクリックします。
+2. **ColorFormats** クエリをマージするには、「**ホーム**」リボン タブの「**結合**」グループ内から、「**クエリのマージ**」をクリックします。
 
     ![画像 5654](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image71.png)
 
-    "クエリをマージすることで、異なるデータ ソース (SQL Server と CSV ファイル) のデータを統合できます。"
+    "クエリをマージすることで、異なるデータ ソース (SQL Server と CSV ファイル) のデータを統合できます。"**
 
 3. **[マージ]** ウィンドウの **Product** クエリ グリッドで、**[Color]** 列ヘッダーを選択します。
 
@@ -705,7 +701,7 @@ ms.locfileid: "146650227"
 
     ![画像 323](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image81.png)
 
-    読み込みを無効にすると、データ モデルにテーブルとして読み込まれません。 このようにするのは、クエリが、データ モデルに読み込み可能な **Product** クエリとマージされているためです。
+    Disabling the load means it will not load as a table to the data model. This is done because the query was merged with the <bpt id="p1">**</bpt>Product<ept id="p1">**</ept> query, which is enabled to load to the data model.
 
 4. **[OK]** をクリックします。
 
@@ -747,4 +743,4 @@ ms.locfileid: "146650227"
 
 5. 次のラボを開始する場合は、Power BI Desktop を開いたままにしておきます。
 
-    "データ モデルのテーブルとリレーションシップは、「**Power BI Desktop でデータをモデル化する**」ラボの中で構成します。"
+    "データ モデルのテーブルとリレーションシップは、「**Power BI Desktop でデータをモデル化する (パート 1)** 」ラボで構成します。"**

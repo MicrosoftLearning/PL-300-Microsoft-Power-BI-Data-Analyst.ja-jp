@@ -2,18 +2,13 @@
 lab:
   title: Power BI Desktop でのデータの準備
   module: Module 2 - Get Data in Power BI
-ms.openlocfilehash: 56cc5b93dfb545367ae8f5fe3996a9318203f151
-ms.sourcegitcommit: 9ea1e7e21b9b3c718030c94b1693d153a2010ec7
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "147015349"
 ---
+
 # <a name="prepare-data-in-power-bi-desktop"></a>**Power BI Desktop でのデータの準備**
 
 **このラボの推定所要時間: 45 分**
 
-このラボでは、Adventure Works 社向けの Power BI Desktop ソリューションの開発を開始します。 これには、ソース データへの接続、データのプレビュー、データ プレビューの技法を使ったソース データの特性と品質の理解が含まれます。
+In this lab you commence the development of a Power BI Desktop solution for the Adventure Works company. It involves connecting to source data, previewing the data, and using data preview techniques to understand the characteristics and quality of the source data.
 
 このラボでは、次の作業を行う方法について説明します。
 
@@ -29,7 +24,7 @@ ms.locfileid: "147015349"
 
 ### <a name="lab-story"></a>**ラボのストーリー**
 
-このラボは、データの準備に始まり、レポートおよびダッシュボードとして発行するまでの完全なストーリーとして設計されたラボ シリーズの 1 つです。 ラボは任意の順序で完了できます。 ただし、複数のラボに取り組む場合は、次の順序で行うことをお勧めします。
+This lab is one of many in a series of labs that was designed as a complete story from data preparation to publication as reports and dashboards. You can complete the labs in any order. However, if you intend to work through multiple labs, for the first 10 labs, we suggest you do them in the following order:
 
 1. **Power BI Desktop でのデータの準備**
 
@@ -37,7 +32,7 @@ ms.locfileid: "147015349"
 
 3. Power BI Desktop でデータをモデル化する
 
-5. Power BI Desktop での DAX 計算の作成、パート 1
+5. Power BI Desktop で DAX 計算を作成する (パート 1)
 
 6. Power BI Desktop で DAX 計算を作成する (パート 2)
 
@@ -53,7 +48,7 @@ ms.locfileid: "147015349"
 
 ## <a name="exercise-1-prepare-data"></a>**演習 1: データの準備**
 
-この演習では、8 個の Power BI Desktop クエリを作成します。 6 個のクエリは、SQL Server のデータ、2 個は CSV ファイルのデータをそれぞれソースとします。
+In this exercise you will create eight Power BI Desktop queries. Six queries will source data from SQL Server, and two from CSV files.
 
 ### <a name="task-1-save-the-power-bi-desktop-file"></a>**タスク 1: Power BI Desktop ファイルを保存する**
 
@@ -69,17 +64,17 @@ ms.locfileid: "147015349"
 
 1. ファイルを保存するには、**「ファイル」** リボン タブをクリックして、バックステージ ビューを開きます。
 
-1. **「保存」** を選択します。
+1. **[保存]** を選択します。
 
     ![画像 4](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image3.png)
 
-1. **「名前を付けて保存」** ウィンドウで、**D:\PL300\MySolution** フォルダーに移動します。
+1. **[名前を付けて保存]** ウィンドウで、**D:\PL300\MySolution** フォルダーに移動します。
 
-1. **「ファイル名」** ボックスに「**Sales Analysis**」と入力します。
+1. **[ファイル名]** ボックスに「**Sales Analysis**」と入力します。
 
     ![画像 14](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image4.png)
 
-1. **「保存」** をクリックします。
+1. **[保存]** をクリックします。
 
     ![画像 17](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image5.png)
 
@@ -93,23 +88,23 @@ ms.locfileid: "147015349"
 
 1. Power BI Desktop で、**「ファイル」** リボン タブをクリックして Backstage ビューを開きます。
 
-1. 左側の **「オプションと設定」** を選択してから、**「オプション」** を選択します。
+1. 左側の **[オプションと設定]** を選択してから、**[オプション]** を選択します。
 
     ![画像 1](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image7.png)
 
-1. **「オプション」** ウィンドウの左側にある **「現在のファイル」** グループで、**「データの読み込み」** を選択します。
+1. **[オプション]** ウィンドウの左側にある **[現在のファイル]** グループで、**[データの読み込み]** を選択します。
 
     ![画像 5](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image8.png)
 
-    現在のファイルの **「データの読み込み」** 設定では、モデリング時の既定の動作を決定する設定オプションを使用できます。
+    現在のファイルの **[データの読み込み]** 設定では、モデリング時の既定の動作を決定する設定オプションを使用できます。
 
 1. **リレーションシップ** グループで、既にオンになっている 2 つのオプションをオフにします。
 
     ![画像 7](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image9.png)
 
-    これらの 2 つのオプションを有効にすることは、データ モデルを開発する場合に役立ちますが、ラボ エクスペリエンスをサポートするために以前に無効にしています。 **Power BI Desktop へのデータの読み込み** ラボでリレーションシップを作成すると、それぞれを追加する理由がわかります。
+    While having these two options enabled can be helpful when developing a data model, you disabled them earlier to support the lab experience. When you create relationships in the <bpt id="p1">**</bpt>Load Data in Power BI Desktop<ept id="p1">**</ept> lab, you’ll learn why you are adding each one.
 
-1. **「OK」** をクリックします。
+1. **[OK]** をクリックします。
 
     ![画像 9](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image10.png)
 
@@ -127,17 +122,15 @@ ms.locfileid: "147015349"
 
     ![画像 21](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image12.png)
 
-    このラボでは、**localhost** を使用して SQL Server データベースに接続します。 独自のソリューションを作成する場合は、この方法はお勧めしません。 理由は、ゲートウェイ データ ソースが **localhost** を解決できないためです。
+    このラボでは、Adventure Works 社向けの Power BI Desktop ソリューションの開発を開始します。
 
-3. **「OK」** をクリックします。
+3. **[OK]** をクリックします。
 
     ![画像 22](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image13.png)
 
-4. **「SQL Server データベース」** ウィンドウで資格情報の入力が求められたら、 **「現在の資格情報を使用する」** を選択します。 次に、 **「接続」** を選択します。
+4. **[ナビゲーター]** ウィンドウで、左側の **AdventureWorksDW2020** データベースを展開します。
 
-4. **「ナビゲーター」** ウィンドウで、左側の **AdventureWorksDW2020** データベースを展開します。
-
-    **AdventureWorksDW2020** データベースは **AdventureWorksDW2017** サンプル データベースに基づいています。 コース ラボの学習の目的をサポートするために変更されています。
+    これには、ソース データへの接続、データのプレビュー、データ プレビューの技法を使ったソース データの特性と品質の理解が含まれます。
 
     ![画像 28](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image17.png)
 
@@ -165,15 +158,15 @@ ms.locfileid: "147015349"
 
 8. 選択したテーブルのデータに変換を適用するには、「データの変換」をクリックします。
 
-    このラボではデータを変換しません。 このラボの目的は、**Power Query エディター** ウィンドウでのデータの探索とプロファイリングに焦点を当てています。
+    You won’t be transforming the data in this lab. The objectives of this lab focus on exploring and profiling the data in the <bpt id="p1">**</bpt>Power Query Editor<ept id="p1">**</ept> window.
 
     ![画像 30](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image19.png)
 
 ### <a name="task-4-preview-sql-server-queries"></a>**タスク 4: SQL Server クエリをプレビューする**
 
-このタスクでは、SQL Server クエリのデータをプレビューします。 まず、データに関する関連情報を学習します。 また、列の品質、列の分布、および列プロファイル ツールを使用してデータを理解し、データ品質を評価します。
+In this task you will preview the data of the SQL Server queries. First, you will learn relevant information about the data. You will also use column quality, column distribution, and column profile tools to understand the data and to assess data quality.
 
-1. **Power Query エディター** ウィンドウで、左側の **「クエリ」** ペインに注意してください。
+1. **Power Query エディター** ウィンドウで、左側の **[クエリ]** ペインに注意してください。
 
     ![画像 31](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image20.png)
 
@@ -183,7 +176,7 @@ ms.locfileid: "147015349"
 
     ![画像 33](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image21.png)
 
-    SQL Server データベースの **DimEmployee** テーブルには、従業員ごとに 1 行が格納されます。 このテーブルの行のサブセットは営業担当者を表し、開発するモデルに関連します。
+    The <bpt id="p1">**</bpt>DimEmployee<ept id="p1">**</ept> table in the SQL Server database stores one row for each employee. A subset of the rows from this table represents the salespeople, which will be relevant to the model you’ll develop.
 
 3. 左下のステータス バーで、テーブルの統計情報があります。テーブルは 33 列、296 行あります。
 
@@ -193,7 +186,7 @@ ms.locfileid: "147015349"
 
 5. 最後の 5 列に、**「テーブル」** または **「値」** のリンクが含まれていることに注意してください。
 
-    この 5 列は、データベース内の他のテーブルとのリレーションシップを表しています。 これらはテーブルを結合するために使用できます。 「**Power BI Desktop へのデータの読み込み**」のラボでテーブルを結合します。
+    These five columns represent relationships to other tables in the database. They can be used to join tables together. You’ll join tables in the <bpt id="p1">**</bpt>Load Data in Power BI Desktop<ept id="p1">**</ept> lab.
 
 6. 列の品質を評価するには、**「表示」** リボン タブの **「データ プレビュー」** グループ内から、**「列の品質」** をオンにします。
 
@@ -209,25 +202,25 @@ ms.locfileid: "147015349"
 
     ![画像 40](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image25.png)
 
-9. **「位置」** 列を再度確認し、4 つの個別の値と 1 つの一意の値があることに注意してください。
+9. **[位置]** 列を再度確認し、4 つの個別の値と 1 つの一意の値があることに注意してください。
 
 10. **EmployeeKey** (先頭) 列の列の分布を確認します。296 個の個別の値と 296 個の一意の値があります。
 
     ![画像 43](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image26.png)
 
-    個別のカウントと一意のカウントが同じ場合は、列に一意の値が含まれていることを意味します。 モデリングの際、一部のモデル テーブルに一意の列を含めることが重要です。 これらの一意の列を使用して、一対多のリレーションシップを作成できます。これは、「**Power BI Desktop でデータをモデル化する**」のラボで行います。
+    When the distinct and unique counts are the same, it means the column contains unique values. When modeling, it’s important that some model tables have unique columns. These unique columns can be used to create one-to-many relationships, which you will do in the <bpt id="p1">**</bpt>Model Data in Power BI Desktop, Part 1<ept id="p1">**</ept> lab.
 
-11. **「クエリ」** ペインで、**DimEmployeeSalesTerritory** クエリを選択します。
+11. **[クエリ]** ペインで、**DimEmployeeSalesTerritory** クエリを選択します。
 
     ![画像 44](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image27.png)
 
-    **「DimEmployeeSalesTerritory」** テーブルには、従業員ごとに 1 行と、その従業員が管理する販売区域の地域が格納されています。 テーブルでは、1 人の従業員に多数のリージョンを関連付けることができます。 一部の従業員は、1 つ、2 つ、またはそれ以上の地域を管理しています。 このデータをモデリングする場合は、多対多のリレーションシップを定義する必要があります。
+    The <bpt id="p1">**</bpt>DimEmployeeSalesTerritory<ept id="p1">**</ept> table stores one row for each employee and the sales territory regions they manage. The table supports relating many regions to a single employee. Some employees manage one, two, or possibly more regions. When you model this data, you’ll need to define a many-to-many relationship, which you’ll do in the <bpt id="p1">**</bpt>Model Data in Power BI Desktop, Part 2<ept id="p1">**</ept> lab.
 
-12. **「クエリ」** ペインで、**「DimProduct」** クエリを選択します。
+12. **[クエリ]** ペインで、**[DimProduct]** クエリを選択します。
 
     ![画像 46](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image28.png)
 
-    **「DimProduct」** テーブルには、会社が販売した商品ごとに 1 行が含まれています。
+    **[DimProduct]** テーブルには、会社が販売した商品ごとに 1 行が含まれています。
 
 13. 水平方向にスクロールして、最後の列を表示します。
 
@@ -235,17 +228,17 @@ ms.locfileid: "147015349"
 
     「**Power BI Desktop でデータを読み込む**」ラボでこのクエリに変換を追加する場合は、**DimProductSubcategory** 列を使用してテーブルを結合します。
 
-15. **「クエリ」** ペインで、**「DimReseller」** クエリを選択します。
+15. **[クエリ]** ペインで、**[DimReseller]** クエリを選択します。
 
     ![画像 49](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image29.png)
 
-    **DimReseller** テーブルには、リセラーごとに 1 行が含まれています。 リセラーは、Adventure Works 製品の販売、流通、または付加価値の提供を行っています。
+    The <bpt id="p1">**</bpt>DimReseller<ept id="p1">**</ept> table contains one row per reseller. Resellers sell, distribute, or value add to the Adventure Works products.
 
 16. 列値を表示するには、**「表示」** リボン タブの **「データ プレビュー」** グループ内から、**「列のプロファイル」** をオンにします。
 
     ![画像 41](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image30.png)
 
-17. **「BusinessType」** 列ヘッダーを選択します。
+17. **[BusinessType]** 列ヘッダーを選択します。
 
 18. データ プレビュー ウィンドウの下に新しいウィンドウがあります。
 
@@ -255,17 +248,17 @@ ms.locfileid: "147015349"
 
     ![画像 51](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image31.png)
 
-21. **「Ware House」** バーの上にカーソルを置くと、この値を持つ 5 つの行があることに気付きます。
+21. **[Ware House]** バーの上にカーソルを置くと、この値を持つ 5 つの行があることに気付きます。
 
     変換を適用して、「**Power BI Desktop でデータを読み込む**」ラボでこれらの 5 つの行のラベルを再設定します。
 
-22. **「クエリ」** ペインで、**「DimSalesTerritory」** クエリを選択します。
+22. **[クエリ]** ペインで、**[DimSalesTerritory]** クエリを選択します。
 
     ![画像 52](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image32.png)
 
-    **「DimSalesTerritory」** テーブルには、**Corporate HQ** (本社) を含む販売地域ごとに 1 行が含まれています。 地域は国に割り当てられ、国はグループに割り当てられています。 「**Power BI Desktop でデータをモデル化する**」のラボでは、地域、国、またはグループ レベルでの分析をサポートする階層を作成します。
+    The <bpt id="p1">**</bpt>DimSalesTerritory<ept id="p1">**</ept> table contains one row per sales region, including <bpt id="p2">**</bpt>Corporate HQ<ept id="p2">**</ept> (headquarters). Regions are assigned to a country, and countries are assigned to groups. In the <bpt id="p1">**</bpt>Model Data in Power BI Desktop, Part 1<ept id="p1">**</ept> lab, you’ll create a hierarchy to support analysis at region, country, or group level.
 
-23. **「クエリ」** ペインで、**「FactResellerSales」** クエリを選択します。
+23. **[クエリ]** ペインで、**[FactResellerSales]** クエリを選択します。
 
     ![画像 54](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image33.png)
 
@@ -275,8 +268,7 @@ ms.locfileid: "147015349"
 
     ![画像 63](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image34.png)
 
-    **TotalProductCost** 列値の不足は、データ品質の問題につながります。 この問題に対処するために、**Power BI Desktop でのデータの読み込み** ラボでは、関連する **DimProduct** テーブルに格納されている製品の標準原価を使用して、欠落した値を埋めるための変換を適用します。
-
+    このラボは、データの準備に始まり、レポートおよびダッシュボードとして発行するまでの完全なストーリーとして設計されたラボ シリーズの 1 つです。
 
 ### <a name="task-5-get-data-from-a-csv-file"></a>**タスク 5: CSV ファイルからデータを取得する**
 
@@ -288,20 +280,22 @@ ms.locfileid: "147015349"
 
 2. **「開く」** ウィンドウで、**D:\PL300\Resources** フォルダーに移動し、**ResellerSalesTargets.csv** ファイルを選択します。
 
-3. **「開く」** をクリックします。
+3. **[開く]** をクリックします。
 
 4. **ResellerSalesTargets.csv** ウィンドウで、プレビュー データを確認します。
 
-5. **「OK」** をクリックします。
+5. **[OK]** をクリックします。
 
     ![画像 71](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image36.png)
- 
 
-6. **「クエリ」** ペインで、**ResellerSalesTargets** クエリが追加されていることに注意してください。
+  
+‎ 
+
+6. **[クエリ]** ペインで、**ResellerSalesTargets** クエリが追加されていることに注意してください。
 
     ![画像 72](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image37.png)
 
-    **ResellerSalesTargets** CSV ファイルには、年あたりの販売員ごとに 1 行が含まれています。 各行に、12 個の月間売上目標 (1,000 単位で表示) が記録されています。 Adventure Works 社の事業年度は 7 月 1 日に始まることに注意してください。
+    ラボは任意の順序で完了できます。
 
 7. 空の値を含む列がない点に注目してください。
 
@@ -311,9 +305,9 @@ ms.locfileid: "147015349"
 
     ![画像 74](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image38.png)
 
-    アイコンは、列のデータ型を表します。 **123** は整数で、**ABC** はテキストです。
+    しかしながら、複数のラボに取り組む場合は、最初の 10 のラボについては、次の順序で行うことをお勧めします。
 
-    多くの変換を適用して、「**Power BI Desktop でデータを読み込む**」のラボで **Date**、**EmployeeKey**、**TargetAmount** の 3 つの列のみで構成される異なる形状の結果を実現します。
+    多くの変換を適用して、「**Power BI Desktop でデータを読み込む**」ラボで **Date**、**EmployeeKey**、**TargetAmount**の 3 つの列のみで構成される異なる形状の結果を実現します。
 
 ### <a name="task-6-get-additional-data-from-a-csv-file"></a>**タスク 6: CSV ファイルから追加データを取得する**
 
@@ -323,7 +317,7 @@ ms.locfileid: "147015349"
 
     ![画像 75](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image39.png)
 
-    **ColorFormats** CSV ファイルには、商品の色ごとに 1 行が含まれています。 各行には、背景とフォントの色を書式設定するための 16 進コードが記録されます。 このデータは、「**Power BI Desktop でデータを読み込む**」のラボで **DimProduct** クエリ データと統合します。
+    The <bpt id="p1">**</bpt>ColorFormats<ept id="p1">**</ept> CSV file contains one row per product color. Each row records the HEX codes to format background and font colors. You’ll integrate this data with the <bpt id="p1">**</bpt>DimProduct<ept id="p1">**</ept> query data in the <bpt id="p2">**</bpt>Load Data in Power BI Desktop<ept id="p2">**</ept> lab.
 
 ### <a name="task-7-finish-up"></a>**タスク 7: 完了**
 
@@ -347,8 +341,8 @@ ms.locfileid: "147015349"
 
     ![画像 86](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image42.png)
 
-    クエリを適用すると、データがデータ モデルに読み込まれます。 このための準備は、それより先に適用が必要な変換の数が多いために完了していません。
+    Applying the queries will load their data to the data model. You’re not ready to do that, as there are many transformations that must be applied first.
 
 4. 次のラボを開始する場合は、Power BI Desktop を開いたままにしておきます。
 
-    **Power BI Desktop へのデータの読み込み** ラボでは、クエリにさまざまな変換を適用し、クエリを適用してデータ モデルに読み込みます。
+    **Power BI Desktop へのデータの読み込み**ラボでは、クエリにさまざまな変換を適用し、クエリを適用してデータ モデルに読み込みます。
