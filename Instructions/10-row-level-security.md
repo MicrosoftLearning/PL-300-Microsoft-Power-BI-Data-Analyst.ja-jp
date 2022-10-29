@@ -9,7 +9,7 @@ lab:
 
 **このラボの推定所要時間: 45 分**
 
-In this lab you will create a many-to-many relationship between the <bpt id="p1">**</bpt>Salesperson<ept id="p1">**</ept> table and the <bpt id="p2">**</bpt>Sales<ept id="p2">**</ept> table. You will also enforce row-level security to ensure that a salesperson can only analyze sales data for their assigned region(s).
+このラボでは、**Salesperson** テーブルと **Sales** テーブルの間に多対多のリレーションシップを作成します。 また、営業担当者が確実に自分の担当地域の売上データだけを分析できるように、行レベルのセキュリティも適用します。
 
 このラボでは、次の作業を行う方法について説明します。
 
@@ -19,7 +19,7 @@ In this lab you will create a many-to-many relationship between the <bpt id="p1"
 
 ### <a name="lab-story"></a>**ラボのストーリー**
 
-This lab is one of many in a series of labs that was designed as a complete story from data preparation to publication as reports and dashboards. You can complete the labs in any order. However, if you intend to work through multiple labs, for the first 10 labs, we suggest you do them in the following order:
+このラボは、データの準備に始まり、レポートおよびダッシュボードとして発行するまでの完全なストーリーとして設計されたラボ シリーズの 1 つです。 ラボは任意の順序で完了できます。 しかしながら、複数のラボに取り組む場合は、最初の 10 のラボについては、次の順序で行うことをお勧めします。
 
 1. Power BI Desktop でのデータの準備
 
@@ -55,7 +55,7 @@ This lab is one of many in a series of labs that was designed as a complete stor
 
     ![画像 8](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image1.png)
 
-1. [はじめに] ウィンドウを閉じるには、ウィンドウの左上にある **[X]** をクリックします。
+1. 作業の開始ウィンドウを閉じるには、ウィンドウの左上にある **[X]** をクリックします。
 
     ![画像 7](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image2.png)
 

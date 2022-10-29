@@ -23,7 +23,7 @@ lab:
 
 ### <a name="lab-story"></a>**ラボのストーリー**
 
-This lab is one of many in a series of labs that was designed as a complete story from data preparation to publication as reports and dashboards. You can complete the labs in any order. However, if you intend to work through multiple labs, for the first 10 labs, we suggest you do them in the following order:
+このラボは、データの準備に始まり、レポートおよびダッシュボードとして発行するまでの完全なストーリーとして設計されたラボ シリーズの 1 つです。 ラボは任意の順序で完了できます。 しかしながら、複数のラボに取り組む場合は、最初の 10 のラボについては、次の順序で行うことをお勧めします。
 
 1. Power BI Desktop でのデータの準備
 
@@ -175,7 +175,7 @@ This lab is one of many in a series of labs that was designed as a complete stor
 
 ## <a name="exercise-2-configure-drill-through"></a>**演習 2:ドリルスルーを構成する**
 
-In this exercise you will create a new page and configure it as a drill through page. When you’ve completed the design, the page will look like the following:
+この演習では、新しいページを作成し、ドリル スルー ページとして構成します。 設計が完了すると、ページは次のようになります。
 
 ![カード ビジュアルとテーブル ビジュアルで構成される新しいページのイメージ。](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image17.png)
 
@@ -247,7 +247,7 @@ In this exercise you will create a new page and configure it as a drill through 
 
 ## <a name="exercise-3-add-conditional-formatting"></a>**演習 3: 条件付き書式を追加する**
 
-In this exercise you will enhance the drill through page with conditional formatting. When you’ve completed the design, the page will look like the following:
+この演習では、条件付き書式を使用してドリル スルー ページを拡張します。 設計が完了すると、ページは次のようになります。
 
 ![色付きの値とアイコンが表示されている、更新されたページのイメージ。](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image28.png)
 
@@ -321,7 +321,7 @@ In this exercise you will enhance the drill through page with conditional format
 
 ## <a name="exercise-4-add-bookmarks-and-buttons"></a>**演習 4: ブックマークとボタンを追加する**
 
-In this exercise you will enhance the <bpt id="p1">**</bpt>My Performance<ept id="p1">**</ept> page with buttons, allowing the report user to select the visual type to display. When you’ve completed the design, the page will look like the following:
+この演習では、**[マイ パフォーマンス]** ページをボタンで拡張し、レポート ユーザーが表示するビジュアル タイプを選択できるようにします。 設計が完了すると、ページは次のようになります。
 
 ![更新されたページ 3 のイメージ。2 つのボタンが表示され、ビジュアルが 2 つだけになっています。](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image38.png)
 

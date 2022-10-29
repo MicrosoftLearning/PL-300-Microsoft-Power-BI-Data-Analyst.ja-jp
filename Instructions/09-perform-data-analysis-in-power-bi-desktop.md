@@ -21,7 +21,7 @@ lab:
 
 ### <a name="lab-story"></a>**ラボのストーリー**
 
-This lab is one of many in a series of labs that was designed as a complete story from data preparation to publication as reports and dashboards. You can complete the labs in any order. However, if you intend to work through multiple labs, for the first 10 labs, we suggest you do them in the following order:
+このラボは、データの準備に始まり、レポートおよびダッシュボードとして発行するまでの完全なストーリーとして設計されたラボ シリーズの 1 つです。 ラボは任意の順序で完了できます。 しかしながら、複数のラボに取り組む場合は、最初の 10 のラボについては、次の順序で行うことをお勧めします。
 
 1. Power BI Desktop でのデータの準備
 
@@ -171,7 +171,7 @@ This lab is one of many in a series of labs that was designed as a complete stor
 
 3. 次のフィールドをビジュアル ウェル/領域に追加します。
 
-    The labs use a shorthand notation to reference a field. It will look like this: <bpt id="p1">**</bpt>Reseller<ept id="p1">**</ept> <bpt id="p2">**</bpt><ph id="ph1">\|</ph><ept id="p2">**</ept> <bpt id="p3">**</bpt>Business Type<ept id="p3">**</ept>. In this example, <bpt id="p1">**</bpt>Reseller<ept id="p1">**</ept> is the table name and <bpt id="p2">**</bpt>Business Type<ept id="p2">**</ept> is the field name.
+    このラボでは、フィールドを参照するために簡略表記を使用します。 次のようになります。**Reseller** **\|** **Business Type**. この例では、**Reseller** がテーブル名、**Business Type** がフィールド名です。
 
     - 凡例: **Reseller \| Business Type**
 

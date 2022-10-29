@@ -9,7 +9,7 @@ lab:
 
 **このラボの推定所要時間: 45 分**
 
-In this lab you will commence developing the data model. It will involve creating relationships between tables, and then configuring table and column properties to improve the friendliness and usability of the data model. You will also create hierarchies and create quick measures.
+このラボでは、データ モデルの開発を開始します。 テーブル間のリレーションシップを作成してから、データ モデルのわかりやすさと使いやすさを向上させるために、テーブルと列のプロパティを構成します。 また、階層を作成し、クイック メジャーを作成します。
 
 このラボでは、次の作業を行う方法について説明します。
 
@@ -22,7 +22,7 @@ In this lab you will commence developing the data model. It will involve creatin
 
 ### <a name="lab-story"></a>**ラボのストーリー**
 
-This lab is one of many in a series of labs that was designed as a complete story from data preparation to publication as reports and dashboards. You can complete the labs in any order. However, if you intend to work through multiple labs, for the first 10 labs, we suggest you do them in the following order:
+このラボは、データの準備に始まり、レポートおよびダッシュボードとして発行するまでの完全なストーリーとして設計されたラボ シリーズの 1 つです。 ラボは任意の順序で完了できます。 しかしながら、複数のラボに取り組む場合は、最初の 10 のラボについては、次の順序で行うことをお勧めします。
 
 1. Power BI Desktop でのデータの準備
 
@@ -208,7 +208,7 @@ This lab is one of many in a series of labs that was designed as a complete stor
 
     "このラボでは、テーブル **SalespersonRegion** と **Targets** は接続しないままにします。*営業担当者と地域の間には多対多のリレーションシップがあり、「**Power BI Desktop でのデータのモデル化 (パート 2)** 」のラボでは、この高度なシナリオを使用して作業します。"*
 
-25. In the diagram, arrange the tables so that the <bpt id="p1">**</bpt>Sales<ept id="p1">**</ept> table is positioned in the center of the diagram, and the related tables are arranged about it. Position the disconnected tables to the side.
+25. 図では、**Sales** テーブルが図の中央に配置され、関連するテーブルがその周りに配置されるようにテーブルを配置します。 切断されたテーブルを横に配置します。
 
     ![画像 340](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image23.png)
 
@@ -348,7 +348,7 @@ This lab is one of many in a series of labs that was designed as a complete stor
 
 ### <a name="task-5-bulk-update-properties"></a>**タスク 5: プロパティを一括更新する**
 
-In this task you will update multiple columns using single bulk updates. You will use this approach to hide columns, and format column values.
+このタスクでは、1 回の一括更新で複数の列を更新します。 この方法を使用して列を非表示にし、列の値を書式設定します。
 
 1. **[フィールド]** ウィンドウで、**Product \| ProductKey** 列を選択します。
 

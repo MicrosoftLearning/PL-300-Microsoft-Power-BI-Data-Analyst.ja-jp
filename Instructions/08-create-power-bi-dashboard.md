@@ -19,7 +19,7 @@ lab:
 
 ### <a name="lab-story"></a>**ラボのストーリー**
 
-This lab is one of many in a series of labs that was designed as a complete story from data preparation to publication as reports and dashboards. You can complete the labs in any order. However, if you intend to work through multiple labs, for the first 10 labs, we suggest you do them in the following order:
+このラボは、データの準備に始まり、レポートおよびダッシュボードとして発行するまでの完全なストーリーとして設計されたラボ シリーズの 1 つです。 ラボは任意の順序で完了できます。 しかしながら、複数のラボに取り組む場合は、最初の 10 のラボについては、次の順序で行うことをお勧めします。
 
 1. Power BI Desktop でのデータの準備
 
@@ -43,7 +43,7 @@ This lab is one of many in a series of labs that was designed as a complete stor
 
 ## <a name="exercise-1-create-a-dashboard"></a>**演習 1: ダッシュボードを作成する**
 
-In this exercise you will create the <bpt id="p1">**</bpt>Sales Monitoring<ept id="p1">**</ept> dashboard. The completed dashboard will look like the following:
+この演習では、**売上モニタリング** ダッシュボードを作成します。 完成したダッシュボードは次のようになります。
 
 ![3 つのタイルで構成されている、完成したダッシュボードのイメージ。](Linked_image_Files/09-create-power-bi-dashboard_image1.png)
 
@@ -163,7 +163,7 @@ In this exercise you will create the <bpt id="p1">**</bpt>Sales Monitoring<ept i
 
 ### <a name="task-4-create-a-dashboard"></a>**タスク 4: ダッシュボードを作成する**
 
-In this task you will create the <bpt id="p1">**</bpt>Sales Monitoring<ept id="p1">**</ept> dashboard. You will pin a visual from the report, and add a tile based on an image data URI, and use Q&amp;A to create a tile.
+このタスクでは、**売上モニタリング** ダッシュボードを作成します。 レポートからビジュアルをピン留めし、画像データの URI に基づいてタイルを追加し、Q&A を使用してタイルを作成します。
 
 1. Microsoft Edge ブラウザー ウィンドウで、Power BI サービス内の **[販売分析]** レポートを開きます。
 
@@ -307,7 +307,7 @@ In this task you will create the <bpt id="p1">**</bpt>Sales Monitoring<ept id="p
 
 ## <a name="exercise-2-refresh-the-dataset"></a>**演習 2:データセットを最新の情報に更新する**
 
-In this exercise you will first load sales order data for June 2020 into the <bpt id="p1">**</bpt>AdventureWorksDW2020<ept id="p1">**</ept> database. You will then open your Power BI Desktop file, perform a data refresh, and then upload the file to your workspace.
+この演習では、最初に 2020 年 6 月の受注データを **AdventureWorksDW2020** データベースに読み込みます。 次に、Power BI Desktop ファイルを開き、データ更新を実行し、ワークスペースにファイルをアップロードします。
 
 ### <a name="task-1-update-the-lab-database"></a>**タスク 1: ラボ データベースを更新する**
 
