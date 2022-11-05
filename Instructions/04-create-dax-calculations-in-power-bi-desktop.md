@@ -21,7 +21,7 @@ lab:
 
 ### <a name="lab-story"></a>**ラボのストーリー**
 
-This lab is one of many in a series of labs that was designed as a complete story from data preparation to publication as reports and dashboards. You can complete the labs in any order. However, if you intend to work through multiple labs, for the first 10 labs, we suggest you do them in the following order:
+このラボは、データの準備に始まり、レポートおよびダッシュボードとして発行するまでの完全なストーリーとして設計されたラボ シリーズの 1 つです。 ラボは任意の順序で完了できます。 しかしながら、複数のラボに取り組む場合は、最初の 10 のラボについては、次の順序で行うことをお勧めします。
 
 1. Power BI Desktop でのデータの準備
 
@@ -45,7 +45,7 @@ This lab is one of many in a series of labs that was designed as a complete stor
 
 ## <a name="exercise-1-create-calculated-tables"></a>**演習 1:計算テーブルを作成する**
 
-In this exercise you will create two calculated tables. The first will be the <bpt id="p1">**</bpt>Salesperson<ept id="p1">**</ept> table, to allow a direct relationship between it and the <bpt id="p2">**</bpt>Sales<ept id="p2">**</ept> table. The second will be the <bpt id="p1">**</bpt>Date<ept id="p1">**</ept> table.
+この演習では、2 つの計算テーブルを作成します。 1 つ目は、**Sales** テーブルとの間の直接的なリレーションシップを実現する、**Salesperson** テーブルです。 2 つ目は、**Date** テーブルです。
 
 ### <a name="task-1-get-started"></a>**タスク 1: 開始する**
 
@@ -202,7 +202,7 @@ In this exercise you will create two calculated tables. The first will be the <b
 
 ### <a name="task-4-create-calculated-columns"></a>**タスク 4:** **計算列を作成する**
 
-In this task you will add additional columns to enable filtering and grouping by different time periods. You will also create a calculated column to control the sort order of other columns.
+このタスクでは、別の期間によるフィルター処理とグループ化を有効にする列を追加します。 また、計算列を作成して、他の列の並べ替え順序の制御も行います。
 
 "利便性のために、このラボのすべての DAX 定義は、**D:\PL300\Labs\05-create-dax-calculations-in-power-bi-desktop\Assets\Snippets.txt** にあるスニペット ファイルからコピーできます。"**
 
@@ -302,7 +302,7 @@ In this task you will add additional columns to enable filtering and grouping by
 
 ### <a name="task-5-complete-the-date-table"></a>**タスク 5:** **Date テーブルを完成させる**
 
-In this task you will complete the design of the <bpt id="p1">**</bpt>Date<ept id="p1">**</ept> table by hiding a column and creating a hierarchy. You will then create relationships to the <bpt id="p1">**</bpt>Sales<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Targets<ept id="p2">**</ept> tables.
+このタスクでは、列を非表示にして階層を作成することにより、**Date** テーブルの設計を完了します。 その後、**Sales** テーブルと **Targets** テーブルに対するリレーションシップを作成します。
 
 1. モデル ビューに切り替えます。
 
@@ -363,7 +363,7 @@ In this task you will complete the design of the <bpt id="p1">**</bpt>Date<ept i
 
 ### <a name="task-1-create-simple-measures"></a>**タスク 1:シンプルなメジャーを作成する**
 
-In this task you will create simple measures. Simple measures aggregate values in a single column or count rows of a table.
+このタスクでは、単純なメジャーを作成します。 単純なメジャーは、単一の列の値を集計するか、テーブルの行をカウントします。
 
 1. レポート ビューの **[ページ 2]** の **[フィールド]** ペインで、**Sales \| Unit Price** フィールドを行列の視覚エフェクトにドラッグします。
 

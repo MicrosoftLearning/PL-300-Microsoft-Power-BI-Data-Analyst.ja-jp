@@ -8,7 +8,7 @@ lab:
 
 **このラボの推定所要時間: 45 分**
 
-In this lab you will commence apply transformations to each of the queries created in the previous lab. You will then apply the queries to load each as a table to the data model.
+このラボでは、前のラボで作成した各クエリに変換を適用します。 その後、クエリを適用し、それぞれテーブルとしてデータ モデルに読み込みます。
 
 このラボでは、次の作業を行う方法について説明します。
 
@@ -18,7 +18,7 @@ In this lab you will commence apply transformations to each of the queries creat
 
 ### <a name="lab-story"></a>**ラボのストーリー**
 
-This lab is one of many in a series of labs that was designed as a complete story from data preparation to publication as reports and dashboards. You can complete the labs in any order. However, if you intend to work through multiple labs, for the first 10 labs, we suggest you do them in the following order:
+このラボは、データの準備に始まり、レポートおよびダッシュボードとして発行するまでの完全なストーリーとして設計されたラボ シリーズの 1 つです。 ラボは任意の順序で完了できます。 しかしながら、複数のラボに取り組む場合は、最初の 10 のラボについては、次の順序で行うことをお勧めします。
 
 1. Power BI Desktop でのデータの準備
 
@@ -55,7 +55,7 @@ This lab is one of many in a series of labs that was designed as a complete stor
 
     ![画像 8](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image1.png)
 
-1. [はじめに] ウィンドウを閉じるには、ウィンドウの左上にある **[X]** をクリックします。
+1. 作業の開始ウィンドウを閉じるには、ウィンドウの左上にある **[X]** をクリックします。
 
     ![画像 7](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image2.png)
 
@@ -701,7 +701,7 @@ This lab is one of many in a series of labs that was designed as a complete stor
 
     ![画像 323](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image81.png)
 
-    Disabling the load means it will not load as a table to the data model. This is done because the query was merged with the <bpt id="p1">**</bpt>Product<ept id="p1">**</ept> query, which is enabled to load to the data model.
+    読み込みを無効にすると、データ モデルにテーブルとして読み込まれません。 このようにするのは、クエリが、データ モデルに読み込み可能な **Product** クエリとマージされているためです。
 
 4. **[OK]** をクリックします。
 

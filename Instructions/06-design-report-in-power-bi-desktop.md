@@ -9,7 +9,7 @@ lab:
 
 **このラボの推定所要時間: 45 分**
 
-In this lab you will create a three-page report. You will then publish it to Power BI, whereupon you will open and interact with the report.
+このラボでは、3 ページのレポートを作成します。 次に、Power BI にｎレポートを発行し、レポートを開いて操作します。
 
 このラボでは、次の作業を行う方法について説明します。
 
@@ -19,7 +19,7 @@ In this lab you will create a three-page report. You will then publish it to Pow
 
 ### <a name="lab-story"></a>**ラボのストーリー**
 
-This lab is one of many in a series of labs that was designed as a complete story from data preparation to publication as reports and dashboards. You can complete the labs in any order. However, if you intend to work through multiple labs, for the first 10 labs, we suggest you do them in the following order:
+このラボは、データの準備に始まり、レポートおよびダッシュボードとして発行するまでの完全なストーリーとして設計されたラボ シリーズの 1 つです。 ラボは任意の順序で完了できます。 しかしながら、複数のラボに取り組む場合は、最初の 10 のラボについては、次の順序で行うことをお勧めします。
 
 1. Power BI Desktop でのデータの準備
 
@@ -88,7 +88,7 @@ This lab is one of many in a series of labs that was designed as a complete stor
 
     ![画像 102](Linked_image_Files/07-design-report-in-power-bi-desktop_image102.png)
 
-1. Scroll down the page to Integration settings. Click the arrow to expand the Map and filled map visuals option.
+1. ページを下にスクロールして [統合の設定] に移動します。 矢印をクリックして、[地図と塗り分け地図の画像] オプションを展開します。
 
     ![画像 103](Linked_image_Files/07-design-report-in-power-bi-desktop_image103.png)
 
@@ -165,7 +165,7 @@ This lab is one of many in a series of labs that was designed as a complete stor
 
 ### <a name="task-4-design-page-1"></a>**タスク 4: ページ 1 をデザインする**
 
-In this task you will design the first report page. When you’ve completed the design, the page will look like the following:
+このタスクでは、最初のレポート ページをデザインします。 設計が完了すると、ページは次のようになります。
 
 ![ロゴ、2 つのスライサー、3 つのビジュアルで構成されているページ 1 のイメージ。](Linked_image_Files/07-design-report-in-power-bi-desktop_image12.png)
 
@@ -328,7 +328,7 @@ In this task you will design the first report page. When you’ve completed the 
 
 ### <a name="task-5-design-page-2"></a>**タスク 5: ページ 2 をデザインする**
 
-このラボでは、3 ページのレポートを作成します。
+このタスクでは、2 番目のレポート ページをデザインします。 設計が完了すると、ページは次のようになります。
 
 ![スライサーとマトリックスで構成されたページ 2 のイメージ。](Linked_image_Files/07-design-report-in-power-bi-desktop_image37.png)
 
@@ -403,7 +403,7 @@ In this task you will design the first report page. When you’ve completed the 
 
 ### <a name="task-6-design-page-3"></a>**タスク 6 :ページ 3 をデザインする**
 
-次に、Power BI にｎレポートを発行し、レポートを開いて操作します。
+このタスクでは、3 番目 (そして最後の) レポート ページをデザインします。 設計が完了すると、ページは次のようになります。
 
 ![3 つのビジュアルで構成されたページ 3 のイメージ。](Linked_image_Files/07-design-report-in-power-bi-desktop_image47.png)
 
@@ -413,7 +413,7 @@ In this task you will design the first report page. When you’ve completed the 
     
     ![フィルター ウィンドウの Salesperson フィールドの画像。](Linked_image_Files/07-design-report-in-power-bi-desktop_image999.png) 
 
-1. Select <bpt id="p1">**</bpt>Michael Blythe<ept id="p1">**</ept>. Data on the <bpt id="p1">**</bpt>My Performance<ept id="p1">**</ept> report page will now be filtered to display data for Michael Blythe only.
+1. **[Michael Blythe]** を選択します。 **[My Performance]** レポート ページの日付は、Michael Blythe のみのデータを表示するためにフィルター処理されています。
 
 1. **Date \| Year** フィールドに基づくドロップダウン スライサーを追加し、サイズと位置を変更してページの左上隅に配置します。
 
