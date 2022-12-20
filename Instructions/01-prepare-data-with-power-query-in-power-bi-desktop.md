@@ -1,12 +1,12 @@
 ---
 lab:
   title: Power BI Desktop でのデータの準備
-  module: Module 2 - Get Data in Power BI
+  module: 2 - Get Data in Power BI
 ---
 
-# <a name="prepare-data-in-power-bi-desktop"></a>**Power BI Desktop でのデータの準備**
+# <a name="prepare-data-in-power-bi-desktop"></a>Power BI Desktop でのデータの準備
 
-**このラボの推定所要時間: 45 分**
+**ラボの推定所要時間は 45 分です。**
 
 このラボでは、Adventure Works 社向けの Power BI Desktop ソリューションの開発を開始します。 これには、ソース データへの接続、データのプレビュー、データ プレビューの技法を使ったソース データの特性と品質の理解が含まれます。
 
@@ -22,29 +22,29 @@ lab:
 
 - データ プレビューの技法を使用してデータをよりよく理解する
 
-### <a name="lab-story"></a>**ラボのストーリー**
+## <a name="lab-story"></a>**ラボのストーリー**
 
-このラボは、データの準備に始まり、レポートおよびダッシュボードとして発行するまでの完全なストーリーとして設計されたラボ シリーズの 1 つです。 ラボは任意の順序で完了できます。 しかしながら、複数のラボに取り組む場合は、最初の 10 のラボについては、次の順序で行うことをお勧めします。
+このラボは、データの準備に始まり、レポートおよびダッシュボードとして発行するまでの完全なストーリーとして設計されたラボ シリーズの 1 つです。 ラボは任意の順序で完了できます。 ただし、複数のラボに取り組む場合は、次の順序で行うことをお勧めします。
 
 1. **Power BI Desktop でのデータの準備**
 
 2. Power BI Desktop にデータを読み込む
 
-3. Power BI Desktop でデータをモデル化する
+3. Power BI でデータ モデルを設計する
 
-5. Power BI Desktop で DAX 計算を作成する (パート 1)
+4. Power BI Desktop で DAX 計算を作成する (パート 1)
 
-6. Power BI Desktop で DAX 計算を作成する (パート 2)
+5. Power BI Desktop で DAX 計算を作成する (パート 2)
 
-7. Power BI Desktop でレポートを設計する (パート 1)
+6. Power BI Desktop でレポートを設計する (パート 1)
 
-8. Power BI Desktop でレポートを設計する (パート 2)
+7. Power BI Desktop でレポートを設計する (パート 2)
+
+8. AI 視覚化でデータを分析する
 
 9. Power BI ダッシュボードを作成する
 
-10. Power BI Desktop でデータ分析を実行する
-
-11. 行レベルのセキュリティを実行する
+10. 行レベルのセキュリティを実行する
 
 ## <a name="exercise-1-prepare-data"></a>**演習 1: データの準備**
 
@@ -128,6 +128,8 @@ lab:
 
     ![画像 22](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image13.png)
 
+4. **「SQL Server データベース」** ウィンドウで資格情報の入力が求められたら、 **「現在の資格情報を使用する」** を選択します。 次に、 **「接続」** を選択します。
+
 4. **[ナビゲーター]** ウィンドウで、左側の **AdventureWorksDW2020** データベースを展開します。
 
     **AdventureWorksDW2020** データベースは **AdventureWorksDW2017** サンプル データベースに基づいています。 コース ラボの学習の目的をサポートするために変更されています。
@@ -208,13 +210,13 @@ lab:
 
     ![画像 43](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image26.png)
 
-    個別のカウントと一意のカウントが同じ場合は、列に一意の値が含まれていることを意味します。 モデリングの際、一部のモデル テーブルに一意の列を含めることが重要です。 これらの一意の列を使用して、一対多のリレーションシップを作成できます。これは、「**Power BI Desktop でのデータのモデル化、パート 1**」ラボで行います。
+    個別のカウントと一意のカウントが同じ場合は、列に一意の値が含まれていることを意味します。 モデリングの際、一部のモデル テーブルに一意の列を含めることが重要です。 これらの一意の列を使用して、一対多のリレーションシップを作成できます。これは、「**Power BI Desktop でデータをモデル化する**」のラボで行います。
 
 11. **[クエリ]** ペインで、**DimEmployeeSalesTerritory** クエリを選択します。
 
     ![画像 44](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image27.png)
 
-    **[DimEmployeeSalesTerritory]** テーブルには、従業員ごとに 1 行と、その従業員が管理する販売区域の地域が格納されています。 テーブルでは、1 人の従業員に多数のリージョンを関連付けることができます。 一部の従業員は、1 つ、2 つ、またはそれ以上の地域を管理しています。 このデータをモデル化する場合、多対多のリレーションシップを定義する必要があります。これは、「**Power BI Desktop でデータをモデル化する (パート 2)**」ラボで行います。
+    **[DimEmployeeSalesTerritory]** テーブルには、従業員ごとに 1 行と、その従業員が管理する販売区域の地域が格納されています。 テーブルでは、1 人の従業員に多数のリージョンを関連付けることができます。 一部の従業員は、1 つ、2 つ、またはそれ以上の地域を管理しています。 このデータをモデリングする場合は、多対多のリレーションシップを定義する必要があります。
 
 12. **[クエリ]** ペインで、**[DimProduct]** クエリを選択します。
 
@@ -256,7 +258,7 @@ lab:
 
     ![画像 52](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image32.png)
 
-    **[DimSalesTerritory]** テーブルには、**Corporate HQ** (本社) を含む販売地域ごとに 1 行が含まれています。 地域は国に割り当てられ、国はグループに割り当てられています。 「**Power BI Desktop でデータをモデル化する (パート 1)**」ラボで、地域、国、またはグループ レベルでの分析をサポートする階層を作成します。
+    **[DimSalesTerritory]** テーブルには、**Corporate HQ** (本社) を含む販売地域ごとに 1 行が含まれています。 地域は国に割り当てられ、国はグループに割り当てられています。 「**Power BI Desktop でデータをモデル化する**」のラボでは、地域、国、またはグループ レベルでの分析をサポートする階層を作成します。
 
 23. **[クエリ]** ペインで、**[FactResellerSales]** クエリを選択します。
 
@@ -269,6 +271,7 @@ lab:
     ![画像 63](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image34.png)
 
     **TotalProductCost** 列値の不足は、データ品質の問題につながります。 この問題に対処するために、**Power BI Desktop でのデータの読み込み**ラボでは、関連する **DimProduct** テーブルに格納されている製品の標準原価を使用して、欠落した値を埋めるための変換を適用します。
+
 
 ### <a name="task-5-get-data-from-a-csv-file"></a>**タスク 5: CSV ファイルからデータを取得する**
 
@@ -287,9 +290,7 @@ lab:
 5. **[OK]** をクリックします。
 
     ![画像 71](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image36.png)
-
-  
-‎ 
+ 
 
 6. **[クエリ]** ペインで、**ResellerSalesTargets** クエリが追加されていることに注意してください。
 

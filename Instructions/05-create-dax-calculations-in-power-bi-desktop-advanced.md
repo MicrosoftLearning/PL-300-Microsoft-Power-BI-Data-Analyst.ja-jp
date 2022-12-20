@@ -1,13 +1,13 @@
 ---
 lab:
   title: Power BI Desktop で DAX 計算を作成する (パート 2)
-  module: Module 5 - Create Model Calculations using DAX in Power BI
+  module: 5 - Create Model Calculations using DAX in Power BI
 ---
 
 
-# <a name="create-dax-calculations-in-power-bi-desktop-part-2"></a>**Power BI Desktop で DAX 計算を作成する (パート 2)**
+# <a name="create-dax-calculations-in-power-bi-desktop-part-2"></a>Power BI Desktop で DAX 計算を作成する (パート 2)
 
-**このラボの推定所要時間: 45 分**
+**ラボの推定所要時間は 45 分です。**
 
 このラボでは、フィルター コンテキストの操作を伴う DAX 式を使用してメジャーを作成します。
 
@@ -19,27 +19,27 @@ lab:
 
 ### <a name="lab-story"></a>**ラボのストーリー**
 
-このラボは、データの準備に始まり、レポートおよびダッシュボードとして発行するまでの完全なストーリーとして設計されたラボ シリーズの 1 つです。 ラボは任意の順序で完了できます。 しかしながら、複数のラボに取り組む場合は、最初の 10 のラボについては、次の順序で行うことをお勧めします。
+このラボは、データの準備に始まり、レポートおよびダッシュボードとして発行するまでの完全なストーリーとして設計されたラボ シリーズの 1 つです。 ラボは任意の順序で完了できます。 ただし、複数のラボに取り組む場合は、次の順序で行うことをお勧めします。
 
 1. Power BI Desktop でのデータの準備
 
 2. Power BI Desktop にデータを読み込む
 
-3. Power BI Desktop でデータをモデル化する
+3. Power BI でデータ モデルを設計する
 
-5. Power BI Desktop で DAX 計算を作成する (パート 1)
+4. Power BI Desktop で DAX 計算を作成する (パート 1)
 
-6. **Power BI Desktop で DAX 計算を作成する (パート 2)**
+5. **Power BI Desktop で DAX 計算を作成する (パート 2)**
 
-7. Power BI Desktop でレポートを設計する (パート 1)
+6. Power BI Desktop でレポートを設計する (パート 1)
 
-8. Power BI Desktop でレポートを設計する (パート 2)
+7. Power BI Desktop でレポートを設計する (パート 2)
+
+8. AI 視覚化でデータを分析する
 
 9. Power BI ダッシュボードを作成する
 
-10. Power BI Desktop でデータ分析を実行する
-
-11. 行レベルのセキュリティを実行する
+10. 行レベルのセキュリティを実行する
 
 ## <a name="exercise-1-work-with-filter-context"></a>**演習 1:フィルター コンテキストを操作する**
 
@@ -69,7 +69,7 @@ lab:
 
     ![画像 9](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image4.png)
 
-1. **[開く]** ウィンドウで、**D:\PL300\Labs\06-create-dax-calculations-in-power-bi-desktop-advanced\Starter** フォルダーに移動します。
+1. **[開く]** ウィンドウで、**D:\PL300\Labs\05-create-dax-calculations-in-power-bi-desktop-advanced\Starter** フォルダーに移動します。
 
 1. **Sales Analysis** ファイルを選択します。
 
@@ -121,13 +121,11 @@ lab:
 
     "**Regions** 階層には、**Group**、**Country**、**Region**のレベルがあることを思い出してください。"**
 
-7. 視覚エフェクトを書式設定するには、**[視覚化]** ペインの下にある **[書式]** ペインを選択します。
+7. 視覚エフェクトを書式設定するには、 **[視覚化]** ペインにある **[書式]** ペインを選択します。
 
     ![画像 14](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image12.png)
 
 8. **[検索]** ボックスに「**階段状**」と入力します。
-
-    ![画像 15](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image13.png)
 
 9. **[階段状レイアウト]** プロパティを **[オフ]** に設定します。
 
@@ -147,7 +145,7 @@ lab:
 
 1. 次の式に基づいて、**Sales** テーブルにメジャーを追加します。
 
-    "利便性のために、このラボのすべての DAX 定義は、**D:\PL300\Labs\06-create-dax-calculations-in-power-bi-desktop-advanced\Assets\Snippets.txt** ファイルからコピーできます。"**
+    *"利便性のために、このラボのすべての DAX 定義は、**D:\PL300\Labs\05-create-dax-calculations-in-power-bi-desktop-advanced\Assets\Snippets.txt** ファイルからコピーできます。"*
 
 
     **DAX**
