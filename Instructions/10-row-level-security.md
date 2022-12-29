@@ -1,7 +1,7 @@
 ---
 lab:
   title: 行レベルのセキュリティを実行する
-  module: Module 13 - Row-Level Security
+  module: 12 - Row-Level Security
 ---
 
 
@@ -9,37 +9,35 @@ lab:
 
 **このラボの推定所要時間: 45 分**
 
-このラボでは、**Salesperson** テーブルと **Sales** テーブルの間に多対多のリレーションシップを作成します。 また、営業担当者が確実に自分の担当地域の売上データだけを分析できるように、行レベルのセキュリティも適用します。
+このラボでは、営業担当者が確実に自分の担当地域の売上データだけを分析できるように、行レベルのセキュリティも適用します。
 
 このラボでは、次の作業を行う方法について説明します。
-
-- 多対多リレーションシップを構成する
 
 - 行レベルのセキュリティを適用する
 
 ### <a name="lab-story"></a>**ラボのストーリー**
 
-このラボは、データの準備に始まり、レポートおよびダッシュボードとして発行するまでの完全なストーリーとして設計されたラボ シリーズの 1 つです。 ラボは任意の順序で完了できます。 しかしながら、複数のラボに取り組む場合は、最初の 10 のラボについては、次の順序で行うことをお勧めします。
+このラボは、データの準備に始まり、レポートおよびダッシュボードとして発行するまでの完全なストーリーとして設計されたラボ シリーズの 1 つです。 ラボは任意の順序で完了できます。 ただし、複数のラボに取り組む場合は、次の順序で行うことをお勧めします。
 
 1. Power BI Desktop でのデータの準備
 
 2. Power BI Desktop にデータを読み込む
 
-3. Power BI Desktop でデータをモデル化する
+3. Power BI でデータ モデルを設計する
 
-5. Power BI Desktop で DAX 計算を作成する (パート 1)
+4. Power BI Desktop で DAX 計算を作成する (パート 1)
 
-6. Power BI Desktop で DAX 計算を作成する (パート 2)
+5. Power BI Desktop で DAX 計算を作成する (パート 2)
 
-7. Power BI Desktop でレポートを設計する (パート 1)
+6. Power BI Desktop でレポートを設計する (パート 1)
 
-8. Power BI Desktop でレポートを設計する (パート 2)
+7. Power BI Desktop でレポートを設計する (パート 2)
+
+8. AI 視覚化でデータを分析する
 
 9. Power BI ダッシュボードを作成する
 
-10. Power BI Desktop でデータ分析を実行する
-
-11. **行レベルのセキュリティを適用する**
+10. **行レベルのセキュリティを適用する**
 
 ## <a name="exercise-1-enforce-row-level-security"></a>**演習 1: 行レベルのセキュリティを適用する**
 
@@ -69,7 +67,7 @@ lab:
 
     ![画像 5](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image4.png)
 
-1. **[開く]** ウィンドウで、**D:\PL300\Labs\12-row-level-security\Starter** フォルダーに移動します。
+1. **[開く]** ウィンドウで、**D:\PL300\Labs\10-row-level-security\Starter** フォルダーに移動します。
 
 1. **Sales Analysis** ファイルを選択します。
 
@@ -181,7 +179,7 @@ lab:
 
     ![画像 18](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image35.png)
 
-### <a name="task-2-finish-up"></a>**タスク 2: 完了**
+### <a name="task-3-finish-up"></a>**タスク 3: 完了**
 
 このタスクでは、ラボを完了します。
 
