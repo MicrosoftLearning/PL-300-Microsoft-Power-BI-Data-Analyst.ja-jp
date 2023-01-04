@@ -1,13 +1,13 @@
 ---
 lab:
   title: Power BI Desktop でレポートを設計する (パート 2)
-  module: Module 7 - Create Reports
+  module: 7 - Create Reports
 ---
 
 
-# <a name="design-a-report-in-power-bi-desktop-part-2"></a>**Power BI Desktop でレポートを設計する (パート 2)**
+# <a name="design-a-report-in-power-bi-desktop-part-2"></a>Power BI Desktop でレポートを設計する (パート 2)
 
-**このラボの推定所要時間: 45 分**
+**ラボの推定所要時間は 45 分です。**
 
 このラボでは、高度なデザイン機能を使用して、**販売分析**を強化します。
 
@@ -23,27 +23,27 @@ lab:
 
 ### <a name="lab-story"></a>**ラボのストーリー**
 
-このラボは、データの準備に始まり、レポートおよびダッシュボードとして発行するまでの完全なストーリーとして設計されたラボ シリーズの 1 つです。 ラボは任意の順序で完了できます。 しかしながら、複数のラボに取り組む場合は、最初の 10 のラボについては、次の順序で行うことをお勧めします。
+このラボは、データの準備に始まり、レポートおよびダッシュボードとして発行するまでの完全なストーリーとして設計されたラボ シリーズの 1 つです。 ラボは任意の順序で完了できます。 ただし、複数のラボに取り組む場合は、次の順序で行うことをお勧めします。
 
 1. Power BI Desktop でのデータの準備
 
 2. Power BI Desktop にデータを読み込む
 
-3. Power BI Desktop でデータをモデル化する
+3. Power BI でデータ モデルを設計する
 
-5. Power BI Desktop で DAX 計算を作成する (パート 1)
+4. Power BI Desktop で DAX 計算を作成する (パート 1)
 
-6. Power BI Desktop で DAX 計算を作成する (パート 2)
+5. Power BI Desktop で DAX 計算を作成する (パート 2)
 
-7. Power BI Desktop でレポートを設計する (パート 1)
+6. Power BI Desktop でレポートを設計する (パート 1)
 
-8. **Power BI Desktop でレポートを設計する (パート 2)**
+7. **Power BI Desktop でレポートを設計する (パート 2)**
+
+8. AI 視覚化でデータを分析する
 
 9. Power BI ダッシュボードを作成する
 
-10. Power BI Desktop でデータ分析を実行する
-
-11. 行レベルのセキュリティを実行する
+10. 行レベルのセキュリティを実行する
 
 ## <a name="exercise-1-configure-sync-slicers"></a>**演習 1: スライサーの同期を構成する**
 
@@ -59,29 +59,23 @@ lab:
 
     ![画像 12](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image1.png)
 
-1. Microsoft Edge ブラウザー ウィンドウで、**https://powerbi.com** に移動します。
+2. Microsoft Edge ブラウザー ウィンドウで、**https://powerbi.microsoft.com** に移動します。
 
     *ヒント:Microsoft Edge のお気に入りバーで、Power BI サービスのお気に入りを使用することもできます。"*
 
-1. **[サインイン]** (右上隅にあります) をクリックします。
+3. **[サインイン]** (右上隅にあります) をクリックします。
 
     ![画像 11](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image2.png)
 
-1. 提供されたアカウントの詳細を入力します。
+4. サインイン プロセスを完了します。
 
-1. パスワードの更新を求めるメッセージが表示されたら、提供されたパスワードを再入力し、新しいパスワードを入力して確認します。
+5. Microsoft Edge からサインインを維持するかどうかを確認するメッセージが表示されたら、**[はい]** をクリックします。
 
-    *重要:新しいパスワードは必ず記録しておいてください。"*
-
-1. サインイン プロセスを完了します。
-
-1. Microsoft Edge からサインインを維持するかどうかを確認するメッセージが表示されたら、**[はい]** をクリックします。
-
-1. Microsoft Edge ブラウザー ウィンドウの Power BI サービスの **[ナビゲーション]** ペインで、**[マイ ワークスペース]** を展開します。
+6. Microsoft Edge ブラウザー ウィンドウの Power BI サービスの **[ナビゲーション]** ペインで、**[マイ ワークスペース]** を展開します。
 
     ![画像 22](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image3.png)
 
-1. Microsoft Edge ブラウザー ウィンドウを開いたままにします。
+7. Microsoft Edge ブラウザー ウィンドウを開いたままにします。
 
 ### <a name="task-2-get-started--open-report"></a>タスク 2: 開始する - レポートを開く
 
@@ -113,7 +107,7 @@ lab:
 
     ![画像 6](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image8.png)
 
-8. **[開く]** ウィンドウで、**D:\PL300\Labs\08-design-report-in-power-bi-desktop-enhanced\Starter** フォルダーに移動します。
+8. **[開く]** ウィンドウで、**D:\PL300\Labs\07-design-report-in-power-bi-desktop-enhanced\Starter** フォルダーに移動します。
 
 9. **Sales Analysis** ファイルを選択します。
 
@@ -193,7 +187,7 @@ lab:
 
     "レポート ユーザーがドリルスルー ページに直接アクセスすることはできません。*他のページのビジュアルからアクセスする必要があります。このラボの最後の演習では、このページにドリルスルーする方法を学習します。"*
 
-3. **[視覚化]** ペインの下にある **[ドリルスルー]** セクションで、**Product \| Category** フィールドを **[Add Drill-Through Fields Here]\(ドリルスルー フィールドをここに追加します\)** ボックスに追加します。
+3. **[視覚化]** ペインの下にある **[ドリルスルー]** セクションで、**Product \| Category** フィールドを **[Add Drill-Through Fields Here](ドリルスルー フィールドをここに追加します)** ボックスに追加します。
 
     "このラボでは、フィールドを参照するために簡略表記を使用します。*次のようになります。**Product \| Category**。この例では、**Product** はテーブル名、**Category** はフィールド名です。"*
 
@@ -219,9 +213,11 @@ lab:
 
 8. 視覚化の書式オプションを構成してから、**[カテゴリ ラベル]** プロパティを **[オフ]** にします。
 
-    ![画像 103](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image25.png)
+    ![画像 103](Linked_image_Files/07-design-report-in-power-bi-desktop_image36b.png)
 
-9. **[背景色]** プロパティを灰色の薄い網掛けに設定します。
+9. **[効果] > [背景色]** プロパティを灰色の薄い網掛けに設定します。
+    
+    ![画像 103](Linked_image_Files/07-design-report-in-power-bi-desktop_image36c.png)
 
 10. ページに **[テーブル]** ビジュアルを追加し、サイズを変更して、カード ビジュアルの下に配置し、ページ上の残りの領域を埋めます。
 
@@ -241,7 +237,7 @@ lab:
 
     - Sales \| Profit Margin
 
-12. ビジュアルの書式オプションを構成し、**[グリッド]** セクションで、**[文字のサイズ]** プロパティを **[20pt]** に設定します。
+12. ビジュアルの書式オプションを構成し、 **[値]** セクションで、 **[文字のサイズ]** プロパティを **[20pt]** に設定します。
 
     "ドリル スルー ページの設計はほぼ完了です。*次の演習では、条件付き書式を使用してページを拡張します。"*
 
@@ -303,11 +299,11 @@ lab:
 
 9. **[色]** フィールドの背景色の条件付き書式を構成します。
 
-10. 「**背景色 - 色**」ウィンドウの「**書式設定**」ドロップダウン リストで、「**フィールド値**」を選択します。
+10. **[背景色 -- 色]** ウィンドウの **[書式設定スタイル]** ドロップダウン リストで、 **[フィールド値]** を選択します。
 
-    ![画像 113](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image35.png)
+    
 
-11. **[フィールドに基づく]** ドロップダウン リストで、**Product \| Formatting \| Background Color Format** を選択します。
+11. **[基準にするフィールド]** ドロップダウン リストで、 **[製品] \| [書式設定] \| [背景の書式]** を選択します。
 
     ![画像 114](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image36.png)
 
@@ -329,7 +325,7 @@ lab:
 
 このタスクでは、月ごとの販売/目標ビジュアルを表示する 2 つのブックマークを追加します。
 
-1. **[My Performance]\(マイ パフォーマンス\)** ページに移動します。
+1. **[My Performance](マイ パフォーマンス)** ページに移動します。
 
 2. **[表示]** リボン タブの **[ペインを表示する]** グループ内の **[ブックマーク]** をクリックします。
 
@@ -339,7 +335,7 @@ lab:
 
     ![画像 119](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image40.png)
 
-4. **[選択項目]** ペインで、**[Sales and Target by Month]\(月別売上高と目標\)** 項目の横にある視覚化を非表示にするには、目のアイコンをクリックします。
+4. **[選択項目]** ペインで、**[Sales and Target by Month](月別売上高と目標)** 項目の横にある視覚化を非表示にするには、目のアイコンをクリックします。
 
     ![画像 120](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image41.png)
 
@@ -363,7 +359,7 @@ lab:
 
     *次の手順では、2 つ目のブックマークを作成および構成して、2 つ目の視覚化を表示します。*
 
-10. **[選択項目]** ペインで、2 つの **[Sales and Target by Month]\(月別売上高と目標\)** 項目の表示を切り替えます。
+10. **[選択項目]** ペインで、2 つの **[Sales and Target by Month](月別売上高と目標)** 項目の表示を切り替えます。
 
     *つまり、表示されている視覚化を非表示にし、非表示の視覚化を表示します。*
 
@@ -397,21 +393,21 @@ lab:
 
 2. **Year** スライサーの真下にボタンを配置します。
 
-3. ボタンを選択し、 **[ボタンの書式設定]** ペインで、 **[ボタン テキスト]** プロパティを **[オン]** にします。
+3. ボタンを選択し、 **[ボタンの書式設定]** ペインで、 **[全般]** をクリックし、 **[タイトル]** プロパティを **[オン]** にします。
 
-    ![画像 126](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image49.png)
+    ![画像 126](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image49b.png)
 
-4. **[ボタン テキスト]** セクションを展開し、**[ボタン テキスト]** ボックスに「**Bar Chart**」と入力します。
+4. **[タイトル]** セクションを展開し、**[テキスト]** ボックスに「**Bar Chart**」と入力します。
 
 5. **[背景]** セクションを展開してから、補完的な色を使用して背景色を設定します。
 
-6. **[アクション]** プロパティを **[オン]** に変更します (リストの一番下近くにあります)。
+6. **[ボタン]** をクリックし、 **[アクション]** プロパティを **[オン]** にします。
 
     ![画像 127](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image50.png)
 
 7. **[アクション]** セクションを展開し、**[種類]** ドロップダウン リストを **[ブックマーク]** に設定します。
 
-8. **[ブックマーク]** ドロップダウン リストで、**[Bar Chart ON]\(横棒グラフ オン\)** を選択します。
+8. **[ブックマーク]** ドロップダウン リストで、**[Bar Chart ON](横棒グラフ オン)** を選択します。
 
     ![画像 128](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image51.png)
 
@@ -421,7 +417,7 @@ lab:
 
     - **[ボタン テキスト]** プロパティを **[縦棒グラフ]** に設定します
 
-    - **[アクション]** セクションで、**[ブックマーク]** ドロップダウン リストを **[Column Chart ON]\(横棒グラフ オン\)** に設定します
+    - **[アクション]** セクションで、**[ブックマーク]** ドロップダウン リストを **[Column Chart ON](横棒グラフ オン)** に設定します
 
     *これで、Sales Analysis レポートのデザインが完成しました。*
 
@@ -467,13 +463,13 @@ lab:
 
 このタスクでは、Power BI サービスのレポートを探索します。
 
-1. Microsoft Edge ブラウザー ウィンドウの Power BI サービスの「**ナビゲーション**」ウィンドウで、**販売分析**レポートをクリックします。
+1. Microsoft Edge ブラウザー ウィンドウの Power BI サービスの **[ナビゲーション]** ペインで、 **[個人用ワークスペース]** を選択してから、 **[売上分析]** レポートを選択します。
 
-2. ドリルスルー レポートをテストするには、 **[概要]** ページの **[Quantity by Category]\(カテゴリ別数量\)** ビジュアルで **[Clothing]** バーを右クリックし、 **[ドリルスルー] \| [製品の詳細]** を選択します。
+2. ドリルスルー レポートをテストするには、 **[概要]** ページの **[Quantity by Category](カテゴリ別数量)** ビジュアルで **[Clothing]** バーを右クリックし、 **[ドリルスルー] \| [製品の詳細]** を選択します。
 
     ![画像 130](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image55.png)
 
-3. **[製品の詳細]** ページが **[Clothing]\(衣類\)** 用であることに注目してください。
+3. **[製品の詳細]** ページが **[Clothing](衣類)** 用であることに注目してください。
 
 4. ソース ページに戻るには、ページの左上隅の矢印ボタンをクリックします。
 

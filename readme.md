@@ -4,7 +4,7 @@
 
 - **あなたは MCT ですか?** - [MCT 向けの GitHub ユーザー ガイド](https://microsoftlearning.github.io/MCT-User-Guide/)をご覧ください
 - **ラボの手順を手動で作成する必要がありますか?** - 手順は、[MicrosoftLearning/Docker-Build](https://github.com/MicrosoftLearning/Docker-Build) リポジトリで確認できます
-- **どのラボがどのモジュールと一緒に行くのか、リフレクサーが必要ですか?** - [GitHub ページ](https://microsoftlearning.github.io/DA-100-Analyzing-Data-with-Power-BI/)をチェックアウトする
+- **どのラボがどのコース プレゼンテーションに対応しているか、復習が必要ですか?** - [GitHub ページ](https://microsoftlearning.github.io/PL-300-Microsoft-Power-BI-Data-Analyst/)をチェックアウトする
 
 ## <a name="what-are-we-doing"></a>ここでの内容
 

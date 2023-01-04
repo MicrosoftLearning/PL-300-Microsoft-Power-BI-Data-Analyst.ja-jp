@@ -1,12 +1,12 @@
 ---
 lab:
   title: Power BI Desktop にデータを読み込む
-  module: 'Module 3 - Clean, Transform, and Load Data in Power BI'
+  module: '3 - Clean, Transform, and Load Data in Power BI'
 ---
 
-# <a name="load-data-in-power-bi-desktop"></a>**Power BI Desktop でデータを読み込む**
+# <a name="load-data-in-power-bi-desktop"></a>Power BI Desktop にデータを読み込む
 
-**このラボの推定所要時間: 45 分**
+**ラボの推定所要時間は 45 分です。**
 
 このラボでは、前のラボで作成した各クエリに変換を適用します。 その後、クエリを適用し、それぞれテーブルとしてデータ モデルに読み込みます。
 
@@ -16,30 +16,29 @@ lab:
 
 - クエリを適用してデータ モデルに読み込む
 
-### <a name="lab-story"></a>**ラボのストーリー**
+## <a name="lab-story"></a>**ラボのストーリー**
 
-このラボは、データの準備に始まり、レポートおよびダッシュボードとして発行するまでの完全なストーリーとして設計されたラボ シリーズの 1 つです。 ラボは任意の順序で完了できます。 しかしながら、複数のラボに取り組む場合は、最初の 10 のラボについては、次の順序で行うことをお勧めします。
+このラボは、データの準備に始まり、レポートおよびダッシュボードとして発行するまでの完全なストーリーとして設計されたラボ シリーズの 1 つです。 ラボは任意の順序で完了できます。 ただし、複数のラボに取り組む場合は、次の順序で行うことをお勧めします。
 
 1. Power BI Desktop でのデータの準備
 
 2. **Power BI Desktop でデータを読み込む**
 
-3. Power BI Desktop でデータをモデル化する
+3. Power BI でデータ モデルを設計する
 
+4. Power BI Desktop で DAX 計算を作成する (パート 1)
 
-5. Power BI Desktop で DAX 計算を作成する (パート 1)
+5. Power BI Desktop で DAX 計算を作成する (パート 2)
 
-6. Power BI Desktop で DAX 計算を作成する (パート 2)
+6. Power BI Desktop でレポートを設計する (パート 1)
 
-7. Power BI Desktop でレポートを設計する (パート 1)
+7. Power BI Desktop でレポートを設計する (パート 2)
 
-8. Power BI Desktop でレポートを設計する (パート 2)
+8. AI 視覚化でデータを分析する
 
 9. Power BI ダッシュボードを作成する
 
-10. Power BI Desktop でデータ分析を実行する
-
-11. 行レベルのセキュリティを実行する
+10. 行レベルのセキュリティを実行する
 
 ## <a name="exercise-1-load-data"></a>**演習 1: データを読み込む**
 
@@ -125,7 +124,7 @@ lab:
 
     "次に、クエリ行をフィルター処理し、営業担当者である従業員のみを取得します。"**
 
-4. 特定の列を見つけるには、**[ホーム]** リボン タブの **[列の管理]** グループ内から、**[列の選択]** の下矢印をクリックし、**[列に移動]** を選択します。
+4. 特定の列を見つけるには、 **[ホーム]** リボン タブの **[列の管理]** の下矢印をクリックし、 **[列の選択]** の下矢印をクリックして、 **[列に移動]** を選択します。
 
     ![画像 88](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image13.png)
 
@@ -151,7 +150,7 @@ lab:
 
     "作成した変換ごとに、追加のステップ ロジックが生成されます。*ステップを編集または削除することができます。クエリ変換のその段階でクエリ結果をプレビューするステップを選択することもできます。"*
 
-10. 列を削除するには、「**ホーム**」リボン タブの「**列の管理**」グループ内から「**列の選択**」アイコンをクリックします。
+10. 列の削除するには、 **[ホーム]** リボン タブの **[列の管理]** グループをクリックし、 **[列の選択]** アイコンをクリックします。
 
     ![画像 99](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image18.png)
 
@@ -211,7 +210,7 @@ lab:
 
 23. 前の手順を使用して、**EmailAddress** 列の名前を **UPN** に変更します。
 
-    "UPN は、User Principal Name の頭字語です。*この列の値は、「**Power BI Desktop でデータをモデル化する (パート 2)** 」ラボで行レベルのセキュリティを構成するときに使用されます。"*
+    *UPN は、User Principal Name の頭字語です。*
 
 24. 左下のステータス バーで、クエリに 5 列と 18 行が含まれているかどうかを確認します。
 
@@ -344,7 +343,6 @@ lab:
     ![画像 2](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image38.png)
 
   
-‎ 
 
 6. **Business Type** 列ヘッダーを右クリックして、「**値の置換**」を選択します。
 
@@ -386,11 +384,7 @@ lab:
 
 2. クエリの名前を「**Region**」に変更します。
 
-3. **SalesTerritoryAlternateKey** 列にフィルターを適用して、値 0 (ゼロ) を削除します。
-
-    ![画像 5660](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image44.png)
-
-4. 以下を除くすべての列を削除します。
+3. 以下を除くすべての列を削除します。
 
     - SalesTerritoryKey
 
@@ -400,7 +394,7 @@ lab:
 
     - SalesTerritoryGroup
 
-5. 次の 3 つの列の名前を変更します。
+4. 次の 3 つの列の名前を変更します。
 
     - **SalesTerritoryRegion** を **Region** に
 
@@ -408,7 +402,7 @@ lab:
 
     - **SalesTerritoryGroup** を **Group** に
 
-6. ステータス バーで、クエリに 4 列と 10 行があることを確認します。
+5. ステータス バーで、クエリに 4 列と 10 行があることを確認します。
 
     ![画像 5661](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image45.png)
 
@@ -460,28 +454,26 @@ lab:
 
 7. **[カスタム列の式]** ボックスに、次の式 (等号記号の後) を入力します。
 
-8. 利便性のために、式は、**D:\PL300\Labs\02-load-data-with-power-query-in-power-bi-desktop\Assets\Snippets.txt** ファイルからコピーできます。"
-
-
-   **Power Query**
-   ```
+   `
    if [TotalProductCost] = null then [OrderQuantity] * [StandardCost] else [TotalProductCost]
-   ```
-
+   `
 
 "この式を使用すると、**TotalProductCost** 値が欠落しているかどうかをテストできます。*そうであれば、**OrderQuantity** 値に **StandardCost** 値を掛けて値を生成します。それ以外の場合は、既存の **TotalProductCost** 値を使用します。"*
 
-9. **[OK]** をクリックします。
+利便性のために、式は、**D:\PL300\Labs\02-load-data-with-power-query-in-power-bi-desktop\Assets\Snippets.txt** ファイルからコピーできます。"
+
+8. **[OK]** をクリックします。
 
     ![画像 5666](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image49.png)
 
-10. 次の 2 つの列を削除します。
+
+9. 次の 2 つの列を削除します。
 
     - TotalProductCost
 
     - StandardCost
 
-11. 次の 3 つの列の名前を変更します。
+10. 次の 3 つの列の名前を変更します。
 
     - **OrderQuantity** を **Quantity** に
 
@@ -489,13 +481,13 @@ lab:
 
     - **SalesAmount** を **Sales** に
 
-12. 列のデータ型を変更するには、列名の左側にある **[Quantity]** 列ヘッダーで **[1.2]** アイコンをクリックし、**[整数]** を選択します。
+11. 列のデータ型を変更するには、列名の左側にある **[Quantity]** 列ヘッダーで **[1.2]** アイコンをクリックし、**[整数]** を選択します。
 
     ![画像 5667](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image50.png)
 
     "正しいデータ型を構成することが重要です。*列に数値が含まれていて、数学計算を実行する予定がある場合は、正しい型を選択することも重要です。"*
 
-13. 次の 3 つの列のデータ型を **[固定小数点数]** に変更します。
+12. 次の 3 つの列のデータ型を **[固定小数点数]** に変更します。
 
     - Unit Price
 
@@ -507,7 +499,7 @@ lab:
 
     "固定小数点数データ型には完全な有効桁数の値が格納されるため、10 進数よりも多くの格納領域が必要です。*財務値、またはレート (為替レートなど) には、固定小数点数型を使用することが重要です。"*
 
-14. ステータス バーで、クエリに 10 列と 999 以上の行があることを確認します。
+13. ステータス バーで、クエリに 10 列と 999 以上の行があることを確認します。
 
     ![画像 5669](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image52.png)
 
@@ -565,7 +557,7 @@ lab:
 
 13. 最初の行は年 **2017** と月番号 **7** であることに注意してください。
 
-14. **[Column1]** 列の最初のグリッド セルに、「**7/1/2017**」と入力してから、**Enter** キーを押します。
+14. **Column1** 列の最初のグリッド セルに、「**07/01/2017**」と入力してから、**Enter** キーを押します。
 
     "この仮想マシンでは米国の地域設定を使用しているため、この日付は実際には "July 1, 2017" になります。"**
 
@@ -643,7 +635,7 @@ lab:
 
     ![画像 5690](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image70.png)
 
-2. **ColorFormats** クエリをマージするには、「**ホーム**」リボン タブの「**結合**」グループ内から、「**クエリのマージ**」をクリックします。
+2. **ColorFormats** クエリをマージするには、 **[ホーム]** リボン タブの **[結合]** の下矢印をクリックして、 **[クエリのマージ]** をクリックします。
 
     ![画像 5654](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image71.png)
 
@@ -743,4 +735,4 @@ lab:
 
 5. 次のラボを開始する場合は、Power BI Desktop を開いたままにしておきます。
 
-    "データ モデルのテーブルとリレーションシップは、「**Power BI Desktop でデータをモデル化する (パート 1)** 」ラボで構成します。"**
+    "データ モデルのテーブルとリレーションシップは、「**Power BI Desktop でデータをモデル化する**」ラボの中で構成します。"**
