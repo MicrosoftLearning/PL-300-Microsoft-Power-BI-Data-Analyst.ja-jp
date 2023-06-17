@@ -5,182 +5,128 @@ lab:
 ---
 
 
-# <a name="enforce-row-level-security"></a>**行レベルのセキュリティを適用する**
+# **行レベルのセキュリティを適用する**
 
 **このラボの推定所要時間: 45 分**
 
-このラボでは、営業担当者が確実に自分の担当地域の売上データだけを分析できるように、行レベルのセキュリティも適用します。
+このラボでは、営業担当者が確実に自分の担当地域の売上データだけを分析できるように、行レベルのセキュリティを適用します。
 
 このラボでは、次の作業を行う方法について説明します。
 
 - 行レベルのセキュリティを適用する
 
-### <a name="lab-story"></a>**ラボのストーリー**
+### **ラボのストーリー**
 
 このラボは、データの準備に始まり、レポートおよびダッシュボードとして発行するまでの完全なストーリーとして設計されたラボ シリーズの 1 つです。 ラボは任意の順序で完了できます。 ただし、複数のラボに取り組む場合は、次の順序で行うことをお勧めします。
 
 1. Power BI Desktop でのデータの準備
+1. Power BI Desktop にデータを読み込む
+1. Power BI でデータ モデルを設計する
+1. Power BI Desktop で DAX 計算を作成する
+1. Power BI Desktop で高度な DAX 計算を作成する
+1. Power BI Desktop でレポートをデザインする
+1. Power BI Desktop でレポートを強化する
+1. Power BI Desktop でデータ分析を実行する
+1. Power BI ダッシュボードを作成する
+1. **行レベルのセキュリティを適用する**
 
-2. Power BI Desktop にデータを読み込む
+## **演習 1: 行レベルのセキュリティを適用する**
 
-3. Power BI でデータ モデルを設計する
+この演習では、営業担当者が自分の担当地域の売上のみを表示できるように、行レベルのセキュリティを適用します。
 
-4. Power BI Desktop で DAX 計算を作成する (パート 1)
+### **タスク 1: 開始する**
 
-5. Power BI Desktop で DAX 計算を作成する (パート 2)
+このタスクでは、ラボの環境を設定します。
 
-6. Power BI Desktop でレポートを設計する (パート 1)
+''重要: 前のラボから続行している (および、そのラボを正常に完了した) 場合は、このタスクを完了せず、代わりに次のタスクから続行してください。''**
 
-7. Power BI Desktop でレポートを設計する (パート 2)
+1. Power BI Desktop を開きます。
 
-8. AI 視覚化でデータを分析する
+    ![Power BI Desktop アイコン](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image1.png)
 
-9. Power BI ダッシュボードを作成する
+    ''ヒント: 既定では、Power BI Desktop の前に [はじめに] ダイアログ ボックスが開きます。**サインイン**してから、ポップアップを閉じます。''**
 
-10. **行レベルのセキュリティを適用する**
+1. スターター Power BI Desktop ファイルを開くには、 **[ファイル] > [レポートを開く] > [レポートの参照]** の順に選択します。
 
-## <a name="exercise-1-enforce-row-level-security"></a>**演習 1: 行レベルのセキュリティを適用する**
-
-この演習では、営業担当者が割り当てられた地域での売上のみを表示できるように、行レベルのセキュリティを適用します。
-
-### <a name="task-1-get-started"></a>**タスク 1: 開始する**
-
-このタスクではこのラボ用の環境を設定します。
-
-*重要:前のラボから継続している (および、そのラボを正常に完了した) 場合は、このタスクを完了させず、次のタスクから続行してください。*
-
-1. Power BI Desktop を開くには、タスク バーにある Microsoft Power BI Desktop のショートカットをクリックします。
-
-    ![画像 8](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image1.png)
-
-1. 作業の開始ウィンドウを閉じるには、ウィンドウの左上にある **[X]** をクリックします。
-
-    ![画像 7](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image2.png)
-
-1. スターター Power BI Desktop ファイルを開くには、**[ファイル]** リボン タブをクリックして、バックステージ ビューを開きます。
-
-1. **[レポートを開く]** を選択します。
-
-    ![画像 6](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image3.png)
-
-1. **[レポートを参照]** をクリックします。
-
-    ![画像 5](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image4.png)
-
-1. **[開く]** ウィンドウで、**D:\PL300\Labs\10-row-level-security\Starter** フォルダーに移動します。
-
-1. **Sales Analysis** ファイルを選択します。
-
-1. **[開く]** をクリックします。
-
-    ![画像 4](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image5.png)
+1. **[開く]** ウィンドウで、**D:\PL300\Labs\10-row-level-security\Starter** フォルダーに移動し、**Sales Analysis** ファイルを開きます。
 
 1. 情報ウィンドウが開いている場合はすべて閉じます。
 
-1. ファイルのコピーを作成するには、**[ファイル]** リボン タブをクリックして、バックステージ ビューを開きます。
+1. リボンの下の黄色の警告メッセージに注目してください。 "このメッセージは、クエリが、モデル テーブルとしての読み込みに適用されていないことを警告しています。クエリは、このラボの後半で適用します。"**
+    
+    "警告メッセージを無視するには、黄色の警告メッセージの右側にある **[X]** を選択します。"**
 
-1. **[名前を付けて保存]** を選択します。
+1. ファイルのコピーを作成するには、 **[ファイル] > [名前を付けて保存]** の順に移動し、**D:\PL300\MySolution** フォルダーに保存します。
 
-    ![図 3](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image6.png)
+1. 変更の適用を求めるメッセージが表示されたら、**[後で適用]** を選択します。
 
-1. 変更を適用するかどうかを確認するメッセージが表示されたら、**[適用]** をクリックします。
+### **タスク 2: 行レベルのセキュリティを適用する**
 
-    ![画像 15](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image7.png)
-
-1. **[名前を付けて保存]** ウィンドウで、**D:\PL300\MySolution** フォルダーに移動します。
-
-1. **[保存]** をクリックします。
-
-    ![画像 2](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image8.png)
-
-### <a name="task-2-enforce-row-level-security"></a>**タスク 2: 行レベルのセキュリティを適用する**
-
-このタスクでは、行レベルのセキュリティを適用して、営業担当者が割り当てられた地域での売上のみを表示できるようにします。
+このタスクでは、行レベルのセキュリティを適用して、営業担当者が自分の担当地域での売上のみを表示できるようにします。
 
 1. データ ビューに切り替えます。
 
-    ![画像 5701](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image20.png)
+   ![画像 5701](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image20.png)
 
-2. **[フィールド]** ペインで、**Salesperson (Performance)** テーブルを選択します。
+1. **[フィールド]** ペインで、**Salesperson (Performance)** テーブルを選択します。
 
-3. データを確認すると、Michael Blythe (EmployeeKey 281) の UPN の値が **michael-blythe@adventureworks.com** になっています。
 
-    *Michael Blythe の担当営業地域が US Northeast (米国北東部)、US Central (米国中部)、US Southeast (米国南東部) の 3 つであることを思い出してください。*
+1. データを確認すると、Michael Blythe (EmployeeKey 281) の UPN の値が **michael-blythe@adventureworks.com** になっています。
+    
+    ''Michael Blythe の担当地域が、米国北東部、米国中部、米国南東部の 3 つであることを思い出すかもしれません。''**
 
-4. レポート ビューに切り替えます。
-
-5. **[モデリング]** リボン タブの **[セキュリティ]** グループ内から、**[ロールの管理]** をクリックします。
+1. **[モデリング]** リボン タブで、 **[セキュリティ]** グループ内から **[ロールの管理]** を選択します。
 
     ![画像 5700](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image21.png)
 
-6. **[ロールの管理]** ウィンドウで、**[作成]** をクリックします。
+1. **[ロールの管理]** ウィンドウで、**[作成]** を選択します。
 
-    ![画像 5702](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image22.png)
+1. ボックスで、選択したテキストをロールの名前:**Salespeople** に置き換えてから、**Enter** キーを押します。
 
-7. ボックスで、選択したテキストをロールの名前:**Salespeople** に置き換えてから、**Enter** キーを押します。
+   ![画像 5703](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image23.png)
 
-    ![画像 5703](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image23.png)
+1. フィルターを割り当てるには、**Salesperson (Performance)** テーブルの省略記号 (…) 文字を選択し、 **[フィルターの追加] \| [UPN]** を選択します。
 
-8. フィルターを割り当てるには、**Salesperson (Performance)** テーブルの省略記号 (…) 文字をクリックし、 **[フィルターの追加] \| [UPN]** を選択します。
+   ![画像 5704](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image24.png)
 
-    ![画像 5704](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image24.png)
-
-9. **[テーブル フィルター DAX 式]** ボックスで、"**Value**" を **USERPRINCIPALNAME()** に置き換えて式を変更します。
-
-    ![画像 11](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image25.png)
-
+1. **[テーブル フィルターの DAX 式]** ボックスで、 **[値]** を **USERPRINCIPALNAME()** に置き換えて式を変更してから、 **[保存]** を選択します。
+    
     "USERPRINCIPALNAME() は、認証されたユーザーの名前を返す Data Analysis Expressions (DAX) 関数です。*つまり、**Salesperson (Performance)** テーブルは、モデルをクエリするユーザーのユーザー プリンシパル名 (UPN) によってフィルター処理されます。"*
 
-10. **[保存]** をクリックします。
+   ![画像 11](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image25.png)
 
-    ![画像 5706](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image26.png)
+1. セキュリティ ロールをテストするには、**[モデリング]** リボン タブで、**[セキュリティ]** グループ内から **[View As](表示方法)** を選択します。
 
-11. セキュリティ ロールをテストするには、**[モデリング]** リボン タブの **[セキュリティ]** グループ内から、**[表示方法]** をクリックします。
+   ![画像 5708](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image27.png)
 
-    ![画像 5708](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image27.png)
+1. **[ロールとして表示]** ウィンドウで **[その他のユーザー]** 項目を選択してから、対応するボックスに「**michael-blythe@adventureworks.com**」と入力します。
 
-12. **[ロールとして表示]** ウィンドウで **[その他のユーザー]** 項目を選択してから、対応するボックスに「**michael-blythe@adventureworks.com**」と入力します。
-
-13. **[営業担当者]** ロールを確認します。
-
-    ![画像 5709](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image28.png)
-
+1. **[営業担当者]** ロールを確認してから、 **[OK]** をクリックします。
+    
     "この構成により、**Salespeople** ロールと、Michael Blythe の名前を借りたユーザーが使用されることになります。"**
 
-14. **[OK]** をクリックします。
+   ![画像 5709](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image28.png)
 
-    ![画像 5710](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image29.png)
+1. レポート ページの上に、テストのセキュリティ コンテキストを説明する黄色のバナーが表示されていることに注目してください。
 
-15. レポート ページの上に、テストのセキュリティ コンテキストを説明する黄色のバナーが表示されていることに注目してください。
+   ![画像 13](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image30.png)
 
-    ![画像 13](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image30.png)
+1. テーブル ビジュアルでは、営業担当者 **Michael Blythe** のみが表示されていることに注目してください。
 
-16. テーブル ビジュアルでは、営業担当者 **Michael Blythe** のみが表示されていることに注目してください。
+   ![画像 5713](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image31.png)
 
-    ![画像 5713](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image31.png)
+1. テストを停止するには、黄色のバナーの右側にある **[表示の停止]** を選択します。
 
-17. テストを中止するには、黄色のバナーの右側にある **[表示の停止]** をクリックします。
+   ![画像 5712](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image32.png)
 
-    ![画像 5712](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image32.png)
+1. **[営業担当者]** ロールを削除するには、 **[モデリング]** リボン タブで、 **[セキュリティ]** グループ内から **[ロールの管理]** を選択します。
 
-    "Power BI Desktop ファイルが Power BI サービスに発行されるときに、発行後のタスクを完了して、セキュリティ プリンシパルを **Salespeople** ロールにマップする必要があります。"*このラボでは行いません。"*
+   ![画像 16](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image33.png)
 
-18. ロールを削除するには、**[モデリング]** リボン タブの **[セキュリティ]** グループ内から、**[ロールの管理]** をクリックします。
+1. **[ロールの管理]** ウィンドウで、**[削除]** を選択します。 削除するかどうかを確認するメッセージが表示されたら、 **[はい、削除します]** を選択します。
 
-    ![画像 16](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image33.png)
+   ![画像 17](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image34.png)
 
-19. **[ロールの管理]** ウィンドウで、**[削除]** をクリックします。
+1. **[保存]** を選択し、Power BI Desktop ファイルを保存してラボを終了します。
 
-    ![画像 17](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image34.png)
-
-20. 削除の確認を求められたら、**[はい、削除します]** をクリックします。
-
-21. **[保存]** をクリックします。
-
-    ![画像 18](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image35.png)
-
-### <a name="task-3-finish-up"></a>**タスク 3: 完了**
-
-このタスクでは、ラボを完了します。
-
-1. Power BI Desktop ファイルを保存します。
+"注: Power BI Desktop ファイルが Power BI サービスに発行されるときに、発行後のタスクを完了して、セキュリティ プリンシパルを **[営業担当者]** ロールにマップする必要があります。このラボでは行いません。"**

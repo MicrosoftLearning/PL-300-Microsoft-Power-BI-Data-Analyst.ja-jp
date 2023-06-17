@@ -1,587 +1,419 @@
 ---
 lab:
-  title: Power BI Desktop でレポートを設計する (パート 1)
+  title: Power BI Desktop でレポートをデザインする
   module: 7 - Create Reports
 ---
 
 
-# <a name="design-a-report-in-power-bi-desktop-part-1"></a>Power BI Desktop でレポートを設計する (パート 1)
+# Power BI Desktop でレポートをデザインする
 
 **ラボの推定所要時間は 45 分です。**
 
-このラボでは、3 ページのレポートを作成します。 次に、Power BI にｎレポートを発行し、レポートを開いて操作します。
+このラボでは、3 ページのレポートを作成します。 次に、Power BI にそれを発行し、そこでレポートを開いて操作します。
 
 このラボでは、次の作業を行う方法について説明します。
 
 - レポートをデザインする
-
 - 視覚化のフィールドと書式プロパティを構成する
 
-### <a name="lab-story"></a>**ラボのストーリー**
+### **ラボのストーリー**
 
 このラボは、データの準備に始まり、レポートおよびダッシュボードとして発行するまでの完全なストーリーとして設計されたラボ シリーズの 1 つです。 ラボは任意の順序で完了できます。 ただし、複数のラボに取り組む場合は、次の順序で行うことをお勧めします。
 
 1. Power BI Desktop でのデータの準備
+1. Power BI Desktop にデータを読み込む
+1. Power BI でデータ モデルを設計する
+1. Power BI Desktop で DAX 計算を作成する
+1. Power BI Desktop で高度な DAX 計算を作成する
+1. **Power BI Desktop でレポートをデザインする**
+1. Power BI Desktop でレポートを強化する
+1. Power BI でデータ分析を実行する
+1. Power BI ダッシュボードを作成する
+1. 行レベルのセキュリティを実行する
 
-2. Power BI Desktop にデータを読み込む
+## **演習 1: レポートを作成する**
 
-3. Power BI でデータ モデルを設計する
+この演習では、**Sales Report** という名前の 3 ページのレポートを作成します。
 
-4. Power BI Desktop で DAX 計算を作成する (パート 1)
+### **タスク 1: 開始する - レポートを開く**
 
-5. Power BI Desktop で DAX 計算を作成する (パート 2)
+このタスクでは、スタート レポートを開いてラボの環境を設定します。
 
-6. **Power BI Desktop でレポートを設計する (パート 1)**
+1. Power BI Desktop から、 **[ファイル]**  >  **[レポートを開く]**  >  **[レポートを参照]** の順に移動します。
 
-7. Power BI Desktop でレポートを設計する (パート 2)
+1. **D:\PL300\Labs\06-design-report-in-power-bi-desktop\Starter** フォルダーで **Sales Analysis** ファイルを開きます。
 
-8. AI 視覚化でデータを分析する
+1. **[ファイル]**  >  **[名前を付けて保存]** の順に移動して、ファイルのコピーを作成し、そのコピーを **D:\PL300\MySolution** フォルダーに保存します。
 
-9. Power BI ダッシュボードを作成する
-
-10. 行レベルのセキュリティを実行する
-
-## <a name="exercise-1-create-a-report"></a>**演習 1: レポートを作成する**
-
-この演習では、**売上レポート** という名前の 3 ページのレポートを作成します。
-
-### <a name="task-1-get-started--sign-in"></a>**タスク 1: 開始する - サインイン**
-
-このタスクでは、Power BI にサインインしてこのラボ用の環境を設定します。
-
-*重要:既に Power BI にサインインしている場合は、次のタスクから続行します。"*
-
-1. Microsoft Edge を開くには、タスク バーの Microsoft Edge プログラムのショートカットをクリックします。
-
-    ![画像 65](Linked_image_Files/07-design-report-in-power-bi-desktop_image1.png)
-
-1. Microsoft Edge ブラウザー ウィンドウで、**https://powerbi.microsoft.com** に移動します。
-
-    *ヒント:Microsoft Edge のお気に入りバーで、Power BI サービスのお気に入りを使用することもできます。"*
-
-1. **[サインイン]** (右上隅にあります) をクリックします。
-
-    ![画像 63](Linked_image_Files/07-design-report-in-power-bi-desktop_image2.png)
-
-1. サインイン プロセスを完了します。
-
-1. Microsoft Edge からサインインを維持するかどうかを確認するメッセージが表示されたら、**[はい]** をクリックします。
-
-1. Microsoft Edge ブラウザー ウィンドウを開いたままにします。
-
-### <a name="task-2-get-started--enable-map-and-filled-map-visuals"></a>**タスク 2: 開始する - 地図と塗り分け地図の画像を有効にする**
-
-このタスクでは、Power BI Desktop の [グローバル] 設定と Power BI 管理ポータルの [統合の設定] を更新することにより、ラボ用の環境で地図と塗り分け地図の画像を有効にします。
-
-1. Power BI Desktop で、 **[オプション] > [オプションと設定] > [グローバル]** に移動し、 **[地図と塗り分け地図の画像を使用する]** チェック ボックスをオンにします。
-
-![Picture103b](Linked_image_Files/07-design-report-in-power-bi-desktop_image103b.png)
-
-2. Power BI 管理ポータルを開くには、Edge ブラウザーの右上にある **[設定]** アイコンをクリックします。
-
-    ![画像 101](Linked_image_Files/07-design-report-in-power-bi-desktop_image101.png)
-
-3. **[管理ポータル]** を選択します。
-
-    ![画像 102](Linked_image_Files/07-design-report-in-power-bi-desktop_image102.png)
-
-4. ページを下にスクロールして [統合の設定] に移動します。 矢印をクリックして、[地図と塗り分け地図の画像] オプションを展開します。
-
-    ![画像 103](Linked_image_Files/07-design-report-in-power-bi-desktop_image103.png)
-
-5. [地図と塗り分け地図の画像] オプションを **[有効]** に設定します。
-
-6. **[適用]** をクリックして変更を適用します。 
-
-    ![画像 104](Linked_image_Files/07-design-report-in-power-bi-desktop_image104.png)
-
-7. ブラウザーの右上に、[テナント設定] の変更が 15 分以内に適用されることを示すメッセージが表示されます。
-
-
-    ![画像 105](Linked_image_Files/07-design-report-in-power-bi-desktop_image105.png)
-
-8. Microsoft Edge ブラウザー ウィンドウを開いたままにします。
-
-### <a name="task-3-get-started--open-report"></a>**タスク 3: 開始する - レポートを開く**
-
-このタスクでは、スターター レポートを開いてこのラボ用の環境を設定します。
-
-*重要:前のラボから継続している (および、そのラボを正常に完了した) 場合は、このタスクを完了させず、次のタスクから続行してください。*
-
-1. Power BI Desktop を開くには、タスク バーにある Microsoft Power BI Desktop のショートカットをクリックします。
-
-    ![画像 48](Linked_image_Files/07-design-report-in-power-bi-desktop_image3.png)
-
-2. 作業の開始ウィンドウを閉じるには、ウィンドウの左上にある **[X]** をクリックします。
-
-    ![画像 47](Linked_image_Files/07-design-report-in-power-bi-desktop_image4.png)
-
-3. Power BI サービスにサインインするには、右上の **[サインイン]** をクリックします。
-
-    ![画像 66](Linked_image_Files/07-design-report-in-power-bi-desktop_image5.png)
-
-4. Power BI サービスへのサインインに使用したのと同じアカウントを使用して、サインイン プロセスを完了します。
-
-5. スターター Power BI Desktop ファイルを開くには、**[ファイル]** リボン タブをクリックして、バックステージ ビューを開きます。
-
-6. **[レポートを開く]** を選択します。
-
-    ![画像 31](Linked_image_Files/07-design-report-in-power-bi-desktop_image6.png)
-
-7. **[レポートを参照]** をクリックします。
-
-    ![画像 30](Linked_image_Files/07-design-report-in-power-bi-desktop_image7.png)
-
-8. **[開く]** ウィンドウで、**D:\PL300\Labs\06-design-report-in-power-bi-desktop\Starter** フォルダーに移動します。
-
-9. **Sales Analysis** ファイルを選択します。
-
-10. **[開く]** をクリックします。
-
-    ![画像 16](Linked_image_Files/07-design-report-in-power-bi-desktop_image8.png)
-
-11. 情報ウィンドウが開いている場合はすべて閉じます。
-
-12. ファイルのコピーを作成するには、**[ファイル]** リボン タブをクリックして、バックステージ ビューを開きます。
-
-13. **[名前を付けて保存]** を選択します。
-
-    ![画像 8](Linked_image_Files/07-design-report-in-power-bi-desktop_image9.png)
-
-14. 変更の適用が求められたら、**[適用]** をクリックします。
-
-    ![画像 5](Linked_image_Files/07-design-report-in-power-bi-desktop_image10.png)
-
-15. **[名前を付けて保存]** ウィンドウで、**D:\PL300\MySolution** フォルダーに移動します。
-
-16. **[保存]** をクリックします。
-
-    ![画像 4](Linked_image_Files/07-design-report-in-power-bi-desktop_image11.png)
-
-### <a name="task-4-design-page-1"></a>**タスク 4: ページ 1 をデザインする**
+### **タスク 2: ページ 1 をデザインする**
 
 このタスクでは、最初のレポート ページをデザインします。 設計が完了すると、ページは次のようになります。
 
-![ロゴ、2 つのスライサー、3 つのビジュアルで構成されているページ 1 のイメージ。](Linked_image_Files/07-design-report-in-power-bi-desktop_image12.png)
+![ロゴ、2 つのスライサー、3 つのビジュアルで構成されているページ 1 のイメージ。](Linked_image_Files/06-finished-report-page.png)
 
-1. Power BI Desktop でページの名前を変更するには、左下で **[ページ 1]** を右クリックし、**[名前の変更]** を選択します。
-
-    ![画像 36](Linked_image_Files/07-design-report-in-power-bi-desktop_image13.png)
+1. Power BI Desktop で、ページの名前を変更するには、左下にある **[ページ 1]** を右クリックしてから、そのページを **Overview** という**名前に変更**します。
 
     *ヒント:ページ名をダブルクリックして名前を変更することもできます。"*
 
-2. ページの名前を **[概要]** に変更して、**Enter** キーを押します。
-
-    ![画像 37](Linked_image_Files/07-design-report-in-power-bi-desktop_image14.png)
-
-3. 画像を追加するには、**[挿入]** リボン タブで、**[要素]** グループ内の **[画像]** をクリックします。
+1. 画像を追加するには、**[挿入]** リボン タブで、**[要素]** グループ内の **[画像]** を選択します。
 
     ![画像 1](Linked_image_Files/07-design-report-in-power-bi-desktop_image15.png)
 
-4. **[開く]** ウィンドウで、**D:\PL300\Resources** フォルダーに移動します。
+1. **[開く]** ウィンドウで、**D:\PL300\Resources** フォルダーに移動します。
 
-5. **AdventureWorksLogo.jpg** ファイルを選択し、**[開く]** をクリックします。
+1. **AdventureWorksLogo.jpg** ファイルを選択し、**[開く]** を選択します。
 
-    ![画像 11](Linked_image_Files/07-design-report-in-power-bi-desktop_image16.png)
+1. 画像をドラッグして左上隅に配置し、ガイド マーカーをドラッグしてサイズを変更します。
 
-6. 画像をドラッグして左上隅に配置し、ガイド マーカーをドラッグしてサイズを変更します。
+     ![画像 12](Linked_image_Files/07-design-report-in-power-bi-desktop_image17.png)
 
-    ![画像 12](Linked_image_Files/07-design-report-in-power-bi-desktop_image17.png)
+1. スライサーを追加するには、まずレポート ページの空の領域をクリックして画像を選び、 **[視覚化]** ペインで **[スライサー]** を選択します。
 
-7. スライサーを追加するには、まずレポート ページの空いている領域をクリックして画像を選択解除します。
-8. **[フィールド]** ペインで、**Date \| Year** フィールドを選択します (階層の **Year** レベルではありません)。
+     ![画像 49](Linked_image_Files/07-design-report-in-power-bi-desktop_image18.png)
+
+1. **[フィールド]** ペインで、(階層の **Year** レベルではなく) **[Date] \| [Year]** フィールドを [視覚化] ペインのスライサーの **[フィールド]** にドラッグします。
     
     "このラボでは、フィールドを参照するために簡略表記を使用します。*次のようになります。**Date \| Year**。この例では、**Date** はテーブル名、**Year** はフィールド名です。"*
 
-9. 年の値のテーブルがレポート ページに追加されていることに注意してください。
+1. スライサーをリストからドロップダウンに変換するには、 **[視覚化] > [ビジュアルの書式設定] > [ビジュアル] > [スライサーの設定] > [スタイル]** の順に移動し、ドロップダウン メニューから **[ドロップダウン]** を選択します。
 
-10. 視覚化をテーブルからスライサーに変換するには、**[視覚化]** ペインで **[スライサー]** を選択します。
+    ![スライサー スタイル](Linked_image_Files/06_slicer_style.png)
 
-    ![画像 49](Linked_image_Files/07-design-report-in-power-bi-desktop_image18.png)
+1. イメージの下に配置され、イメージと同じ幅になるようにスライサーのサイズと位置を変更します。
 
-11. スライサーを一覧からドロップダウンに変換するには、スライサーの右上にある下向き矢印をクリックして、**[ドロップダウン]** を選択します。
+     ![画像 19](Linked_image_Files/07-design-report-in-power-bi-desktop_image20.png)
 
-    ![画像 18](Linked_image_Files/07-design-report-in-power-bi-desktop_image19.png)
+1. **Year** スライサーで、ドロップダウン リストを開き、**FY2020** を選択してドロップダウン リストを折りたたみます。
+    1. "レポート ページは、**FY2020** 年でフィルター処理されるようになりました。"**
 
-12. イメージの下に配置され、イメージと同じ幅になるようにスライサーのサイズと位置を変更します。
+     ![画像 20](Linked_image_Files/07-design-report-in-power-bi-desktop_image21.png)
 
-    ![画像 19](Linked_image_Files/07-design-report-in-power-bi-desktop_image20.png)
+1. レポート ページの空いている領域をクリックして、スライサーの選択を解除します。
 
-13. **Year** スライサーで、ドロップダウン リストを開き、**FY2020** を選択してドロップダウン リストを折りたたみます。
+1. **Region \| Region** フィールドを基にして、2 番目のスライサーを作成します (階層の **Region** レベルではありません)。
 
-    ![画像 20](Linked_image_Files/07-design-report-in-power-bi-desktop_image21.png)
+1. スライサーをリストのままにして、**Year** スライサーでスライサーのサイズを変更し、配置します。
 
-    "レポート ページは、**FY2020** 年でフィルター処理されるようになりました。"**
+     ![画像 21](Linked_image_Files/07-design-report-in-power-bi-desktop_image22.png)
 
-14. レポート ページの空いている領域をクリックして、スライサーの選択を解除します。
+1. レポート ページの空いている領域をクリックして、スライサーの選択を解除します。
 
-15. **Region \| Region** フィールドを基にして、2 番目のスライサーを作成します (階層の **Region** レベルではありません)。
+1. ページにグラフを追加するには、**[視覚化]** ペインで、**[折れ線グラフおよび積み上げ縦棒グラフ]** 視覚化の種類を選択します。
 
-16. スライサーをリストのままにして、**Year** スライサーでスライサーのサイズを変更し、配置します。
+     ![画像 51](Linked_image_Files/07-design-report-in-power-bi-desktop_image26.png)
 
-    ![画像 21](Linked_image_Files/07-design-report-in-power-bi-desktop_image22.png)
+1. ビジュアルをロゴの右側に配置し、レポート ページの幅と等しくなるようにサイズを変更します。
 
+     ![画像 26](Linked_image_Files/07-design-report-in-power-bi-desktop_image27.png)
 
-21. レポート ページの空いている領域をクリックして、スライサーの選択を解除します。
+1. 次のフィールドをビジュアルにドラッグ アンド ドロップします。
 
-22. ページにグラフを追加するには、**[視覚化]** ペインで、**[折れ線グラフおよび積み上げ縦棒グラフ]** 視覚化の種類をクリックします。
+     - Date \| Month
+     - Sales \| Sales
 
-    ![画像 51](Linked_image_Files/07-design-report-in-power-bi-desktop_image26.png)
+1. ビジュアル フィールド ウィンドウで ( **[フィールド]** ウィンドウではなくビジュアル フィールド ウィンドウは **[視覚化]** ウィンドウの下にあります)、フィールドが **[X 軸]** および **[列の Y 軸]** ウェル/領域に割り当てられていることに注目してください。
+    
+    "フィールドをビジュアルにドラッグすると、既定のウェル/領域に追加されます。精度を高めるために、次に行うように、フィールドをウェル/領域に直接ドラッグできます。"**
 
-23. ビジュアルをロゴの右側に配置し、レポート ページの幅と等しくなるようにサイズを変更します。
+     ![画像 27](Linked_image_Files/07-design-report-in-power-bi-desktop_image28_N.png)
 
-    ![画像 26](Linked_image_Files/07-design-report-in-power-bi-desktop_image27.png)
+1. **[フィールド]** ペインから、**Sales \| Profit Margin** を **[線の Y 軸]** ウェル/領域にドラッグします。
 
-24. 次のフィールドをビジュアルにドラッグ アンド ドロップします。
+     ![画像 28](Linked_image_Files/07-design-report-in-power-bi-desktop_image29.png)
 
-    - Date \| Month
+1. 視覚化に 11 か月しかないことに注意してください。
+    
+    "1 年の最後の月である 2020 年 6 月は、売上が (まだ) ありません。既定では、売上が空の月はビジュアルで除去されています。次に、すべての月が表示されるようにビジュアルを構成します。"**
 
-    - Sales \| Sales
+1. ビジュアル フィールド ペインの **[X 軸]** ウェル/領域で、 **[Month]** フィールドの下向き矢印を選択し、 **[データのないアイテムを表示]** を選びます。
+    
+    ''**2020 June** の月が表示されるようになったことに注目してください。''**
 
-25. ビジュアル フィールド ウィンドウで ( **[フィールド]** ウィンドウではなくビジュアル フィールド ウィンドウは **[視覚化]** ウィンドウの下にあります)、フィールドが **[X 軸]** および **[列の Y 軸]** ウェル/領域に割り当てられていることに注目してください。
+     ![画像 52](Linked_image_Files/07-design-report-in-power-bi-desktop_image30.png)
 
-    ![画像 27](Linked_image_Files/07-design-report-in-power-bi-desktop_image28_N.png)
+1. レポート ページの空いている領域をクリックして、グラフの選択を解除します。
 
-    "ビジュアルをビジュアルにドラッグすると、既定のウェル/領域に追加されます。*精度を高めるには、次に行うように、フィールドをウェル/領域に直接ドラッグできます。"*
+1. ページにグラフを追加するには、 **[視覚化]** ペインで、 **[積み上げ縦棒グラフ]** という視覚化の種類を選択します。
 
-26. **[フィールド]** ペインから、**Sales \| Profit Margin** を **[線の Y 軸]** ウェル/領域にドラッグします。
+     ![画像 53](Linked_image_Files/07-stacked-column-chart.png)
 
-    ![画像 28](Linked_image_Files/07-design-report-in-power-bi-desktop_image29.png)
+1. ビジュアルのサイズを変更して縦棒/折れ線グラフの下に配置し、上のグラフの幅の半分になるようにします。
 
-27. 視覚化に 11 か月しかないことに注意してください。
+     ![画像 33](Linked_image_Files/07-design-report-in-power-bi-desktop_image32.png)
 
-    "1 年の最後の月である 2020 年 6 月は、売上が (まだ) ありません。*既定で、売上が空の月は視覚化によって除去されています。次に、すべての月が表示されるように視覚化を構成します。"*
+1. 次のフィールドをビジュアル ウェル/領域に追加します。
 
-28. ビジュアル フィールド ウィンドウの **[X 軸]** ウェル/領域で、 **[Month]** フィールドの下向き矢印をクリックし、 **[データのないアイテムを表示]** を選択します。
+     - X 軸: **Region \| Country**
+     - Y 軸: **Sales \| Sales**
+     - 凡例: **Product \| Category**
 
-    ![画像 52](Linked_image_Files/07-design-report-in-power-bi-desktop_image30.png)
+1. レポート ページの空いている領域をクリックして、グラフの選択を解除します。
 
-29. **2020 June** の月が表示されるようになったことに注意してください。
+1. ページにグラフを追加するには、**[視覚化]** ペインで、**[積み上げ横棒グラフ]** 視覚化の種類をクリックします。
 
-30. レポート ページの空いている領域をクリックして、グラフの選択を解除します。
+     ![画像 54](Linked_image_Files/07-design-report-in-power-bi-desktop_image33.png)
 
-31. ページにグラフを追加するには、**[視覚化]** ペインで、**[マップ]** 視覚化の種類をクリックします。
+1. ビジュアルのサイズを変更し、残りのレポート ページ領域を埋めるように配置します。
 
-    ![画像 53](Linked_image_Files/07-design-report-in-power-bi-desktop_image31.png)
+     ![画像 35](Linked_image_Files/07-design-report-in-power-bi-desktop_image34.png)
 
-32. ビジュアルのサイズを変更して縦棒/折れ線グラフの下に配置し、上のグラフの幅の半分になるようにします。
+1. 次のフィールドをビジュアル ウェル/領域に追加します。
 
-    ![画像 33](Linked_image_Files/07-design-report-in-power-bi-desktop_image32.png)
+     - Y 軸: **Product \| Category**
+     - X 軸: **Sales \| Quantity**
 
-33. 次のフィールドをビジュアル ウェル/領域に追加します。
+1. 視覚化の書式を設定するには、**[書式]** ペインを開きます。
 
-    - 場所: **Region \| Country**
+     ![図 3](Linked_image_Files/07-design-report-in-power-bi-desktop_image35.png)
 
-    - 凡例: **Product \| Category**
+1. **[バー]** 、 **[色]** グループの順に展開し、 **[既定の色]** プロパティを適切な色に設定します (縦棒グラフや折れ線グラフを補完する色)。
 
-    - サイズ:**Sales \| Sales**
+1. **[データ ラベル]** プロパティを **[オン]** に設定します。
 
-34. レポート ページの空いている領域をクリックして、グラフの選択を解除します。
+     ![画像 2](Linked_image_Files/07-design-report-in-power-bi-desktop_image36.png)
 
-35. ページにグラフを追加するには、**[視覚化]** ペインで、**[積み上げ横棒グラフ]** 視覚化の種類をクリックします。
+1. Power BI Desktop ファイルを保存します。
 
-    ![画像 54](Linked_image_Files/07-design-report-in-power-bi-desktop_image33.png)
+*最初のページのデザインが完了しました。*
 
-36. ビジュアルのサイズを変更し、残りのレポート ページ領域を埋めるように配置します。
-
-    ![画像 35](Linked_image_Files/07-design-report-in-power-bi-desktop_image34.png)
-
-37. 次のフィールドをビジュアル ウェル/領域に追加します。
-
-    - 軸: **Product \| Category**
-
-    - 値: **Sales \| Quantity**
-
-38. 視覚化の書式を設定するには、**[書式]** ペインを開きます。
-
-    ![図 3](Linked_image_Files/07-design-report-in-power-bi-desktop_image35.png)
-
-39. **[バー]** 、 **[色]** グループの順に展開し、 **[既定の色]** プロパティを適切な色に設定します (縦棒グラフや折れ線グラフを補完する色)。
-
-40. **[データ ラベル]** プロパティを **[オン]** に設定します。
-
-    ![画像 2](Linked_image_Files/07-design-report-in-power-bi-desktop_image36.png)
-
-41. Power BI Desktop ファイルを保存します。
-
-    *最初のページのデザインが完了しました。*
-
-### <a name="task-5-design-page-2"></a>**タスク 5: ページ 2 をデザインする**
+### **タスク 3: ページ 2 をデザインする**
 
 このタスクでは、2 番目のレポート ページをデザインします。 設計が完了すると、ページは次のようになります。
 
-![スライサーとマトリックスで構成されたページ 2 のイメージ。](Linked_image_Files/07-design-report-in-power-bi-desktop_image37.png)
+ ![スライサーとマトリックスで構成されたページ 2 のイメージ。](Linked_image_Files/07-design-report-in-power-bi-desktop_image37.png)
 
 *重要:ラボに詳細な手順が既に用意されている場合は、ラボの手順により簡潔な手順が提供されます。詳細な手順が必要な場合は、このラボの他のタスクを参照してください。"*
 
-1. 新しいページを作成するには、左下にあるプラス アイコンをクリックします。
+1. 新しいページを作成するには、左下にあるプラス記号アイコンを選択し、新しいページの名前を **Profit** に変更します。
 
-    ![画像 42](Linked_image_Files/07-design-report-in-power-bi-desktop_image38.png)
+1. **Region \| Region** フィールドに基づくスライサーを追加します。
 
-2. ページの名前を **[Profit]** に変更します。
+1. **[書式]** ペインを使用して、[すべて選択] オプションを有効にします ( **[選択]** グループ)。
 
-    ![画像 43](Linked_image_Files/07-design-report-in-power-bi-desktop_image39.png)
+1. スライサーのサイズを変更してレポート ページの左側に配置し、ページの高さの約半分になるようにします。
 
-  
+     ![画像 44](Linked_image_Files/07-design-report-in-power-bi-desktop_image40.png)
 
-3. **Region \| Region** フィールドに基づくスライサーを追加します。
+1. マトリックス ビジュアルを追加し、サイズを変更して配置して、レポート ページの残りの領域を埋めます
 
-4. **[書式]** ペインを使用して、[すべて選択] オプションを有効にします ( **[選択]** グループ)。
+     ![画像 45](Linked_image_Files/07-design-report-in-power-bi-desktop_image41.png)
 
-5. スライサーのサイズを変更してレポート ページの左側に配置し、ページの高さの約半分になるようにします。
+1. **Date \| Fiscal** 階層を、マトリックスの **[行]** ウェル/領域に追加します。
 
-    ![画像 44](Linked_image_Files/07-design-report-in-power-bi-desktop_image40.png)
+     ![画像 46](Linked_image_Files/07-design-report-in-power-bi-desktop_image42.png)
 
-6. マトリックス ビジュアルを追加し、サイズを変更して配置して、レポート ページの残りの領域を埋めます
+1. 次の 5 つの **Sales** テーブル フィールドを **[値]** ウェル/領域に追加します。
 
-    ![画像 45](Linked_image_Files/07-design-report-in-power-bi-desktop_image41.png)
+     - Orders (**Counts** フォルダーから)
+     - Sales
+     - Cost
+     - Profit
+     - 利益率
 
-7. **Date \| Fiscal** 階層を、マトリックスの **[行]** ウェル/領域に追加します。
+     ![画像 55](Linked_image_Files/07-design-report-in-power-bi-desktop_image43.png)
 
-    ![画像 46](Linked_image_Files/07-design-report-in-power-bi-desktop_image42.png)
+1. **[フィルター]** ウィンドウ (**[視覚化]** ウィンドウの左側) で、**[このページでのフィルター]** ウェル/領域を確認します (下にスクロールする必要があるかもしれません)。
 
-8. 次の 5 つの **Sales** テーブル フィールドを **[値]** ウェル/領域に追加します。
+     ![画像 57](Linked_image_Files/07-design-report-in-power-bi-desktop_image44.png)
 
-    - Orders (**Counts** フォルダーから)
-
-    - Sales
-
-    - Cost
-
-    - Profit
-
-    - 利益率
-
-    ![画像 55](Linked_image_Files/07-design-report-in-power-bi-desktop_image43.png)
-
-9. **[フィルター]** ウィンドウ (**[視覚化]** ウィンドウの左側) で、**[このページでのフィルター]** ウェル/領域を確認します (下にスクロールする必要があるかもしれません)。
-
-    ![画像 57](Linked_image_Files/07-design-report-in-power-bi-desktop_image44.png)
-
-10. **[フィールド]** ペインから **Product \| Category** フィールドを **[このページでのフィルター]** ウェル/領域にドラッグします。
-
-11. フィルター カード内の右上にある矢印をクリックして、カードを折りたたみます。
-
-    ![画像 58](Linked_image_Files/07-design-report-in-power-bi-desktop_image45.png)
-
+1. **[フィールド]** ペインから **Product \| Category** フィールドを **[このページでのフィルター]** ウェル/領域にドラッグします。
+    
     " **[フィルター]** ペインにフィールドを追加すると、スライサーと同じ結果を得ることができます。*1 つの違いは、レポート ページのスペースを取らない点です。もう 1 つの違いは、より洗練されたフィルター処理要件を達成するように構成できることです。"*
 
-12. **[カテゴリ]** カード直下で、**[このページでのフィルター]** ウェル/領域に次の各 **Product** テーブル フィールドを追加して、それぞれを折りたたみます。
+1. フィルター カード内の右上にある矢印を選択して、カードを折りたたみます。
 
-    - Subcategory
+1. **[カテゴリ]** カード直下で、**[このページでのフィルター]** ウェル/領域に次の各 **Product** テーブル フィールドを追加して、それぞれを折りたたみます。
 
-    - Product
+     - Subcategory
+     - Product
+     - Color
 
-    - Color
+     ![画像 60](Linked_image_Files/07-design-report-in-power-bi-desktop_image46.png)
 
-    ![画像 60](Linked_image_Files/07-design-report-in-power-bi-desktop_image46.png)
+1. Power BI Desktop ファイルを保存します。
 
-13. Power BI Desktop ファイルを保存します。
+ *2 番目のページのデザインが完了しました。*
 
-    *2 番目のページのデザインが完了しました。*
+### **タスク 4: ページ 3 をデザインする**
 
-### <a name="task-6-design-page-3"></a>**タスク 6 :ページ 3 をデザインする**
+このタスクでは、3 番目 (最後) のレポート ページをデザインします。 設計が完了すると、ページは次のようになります。
 
-このタスクでは、3 番目 (そして最後の) レポート ページをデザインします。 設計が完了すると、ページは次のようになります。
-
-![3 つのビジュアルで構成されたページ 3 のイメージ。](Linked_image_Files/07-design-report-in-power-bi-desktop_image47.png)
+ ![3 つのビジュアルで構成されたページ 3 のイメージ。](Linked_image_Files/07-design-report-in-power-bi-desktop_image47.png)
 
 1. 新しいページを作成し、名前を **"My Performance"** に変更します。
 
 1. 行レベルのセキュリティ フィルターのパフォーマンスをシミュレートするには、**Salesperson (Performance) \| Salesperson** フィールドを、[フィルター] ペインの [ページ レベル フィルター] にドラッグします。
-    
-    ![フィルター ウィンドウの Salesperson フィールドの画像。](Linked_image_Files/07-design-report-in-power-bi-desktop_image999.png) 
+
+     ![フィルター ウィンドウの Salesperson フィールドの画像。](Linked_image_Files/07-design-report-in-power-bi-desktop_image999.png)
 
 1. **[Michael Blythe]** を選択します。 **[My Performance]** レポート ページの日付は、Michael Blythe のみのデータを表示するためにフィルター処理されています。
 
 1. **Date \| Year** フィールドに基づくドロップダウン スライサーを追加し、サイズと位置を変更してページの左上隅に配置します。
 
-    ![画像 70](Linked_image_Files/07-design-report-in-power-bi-desktop_image49.png)
+     ![画像 70](Linked_image_Files/07-design-report-in-power-bi-desktop_image49.png)
 
 1. スライサーで、**FY2019** によってフィルター処理するようにページを設定します。
 
-    ![画像 71](Linked_image_Files/07-design-report-in-power-bi-desktop_image50.png)
+     ![画像 71](Linked_image_Files/07-design-report-in-power-bi-desktop_image50.png)
 
 1. **[複数の行カード]** 視覚化を追加し、スライサーの右側でページの残りの幅を埋めるようにサイズと位置を変更します。
 
-    ![画像 56](Linked_image_Files/07-design-report-in-power-bi-desktop_image51.png)
+     ![画像 56](Linked_image_Files/07-design-report-in-power-bi-desktop_image51.png)
 
-    ![画像 74](Linked_image_Files/07-design-report-in-power-bi-desktop_image52.png)
+     ![画像 74](Linked_image_Files/07-design-report-in-power-bi-desktop_image52.png)
 
 1. 視覚化に次の 4 つのフィールドを追加します。
 
-    - Sales \| Sales
-
-    - Targets \| Target
-
-    - Targets \| Variance
-
-    - Targets \| Variance Margin
+     - Sales \| Sales
+     - Targets \| Target
+     - Targets \| Variance
+     - Targets \| Variance Margin
 
 1. 視覚化の書式を設定します。
 
-    - **[吹き出しの値]** グループで、 **[テキスト サイズ]** プロパティを **28 pt** に増やします
+     - **[吹き出しの値]** グループで、 **[テキスト サイズ]** プロパティを **28 pt** に増やします
 
-    - **[背景]** グループで、**[色]** を明るい灰色に設定します
+     - **[全般] > [効果] > [背景]** グループで、 **[色]** を薄い灰色 ("白、20% 暗い" など) に設定して、コントラストを指定します
 
-    ![画像 79](Linked_image_Files/07-design-report-in-power-bi-desktop_image53.png)
+         ![画像 79](Linked_image_Files/07-design-report-in-power-bi-desktop_image53.png)
 
 1. **クラスター棒グラフ** ビジュアルを追加し、複数行カード ビジュアルの下に位置し、ページの残りの高さと、複数行カード ビジュアルの幅の半分になるようにサイズを変更します。
 
-    ![画像 59](Linked_image_Files/07-design-report-in-power-bi-desktop_image54.png)
+     ![画像 59](Linked_image_Files/07-design-report-in-power-bi-desktop_image54.png)
 
-    ![画像 78](Linked_image_Files/07-design-report-in-power-bi-desktop_image55.png)
+     ![画像 78](Linked_image_Files/07-design-report-in-power-bi-desktop_image55.png)
 
 1. 次のフィールドをビジュアル ウェル/領域に追加します。
 
-    - Y 軸: **Date \| Month**
+     - Y 軸: **Date \| Month**
+     - X 軸: **Sales \| Sales** および **Targets \| Target**
 
-    - X 軸: **Sales \| Sales** および **Targets \| Target**
-
-    ![画像 80](Linked_image_Files/07-design-report-in-power-bi-desktop_image56.png)
+         ![画像 80](Linked_image_Files/07-design-report-in-power-bi-desktop_image56.png)
 
 1. 視覚化のコピーを作成するには、**Ctrl + C** キーを押してから、**Ctrl + V** キーを押します。
 
 1. 新しいビジュアルを元のビジュアルの右側に配置します。
 
-    ![画像 82](Linked_image_Files/07-design-report-in-power-bi-desktop_image57.png)
+     ![画像 82](Linked_image_Files/07-design-report-in-power-bi-desktop_image57.png)
 
 1. 視覚エフェクトの種類を変更するには、**[視覚化]** ペインで **[集合縦棒グラフ]** を選択します。
 
-    ![画像 61](Linked_image_Files/07-design-report-in-power-bi-desktop_image58.png)
+     ![画像 61](Linked_image_Files/07-design-report-in-power-bi-desktop_image58.png)
 
-    "同じデータを 2 つの異なる視覚化の種類で表したものを見ることができるようになりました。*これはページ レイアウトの使い方としてはあまりよくありませんが、**Power BI Desktop でのレポートの設計、パート 2** ラボでは、ビジュアルを重ね合わせることで改善します。ページにボタンを追加して、2 つの視覚化のどちらを表示するかをレポートのユーザーが決定できるようにします。"*
+ "同じデータを 2 つの異なる視覚化の種類で表したものを見ることができるようになりました。これはページ レイアウトの使い方としてはあまりよくありませんが、「**Power BI Desktop でレポートを強化する**」ラボでは、ビジュアルを重ね合わせることで改善します。ページにボタンを追加して、2 つのビジュアルのどちらを表示するかをレポートのユーザーが決定できるようにします。"**
 
-    *3 番目 (最後) のページのデザインが完了しました。*
+ *3 番目 (最後) のページのデザインが完了しました。*
 
-### <a name="task-7-publish-the-report"></a>**タスク 7: レポートを発行する**
+## **演習 2: レポートを探索する**
 
-このタスクでは、レポートを発行します。
+この演習では、レポートを Power BI サービスに発行し、読み取り専用コンシューマー レポートを探索します。
 
-1. **[概要]** ページを選択します。
+### **タスク 1: レポートを発行する**
 
-2. Power BI Desktop ファイルを保存します。
+このタスクでは、レポートを Power BI サービスに発行します。
 
-3. **[ホーム]** リボン タブで、**[共有]** グループの **[発行]** をクリックします。
+1. **[Overview]** ページを選択してから、Power BI Desktop ファイルを保存します。
 
-    ![画像 67](Linked_image_Files/07-design-report-in-power-bi-desktop_image59.png)
+1. **[ホーム]** リボン タブで、**[共有]** グループの **[発行]** を選択します。
+    
+    ''まだ Power BI Desktop にサインインしていない場合は、サインインして発行する必要があります。''**
 
-4. **[Power BI に発行]** ウィンドウで、**[マイ ワークスペース]** が選択されていることを確認します。
+     ![画像 67](Linked_image_Files/07-design-report-in-power-bi-desktop_image59.png)
 
-5. レポートを発行するには、**[選択]** をクリックします。
+1. **[Power BI に発行]** ウィンドウで、**[マイ ワークスペース]** が選択されていることを確認します。
+    
+    ''このラボでは、Power BI サービス内のさまざまな項目については詳しく説明しません。**
 
-    ![画像 75](Linked_image_Files/07-design-report-in-power-bi-desktop_image60.png)
+1. レポートを発行するには、 **[選択]** を選びます。 これには数分かかることがあります。 
+1. 発行が成功したら、**[了解]** を選択します。
 
-6. 発行が成功したら、**[了解]** をクリックします。
-
-    ![画像 76](Linked_image_Files/07-design-report-in-power-bi-desktop_image61.png)
-
-7. Power BI Desktop を開いたままにします。
-
-    *次の演習では、Power BI サービスでレポートを探索します。*
-
-## <a name="exercise-2-explore-the-report"></a>**演習 2: レポートを探索する**
-
-この演習では、Power BI に発行されたレポートを探索します。
-
-### <a name="task-1-explore-the-report"></a>**タスク 1: レポートを探索する**
+### **タスク 2: レポートを探索する**
 
 このタスクでは、Power BI に発行されたレポートを探索します。
 
+1. Microsoft Edge ブラウザーを開いてから、 **https://app.powerbi.com** でサインインします。
+
 1. Microsoft Edge ブラウザー ウィンドウの Power BI サービスの **[ナビゲーション]** ウィンドウ (左側にあり、折りたたまれている場合があります) で、**[マイ ワークスペース]** を展開します。
 
-    ![画像 93](Linked_image_Files/07-design-report-in-power-bi-desktop_image62.png)
+    ![画像 93](Linked_image_Files/06-my-workspace-new.png)
 
-2. **販売分析**レポートとデータセットに注目して、ワークスペースの内容を確認します。
+1. ワークスペースのコンテンツを確認します。 [すべて]、[コンテンツ]、[データセット + データフロー] のナビゲーション オプションに注目してください。
+    1. ''ワークスペースに存在できる項目は 4 種類あります。ここでは、**レポート**と**データセット**について説明します。''**
+    1. ''データセットが表示されない場合は、Microsoft Edge ブラウザーを最新の情報に更新する必要がある場合があります。''**
+    1. *Power BI Desktop ファイルを発行したときに、データ モデルはデータセットとして発行されました。*
 
-    *Power BI Desktop ファイルを発行したときに、データ モデルはデータセットとして発行されました。*
+1. レポートを探索するには、 **[Sales Analysis]** レポートを選択します。
 
-    "表示されない場合は、**F5** キーを押してブラウザーを再度読み込んでから、もう一度ワークスペースを展開します。"**
+1. 左側の **[ページ]** ウィンドウで、**[概要]** ページを選択します。
 
-    ![画像 94](Linked_image_Files/07-design-report-in-power-bi-desktop_image63.png)
+1. **Regions** スライサーで、**Ctrl** キーを押しながら複数の地域を選択します。
 
-3. レポートを開くには、**販売分析**レポートをクリックします。
+1. 縦棒と折れ線のグラフで、任意の月の列を選択して、ページをクロスフィルター処理します。
 
-4. 左側の **[ページ]** ウィンドウで、**[概要]** ページを選択します。
- 
-    ***注**: マップ ビジュアルが無効になっているというエラーが表示される場合は、ブラウザーを更新してください。*
+1. **Ctrl** キーを押しながら、別の月を選択します。
 
-5. **Regions** スライサーで、**Ctrl** キーを押しながら複数の地域を選択します。
+     ''注: 既定では、クロスフィルター処理によってページ上の他のすべてのビジュアルがフィルター処理されます。''**
 
-6. 縦棒と折れ線のグラフで、任意の月の列を選択して、ページをクロスフィルター処理します。
+1. 横棒グラフがフィルター処理されて強調表示されており、横棒の太字部分がフィルター処理された月を表していることに注意してください。
 
-7. **Ctrl** キーを押しながら、追加の月を選択します。
-
-    *既定で、クロスフィルター処理によってページ上の他のすべての視覚化がフィルター処理されます。*
-
-8. 横棒グラフがフィルター処理されて強調表示されており、横棒の太字部分がフィルター処理された月を表していることに注意してください。
-
-9. 棒グラフ ビジュアルの上にカーソルを置き、右上のフィルター アイコンにカーソルを合わせます。
-
-    ![画像 95](Linked_image_Files/07-design-report-in-power-bi-desktop_image64.png)
-
+1. 棒グラフ ビジュアルの上にカーソルを置き、右上のフィルター アイコンにカーソルを合わせます。 
+    
     *フィルター アイコンを使用すると、他の視覚化からのスライサーとクロスフィルターも含めて、視覚化に適用されているすべてのフィルターがわかります。*
 
-10. 横棒をポイントし、ヒントの情報を確認します。
+1. 横棒をポイントし、ヒントの情報を確認します。
 
-11. クロスフィルターを取り消すには、縦棒と折れ線のグラフで、視覚化の空いている領域をクリックします。
+1. クロスフィルターを取り消すには、縦棒と折れ線のグラフで、視覚化の空いている領域を選択します。
 
-12. マップ ビジュアルの上にカーソルを移動し、右上の **[フォーカス モード]** アイコンをクリックします。
-
-    ![画像 96](Linked_image_Files/07-design-report-in-power-bi-desktop_image65.png)
-
+1. 積み上げ縦棒グラフのビジュアルをポイントしてから、右上にある **[フォーカス モード]** アイコンを選択します。
+    
     *フォーカス設定モードでは、視覚化が全ページ サイズに拡大されます。*
 
-13. 棒グラフの別のセグメントにカーソルを合わせると、ヒントが表示されます。
+     ![画像 96](Linked_image_Files/07-published-report-visual-filter.png)
 
-14. レポートのページに戻るには、左上にある **[レポートに戻る]** をクリックします。
+1. 棒グラフの別のセグメントにカーソルを合わせると、ヒントが表示されます。
 
-    ![画像 86](Linked_image_Files/07-design-report-in-power-bi-desktop_image66.png)
+1. レポートのページに戻るには、左上にある **[レポートに戻る]** を選択します。
 
-15. もう一度マップ ビジュアルの上にカーソルを移動し、右上の省略記号 (..) をクリックして、メニュー オプションに注目します。
+     ![画像 86](Linked_image_Files/07-design-report-in-power-bi-desktop_image66.png)
 
-    ![画像 97](Linked_image_Files/07-design-report-in-power-bi-desktop_image67.png)
+1. もう一度ビジュアルの 1 つをポイントし、右上にある省略記号 (...) を選択して、メニュー オプションに注目します。 **[Chat in Teams](Teams でチャット)** 以外のオプションを 1 つずつ試します。
 
-16. **[Chat in Teams](Teams でチャット)** 以外のオプションを 1 つずつ試します。
+     ![画像 97](Linked_image_Files/07-design-report-in-power-bi-desktop_image67.png)
 
-17. 左側の **[ページ]** ペインで、**Profit** ページを選択します。
+1. 左側の **[ページ]** ペインで、**Profit** ページを選択します。
 
-    ![画像 84](Linked_image_Files/07-design-report-in-power-bi-desktop_image68.png)
+     ![画像 84](Linked_image_Files/07-design-report-in-power-bi-desktop_image68.png)
 
-18. **Region** スライサーは、**[概要]** ページの **[Region]** スライサーとは異なる選択を行うことに注目してください。
+1. **Region** スライサーは、**[概要]** ページの **[Region]** スライサーとは異なる選択を行うことに注目してください。
+    
+    "スライサーは同期されていません。「**Power BI Desktop でレポートを強化する**」ラボで、レポートのデザインを変更し、ページ間で確実に同期されるようにします。"**
 
-    "スライサーが同期されていません。「**Power BI Desktop でレポートをデザインする (パート 2)**」ラボで、レポートのデザインを変更して、ページ間で同期されるようにします。"**
-
-19. **[フィルター]** ペイン (右側にあります) でフィルター カードを展開し、フィルターをいくつか適用します。
-
+1. **[フィルター]** ペイン (右側にあります) でフィルター カードを展開し、フィルターをいくつか適用します。
+    
     " **[フィルター]** ペインでは、スライサーとしてページに収まりきらない可能性があるほど多くのフィルターを定義できます。"**
 
-20. マトリックス視覚化で、プラス (+) ボタンを使用して **Fiscal** 階層の詳細を表示します。
+1. マトリックス視覚化で、プラス (+) ボタンを使用して **Fiscal** 階層の詳細を表示します。
 
-21. **My Performance** ページを選択します。
+1. **My Performance** ページを選択します。
 
-    ![画像 89](Linked_image_Files/07-design-report-in-power-bi-desktop_image69.png)
+     ![画像 89](Linked_image_Files/07-design-report-in-power-bi-desktop_image69.png)
 
-22. メニュー バーの右上にある **[表示]** をクリックして、**[全画面]** を選択します。
+1. メニュー バーの右上にある **[表示]** を選択して、**[全画面]** を選択します。
 
-    ![画像 98](Linked_image_Files/07-design-report-in-power-bi-desktop_image70.png)
+     ![画像 98](Linked_image_Files/07-design-report-in-power-bi-desktop_image70.png)
 
-23. スライサーを変更し、ページをクロスフィルター処理して、ページを操作します。
+1. スライサーを変更し、ページをクロスフィルター処理して、ページを操作します。
 
-24. ウィンドウの最下部には、ページの変更、ページ間での前後への移動、または全画面表示モードを終了するためのコマンドがあります。
+1. ウィンドウの最下部には、ページの変更、ページ間での前後への移動、または全画面表示モードを終了するためのコマンドがあります。
 
-25. 左側のアイコンをクリックして、全画面表示モードを終了します。
+1. 右側のアイコンを選択して、全画面表示モードを終了します。
 
-    ![画像 91](Linked_image_Files/07-design-report-in-power-bi-desktop_image71.png)
+     ![画像 91](Linked_image_Files/07-design-report-in-power-bi-desktop_image71.png)
 
-### <a name="task-2-finish-up"></a>**タスク 2: 完了**
+### **タスク 3: 完了**
 
 このタスクでは、ラボを完了します。
 
-1. ワークスペースに戻るには、ウィンドウの Web ページのバナーで、**[マイ ワークスペース]** をクリックします。
+[マイ ワークスペース] に戻るには、ウィンドウの Web ページのバナーで **[マイ ワークスペース]** を選択します。
 
-    ![画像 99](Linked_image_Files/07-design-report-in-power-bi-desktop_image72.png)
-
-2. Microsoft Edge ブラウザー ウィンドウを開いたままにします。
-
-    "「**Power BI Desktop でレポートをデザインする (パート 2)**」ラボでは、高度な機能を使用してレポートのデザインを向上させます。"**
+ ''「**Power BI Desktop でレポートを強化する**」ラボでは、高度な機能を使用してレポートのデザインを強化します。''**
