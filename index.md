@@ -4,11 +4,11 @@ permalink: index.html
 layout: home
 ---
 
-# <a name="content-directory"></a>コンテンツ ディレクトリ
+# コンテンツ ディレクトリ
 
 各ラボの演習とデモへのハイパーリンクを以下に示します。
 
-## <a name="labs"></a>ラボ
+## ラボ
 
 {% assign labs = site.pages | where_exp:"page", "page.url contains '/Instructions'" %}
 | セクション | ラボ |
