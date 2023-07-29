@@ -1,6 +1,6 @@
 ---
 lab:
-  title: Power BI で高度な分析を実行する
+  title: AI 視覚化を使って高度な分析を実行する
   module: Perform Data Analysis in Power BI
 ---
 
