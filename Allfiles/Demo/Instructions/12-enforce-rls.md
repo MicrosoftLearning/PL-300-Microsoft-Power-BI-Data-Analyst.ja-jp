@@ -1,74 +1,74 @@
 ---
 demo:
-    title: 'Enforce Row-level security in Power BI'
-    module: 'Deploy and manage Power BI service items'
+  "\_\_ title": Enforce Row-level security in Power BI
+  "\_\_ module": Deploy and manage Power BI service items
 ---
-# Enforce Row-level security in Power BI
+# Power BI で行レベルのセキュリティを適用する
 
-## Add a security table to the model
+## モデルにセキュリティ テーブルを追加する
 
-1. In Power BI Desktop, open the Power Query Editor window.
+1. Power BI Desktop で、Power Query エディター ウィンドウを開きます。
 
-1. Add a new query based on the `D:\Demo\Data\**ManagerCategory**.xlsx` file.
+1. `D:\Demo\Data\**ManagerCategory**.xlsx` ファイルに基づいて新しいクエリを追加します。
 
-1. Use the **ManagerCategory** table in the file.
+1. このファイルの **ManagerCategory** テーブルを使います。
 
-1. Remove the **Manager** column.
+1. **[Manager]** 列を削除します。
 
-1. Split the **Category** column by the semicolon delimiter and split into rows (advanced options).
+1. **Category** 列をセミコロン区切り記号で分割し、行に分割します (詳細オプション)。
 
-1. In the **Email** column, replace the value **<ty-johnston@tailspintoys.com>** with the recipient account (from the MySettings.txt file).
+1. **Email** 列の値 **<ty-johnston@tailspintoys.com>** を (MySettings.txt ファイルの) 受信者アカウントに置き換えます。
 
-1. Point out that this user is able to see three product categories: **Collective pitch, Trainer, and Warbird**.
+1. このユーザーは **Collective pitch、Trainer、Warbird** という 3 つの製品カテゴリを表示できることに注目してください。
 
-1. Close and apply the queries.
+1. 閉じてクエリを適用します。
 
-1. In Model view, create a relationship between the **ManagerCategory** and Product tables relating the **Category** column.
+1. モデル ビューで、**ManagerCategory** と Product の各テーブル間に、**Category** 列に関連するリレーションシップを作成します。
 
-1. Set the cross filter direction to Single (**ManagerCategory** filters Product).
+1. クロス フィルターの方向を [単一] (**ManagerCategory** が Product をフィルター処理する) に設定します。
 
-1. Hide the **ManagerCategory** table.
+1. **[ManagerCategory]** テーブルを非表示にします。
 
-## Add a role
+## ロールを追加する
 
-1. In Report view, open Manage Roles, and then create a role named **Manager**.
+1. レポート ビューで [ロールの​​管理] を開き、「**Manager**」という名前のロールを作成します。
 
-1. In the role, filter the **ManagerCategory** table Email address column as follows:
+1. ロールで、**[ManagerCategory]** テーブルの [Email] アドレス列を次のようにフィルター処理します。
 
   ```dax
    [Email] = USERPRINCIPALNAME()
    ```
 
-1. **Save**.
+1. **保存**。
 
-## Validate the role
+## ロールを検証する
 
-1. Open View As, and then configure the following settings:
+1. [表示方法] を開き、次の設定を行います。
 
-    - Other User: Check, then enter the recipient account.
+    - その他のユーザー:オンにして、受信者アカウントを入力します。
 
-    - Manager role: Check
+    - マネージャー ロール:オン
 
-1. Point out that the filter visual shows just three product categories.
+1. フィルター ビジュアルには 3 つの製品カテゴリしか表示されないことを示します。
 
-1. Stop viewing the report using the view-as options.
+1. 表示方法オプションを使用してレポートの表示を停止します。
 
-1. Save the Power BI Desktop file.
+1. Power BI Desktop ファイルを保存します。
 
-1. Publish the Power BI Desktop file to the workspace, overwriting the dataset and report in the service.
+1. Power BI Desktop ファイルをワークスペースに発行し、サービスのデータセットとレポートを上書きします。
 
-1. Close Power BI Desktop.
+1. Power BI Desktop を閉じます。
 
-## Configure dataset security
+## データセットのセキュリティを構成する
 
-1. In the Power BI service for the instructor, from the Navigation pane, open the security page for the **Sales Analysis** dataset.
+1. 講師用の Power BI サービスで、[ナビゲーション] ウィンドウから **[売上分析]** データセットのセキュリティ ページを開きます。
 
-1. In the Members section, enter the recipient account (representing **Ty Johnston**).
+1. [メンバー] セクションで、(**Ty Johnston** を表す) 受信者アカウントを入力します。
 
-1. Add and Save.
+1. [追加] して [保存] します。
 
-## Test row-level security in the app
+## アプリで行レベルのセキュリティをテストする
 
-1. In the Power BI service for the recipient, refresh the dashboard (left open from the previous demo).
+1. 受信者用の Power BI サービスで、ダッシュボードをリフレッシュします (前回のデモで開いたままになっています)。
 
-1. In the **Profit Margin** dashboard tile, verify that only three product categories can be seen.
+1. **Profit Margin** ダッシュボード タイルで、3 つの製品カテゴリのみが表示されていることを確認します。
