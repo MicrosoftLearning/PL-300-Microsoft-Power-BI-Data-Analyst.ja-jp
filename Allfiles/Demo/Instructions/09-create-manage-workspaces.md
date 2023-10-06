@@ -1,57 +1,57 @@
 ---
 demo:
-    title: 'Create and manage workspaces in Power BI'
-    module: 'Deploy and manage Power BI service items'
+  "\_\_ title": Create and manage workspaces in Power BI
+  "\_\_ module": Deploy and manage Power BI service items
 ---
 
-# Create and manage workspaces
+# ワークスペースの作成と管理
 
-## Share a dashboard
+## ダッシュボードを共有する
 
-1. Open another Microsoft Edge window, in a new InPrivate window.
+1. 別の Microsoft Edge ウィンドウを新しい InPrivate ウィンドウで開きます。
 
-1. Sign in to the Power BI service, and accept the Power BI Pro trial license if not already done.
+1. Power BI サービスにサインインし、まだ行っていない場合は、Power BI Pro 試用版ライセンスに同意します。
 
-## Open the shared dashboard
+## 共有ダッシュボードを開く
 
-1. Switch to the **instructor** Power BI service window.
+1. **講師**の Power BI サービス ウィンドウに切り替えます。
 
-1. Open the **Sales Monitoring** dashboard.
+1. **[売上モニタリング]** ダッシュボードを開きます。
 
-1. On the menu, select Share.
+1. メニューで [共有] を選びます。
 
-1. Share the dashboard to the recipient account.
+1. 受信者アカウントにダッシュボードを共有します。
 
-1. Switch to the **recipient** Power BI service window.
+1. **受信者**の Power BI サービス ウィンドウに切り替えます。
 
-1. Open **Shared with Me** and open the Sales Monitoring dashboard.
+1. **[自分と共有]** を開き、[売上モニタリング] ダッシュボードを開きます。
 
-1. Point out that the dashboard is read-only.
+1. ダッシュボードが読み取り専用であることを示します。
 
-## Create an app
+## アプリを作成する
 
-1. Switch to the **instructor** Power BI service window.
+1. **講師**の Power BI サービス ウィンドウに切り替えます。
 
-1. In the Navigation pane, select the workspace name.
+1. [ナビゲーション] ペインで、ワークスペース名を選びます。
 
-1. At the top-right, select **Create App**.
+1. 右上の **[アプリの作成]** を選びます。
 
-1. In the Setup section, enter description text and optionally choose a theme color.
+1. [設定] セクションで、説明テキストを入力し、必要に応じてテーマの色を選択します。
 
-1. In the Navigation section, optionally sequence the report before the dashboard.
+1. [ナビゲーション] セクションで、必要に応じてレポートをダッシュボードの前に並べます。
 
-1. In the Permissions section, grant access to the recipient account.
+1. [アクセス許可] セクションで、受信者アカウントへのアクセスを許可します。
 
-1. Publish the app.
+1. アプリの発行
 
-## Get and open the app
+## アプリを取得して開く
 
-1. Switch to the **recipient** Power BI service window.
+1. **受信者**の Power BI サービス ウィンドウに切り替えます。
 
-1. Open Apps, and then get the app you just published.
+1. [アプリ] を開くと、発行したばかりのアプリが表示されます。
 
-1. Once added, open the app.
+1. 追加したら、アプリを開きます。
 
-1. Navigate between the report pages and the dashboard.
+1. レポート ページとダッシュボード間を移動します。
 
-1. Leave the app open. It will be used in the row-level security demo later.
+1. アプリを開いたままにします。 これは、後で行レベルのセキュリティのデモを行うときに使います。
