@@ -1,33 +1,33 @@
 ---
 demo:
-    title: 'Clean, transform, and load data in Power BI'
-    module: 'Clean, transform, and load data in Power BI'
+  "\_\_ title": 'Clean, transform, and load data in Power BI'
+  "\_\_ module": 'Clean, transform, and load data in Power BI'
 ---
-# Clean, transform, and load data in Power BI
+# Power BI でのデータの消去、変換、読み込み
 
-## Apply query transformations
+## クエリに変換を適用する
 
-1. First, apply transformations to the Product query.
+1. 最初に、Product クエリに変換を適用します。
 
-1. Remove the RetailPrice, Photo, and Sales columns.
+1. [RetailPrice]、[Photo]、[Sales] 列を削除します。
 
-1. Change the data type of the Channels column to Whole Number.
+1. [Channels] 列のデータ型を [整数] に変更します。
 
-1. Rename the following columns:
+1. 次の列の名前を変更します。
 
-    - ProductSKU to SKU
+    - ProductSKU → SKU
 
-    - ProductName to Product
+    - ProductName → Product
 
-    - ProductCategory to Category
+    - ProductCategory → Category
 
-    - ItemGroup to Item Group
+    - ItemGroup → Item Group
 
-    - KitType to Kit Type
+    - KitType → Kit Type
 
-1. Second, apply transformations to the Sales query.
+1. 次に、Sales クエリに変換を適用します。
 
-1. Remove all columns, except:
+1. 以下を除くすべての列を削除します。
 
     - OrderDate
 
@@ -37,38 +37,38 @@ demo:
 
     - UnitPrice
 
-1. Change the data type of the UnitPrice column to Fixed Decimal Number.
+1. [UnitPrice] 列のデータ型を [固定小数点数] に変更します。
 
-1. Rename the UnitPrice column to Unit Price.
+1. [UnitPrice] 列の名前を [Unit Price] に変更します。
 
-1. Multi-select the Quantity and Unit Price columns, and then add a new column based on their multiplication.
+1. [Quantity] と [Unit Price] 列を複数選択し、それらの乗算に基づいて新しい列を追加します。
 
-1. Rename the new column as Sales.
+1. 新しい列の名前を [Sales] に変更します。
 
-## Integrate queries
+## クエリの統合
 
-1. Create a new query using the Excel connector, connecting to the D:\PL300\Demo\Data\ProductCost.xlsx file.
+1. Excel コネクタを使用して D:\PL300\Demo\Data\ProductCost.xlsx ファイルに接続し、新しいクエリを作成します。
 
-1. Remove the Product column.
+1. [Product] 列を削除します。
 
-1. Change the data type of the ProductCost column to Fixed Decimal Number.
+1. [ProductCost] 列のデータ型を [固定小数点数] に変更します。
 
-1. Select the Product query, and then merge with the ProductCost query, relating the SKU columns.
+1. Product クエリを選択したら、SKU 列に関連する ProductCost クエリと結合します。
 
-1. In the Privacy Levels window, set the privacy level for the D:\ to Organizational.
+1. [プライバシー レベル] ウィンドウで、[D:\] のプライバシー レベルを [組織] に設定します。
 
-1. Expand the ProductCost column to include the ProductCost column (from the ProductCost query).
+1. ProductCost 列を展開して、ProductCost 列を含めます (ProductCost クエリから)。
 
-1. Rename the new column as Cost.
+1. 新しい列の名前を [Cost] に変更します。
 
-## Disable and load queries to the data model
+## データ モデルにクエリを無効にして読み込む
 
-1. In the Queries pane, disable the ProductCost query.
+1. [クエリ] ペインで、[ProductCost] クエリを無効にします。
 
-1. On the Home ribbon tab, click the Close & Apply icon.
+1. [ホーム] リボン タブで、[閉じて適用] アイコンをクリックします。
 
-1. In Power BI Desktop, point out the two tables in the Data pane.
+1. Power BI Desktop で、[データ] ペインの 2 つのテーブルを示します。
 
-1. Save the Power BI Desktop file.
+1. Power BI Desktop ファイルを保存します。
 
-1. Leave the Power BI Desktop file open for the next demo.
+1. Power BI Desktop ファイルは、次のデモ用に開いたままにしておきます。
