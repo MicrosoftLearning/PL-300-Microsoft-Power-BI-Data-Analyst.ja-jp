@@ -78,4 +78,4 @@ demo:
 
 1. Power BI Desktop を閉じます。
 
-> **注**: この Power BI Desktop ソリューションを再使用することはありません。
+> **注**: この Power BI Desktop ソリューションを再び使用することはありません。
