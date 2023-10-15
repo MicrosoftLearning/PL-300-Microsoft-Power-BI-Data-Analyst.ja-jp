@@ -1,36 +1,30 @@
----
-demo:
-  "\_\_ title": Setup demo environment
-  "\_\_ module": Setup demo environment
----
+# Demo Setup
 
-# デモのセットアップ
+## VM Setup
 
-## VM のセットアップ
+1. Sign in to the virtual machine environment using the Student account.
 
-1. 学生アカウントを使用して仮想マシン環境にサインインします。
+1. Open Microsoft Edge, then navigate to <https://powerbi.com> and sign in using the instructor account.
+    > **Tip**: If prompted to change the password, be sure to record it in the D:\PL300\Demo\Setup\MySettings.txt file.
 
-1. Microsoft Edge を開き、<https://powerbi.com> に移動し、講師アカウントを使用してサインインします。
-    > **ヒント**: パスワードの変更を求めるメッセージが表示されたら、D:\PL300\Demo\Setup\MySettings.txt ファイルにパスワードを記録してください。
+1. In the Power BI service, accept the Power BI Pro trial.
 
-1. Power BI サービスで、Power BI Pro の試用版を受け入れます。
+## First demo setup
 
-## 最初のデモのセットアップ
+1. Create a workspace and use the D:\PL300\Demo\Resources\Icon-Star.jpg image as its icon.
 
-1. ワークスペースを作成し、D:\PL300\Demo\Resources\Icon-Star.jpg 画像をアイコンとして使用します。
+1. Open the D:\PL300\Demo\Setup\Sales Analysis.pbix file in Power BI Desktop.
 
-1. Power BI Desktop で D:\PL300\Demo\Setup\Sales Analysis.pbix ファイルを開きます。
+1. In Power BI Desktop, sign in by using the instructor account.
 
-1. Power BI Desktop で講師アカウントを使用してサインインします。
+1. Publish the report to the workspace you created earlier.
 
-1. 前に作成したワークスペースにレポートを発行します。
+1. In the Power BI service, open the Sales Analysis report, and then pin the column/line chart visual to create a new dashboard named Sales Monitoring.
 
-1. Power BI サービスで、[売上分析] レポートを開き、縦棒または折れ線グラフのビジュアルをピン留めして、[売上モニタリング] という名前の新しいダッシュボードを作成します。
+1. Pin the funnel chart to the dashboard, also.
 
-1. じょうごグラフもダッシュボードにピン留めします。
+1. Open the dashboard and leave it ready for the first demo.
 
-1. ダッシュボードを開き、最初のデモ用に準備しておきます。
+1. Close Power BI Desktop.
 
-1. Power BI Desktop を閉じます。
-
-> **注**: デモの資産は、PL-300 Power BI データ アナリスト [GitHub リポジトリ](https://github.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/tree/Main/Allfiles/Demo)にあります。
+> **Note**: Demo assets can be found in the PL-300 Power BI Data Analyst [GitHub Repository](https://github.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/tree/Main/Allfiles/Demo).
