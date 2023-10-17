@@ -1,79 +1,84 @@
-# Create measures using dax in Power BI
+---
+demo:
+  "\_\_ title": Create measures using DAX in Power BI
+  "\_\_ module": Create measures using DAX in Power BI
+---
+# Power BI で DAX を使ってメジャーを作成する
 
-> **Tip**: All calculations can be copied from the D:\PL300\Demo\Resources\Snippets-Demo-05.txt file.
+> **ヒント**: すべての計算は D:\PL300\Demo\Resources\Snippets-Demo-05.txt ファイルからコピーできます。
 
-## Create a calculated table
+## 計算テーブルを作成する
 
-1. Create a calculated table by using the following expression:
+1. 次の式を使用して、計算テーブルを作成します。
 
 ```dax
 Date = CALENDARAUTO()
 ```
 
-1. Switch to Data view, and review the table, which comprises a single date column.
+1. データ ビューに切り替え、単一の日付列で構成されるテーブルを確認します。
 
-Create calculated columns
+計算列の作成
 
-1. Add a calculated column to the Date table:
+1. [Date] テーブルに計算列を追加します。
 
 ```dax
 Year = "CY" & YEAR('Date'[Date])
 ```
 
-1. Add an additional calculated column to the Date table:
+1. [Date] テーブルに別の計算列を追加します。
 
 ```dax
 Month = FORMAT('Date'[Date], "YYYY-MM")
 ```
 
-1. In Model view, create a relationship by dragging the Date table Date column to the Sales table OrderDate column.
+1. モデル ビューで、[Date] テーブルの [Date] 列を [Sales] テーブルの [OrderDate] 列にドラッグしてリレーションシップを作成します。
 
-1. Hide the Sales table OrderDate column.
+1. [Sales] テーブルの [OrderDate] 列を非表示にします。
 
-1. In the Date table, create the Calendar hierarchy, with Year and Month levels.
+1. Date テーブルで、Year と Month のレベルを持つ Calendar 階層を作成します。
 
-1. In Report view, mark the Date table as a date table using the Date column.
+1. レポート ビューで、Date 列を使用して Date テーブルを日付テーブルとしてマークします。
 
-1. In the matrix visual, remove the Products hierarchy, and then replace it with the Calendar hierarchy.
+1. マトリックス ビジュアルで、[Products] 階層を削除し、[Calendar] 階層に置き換えます。
 
-1. Add a calculated column to the Sales table:
+1. [Sales] テーブルに計算列を追加します。
 
 ```dax
 Cost = 'Sales'[Quantity] * RELATED('Product'[Cost])
 ```
 
-1. Format the Cost column to two decimal places.
+1. [Cost] 列を小数点以下 2 桁に書式設定します。
 
-## Create a Quick Measure
+## クイック メジャーを作成する
 
-1. Add a quick measure to the Sales table, subtracting the Cost column from Profit column.
+1. Sales テーブルにクイック メジャーを追加し、Cost 列を Profit 列から減算します。
 
-1. Rename the measure as Profit.
+1. メジャーの名前を [Profit] に変更します。
 
-1. Explain that the measure does not store data in the model.
+1. メジャーがモデルにデータを保存しないことを説明します。
 
-Create regular measures
+標準メジャーを作成する
 
-1. Add a measure to the Sales table:
+1. [Sales] テーブルにメジャーを追加します。
 
 ```dax
 Profit Margin = DIVIDE([Profit], SUM('Sales'[Sales]))
 ```
 
-1. Format the Profit Margin column as a percentage.
+1. [Profit Margin] 列をパーセンテージとして書式設定します。
 
-1. Add another measure to the Sales table:
+1. Sales テーブルに別のメジャーを追加します。
 
 ```dax
 Sales YTD = TOTALYTD(SUM('Sales'[Sales]), 'Date'[Date])
 ```
 
-1. Format the Sales YTD column to two decimal places.
+1. [Sales YTD] 列を小数点以下 2 桁に書式設定します。
 
-## Validate the calculations with the matrix visual
+## マトリックス ビジュアルを使用して計算を検証する
 
-1. Add the Cost, Profit, Profit Margin, and Sales YTD fields to the matrix visual.
+1. [Cost]、[Profit]、[Profit Margin]、[Sales YTD] の各フィールドをマトリックス ビジュアルに追加します。
 
-1. Save the Power BI Desktop file.
+1. Power BI Desktop ファイルを保存します。
 
-1. Leave the Power BI Desktop file open for a later demo.
+1. Power BI Desktop ファイルは、後のデモ用に開いたままにしておきます。

@@ -1,51 +1,56 @@
-# Manage files and datasets in Power BI
+---
+demo:
+  "\_\_ title": Manage files and datasets in Power BI
+  "\_\_ module": Deploy and manage Power BI service items
+---
+# Power BI でファイルとデータセットを管理する
 
-## Prepare for gateway data refresh
+## ゲートウェイのデータ更新を準備する
 
-> **Note** the following steps are not needed when using the data gateway in personal mode. You can proceed directly to the next objective (setup the gateway).
+> **注** 個人用モードでデータ ゲートウェイを使う場合、次の手順は必要ありません。 次の目的 (ゲートウェイの設定) に直接進むことができます。
 
-1. In Power BI Desktop, open the Power Query Editor window, and select the **ProductCost** query.
+1. Power BI Desktop で、Power Query エディター ウィンドウを開き、**[ProductCost]** クエリを選択します。
 
-1. Edit the Source step, and then modify the file path to use the file share, as follows:
+1. Source ステップを編集し、次のようにファイル共有を使うようにファイル パスを変更します:
 
     `\\DATA-AI\Data\ProductCost.xlsx`
 
-1. Close and apply the Power Query Editor window.
+1. Power Query エディター ウィンドウを閉じて適用します。
 
-1. Save the Power BI Desktop file.
+1. Power BI Desktop ファイルを保存します。
 
-1. Publish the Power BI Desktop file to the workspace, overwriting the dataset and report in the service.
+1. Power BI Desktop ファイルをワークスペースに発行し、サービスのデータセットとレポートを上書きします。
 
-## Setup the gateway (personal mode)
+## ゲートウェイをセットアップする (個人用モード)
 
-1. In the Power BI service for the instructor, reload (F5) the dataset settings page.
+1. 講師用の Power BI サービスで、データセット設定ページを再読み込みします (F5) 。
 
-1. Expand the Gateway Connection section and point out that no gateway is installed.
+1. [ゲートウェイ接続] セクションを展開し、ゲートウェイがインストールされていないことを示します。
 
-1. Use the download dropdown list (located at the top-right), and select Data Gateway.
+1. ダウンロード ドロップダウン リスト (右上) を使用して、[データ ゲートウェイ] を選択します。
 
-1. In the new web page, download the personal mode gateway.
+1. 新しい Web ページで、[個人用モード ゲートウェイ] をダウンロードします。
 
-1. Once downloaded, open the downloaded file.
+1. ダウンロードが完了したら、ダウンロードしたファイルを開きます。
 
-1. Complete the gateway setup by using the credentials of the instructor account.
+1. 講師アカウントの認証情報を使用して、ゲートウェイのセットアップを完了します。
 
-1. Once setup, return to and reload the dataset settings page.
+1. セットアップが完了したら、データセット設定ページに戻り、再読み込みします。
 
-1. Assign the personal gateway, and the edit the credentials for the two data sources.
+1. 個人用ゲートウェイを割り当て、2 つのデータ ソースの認証情報を編集します。
 
-1. For both data sources, set the authentication method to **WindowsWithoutImpersonation**, and set the privacy level to **Organizational**.
+1. 両方のデータ ソースについて、認証方法を **[WindowsWithoutImpersonation]** に設定し、プライバシー レベルを **[組織]** に設定します。
 
-1. Optionally, expand the **Scheduled Refresh** section, and show how to configure a recurring schedule.
+1. 必要に応じて、**[スケジュールされた更新]** セクションを展開し、定期的なスケジュールの構成方法を示します。
 
-## Refresh the dataset
+## データセットを最新の情報に更新する
 
-1. Before refreshing the dataset, open the **Sales Monitoring** dashboard.
+1. データセットを更新する前に、**[売上モニタリング]** ダッシュボードを開きます。
 
-1. Edit the details of the Sales, Profit Margin tile to display the last refresh time.
+1. [売上、利益率] タイルの詳細を編集して、最終更新日時を表示します。
 
-1. Right-click the `D:\PL300\Demo\Resources\UpdateDatabase-LoadAdditionalSales.ps1` file, and then run with PowerShell. *This script will load December 2020 sales data into the database.*
+1. `D:\PL300\Demo\Resources\UpdateDatabase-LoadAdditionalSales.ps1` ファイルを右クリックし、PowerShell で実行します。 "このスクリプトを実行すると、2020 年 12 月の売上データがデータベースに読み込まれます。"**
 
-1. In the Power BI service for the instructor, from the Navigation pane, refresh the **Sales Analysis** dataset.
+1. 講師用の Power BI サービスで、[ナビゲーション] ウィンドウから **[売上分析]** データセットを更新します。
 
-1. When the refresh completes, point out how the dashboard tile **December 2020** column appears, and that the refresh time is **NOW**.
+1. 更新が完了したら、ダッシュボード タイルの **December 2020** 列がどのように表示されるか、また更新時間が "**現在**" であることを確認します。

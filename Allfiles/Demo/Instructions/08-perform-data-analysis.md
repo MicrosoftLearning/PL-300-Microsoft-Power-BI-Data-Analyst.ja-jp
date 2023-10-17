@@ -1,39 +1,44 @@
-# Perform data analysis
+---
+demo:
+  "\_\_ title": Perform data analysis in Power BI
+  "\_\_ module": Perform data analysis in Power BI
+---
+# データ分析の実行
 
-## Add a group
+## グループを追加する
 
-1. Add another new page to the report named **Category Analysis**.
+1. **[カテゴリ分析]** という名前のレポートに新しいページをさらに追加します。
 
-1. Copy, paste, and then sync the **Year slicer** from the **Profit Analysis** page to the new page.
+1. **Year スライサー**を **Profit Analysis** ページからコピーして貼り付けたら同期します。
 
-1. Add a new group based on the **Product** table **Category** column.
+1. **[Product]** テーブルの **[Category]** 列に基づいて新しいグループを追加します。
 
-1. Create a group based on the Trainer value.
+1. [Trainer] 値に基づいてグループを作成します。
 
-1. Select the **Include Other Group** checkbox.
+1. **[他のグループを含める]** チェックボックスをオンにします。
 
-1. Add a matrix visual, and position and size it so it fills the page.
+1. マトリックス ビジュアルを追加し、ページ全体に表示されるように配置してサイズを変更します。
 
-1. Configure the matrix visual as follows:
+1. マトリックス ビジュアルを次のように構成します。
 
-    - Rows: Product | Category (groups) and Product | Product
+    - 行: Product | Category (グループ) と Product | Product
 
-    - Values: Quantity, Sales, Profit, and Profit Margin from the Sales table
+    - 値: Sales テーブルの Quantity、Sales、Profit、Profit Margin
 
-1. Expand both categories.
+1. 両方のカテゴリを展開します。
 
-## Apply conditional formatting
+## 条件付き書式の適用
 
-1. In the matrix visual, apply background color conditional formatting to the **Profit Margin** field.
+1. マトリックス ビジュアルで、**[Profit Margin]** フィールドに背景色の条件付き書式を適用します。
 
-1. Select red for the minimum color, and green for the maximum color.
+1. 最小値の色として赤を選択し、最大値の色として緑を選択します。
 
-1. Point out the range of colors used to convey low-to-high profit margin values.
+1. 低い利益率から高い利益率の値を伝えるために使用される色の範囲を示します。
 
-1. Save the Power BI Desktop file.
+1. Power BI Desktop ファイルを保存します。
 
-1. Publish the report to the newer workspace, overwriting when prompted.
+1. 新しいワークスペースにレポートを発行し、プロンプトが表示されたら上書きします。
 
-1. In the Power BI service, open the **Sales Analysis** report, and interact with each of the report pages.
+1. Power BI サービスで、**[売上分析]** レポートを開き、各レポート ページを操作します。
 
-1. Leave the Power BI Desktop file open.
+1. Power BI Desktop ファイルを開いたままにします。

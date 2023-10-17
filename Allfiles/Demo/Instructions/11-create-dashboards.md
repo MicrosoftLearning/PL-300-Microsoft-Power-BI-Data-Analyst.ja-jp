@@ -1,31 +1,36 @@
-# Create dashboards in the Power BI service
+---
+demo:
+  "\_\_ title": Create dashboards in the Power BI service
+  "\_\_ module": Deploy and manage Power BI service items
+---
+# Power BI サービス内でダッシュボードを作成する
 
-## Create a dashboard
+## ダッシュボードを作成する
 
-1. First, in the Power BI service, create a new workspace.
+1. まず、Power BI サービスで新しいワークスペースを作成します。
 
-1. Select the `D:\PL300\Demo\Resources\Icon-Airplane.jpg` image for workspace icon.
+1. ワークスペース アイコンの `D:\PL300\Demo\Resources\Icon-Airplane.jpg` 画像を選択してください。
 
-1. In Power BI Desktop, publish the **Sales Analysis** report to the new workspace.
+1. Power BI Desktop で、新しいワークスペースに **[売上分析]** レポートを発行します。
 
-1. Once published, return to the Power BI service.
+1. 発行されたら、Power BI サービスに戻ります。
 
-1. Open the **Sales Analysis** report, and then ensure the Year slicer is set to **CY2020**.
+1. **[売上分析]** レポートを開き、[Year] スライサーが **[CY2020]** に設定されていることを確認します。
 
-## Pin report visuals
+## レポート ビジュアルをピン留めする
 
-1. Pin the line and stacked column chart to create a new dashboard named **Sales Monitoring**.
+1. 折れ線グラフと積み上げ棒グラフをピン留めして、**売上モニタリング**という名前の新しいダッシュボードを作成します。
 
-1. Pin the funnel chart to the new dashboard.
+1. じょうごグラフを新しいダッシュボードにピン留めします。
 
-1. Open the **Sales Monitoring** dashboard.
+1. **[売上モニタリング]** ダッシュボードを開きます。
 
-1. Edit the details of the **Profit Margin** tile and change the subtitle text to include the year (**CY2020**).
+1. **[利益率]** タイルの詳細を編集し、サブタイトル テキストを変更して年 (**CY2020**) を含めてください。
 
-## Add Q&A tile
+## Q&A タイルを追加する
 
-1. Use Q&A on the dashboard to ask the following question: **Total sales in CY2020**
+1. ダッシュボードの Q&A を使用して、次の質問をします: **2020 年度の総売上高**
 
-1. Pin the response to the dashboard.
+1. 応答をダッシュボードにピン留めします。
 
-1. Show how to resize and reposition the tiles.
+1. タイルのサイズと位置を変更する方法を示します。

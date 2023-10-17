@@ -1,75 +1,81 @@
-# (Optional) Optimize model performance
+---
+demo:
+  "\_\_ title": (Optional) Optimize model performance in Power BI
+  "\_\_ module": Optimize model performance in Power BI
+---
 
-## Review a DirectQuery model design
+# (省略可能) モデル パフォーマンスを最適化する
 
-> **Note**: This demo uses a different Power BI Desktop file.
+## DirectQuery モデル設計を確認する
 
-1. Open the D:\PL300\Demo\Resources\AW Sales Analysis.pbix file.
+> **注**: このデモでは、別の Power BI Desktop ファイルを使用します。
 
-1. If prompted to connect to the data source, click Connect.
+1. D:\PL300\Demo\Resources\AW Sales Analysis.pbix ファイルを開きます。
 
-1. At the bottom-right corner, point out that the data model comprises DirectQuery tables.
+1. データ ソースに接続するかどうかを確認するメッセージが表示されたら、[接続] をクリックします。
 
-1. Save the Power BI Desktop file to the D:\PL300\Demo\MySolution folder.
+1. 右下隅で、データ モデルが DirectQuery テーブルで構成されていることを示します。
 
-1. In Model view, introduce the model design, which includes two related tables.
+1. Power BI Desktop ファイルを D:\PL300\Demo\MySolution フォルダーに保存します。
 
-1. In Report view, interact with the report by selecting different items in the Fiscal Year slicer.
+1. モデル ビューで、2 つの関連するテーブルを含むモデル設計を紹介します。
 
-1. Drill through on any month column to reveal order details.
+1. レポート ビューで、[Fiscal Year] スライサーでさまざまな項目を選択してレポートを操作します。
 
-1. Return to the Sales Summary page.
+1. 任意の月の列でドリルスルーして、注文の詳細を表示します。
 
-## Review query performance
+1. [売上概要] ページに戻ります。
 
-1. On the View ribbon tab, show the Performance Analyzer pane.
+## クエリ パフォーマンスを確認する
 
-1. Refresh the visuals, and then expand the slicer and Sales by Month visual.
+1. [表示] リボン タブで、[パフォーマンス アナライザー] ペインを表示します。
 
-1. Point out that they used DirectQuery mode (data was requested from the data source).
+1. ビジュアルを更新した後、スライサーと Sales by Month ビジュアルを展開します。
 
-## Configure Dual storage tables
+1. DirectQuery モードを使用したこと (データがデータ ソースから要求されたこと) を指摘します。
 
-1. In Model view, select the Date table, and then select the storage mode to Dual.
+## デュアル ストレージ テーブルを構成する
 
-1. When the data has imported, switch to Report view, and then in the Performance Analyzer pane, refresh the visuals.
+1. モデル ビューで、[Date] テーブルを選択し、ストレージ モードとして [デュアル] を選択します。
 
-1. Point out that the Date table is now queried from the model cache.
+1. データがインポートされたら、レポート ビューに切り替え、[パフォーマンス アナライザー] ペインでビジュアルを更新します。
 
-## Create aggregations
+1. [Date] テーブルがモデル キャッシュから照会されるようになったことを示します。
 
-1. Open the Power Query Editor window, and in the Queries pane, duplicate the Reseller Sales query.
+## 集計の作成
 
-1. Rename the new query Reseller Sales Agg.
+1. Power Query エディター ウィンドウを開き、[Queries] ペインで [Reseller Sales] クエリを複製します。
 
-1. Apply a group by transformation, as follows:
+1. 新しいクエリの名前を [Reseller Sales Agg] に変更します。
 
-    - Group by OrderDate.
+1. 次のように、変換によるグループ化を適用します。
 
-    - New column: Sales, which is the sum of the SalesAmount column.
+    - [OrderDate] でグループ化。
 
-1. Close and apply the queries.
+    - 新しい列: SalesAmount 列の合計である Sales。
 
-1. In Model view, set the storage mode for the Reseller Sales Agg table to Import.
+1. 閉じてクエリを適用します。
 
-1. Create a relationship from the Date table Date column to the Reseller Sales Agg table OrderDate column—ensure that the column cardinality is set to one-to-many, with the Date table on the one-side.
+1. モデル ビューで、[Reseller Sales Agg] テーブルのストレージ モードを [インポート] に設定します。
 
-1. Manage aggregations on the Reseller Sales Agg table:
+1. Date テーブルの Date 列から Reseller Sales Agg テーブルの OrderDate 列へのリレーションシップを作成します。列のカーディナリティが 1 対多で、Date テーブルが片側にあることを確認します。
 
-    - OrderDate: Group by the Reseller Sales table OrderDate column.
+1. [Reseller Sales Agg] テーブルで集計を管理します。
 
-    - Sales: Sum the Reseller Sales table SalesAmount column.
+    - [OrderDate]: [Reseller Sales] テーブルの [OrderDate] 列でグループ化します。
 
-1. Point out that the aggregation table is now hidden.
+    - [Sales]: [Reseller Sales] テーブルの [SalesAmount] 列を合計します。
 
-1. Switch to Report view, and in the Performance Analyzer pane, and then refresh the visuals.
+1. 集計テーブルが非表示になったことを示します。
 
-1. Point out that the Sales by Month table is now queried from the model cache.
+1. レポート ビューに切り替え、パフォーマンス アナライザー ペインでビジュアルを更新します。
 
-1. Drill through from any month, and point out that the details in the table are requested as DirectQuery from the data source.
+1. [Sales by Month] テーブルがモデル キャッシュから照会されるようになったことを示します。
 
-1. Save the Power BI Desktop file.
+1. 任意の月からドリル スルーし、テーブルの詳細がデータ ソースから DirectQuery として要求されていることを示します。
 
-1. Close Power BI Desktop.
+1. Power BI Desktop ファイルを保存します。
 
-> **Note**: You will not use this Power BI Desktop solution again.
+1. Power BI Desktop を閉じます。
+
+> **注**: この Power BI Desktop ソリューションを再び使用することはありません。

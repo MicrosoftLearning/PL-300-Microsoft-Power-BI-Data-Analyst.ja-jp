@@ -1,47 +1,52 @@
-# Create reports
+---
+demo:
+  "\_\_ title": Create reports in Power BI
+  "\_\_ module": Create reports in Power BI
+---
+# レポートの作成
 
-## Create a single-page report
+## 単一ページのレポートを作成する
 
-1. Remove the matrix visual that was used to test and validate the model calculations.
+1. モデル計算のテストと検証に使用したマトリックス ビジュアルを削除します。
 
-1. Rename the report page as Sales Summary.
+1. レポート ページの名前を [売上概要] に変更します。
 
-## Add a slicer
+## スライサーを追加する
 
-1. Add a slicer for the Date table Year column and position it at the top-left of the report page.
+1. Date テーブルの Year 列にスライサーを追加し、レポート ページの左上に配置します。
 
-1. Use the formatting options to configure the slicer for single selection.
+1. 書式設定オプションを使用して、1 つの選択範囲に対してスライサーを設定します。
 
-## Add various visuals
+## さまざまなビジュアルを追加する
 
-1. Add a line and stacked column chart to the page, and configure it as follows:
+1. ページに折れ線グラフと積み上げ縦棒グラフを追加し、次のように構成します。
 
-    - Shared axis: Date | Month
+    - 共有の軸: Date | Month
 
-    - Columns values: Sales | Sales
+    - 列の値: Sales | Sales
 
-    - Line values: Sales | Profit Margin
+    - 行の値: Sales | Profit Margin
 
-1. Use the slicer to filter the page by CY2019, and then CY2020.
+1. スライサーを使用して、[CY2019]、[CY2020] の順にページにフィルターを適用します。
 
-1. In the line and stacked column chart, point out that there is no sales column for December 2020.
+1. 折れ線グラフおよび積み上げ縦棒グラフで、2020 年 12 月の売上高列がないことを示します。
 
-1. Configure the shared axis to “show items with no data”.
+1. 共有の軸を「データのないアイテムの表示」に設定します。
 
-1. Point out that December 2020 is added to the axis, but there is no column of data.
+1. 軸には 2020 年 12 月が追加されていますが、データの列がありません。
 
-1. Explain that sales data for December 2020 has not happened yet. *You will run a script in a later demo to load December 2020 sales.*
+1. 2020 年 12 月の売上データはまだ出ていないことを説明します。 *この後のデモでスクリプトを実行して、2020 年 12 月の売上を読み込みます。*
 
-1. Add a funnel chart, and configure it as follows:
+1. じょうごグラフを追加し、次のように構成します。
 
-    - Group: Product | Category
+    - グループ: Product | Category
 
-    - Values: Sales | Profit Margin
+    - 値: Sales | Profit Margin
 
-1. Use the formatting options to select a contrasting data color.
+1. 書式設定オプションを使用して、対照的なデータ色を選択します。
 
-1. Add a Q&A visual, and enter the following question: Total sales by product demographic
+1. Q&A ビジュアルを追加し、次の質問を入力します: 製品層別総売上高
 
-1. Save the Power BI Desktop file.
+1. Power BI Desktop ファイルを保存します。
 
-1. Leave the Power BI Desktop file open for a later demo.
+1. Power BI Desktop ファイルは、後のデモ用に開いたままにしておきます。
