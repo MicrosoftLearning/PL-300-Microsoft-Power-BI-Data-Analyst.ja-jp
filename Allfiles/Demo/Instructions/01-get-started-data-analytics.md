@@ -1,30 +1,25 @@
----
-demo:
-  "\_\_ title": Get started with Microsoft data analytics
-  "\_\_ module": Get started with Microsoft data analytics
----
-# Microsoft Data Analytics の使用を開始する
+# Get started with Microsoft data analytics
 
-## ダッシュボードを探索する
+## Explore the dashboard
 
-1. [売上モニタリング] ダッシュボードを表示し、そこから事実を一目で把握する方法を説明します。
+1. Show the Sales Monitoring dashboard, and explain how it can be used to get at-a-glance facts.
 
-1. いずれかのタイルをクリックすると、[売上分析] レポートが表示されます。
+1. Click either tile to click through to the Sales Analysis report.
 
-## レポートを探索する
+## Explore the report
 
-1. ページをまたいでさまざまなスライサーやビジュアルを操作できます。
+1. Interact with various slicers and visuals across the pages.
 
-1. レポートを編集し、[データ] ペインのすべてのフィールドを展開します。
+1. Edit the report, and then expand all fields in the Data pane.
 
-## コースで開発するソリューションを説明する
+## Describe the solution that will be developed during the course
 
-1. このデータ モデルは SQL Server データベースと Excel ワークブックに基づいており、売上原価の決定に役立つことを説明します。
+1. Explain that the data model is based on a SQL Server database and an Excel workbook, which helps to determine cost of goods sold.
 
-1. データを最新の状態に保つためにゲートウェイが設定されることを説明します。
+1. Explain that a gateway will be set up to keep data current.
 
-1. それは受信者と共有され、受信者は自分が管理する製品カテゴリのみのデータのサブセットのみを表示できることを説明します。
+1. Explain that it will be shared with a recipient, and that recipients will only be allowed to see a subset of data being only the product categories they manage.
 
-1. Power BI サービスのホーム ページに戻り、ワークスペースを折りたたみます。
+1. Return to the Power BI service home page, and collapse the workspace.
 
-> **注**: この開発済みのソリューションを再使用することはありません。
+> **Note**: You will not use this pre-developed solution again.
