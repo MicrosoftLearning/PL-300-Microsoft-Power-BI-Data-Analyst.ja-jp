@@ -1,5 +1,5 @@
 ---
-demo:
+lab:
   "\_\_ title": Get started with Microsoft data analytics
   "\_\_ module": Get started with Microsoft data analytics
 ---
