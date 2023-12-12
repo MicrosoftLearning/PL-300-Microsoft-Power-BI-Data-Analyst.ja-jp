@@ -1,9 +1,9 @@
 ---
-lab:
-  "\_\_ title": Create reports in Power BI
-  "\_\_ module": Create reports in Power BI
+demo:
+  title: Power BI でレポートを作成する
+  module: Create reports in Power BI
 ---
-# レポートの作成
+# レポートを作成します
 
 ## 単一ページのレポートを作成する
 

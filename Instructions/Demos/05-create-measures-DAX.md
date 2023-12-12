@@ -1,7 +1,7 @@
 ---
-lab:
-  "\_\_ title": Create measures using DAX in Power BI
-  "\_\_ module": Create measures using DAX in Power BI
+demo:
+  title: Power BI で DAX を使ってメジャーを作成する
+  module: Create measures using DAX in Power BI
 ---
 # Power BI で DAX を使ってメジャーを作成する
 

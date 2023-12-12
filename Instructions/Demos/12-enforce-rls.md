@@ -1,8 +1,9 @@
 ---
-lab:
-  "\_\_ title": Enforce Row-level security in Power BI
-  "\_\_ module": Deploy and manage Power BI service items
+demo:
+  title: Power BI で行レベルのセキュリティを適用する
+  module: Deploy and manage Power BI service items
 ---
+
 # Power BI で行レベルのセキュリティを適用する
 
 ## モデルにセキュリティ テーブルを追加する
@@ -39,7 +40,7 @@ lab:
    [Email] = USERPRINCIPALNAME()
    ```
 
-1. **保存**。
+1. **保存**します。
 
 ## ロールを検証する
 
@@ -61,7 +62,7 @@ lab:
 
 ## データセットのセキュリティを構成する
 
-1. 講師用の Power BI サービスで、[ナビゲーション] ウィンドウから **[売上分析]** データセットのセキュリティ ページを開きます。
+1. 講師用の Power BI サービスで、[ナビゲーション] ウィンドウから **[売上分析]** データセットの「セキュリティ」ページを開きます。
 
 1. [メンバー] セクションで、(**Ty Johnston** を表す) 受信者アカウントを入力します。
 

@@ -1,7 +1,7 @@
 ---
 demo:
-  "\_\_ title": (Optional) Optimize model performance in Power BI
-  "\_\_ module": Optimize model performance in Power BI
+  title: (オプション) Power BI でモデル パフォーマンスを最適化する
+  module: Optimize model performance in Power BI
 ---
 
 # (省略可能) モデル パフォーマンスを最適化する
@@ -78,4 +78,4 @@ demo:
 
 1. Power BI Desktop を閉じます。
 
-> **注**: この Power BI Desktop ソリューションを再び使用することはありません。
+> **注**: この Power BI Desktop ソリューションを再使用することはありません。
