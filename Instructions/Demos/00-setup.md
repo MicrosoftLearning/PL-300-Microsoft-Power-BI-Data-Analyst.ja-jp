@@ -1,10 +1,11 @@
 ---
-lab:
-  "\_\_ title": Setup demo environment
-  "\_\_ module": Setup demo environment
+demo:
+  title: 独自の環境のセットアップ
+  module: Set up your own environment
 ---
 
-# デモのセットアップ
+
+# デモ セットアップ
 
 ## VM のセットアップ
 

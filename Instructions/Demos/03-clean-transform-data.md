@@ -1,8 +1,9 @@
 ---
-lab:
-  "\_\_ title": 'Clean, transform, and load data in Power BI'
-  "\_\_ module": 'Clean, transform, and load data in Power BI'
+demo:
+  title: Power BI でのデータの消去、変換、読み込み
+  module: 'Clean, transform, and load data in Power BI'
 ---
+
 # Power BI でのデータの消去、変換、読み込み
 
 ## クエリに変換を適用する
@@ -61,13 +62,13 @@ lab:
 
 1. 新しい列の名前を [Cost] に変更します。
 
-## データ モデルにクエリを無効にして読み込む
+## データ モデルへのクエリーを無効化してロードする
 
 1. [クエリ] ペインで、[ProductCost] クエリを無効にします。
 
 1. [ホーム] リボン タブで、[閉じて適用] アイコンをクリックします。
 
-1. Power BI Desktop で、[データ] ペインの 2 つのテーブルを示します。
+1. Power BI Desktop で、[データ] ペインの 2 つのテーブルを指定します。
 
 1. Power BI Desktop ファイルを保存します。
 

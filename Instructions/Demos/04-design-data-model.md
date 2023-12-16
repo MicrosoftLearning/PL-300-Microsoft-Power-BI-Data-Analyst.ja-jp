@@ -1,13 +1,13 @@
 ---
-lab:
-  "\_\_ title": Design a data model in Power BI
-  "\_\_ module": Design a data model in Power BI
+demo:
+  title: Power BI でデータ モデルを設計する
+  module: Design a data model in Power BI
 ---
 # Power BI でデータ モデルを設計する
 
 ## モデルを確認する
 
-1. [データ] ペインで、すべてのテーブルを展開してすべてのフィールドを表示してください。
+1. [データ] ペインで、すべてのテーブルを展開してすべてのフィールドを表示します。
 
 1. [Sales] テーブルで、自動的に作成された [OrderDate] 階層を示します。
 
@@ -43,7 +43,7 @@ lab:
 
 1. [Unit Price] 値は価格の合計であり、正しくないことを示してください。
 
-1. [データ] ペインで、[Unit Price] フィールドを選び、[平均] を使うように集計を構成してください。
+1. [データ] ペインで、[Unit Price] フィールドを選び、[平均] を使うように集計を構成します。
 
 1. マトリックス ビジュアルから [Sum of Unit Price] 列を削除し、[Unit Price] フィールドを再度追加します。
 

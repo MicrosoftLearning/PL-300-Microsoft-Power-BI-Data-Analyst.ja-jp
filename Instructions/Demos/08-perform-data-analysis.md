@@ -1,7 +1,7 @@
 ---
-lab:
-  "\_\_ title": Perform data analysis in Power BI
-  "\_\_ module": Perform data analysis in Power BI
+demo:
+  title: Power BI でデータ分析を実行する
+  module: Perform data analysis in Power BI
 ---
 # データ分析の実行
 
@@ -9,19 +9,19 @@ lab:
 
 1. **[カテゴリ分析]** という名前のレポートに新しいページをさらに追加します。
 
-1. **Year スライサー**を **Profit Analysis** ページからコピーして貼り付けたら同期します。
+1. **Year** スライサーを **Profit Analysis** ページからコピーして貼り付けたら同期します。
 
 1. **[Product]** テーブルの **[Category]** 列に基づいて新しいグループを追加します。
 
 1. [Trainer] 値に基づいてグループを作成します。
 
-1. **[他のグループを含める]** チェックボックスをオンにしてください。
+1. **[他のグループを含める]** チェックボックスをオンにします。
 
 1. マトリックス ビジュアルを追加し、ページ全体に表示されるように配置してサイズを変更します。
 
 1. マトリックス ビジュアルを次のように構成します。
 
-    - 行: Product | Category (グループ) と Product | Product
+    - 行: 製品 | カテゴリ (グループ) と 製品 | 製品
 
     - 値: Sales テーブルの Quantity、Sales、Profit、Profit Margin
 
