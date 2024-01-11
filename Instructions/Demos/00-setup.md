@@ -1,9 +1,8 @@
 ---
-demo:
-  title: 独自の環境のセットアップ
-  module: Set up your own environment
+lab:
+  "\_\_ title": Setup demo environment
+  "\_\_ module": Setup demo environment
 ---
-
 
 # デモ セットアップ
 
@@ -11,7 +10,7 @@ demo:
 
 1. 学生アカウントを使用して仮想マシン環境にサインインします。
 
-1. Microsoft Edge を開き、<https://powerbi.com> に移動し、講師アカウントを使用してサインインします。
+1. Microsoft Edge を開き、<https://powerbi.com> に移動し、インストラクターのアカウントを使用してサインインします。
     > **ヒント**: パスワードの変更を求めるメッセージが表示されたら、D:\PL300\Demo\Setup\MySettings.txt ファイルにパスワードを記録してください。
 
 1. Power BI サービスで、Power BI Pro の試用版を受け入れます。

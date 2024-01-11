@@ -1,9 +1,8 @@
 ---
-demo:
-  title: Microsoft Data Analytics の使用を開始する
-  module: Get started with Microsoft data analytics
+lab:
+  "\_\_ title": Get started with Microsoft data analytics
+  "\_\_ module": Get started with Microsoft data analytics
 ---
-
 # Microsoft Data Analytics の使用を開始する
 
 ## ダッシュボードを探索する

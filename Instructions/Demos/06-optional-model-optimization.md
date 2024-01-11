@@ -1,7 +1,7 @@
 ---
-demo:
-  title: (オプション) Power BI でモデル パフォーマンスを最適化する
-  module: Optimize model performance in Power BI
+lab:
+  "\_\_ title": (Optional) Optimize model performance in Power BI
+  "\_\_ module": Optimize model performance in Power BI
 ---
 
 # (省略可能) モデル パフォーマンスを最適化する

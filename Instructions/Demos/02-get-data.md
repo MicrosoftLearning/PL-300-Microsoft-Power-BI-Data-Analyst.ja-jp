@@ -1,10 +1,9 @@
 ---
-demo:
-  title: Power BI でデータを取得する
-  module: Get data in Power BI
+lab:
+  "\_\_ title": Get data in Power BI
+  "\_\_ module": Get data in Power BI
 ---
-
-# Power BI におけるデータの取り出し
+# Power BI でデータを取得する
 
 ## Power BI レポートの作成を開始する
 

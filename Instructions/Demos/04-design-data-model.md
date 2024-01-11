@@ -1,7 +1,7 @@
 ---
-demo:
-  title: Power BI でデータ モデルを設計する
-  module: Design a data model in Power BI
+lab:
+  "\_\_ title": Design a data model in Power BI
+  "\_\_ module": Design a data model in Power BI
 ---
 # Power BI でデータ モデルを設計する
 
