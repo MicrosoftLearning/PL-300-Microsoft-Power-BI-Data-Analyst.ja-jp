@@ -1,9 +1,8 @@
 ---
-demo:
-  title: Power BI でのデータの消去、変換、読み込み
-  module: 'Clean, transform, and load data in Power BI'
+lab:
+  "\_\_ title": 'Clean, transform, and load data in Power BI'
+  "\_\_ module": 'Clean, transform, and load data in Power BI'
 ---
-
 # Power BI でのデータの消去、変換、読み込み
 
 ## クエリに変換を適用する

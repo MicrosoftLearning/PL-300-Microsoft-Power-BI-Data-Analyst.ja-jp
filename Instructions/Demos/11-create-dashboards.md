@@ -1,9 +1,9 @@
 ---
-demo:
-  title: Power BI サービス内でダッシュボードを作成する
-  module: Deploy and manage Power BI service items
+lab:
+  "\_\_ title": Create dashboards in the Power BI service
+  "\_\_ module": Deploy and manage Power BI service items
 ---
-# Power BI サービス内でダッシュボードを作成する
+# Power BI サービス内でダッシュボードを作成
 
 ## ダッシュボードを作成する
 
@@ -15,7 +15,7 @@ demo:
 
 1. 発行されたら、Power BI サービスに戻ります。
 
-1. **[売上分析]** レポートを開き、[Year] スライサーが **[CY2020]** に設定されていることを確認します。
+1. **[売上分析]** レポートを開き、Year スライサーが **[CY2020]** に設定されていることを確認します。
 
 ## レポート ビジュアルをピン留めする
 
