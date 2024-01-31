@@ -1,5 +1,6 @@
 ---
 lab:
+  course: PL-300
   title: AI 視覚化を使って高度な分析を実行する
   module: Perform Data Analysis in Power BI
 ---
@@ -46,7 +47,7 @@ lab:
 
 1. **[アップロード] > [参照]** の順に選択します。
 
-1. **D:\PL300\Labs\08-perform-data-analysis-in-power-bi-desktop\Starter** フォルダーに移動します。
+1. **D:\Allfiles\Labs\08-perform-data-analysis-in-power-bi-desktop\Starter** フォルダーに移動します。
 
 1. **Sales Analysis.pbix** ファイルを選択し、**[開く]** を選択します。
 
@@ -70,7 +71,7 @@ lab:
 
 1. **[データ ハブ]** ウィンドウの **[マイ ワークスペース]** で **[売り上げ分析]** セマンティック モデルを選んでから、**[接続]** を選択するか、ダブルクリックしてセマンティック モデルを読み込みます。
 
-1. **[ファイル] > [保存]** の順に移動し、ファイルに **Sales Exploration** という名前を付けて **D:\PL300\MySolution** フォルダーに保存します。
+1. **[ファイル] > [保存]** に移動し、そのファイルに「**Sales Exploration**」という名前を付けて **D:\Allfiles\MySolution** フォルダー内に保存します。
 
 *次に、2 つのレポート ページを作成し、各ページで異なるビジュアルを操作して、データの分析および調査を行います。*
 
