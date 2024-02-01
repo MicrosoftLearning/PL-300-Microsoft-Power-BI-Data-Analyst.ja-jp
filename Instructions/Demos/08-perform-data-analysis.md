@@ -1,7 +1,8 @@
 ---
-lab:
-  "\_\_ title": Perform data analysis in Power BI
-  "\_\_ module": Perform data analysis in Power BI
+demo:
+  course: PL-300
+  title: Power BI でデータ分析を実行する
+  module: Perform data analysis in Power BI
 ---
 # データ分析の実行
 

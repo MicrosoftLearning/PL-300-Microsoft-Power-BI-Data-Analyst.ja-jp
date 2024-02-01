@@ -1,11 +1,12 @@
 ---
-lab:
-  "\_\_ title": Create measures using DAX in Power BI
-  "\_\_ module": Create measures using DAX in Power BI
+demo:
+  course: 'PL-300, DP-605'
+  title: Power BI で DAX を使ってメジャーを作成する
+  module: Create measures using DAX in Power BI
 ---
 # Power BI で DAX を使ってメジャーを作成する
 
-> **ヒント**: すべての計算は D:\PL300\Demo\Resources\Snippets-Demo-05.txt ファイルからコピーできます。
+> **ヒント**: すべての計算は、D:\Allfiles\Demo\Resources\Snippets-Demo-05.txt ファイルからコピーできます。
 
 ## 計算テーブルを作成する
 
