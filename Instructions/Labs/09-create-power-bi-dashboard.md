@@ -1,5 +1,6 @@
 ---
 lab:
+  course: PL-300
   title: Power BI ダッシュボードを作成する
   module: Create Dashboards
 ---
@@ -46,7 +47,7 @@ lab:
 
 1. **[アップロード] > [参照]** の順に選択します。
 
-1. **D:\PL300\Labs\09-create-power-bi-dashboard\Starter** フォルダーに移動します。
+1. **D:\Allfiles\Labs\09-create-power-bi-dashboard\Starter** フォルダーに移動します。
 
 1. **Sales Analysis.pbix** ファイルを選択し、**[開く]** を選択します。
 
@@ -116,7 +117,7 @@ lab:
 
 1. (右側にある) **[タイルの追加]** ペインで、 **[画像]** タイルを選んでから、 **[次へ]** 選択します。
 
-1. **[画像タイルの追加]** ペインの **[URL]** ボックスに、**D:\PL300\Resources\AdventureWorksLogo_DataURL.txt** ファイルにある完全な URL を入力してから、 **[適用]** を選択します。
+1. **[画像タイルの追加]** ペインの **[URL]** ボックスに、**D:\Allfiles\Resources\AdventureWorksLogo_DataURL.txt** ファイルにある完全な URL を入力してから、**[適用]** を選びます。
     
     *その URL を使用して画像を埋め込むことも、データ URL を使用してコンテンツをインラインで埋め込むこともできます。*
 
@@ -160,7 +161,7 @@ lab:
 
 このタスクでは、PowerShell スクリプトを実行して、**AdventureWorksDW2020** データベース内のデータを更新します。
 
-1. エクスプローラーで、**D:\PL300\Setup** フォルダー内の **UpdateDatabase-2-AddSales.ps1** ファイルを右クリックし、 **[PowerShell で実行]** を選択します。
+1. エクスプローラーで、**D:\Allfiles\Setup** フォルダー内の **UpdateDatabase-2-AddSales.ps1** ファイルを右クリックし、**[PowerShell で実行]** を選びます。
 
     ![画像 28](Linked_image_Files/09-create-power-bi-dashboard_image46.png)
 

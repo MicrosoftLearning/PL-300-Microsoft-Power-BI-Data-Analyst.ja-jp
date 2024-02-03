@@ -1,7 +1,8 @@
 ---
-lab:
-  "\_\_ title": (Optional) Optimize model performance in Power BI
-  "\_\_ module": Optimize model performance in Power BI
+demo:
+  course: PL-300
+  title: (オプション) Power BI でモデル パフォーマンスを最適化する
+  module: Optimize model performance in Power BI
 ---
 
 # (省略可能) モデル パフォーマンスを最適化する
@@ -10,13 +11,13 @@ lab:
 
 > **注**: このデモでは、別の Power BI Desktop ファイルを使用します。
 
-1. D:\PL300\Demo\Resources\AW Sales Analysis.pbix ファイルを開きます。
+1. D:\Allfiles\Demo\Resources\AW Sales Analysis.pbix ファイルを開いてください。
 
 1. データ ソースに接続するかどうかを確認するメッセージが表示されたら、[接続] をクリックします。
 
 1. 右下隅で、データ モデルが DirectQuery テーブルで構成されていることを示します。
 
-1. Power BI Desktop ファイルを D:\PL300\Demo\MySolution フォルダーに保存します。
+1. Power BI Desktop ファイルを D:\Allfiles\Demo\MySolution フォルダーに保存します。
 
 1. モデル ビューで、2 つの関連するテーブルを含むモデル設計を紹介します。
 

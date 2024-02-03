@@ -1,8 +1,10 @@
 ---
-lab:
-  "\_\_ title": Setup demo environment
-  "\_\_ module": Setup demo environment
+demo:
+  course: 'PL-300, DP-605'
+  title: 独自の環境のセットアップ
+  module: Set up your own environment
 ---
+
 
 # デモ セットアップ
 
@@ -11,15 +13,15 @@ lab:
 1. 学生アカウントを使用して仮想マシン環境にサインインします。
 
 1. Microsoft Edge を開き、<https://powerbi.com> に移動し、インストラクターのアカウントを使用してサインインします。
-    > **ヒント**: パスワードの変更を求めるメッセージが表示されたら、D:\PL300\Demo\Setup\MySettings.txt ファイルにパスワードを記録してください。
+    > **ヒント**: パスワードの変更を求めるメッセージが表示されたら、D:\Allfiles\Demo\Setup\MySettings.txt ファイルにパスワードを記録してください。
 
 1. Power BI サービスで、Power BI Pro の試用版を受け入れます。
 
 ## 最初のデモのセットアップ
 
-1. ワークスペースを作成し、D:\PL300\Demo\Resources\Icon-Star.jpg 画像をアイコンとして使用します。
+1. ワークスペースを作成し、D:\Allfiles\Demo\Resources\Icon-Star.jpg 画像をアイコンとして使います。
 
-1. Power BI Desktop で D:\PL300\Demo\Setup\Sales Analysis.pbix ファイルを開きます。
+1. Power BI Desktop で D:\Allfiles\Demo\Setup\Sales Analysis.pbix ファイルを開きます。
 
 1. Power BI Desktop で講師アカウントを使用してサインインします。
 

@@ -1,7 +1,8 @@
 ---
-lab:
-  "\_\_ title": Create and manage workspaces in Power BI
-  "\_\_ module": Deploy and manage Power BI service items
+demo:
+  course: 'PL-300, DP-605'
+  title: Power BI でワークスペースを作成および管理する
+  module: Deploy and manage Power BI service items
 ---
 
 # ワークスペースの作成と管理

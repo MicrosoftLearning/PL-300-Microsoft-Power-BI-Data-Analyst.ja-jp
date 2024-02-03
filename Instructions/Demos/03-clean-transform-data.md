@@ -1,9 +1,11 @@
 ---
-lab:
-  "\_\_ title": 'Clean, transform, and load data in Power BI'
-  "\_\_ module": 'Clean, transform, and load data in Power BI'
+demo:
+  course: 'PL-300, DP-605'
+  title: Power BI でのデータのクリーン化、変換、読み込み
+  module: 'Clean, transform, and load data in Power BI'
 ---
-# Power BI でのデータの消去、変換、読み込み
+
+# Power BI でのデータのクリーン化、変換、読み込み
 
 ## クエリに変換を適用する
 
@@ -47,7 +49,7 @@ lab:
 
 ## クエリの統合
 
-1. Excel コネクタを使用して D:\PL300\Demo\Data\ProductCost.xlsx ファイルに接続し、新しいクエリを作成します。
+1. Excel コネクタを使用して新しいクエリを作成し、D:\Allfiles\Demo\Data\ProductCost.xlsx ファイルに接続します。
 
 1. [Product] 列を削除します。
 

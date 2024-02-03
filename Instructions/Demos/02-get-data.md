@@ -1,15 +1,17 @@
 ---
-lab:
-  "\_\_ title": Get data in Power BI
-  "\_\_ module": Get data in Power BI
+demo:
+  course: 'PL-300, DP-605'
+  title: Power BI でデータを取得する
+  module: Get data in Power BI
 ---
-# Power BI でデータを取得する
+
+# Power BI でのデータの取得
 
 ## Power BI レポートの作成を開始する
 
 1. Power BI Desktop　を開き、「作業の開始」ページを閉じます。
 
-1. D:\PL300\Demo フォルダーに、売上分析としてファイルを保存します。
+1. D:\Allfiles\Demo フォルダーに、販売分析としてファイルを保存します。
 
 ## SQL Server データベースに接続する
 

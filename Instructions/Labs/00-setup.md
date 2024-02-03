@@ -1,5 +1,6 @@
 ---
 lab:
+  course: 'PL-300, DP-605'
   title: 独自の環境のセットアップ
   module: Set up your own environment
 ---
@@ -9,7 +10,7 @@ lab:
 これらのラボは、ホストされているラボ環境で実行することをお勧めします。 ご自分のコンピューターで実行する場合は、次のソフトウェアをインストールしてください。
 
 - すべてのセットアップとリソースのファイルは、[GitHub からダウンロード](https://github.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/raw/Main/AllfilesDownload.zip)できます。
-  - 'AllFiles' フォルダーを D:/ に抽出し、名前を 'PL300' に変更します。
+  - 'AllFiles' フォルダーを D:/ に抽出し、その名前を 'D:\Allfiles\' に変更します。
 
 ***独自の環境を使用すると、予期しないダイアログと動作が発生する可能性があります。可能なローカル構成の範囲が広いため、コース チームは、独自の環境で発生する可能性のある問題をサポートできません。***
 
