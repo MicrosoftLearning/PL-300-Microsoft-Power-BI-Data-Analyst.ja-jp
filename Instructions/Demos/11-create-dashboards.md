@@ -1,15 +1,16 @@
 ---
-lab:
-  "\_\_ title": Create dashboards in the Power BI service
-  "\_\_ module": Deploy and manage Power BI service items
+demo:
+  course: PL-300
+  title: Power BI サービス内でダッシュボードを作成する
+  module: Deploy and manage Power BI service items
 ---
-# Power BI サービス内でダッシュボードを作成
+# Power BI サービス内でダッシュボードを作成する
 
 ## ダッシュボードを作成する
 
 1. まず、Power BI サービス内で新しいワークスペースを作成します。
 
-1. ワークスペース アイコンの `D:\PL300\Demo\Resources\Icon-Airplane.jpg` 画像を選択してください。
+1. ワークスペース アイコンの `D:\Allfiles\Demo\Resources\Icon-Airplane.jpg` 画像を選択してください。
 
 1. Power BI Desktop で、新しいワークスペースに **[売上分析]** レポートを発行します。
 
