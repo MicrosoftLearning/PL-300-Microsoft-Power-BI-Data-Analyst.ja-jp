@@ -1,8 +1,10 @@
 ---
-lab:
-  "\_\_ title": Get started with Microsoft data analytics
-  "\_\_ module": Get started with Microsoft data analytics
+demo:
+  course: 'PL-300, DP-605'
+  title: Microsoft Data Analytics の使用を開始する
+  module: Get started with Microsoft data analytics
 ---
+
 # Microsoft Data Analytics の使用を開始する
 
 ## ダッシュボードを探索する

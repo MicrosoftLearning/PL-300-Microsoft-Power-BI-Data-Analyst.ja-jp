@@ -1,5 +1,6 @@
 ---
 demo:
+  course: PL-300
   title: Power BI で行レベルのセキュリティを適用する
   module: Deploy and manage Power BI service items
 ---
@@ -40,7 +41,7 @@ demo:
    [Email] = USERPRINCIPALNAME()
    ```
 
-1. **保存**します。
+1. **保存**。
 
 ## ロールを検証する
 

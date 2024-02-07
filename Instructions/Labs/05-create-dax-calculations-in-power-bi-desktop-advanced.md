@@ -1,5 +1,6 @@
 ---
 lab:
+  course: PL-300
   title: Power BI Desktop で高度な DAX 計算を作成する
   module: Create Model Calculations using DAX in Power BI
 ---
@@ -30,17 +31,17 @@ lab:
 
 1. スターター Power BI Desktop ファイルを開くには、 **[ファイル] > [レポートを開く] > [レポートの参照]** の順に選択します。
 
-1. **[開く]** ウィンドウで、**D:\PL300\Labs\05-create-dax-calculations-in-power-bi-desktop-advanced\Starter** フォルダーに移動し、**Sales Analysis** ファイルを開きます。
+1. **[開く]** ウィンドウで、**D:\Allfiles\Labs\05-create-dax-calculations-in-power-bi-desktop-advanced\Starter** フォルダーに移動し、**Sales Analysis** ファイルを開きます。
 
 1. 情報ウィンドウが開いている場合はすべて閉じます。
 
-1. リボンの下の黄色の警告メッセージに注目してください。 
+1. リボンの下の警告メッセージに注目してください。 
 
     "このメッセージは、クエリが、モデル テーブルとしての読み込みに適用されていないことを警告しています。クエリは、このラボの後半で適用します。"**
     
-    "警告メッセージを無視するには、黄色の警告メッセージの右側にある **[X]** を選択します。"**
+    "警告メッセージを無視するには、警告メッセージの右側にある **[X]** を選びます。"**
 
-1. ファイルのコピーを作成するには、 **[ファイル] > [名前を付けて保存]** の順に移動し、**D:\PL300\MySolution** フォルダーに保存します。
+1. ファイルのコピーを作成するには、**[ファイル] > [名前を付けて保存]** の順に移動し、**D:\Allfiles\MySolution** フォルダーに保存します。
 
 ## **行列の視覚エフェクトを作成する**
 
@@ -90,7 +91,7 @@ lab:
 
 1. 次の式に基づいて、**Sales** テーブルにメジャーを追加します。
     
-     *"利便性のために、このラボのすべての DAX 定義は、**D:\PL300\Labs\05-create-dax-calculations-in-power-bi-desktop-advanced\Assets\Snippets.txt** ファイルからコピーできます。"*
+     "利便性のために、このラボのすべての DAX 定義は、**D:\Allfiles\Labs\05-create-dax-calculations-in-power-bi-desktop-advanced\Assets\Snippets.txt** ファイルからコピーできます。"**
 
 
     **DAX**

@@ -1,5 +1,6 @@
 ---
 lab:
+  course: 'PL-300, DP-605'
   title: Power BI Desktop でレポートをデザインする
   module: Create Reports in Power BI Desktop
 ---
@@ -24,9 +25,9 @@ lab:
 
 1. Power BI Desktop から、 **[ファイル]**  >  **[レポートを開く]**  >  **[レポートを参照]** の順に移動します。
 
-1. **D:\PL300\Labs\06-design-report-in-power-bi-desktop\Starter** フォルダーで **Sales Analysis** ファイルを開きます。
+1. **D:\Allfiles\Labs\06-design-report-in-power-bi-desktop\Starter** フォルダーで **Sales Analysis** ファイルを開きます。
 
-1. **[ファイル]**  >  **[名前を付けて保存]** の順に移動して、ファイルのコピーを作成し、そのコピーを **D:\PL300\MySolution** フォルダーに保存します。
+1. **[ファイル]** > **[名前を付けて保存]** の順に移動して、ファイルのコピーを作成し、そのコピーを **D:\Allfiles\MySolution** フォルダーに保存します。
 
 ## **ページ 1 をデザインする**
 
@@ -42,7 +43,7 @@ lab:
 
     ![画像 1](Linked_image_Files/07-design-report-in-power-bi-desktop_image15.png)
 
-1. **[開く]** ウィンドウで、**D:\PL300\Resources** フォルダーに移動します。
+1. **[開く]** ウィンドウで、**D:\Allfiles\Resources** フォルダーに移動します。
 
 1. **AdventureWorksLogo.jpg** ファイルを選択し、**[開く]** を選択します。
 

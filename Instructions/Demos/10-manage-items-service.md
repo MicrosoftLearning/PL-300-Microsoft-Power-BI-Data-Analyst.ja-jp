@@ -1,9 +1,9 @@
 ---
-lab:
-  "\_\_ title": Manage files and semantic models in Power BI
-  "\_\_ module": Deploy and manage Power BI service items
+demo:
+  course: PL-300
+  title: Power BI でファイルとセマンティック モデルを管理する
+  module: Deploy and manage Power BI service items
 ---
-
 # Power BI でファイルとセマンティック モデルを管理する
 
 ## ゲートウェイのデータ更新を準備する
@@ -50,7 +50,7 @@ lab:
 
 1. [売上、利益率] タイルの詳細を編集して、最終更新日時を表示します。
 
-1. `D:\PL300\Demo\Resources\UpdateDatabase-LoadAdditionalSales.ps1` ファイルを右クリックし、PowerShell で実行します。 "このスクリプトを実行すると、2020 年 12 月の売上データがデータベースに読み込まれます。"**
+1. `D:\Allfiles\Demo\Resources\UpdateDatabase-LoadAdditionalSales.ps1` ファイルを右クリックし、PowerShell で実行します。 "このスクリプトを実行すると、2020 年 12 月の売上データがデータベースに読み込まれます。"**
 
 1. 講師用の Power BI サービスで、[ナビゲーション] ウィンドウから **[売上分析]** セマンティック モデルを更新します。
 
