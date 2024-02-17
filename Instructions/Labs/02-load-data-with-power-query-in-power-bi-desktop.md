@@ -275,8 +275,7 @@ lab:
 
 1. **[カスタム列の式]** ボックスで、次の式を (等号の後に) 入力してから、新しい列を保存します。
 
-        `
-    if [TotalProductCost] = null then [OrderQuantity] * [StandardCost] else [TotalProductCost]  `
+   ` if [TotalProductCost] = null then [OrderQuantity] * [StandardCost] else [TotalProductCost] `
 
     ''式は、**D:\Allfiles\Labs\02-load-data-with-power-query-in-power-bi-desktop\Assets\Snippets.txt** ファイルからコピーできます。''**
 
