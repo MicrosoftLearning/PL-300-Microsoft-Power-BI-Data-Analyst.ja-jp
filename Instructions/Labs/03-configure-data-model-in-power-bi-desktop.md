@@ -337,7 +337,7 @@ lab:
 
 1. **Sales** フィールドを **[基準値]** ボックスにドラッグします。
 
-1. **[コスト]** フィールドを **[減算する値]** ボックスにドラッグし、**[追加]** を選択します。  
+1. **[Cost]** フィールドを **[Value to Subtract]** ボックスにドラッグし、**[追加]** を選択します。  
 
      ![画像 368](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image48.png)
 
