@@ -11,7 +11,7 @@ demo:
 
 1. Power BI Desktop　を開き、「作業の開始」ページを閉じます。
 
-1. D:\Allfiles\Demo フォルダーに、Sales Analysis という名前でファイルを保存します。
+1. D:\Allfiles\Demo フォルダーに、販売分析としてファイルを保存します。
 
 ## SQL Server データベースに接続する
 
