@@ -147,7 +147,7 @@ lab:
 
 1. 階層を作成するには、 **[データ]** ペインで **Category** 列を右クリックし、次に **[階層の作成]** を選択します。
 
-     ![[階層の作成] ダイアログ。](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image24.png)
+     ![階層の作成 ダイアログ。](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image24.png)
 
 1. **[プロパティ]** ペイン ( **[データ]** ペインの左側) で、 **[名前]** ボックスのテキストを「**Products**」に置き換えます。
 
