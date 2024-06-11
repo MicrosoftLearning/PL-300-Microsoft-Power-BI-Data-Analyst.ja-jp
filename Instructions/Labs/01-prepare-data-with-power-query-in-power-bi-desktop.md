@@ -47,7 +47,7 @@ lab:
 
 1. **[ホーム]** リボン タブで、**[データ]** グループ内から **[SQL Server]** を選択します。
 
-     ![SQL Server の [データの取得] アイコン](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image11.png)
+     ![SQL Server の データの取得 アイコン](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image11.png)
 
 1. **[SQL Server データベース]** ウィンドウの **[サーバー]** ボックスに「**localhost**」と入力して、**[データベース]** を空白のままにして **[OK]** を選択してください。
 
@@ -100,11 +100,11 @@ lab:
 
 1. 列の品質を評価するには、**「表示」** リボン タブの **「データ プレビュー」** グループ内から、**「列の品質」** をオンにします。 列の品質機能を使用すると、列にある有効、エラー、または空の値の割合を簡単に判断できます。
 
-     ![リボンの [列の品質] の選択](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image23.png)
+     ![リボンの 列の品質 の選択](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image23.png)
 
 1. **[位置]** 列に 94% の空 (null) 行があることに注目してください。
 
-     ![94% の空の行を示す [列の品質]](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image24.png)
+     ![94% の空の行を示す 列の品質](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image24.png)
 
 1. 列の分布を評価するには、**[表示]** リボン タブの **[データ プレビュー]** グループ内から、**[列の分布]** をオンにします。
 
