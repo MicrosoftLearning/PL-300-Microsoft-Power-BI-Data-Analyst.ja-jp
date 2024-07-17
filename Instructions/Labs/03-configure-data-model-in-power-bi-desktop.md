@@ -28,11 +28,11 @@ lab:
 
     ![Power BI Desktop アイコン](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image1.png)
 
-    ''ヒント: 既定では、Power BI Desktop の前に [はじめに] ダイアログ ボックスが開きます。サインインしてから、ポップアップを閉じることができます。''**
-
-1. スターター Power BI Desktop ファイルを開くには、 **[ファイル] > [レポートを開く] > [レポートの参照]** の順に選択します。
+1. スターター Power BI Desktop ファイルを開くには、**[このデバイスを開く] > [このデバイスを参照]** の順に選択します。
 
 1. **D:\Allfiles\Labs\03-configure-data-model-in-power-bi-desktop\Starter** フォルダーに移動し、**Sales Analysis** ファイルを選択します。
+
+   *注: この時点で、まだサインインしていない場合は、Power BI からサインインが求められます。サインインするか、**[キャンセル]** を選択してラボを続行できます。*
 
 1. 情報ウィンドウが開いている場合はすべて閉じます。
 
@@ -76,7 +76,7 @@ lab:
 
 1. リレーションシップを作成するには、**[新規]** を選択します。
 
-1. **[リレーションシップの作成]** ウィンドウの最初のドロップダウン リストで、**Product** テーブルを選択します。
+1. **[新しいリレーションシップ]** ウィンドウの最初のドロップダウン リストで、**Product** テーブルを選択します。
 
      ![画像 333](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image16.png)
 
@@ -147,7 +147,7 @@ lab:
 
 1. 階層を作成するには、 **[データ]** ペインで **Category** 列を右クリックし、次に **[階層の作成]** を選択します。
 
-     ![階層の作成 ダイアログ。](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image24.png)
+     ![[階層の作成] ダイアログ。](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image24.png)
 
 1. **[プロパティ]** ペイン ( **[データ]** ペインの左側) で、 **[名前]** ボックスのテキストを「**Products**」に置き換えます。
 
@@ -247,7 +247,7 @@ lab:
 
 このタスクでは、1 回の一括更新で複数の列を更新します。 この方法を使用して列を非表示にし、列の値を書式設定します。
 
-1. **[データ]** ペインで、**Product \| ProductKey** 列を選択します。
+1. **[モデル] ビュー** > **[データ]** ペインから、**Product \| ProductKey** 列を選択します。
 
 1. **Ctrl** キーを押しながら、次の 13 個の列 (複数のテーブルにまたがる) を選択します。
 
@@ -378,8 +378,6 @@ lab:
 ## **多対多リレーションシップを作成する**
 
 このタスクでは、**Salesperson** テーブルと **Sales** テーブルの間に多対多のリレーションシップを作成します。
-
- "このラボでは、フィールドを参照するために簡略表記を使用します。*次のようになります。**Salesperson \| Salesperson** 。この例では、**Salesperson** はテーブル名、**Salesperson** はフィールド名です。*
 
 1. Power BI Desktop のレポート ビューの **[データ]** ペインで、次の 2 つのフィールドをオンにして、**テーブル** ビジュアルを作成します。
 
