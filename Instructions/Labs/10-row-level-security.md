@@ -29,11 +29,11 @@ lab:
 
     ![Power BI Desktop アイコン](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image1.png)
 
-    ''ヒント: 既定では、Power BI Desktop の前に [はじめに] ダイアログ ボックスが開きます。**サインイン**してから、ポップアップを閉じます。''**
-
-1. スターター Power BI Desktop ファイルを開くには、 **[ファイル] > [レポートを開く] > [レポートの参照]** の順に選択します。
+1. スターター Power BI Desktop ファイルを開くには、**[このデバイスを開く] > [このデバイスを参照]** の順に選択します。
 
 1. **[開く]** ウィンドウで、**D:\Allfiles\Labs\10-row-level-security\Starter** フォルダーに移動し、**Sales Analysis** ファイルを開きます。
+
+   *注: この時点で、まだサインインしていない場合は、Power BI からサインインが求められます。サインインするか、**[キャンセル]** を選択してラボを続行できます。*
 
 1. 情報ウィンドウが開いている場合はすべて閉じます。
 
@@ -60,27 +60,35 @@ lab:
     
     ''Michael Blythe の担当地域が、米国北東部、米国中部、米国南東部の 3 つであることを思い出すかもしれません。''**
 
-1. **[モデリング]** リボン タブで、 **[セキュリティ]** グループ内から **[ロールの管理]** を選択します。
+1. **[ホーム]** リボン タブで、**[セキュリティ]** グループ内から **[ロールの管理]** を選択します。
 
     ![画像 5700](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image21.png)
 
-1. **[ロールの管理]** ウィンドウで、**[作成]** を選択します。
+1. **セキュリティ ロールの管理** ウィンドウの **[ロール]** セクションで、**[新規]** を選択します。
 
 1. ボックスで、選択したテキストをロールの名前:**Salespeople** に置き換えてから、**Enter** キーを押します。
 
    ![画像 5703](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image23.png)
 
-1. フィルターを割り当てるには、**Salesperson (Performance)** テーブルの省略記号 (…) 文字を選択し、 **[フィルターの追加] \| [UPN]** を選択します。
+1. フィルターを割り当てるには、**Salesperson (Performance)** テーブルを選択し、**[データのフィルター処理]** セクションで **[DAX エディターに切り替える]** を選択します。
 
-   ![画像 5704](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image24.png)
+   ![スクリーンショット 2024-04-18 144345](https://github.com/afelix-95/PL-300-Microsoft-Power-BI-Data-Analyst/assets/148110824/1308d47f-2cca-4f88-9237-b02b66b4cf1e)
 
-1. **[テーブル フィルターの DAX 式]** ボックスで、 **[値]** を **USERPRINCIPALNAME()** に置き換えて式を変更してから、 **[保存]** を選択します。
+1. DAX エディター ボックスで、次の式を入力します。
+
+    **DAX**
+
+    ```
+    [UPN] = USERPRINCIPALNAME()
+    ```
     
     "USERPRINCIPALNAME() は、認証されたユーザーの名前を返す Data Analysis Expressions (DAX) 関数です。*つまり、**Salesperson (Performance)** テーブルは、モデルをクエリするユーザーのユーザー プリンシパル名 (UPN) によってフィルター処理されます。"*
 
    ![画像 11](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image25.png)
 
-1. セキュリティ ロールをテストするには、**[モデリング]** リボン タブで、**[セキュリティ]** グループ内から **[View As](表示方法)** を選択します。
+1. **[保存]**、**[閉じる]** の順に選びます。
+
+1. セキュリティ ロールをテストするには、**[ホーム]** リボン タブで、**[セキュリティ]** グループ内から **[View As](表示方法)** を選択します。
 
    ![画像 5708](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image27.png)
 
@@ -104,13 +112,13 @@ lab:
 
    ![画像 5712](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image32.png)
 
-1. **[営業担当者]** ロールを削除するには、 **[モデリング]** リボン タブで、 **[セキュリティ]** グループ内から **[ロールの管理]** を選択します。
+1. **[Salespeople]** ロールを削除するには、**[ホーム]** リボン タブで、**[セキュリティ]** グループ内から **[ロールの管理]** を選択します。
 
    ![画像 16](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image33.png)
 
-1. **[ロールの管理]** ウィンドウで、**[削除]** を選択します。 削除するかどうかを確認するメッセージが表示されたら、 **[はい、削除します]** を選択します。
+1. **セキュリティ ロールの管理** ウィンドウで、**Salespeople** ロールの省略記号 (...) を選択し、**[削除]** を選択します。 削除するかどうかを確認するメッセージが表示されたら、 **[はい、削除します]** を選択します。
 
-   ![画像 17](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image34.png)
+   ![スクリーンショット 2024-04-18 145556](https://github.com/afelix-95/PL-300-Microsoft-Power-BI-Data-Analyst/assets/148110824/deeb4eac-b639-433d-a9d4-29c8e127008e)
 
 ### **仕上げ**
 

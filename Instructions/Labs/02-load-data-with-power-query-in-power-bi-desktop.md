@@ -26,13 +26,13 @@ lab:
 
 1. Power BI Desktop を開きます。
 
-    ヒント: 既定では、Power BI Desktop の前に [はじめに] ダイアログ ボックスが開きます。サインインしてから、ポップアップを閉じることができます。**
-
     ![Power BI Desktop アイコン](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image1.png)
 
-1. スターター Power BI Desktop ファイルを開くには、 **[ファイル] > [レポートを開く] > [レポートの参照]** の順に選択します。
+1. スターター Power BI Desktop ファイルを開くには、**[このデバイスを開く] > [このデバイスを参照]** の順に選択します。
 
 1. **[開く]** ウィンドウで、**D:\Allfiles\Labs\02-load-data-with-power-query-in-power-bi-desktop\Starter** フォルダーに移動し、**Sales Analysis** ファイルを開きます。
+
+   *注: この時点で、まだサインインしていない場合は、Power BI からサインインが求められます。サインインするか、**[キャンセル]** を選択してラボを続行できます。*
 
 1. 情報ウィンドウが開いている場合はすべて閉じます。
 
@@ -54,7 +54,7 @@ lab:
 
 1. **[Power Query エディター]** ウィンドウを開くには、**[ホーム]** リボン タブの **[クエリ]** グループ内から、**[データの変換]** アイコンを選択します。
 
-     ![ホーム リボンの データの変換](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image10.png)
+     ![[ホーム] リボンの [データの変換]](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image10.png)
 
 1. **[Power Query エディター]** ウィンドウの **[クエリ]** ウィンドウで、**[DimEmployee]** クエリを選択します。
 
@@ -72,7 +72,7 @@ lab:
 
 1. **[列に移動]** ウィンドウで、一覧を列名で並べ替えるには、 **[昇順]** 並べ替えボタンを選択し、 **[名前]** と **[SalesPersonFlag]** を選択します。 **[OK]** をクリックします。
 
-     ![列に移動 の並べ替えオプション](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image14.png)
+     ![[列に移動] の並べ替えオプション](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image14.png)
 
 1. **SalesPersonFlag** 列を見つけたら、Salespeople (つまり、**TRUE**) のみが選択されるようにこの列をフィルター処理して、 **[OK]** をクリックします。
 
@@ -207,7 +207,7 @@ lab:
     - **[検索する値]** ボックスに「**Ware House**」と入力します
     - **[置換後]** ボックスに「**Warehouse**」と入力します
 
-     ![値の置換 ダイアログ](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image40.png)
+     ![[値の置換] ダイアログ](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image40.png)
 
 1. 次の 4 つの列の名前を変更します。
 

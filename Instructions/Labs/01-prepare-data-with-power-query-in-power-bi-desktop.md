@@ -31,15 +31,15 @@ lab:
 
     ![Power BI Desktop アイコン](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image1.png)
 
-    ''ヒント: 既定では、Power BI Desktop の前に [はじめに] ダイアログ ボックスが開きます。サインインしてから、ポップアップを閉じることができます。''**
-
-1. スターター Power BI Desktop ファイルを開くには、 **[ファイル] > [レポートを開く] > [レポートの参照]** の順に選択します。
+1. スターター Power BI Desktop ファイルを開くには、**[このデバイスを開く]、[このデバイスの参照]** の順に選択します。
 
 1. **[開く]** ウィンドウで、**D:\Allfiles\Labs\01-prepare-data-with-power-query-in-power-bi-desktop\Starter** フォルダーに移動します。
 
 1. **Sales Analysis** ファイルを選択します。
 
-1. **[名前を付けて保存]** を使用して、ファイルのコピーを **D:\Allfiles\MySolution** フォルダーに保存します。
+    *注: この時点で、まだサインインしていない場合は、Power BI からサインインが求められます。サインインするか、**[キャンセル]** を選択してラボを続行できます。*
+
+1. **[ファイル] > [名前を付けて保存]** を使用して、ファイルのコピーを **D:\Allfiles\MySolution** フォルダーに保存します。
 
 ## **SQL Server からデータを取得する**
 
@@ -47,7 +47,7 @@ lab:
 
 1. **[ホーム]** リボン タブで、**[データ]** グループ内から **[SQL Server]** を選択します。
 
-     ![SQL Server の データの取得 アイコン](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image11.png)
+     ![SQL Server の [データの取得] アイコン](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image11.png)
 
 1. **[SQL Server データベース]** ウィンドウの **[サーバー]** ボックスに「**localhost**」と入力して、**[データベース]** を空白のままにして **[OK]** を選択してください。
 
@@ -76,7 +76,7 @@ lab:
 
 1. **[データの変換]** を選択してこのタスクを完了すると、Power Query エディターが開きます。
 
-これで、Power BI にデータがインポートされ、次のタスク用に Power Query エディターが開きます。
+これでデータに接続され、次のタスク用に Power Query エディターが開きます。
 
 ## **Power Query エディターでデータをプレビューする**
 
@@ -100,11 +100,11 @@ lab:
 
 1. 列の品質を評価するには、**「表示」** リボン タブの **「データ プレビュー」** グループ内から、**「列の品質」** をオンにします。 列の品質機能を使用すると、列にある有効、エラー、または空の値の割合を簡単に判断できます。
 
-     ![リボンの 列の品質 の選択](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image23.png)
+     ![リボンの [列の品質] の選択](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image23.png)
 
 1. **[位置]** 列に 94% の空 (null) 行があることに注目してください。
 
-     ![94% の空の行を示す 列の品質](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image24.png)
+     ![94% の空の行を示す [列の品質]](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image24.png)
 
 1. 列の分布を評価するには、**[表示]** リボン タブの **[データ プレビュー]** グループ内から、**[列の分布]** をオンにします。
 
