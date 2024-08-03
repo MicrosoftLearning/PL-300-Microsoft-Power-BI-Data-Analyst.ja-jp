@@ -1,6 +1,5 @@
 ---
 demo:
-  course: 'PL-300, DP-605'
   title: Power BI でデータ モデルを設計する
   module: Design a data model in Power BI
 ---

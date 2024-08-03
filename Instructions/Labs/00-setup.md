@@ -1,6 +1,5 @@
 ---
 lab:
-  course: 'PL-300, DP-605'
   title: 独自の環境のセットアップ
   module: Set up your own environment
 ---

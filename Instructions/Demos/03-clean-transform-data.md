@@ -1,6 +1,5 @@
 ---
 demo:
-  course: 'PL-300, DP-605'
   title: Power BI でのデータのクリーン化、変換、読み込み
   module: 'Clean, transform, and load data in Power BI'
 ---

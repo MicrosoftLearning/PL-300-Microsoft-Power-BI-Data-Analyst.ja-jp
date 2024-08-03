@@ -1,6 +1,5 @@
 ---
 demo:
-  course: PL-300
   title: Power BI サービス内でダッシュボードを作成する
   module: Deploy and manage Power BI service items
 ---

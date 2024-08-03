@@ -1,6 +1,5 @@
 ---
 demo:
-  course: 'PL-300, DP-605'
   title: Power BI でレポートを作成する
   module: Create reports in Power BI
 ---

@@ -1,6 +1,5 @@
 ---
 demo:
-  course: PL-300
   title: Power BI でファイルとセマンティック モデルを管理する
   module: Deploy and manage Power BI service items
 ---

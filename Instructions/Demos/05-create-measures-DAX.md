@@ -1,6 +1,5 @@
 ---
 demo:
-  course: 'PL-300, DP-605'
   title: Power BI で DAX を使ってメジャーを作成する
   module: Create measures using DAX in Power BI
 ---

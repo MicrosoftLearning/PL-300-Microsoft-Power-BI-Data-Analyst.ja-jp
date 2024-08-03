@@ -1,6 +1,5 @@
 ---
 demo:
-  course: 'PL-300, DP-605'
   title: Power BI でワークスペースを作成および管理する
   module: Deploy and manage Power BI service items
 ---

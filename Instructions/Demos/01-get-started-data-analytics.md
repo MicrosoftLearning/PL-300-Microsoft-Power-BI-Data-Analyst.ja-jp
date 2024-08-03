@@ -1,6 +1,5 @@
 ---
 demo:
-  course: 'PL-300, DP-605'
   title: Microsoft Data Analytics の使用を開始する
   module: Get started with Microsoft data analytics
 ---

@@ -1,6 +1,5 @@
 ---
 demo:
-  course: 'PL-300, DP-605'
   title: Power BI でデータを取得する
   module: Get data in Power BI
 ---
