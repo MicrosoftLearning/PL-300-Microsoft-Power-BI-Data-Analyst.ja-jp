@@ -45,7 +45,7 @@ lab:
 
 2. 数式バー (計算の作成または編集時に、リボンのすぐ下に表示されます) に、「**Salesperson =**」と入力して **Shift + Enter** キーを押し、「**'Salesperson (Performance)'**」と入力して **Enter** キーを押します。
 
-    > **注**: *便宜上、このラボのすべての DAX 定義は、**D:\Allfiles\Labs\04-create-dax-calculations-in-power-bi-desktop\Assets\Snippets.txt** にあるスニペット ファイルからコピーできます。*
+    > **注**: *便宜上、このラボのすべての DAX 定義は **04-intro-dax\Snippets.txt** にあるスニペット ファイルからコピーできます。*
 
      ![画像 4](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image10.png)
 
@@ -123,13 +123,14 @@ lab:
     ![画像 11](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image19.png)
 
 1. 数式バーに次のように入力 (またはスニペット ファイルからコピー) して、**Enter** キーを押します。
+    > "この数式では日付の年の値が使用されますが、月が 6 月よりも後の場合は、年の値に 1 が加算されます。*このようにして、Adventure Works 社の会計年度が計算されます。"*
 
    ```DAX
    Year =
    "FY" & YEAR('Date'[Date]) + IF(MONTH('Date'[Date]) > 6, 1)
    ```
 
-    > "この数式では日付の年の値が使用されますが、月が 6 月よりも後の場合は、年の値に 1 が加算されます。*このようにして、Adventure Works 社の会計年度が計算されます。"*
+
 
 1. スニペットのファイル定義を使用して、**Date** テーブルに対して次の 2 つの計算列を作成します。
 
