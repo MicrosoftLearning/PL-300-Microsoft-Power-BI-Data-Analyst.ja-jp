@@ -95,13 +95,13 @@ lab:
 
      ![リボンの [列の品質] の選択](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image23.png)
 
-1. **[位置]** 列に 94% の空 (null) 行があることに注目してください。
+1. **[Position]** 列に 94% の空 (null) 行があることに注目してください。
 
      ![94% の空の行を示す [列の品質]](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image24.png)
 
 1. 列の分布を評価するには、**[表示]** リボン タブの **[データ プレビュー]** グループ内から、**[列の分布]** をオンにします。
 
-1. **[位置]** 列を再度確認し、4 つの個別の値と 1 つの一意の値があることに注意してください。
+1. **[Position]** 列を再度確認し、4 つの個別の値と 1 つの一意の値があることに注意してください。
 
 1. **EmployeeKey** 列の列の分布を確認します。296 個の個別の値と 296 個の一意の値があります。
 
