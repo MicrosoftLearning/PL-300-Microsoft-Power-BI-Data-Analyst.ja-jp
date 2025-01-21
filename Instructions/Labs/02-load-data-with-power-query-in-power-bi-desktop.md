@@ -37,13 +37,13 @@ lab:
 
 1. **[Power Query エディター]** ウィンドウを開くには、**[ホーム]** リボン タブの **[クエリ]** グループ内から、**[データの変換]** アイコンを選択します。
 
-     ![[ホーム] リボンの [データの変換]](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image10.png)
+    ![[ホーム] リボンの [データの変換]](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image10.png)
 
 1. **[Power Query エディター]** ウィンドウの **[クエリ]** ウィンドウで、**[DimEmployee]** クエリを選択します。
 
-     ![画像 1](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image11.png)
+    ![画像 1](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image11.png)
 
-> **注:** 接続方法の指定を求める警告メッセージが表示された場合は、**[資格情報の編集]** を選択し、現在の資格情報を使用して接続し、**[OK]** を選択して暗号化されていない接続を使用します。
+    > **注:** 接続方法の指定を求める警告メッセージが表示された場合は、**[資格情報の編集]** を選択し、現在の資格情報を使用して接続し、**[OK]** を選択して暗号化されていない接続を使用します。
  
 1. クエリの名前を変更するには、(右側にある) **[クエリの設定]** ペインで、**[名前]** ボックスのテキストを **Salesperson** に置き換え、**Enter** キーを押します。 次に、 **[クエリ]** ペインで名前が更新されたことを確認します。
 
@@ -53,11 +53,11 @@ lab:
 
     > [列に移動] は、列が多いときに便利な機能です。または、水平方向にスクロールして列を見つけることができます。**
 
-     ![列の管理 > 列の選択 > 列に移動](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image13.png)
+    ![列の管理 > 列の選択 > 列に移動](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image13.png)
 
 1. **[列に移動]** ウィンドウで、一覧を列名で並べ替えるには、 **[昇順]** 並べ替えボタンを選択し、 **[名前]** と **[SalesPersonFlag]** を選択します。 **[OK]** をクリックします。
 
-     ![[列に移動] の並べ替えオプション](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image14.png)
+    ![[列に移動] の並べ替えオプション](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image14.png)
 
 1. **SalesPersonFlag** 列を見つけたら、Salespeople (つまり、**TRUE**) のみが選択されるようにこの列をフィルター処理して、 **[OK]** をクリックします。
 
@@ -65,7 +65,7 @@ lab:
 
     > 作成した変換ごとに、別のステップ ロジックが生成されます。ステップを編集または削除することができます。クエリ変換のその段階でクエリ結果をプレビューするステップを選択することもできます。**
 
-     ![適用したステップ](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image17.png)
+    ![適用したステップ](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image17.png)
 
 1. 列を削除するには、 **[ホーム]** リボン タブの **[列の管理]** グループを選択し、 **[列の選択]** アイコンを選択します。
 
@@ -82,11 +82,11 @@ lab:
 
 1. **[適用するステップ]** リストで、別のクエリ手順が追加されていることに注目してください。
 
-     ![削除された他の列のステップ](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image21.png)
+    ![削除された他の列のステップ](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image21.png)
 
 1. 1 つの名前列を作成するには、まず、**FirstName** 列ヘッダーを選択します。 **Ctrl** キーを押しながら、**LastName** 列を選択します。
 
-     ![2 つの列を複数選択して 1 つの列を作成する](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image22.png)
+    ![2 つの列を複数選択して 1 つの列を作成する](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image22.png)
 
 1. 選択列ヘッダーのいずれかを右クリックし、コンテキスト メニューで **[列のマージ]** を選択します。
 
@@ -149,7 +149,7 @@ lab:
 1. **EnglishProductSubcategoryName** と **DimProductCategory** を選択し、 **[元の列名をプレフィックスとして使用します]** チェック ボックスをオフにしてから、 **[OK]** を選択します。
 
     > "これら 2 つの列を選択すると、変換が適用されて **DimProductSubcategory** テーブルに結合され、これらの列が含まれます。***DimProductCategory** 列は、実際にはデータ ソース内の別の関連テーブルです。"*
-    >
+
     > "クエリ列名は常に一意である必要があります。*このチェックボックスをオンにすると、各列の前に展開された列名が追加されます (この場合は **DimProductSubcategory**)。選択した列名が **Product** クエリの列名と競合しないことがわかっているため、オプションは選択解除されています。"*
 
 1. 変換の結果、2 つの列が追加され、**DimProductSubcategory** 列が削除されたことがわかります。
@@ -193,7 +193,7 @@ lab:
     - **[検索する値]** ボックスに「**Ware House**」と入力します
     - **[置換後]** ボックスに「**Warehouse**」と入力します
 
-     ![[値の置換] ダイアログ](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image40.png)
+    ![[値の置換] ダイアログ](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image40.png)
 
 1. 次の 4 つの列の名前を変更します。
 
@@ -255,7 +255,7 @@ lab:
 
 1. カスタム列を作成するには、 **[列の追加]** リボン タブの **[全般]** グループ内から、 **[カスタム列]** を選択します。
 
-     ![画像 5664](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image47.png)
+    ![画像 5664](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image47.png)
 
 1. 「**カスタム列**」ウィンドウの「**新しい列名**」ボックスで、テキストを **Cost** に置き換えます。
 
@@ -282,7 +282,7 @@ lab:
 
     > "正しいデータ型を構成することが重要です。*列に数値が含まれていて、数学計算を実行する予定がある場合は、正しい型を選択することも重要です。"*
 
-     ![画像 5667](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image50.png)
+    ![画像 5667](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image50.png)
 
 1. 次の 3 つの列のデータ型を **[固定小数点数]** に変更します。
 
@@ -300,7 +300,7 @@ lab:
 
 1. **ResellerSalesTargets** クエリを選択し、名前を **Targets** に変更します。
 
-> **注:** 接続方法の指定を求める警告メッセージが表示された場合は、**[資格情報の編集]** を選択し、匿名アクセスを使用します。
+    > **注:** 接続方法の指定を求める警告メッセージが表示された場合は、**[資格情報の編集]** を選択し、匿名アクセスを使用します。
 
 1. 12 か月の列 (**M01**-**M12**) のピボットを解除するには、まず **Year** および **EmployeeID** の列ヘッダーを複数選択します。
 
@@ -341,7 +341,7 @@ lab:
 
 1. クエリ グリッドの上に表示される数式にも注目してください。
 
-     ![画像 5679](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image60.png)
+    ![画像 5679](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image60.png)
 
 1. 新しい列の名前を変更するには、 **[マージ済み]** 列ヘッダーをダブルクリックし、列の名前を **TargetMonth** に変更します。
 
@@ -359,7 +359,7 @@ lab:
 
     > *ターゲット値は千単位で格納されていることを思い出してください。*
 
-     ![画像 5682](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image63.png)
+    ![画像 5682](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image63.png)
 
 1. **[乗算]** ウィンドウの **[値]** ボックスに「**1000**」と入力し、 **[OK]** を選択します。
 
@@ -373,7 +373,7 @@ lab:
 
 1. **[ホーム]** リボン タブの **[変換]** グループ内から、 **[1 行目をヘッダーとして使用]** を選択します。
 
-     ![画像 5688](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image68.png)
+    ![画像 5688](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image68.png)
 
 **ステータス バーで、クエリに 3 列と 10 行が含まれていることを確認します。**
 
@@ -387,15 +387,15 @@ lab:
 
     > "クエリをマージすることで、異なるデータ ソース (SQL Server と CSV ファイル) のデータを統合できます。"**
 
-     ![画像 5654](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image71.png)
+    ![画像 5654](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image71.png)
 
 1. **[マージ]** ウィンドウの **Product** クエリ グリッドで、**[Color]** 列ヘッダーを選択します。
 
-     ![画像 5655](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image72.png)
+    ![画像 5655](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image72.png)
 
 1. **Product** クエリ グリッドの下のドロップダウン リストで、**ColorFormats** クエリを選択します。
 
-     ![画像 21](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image73.png)
+    ![画像 21](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image73.png)
 
 1. **ColorFormats** クエリ グリッドで、**Color** 列ヘッダーを選択します。
 
@@ -403,7 +403,7 @@ lab:
 
     > データ ソースのプライバシー レベルを構成して、ソース間でデータを共有できるかどうかを決定できます。各データ ソースを **[組織]** に設定すると、必要に応じてデータを共有できます。プライベート データ ソースを他のデータ ソースと共有することはできません。これは、プライベート データを共有できないという意味ではありません。つまり、Power Query エンジンではソース間でデータを共有できません。**
 
-     ![画像 5691](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image74.png)
+    ![画像 5691](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image74.png)
 
 1. **[マージ]** ウィンドウで、既定の **[結合の種類]** (左外部の選択を維持する) を使用し、 **[OK]** を選択します。
 
@@ -422,33 +422,33 @@ lab:
 
 1. **[クエリの設定]** ペインで、**[すべてのプロパティ]** リンクを選択します。
 
-     ![画像 322](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image80.png)
+    ![画像 322](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image80.png)
 
 1. **[クエリのプロパティ]** ウィンドウで、**[レポートへの読み込みを有効にする]** チェックボックスをオフにします。
 
     > 読み込みを無効にすると、データ モデルにテーブルとして読み込まれません。これは、クエリが **Product** クエリとマージされ、データ モデルへの読み込みが有効になっているためです。**
 
-     ![画像 323](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image81.png)
+    ![画像 323](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image81.png)
 
 ### 最終製品を確認する
 
-Power Query エディターで、次のように適切な名前が付けられた **8 つのクエリ**があることを確認します。
+1. Power Query エディターで、次のように適切な名前が付けられた **8 つのクエリ**があることを確認します。
 
-- Salesperson
-- SalespersonRegion
-- Product
-- Reseller
-- Region
-- Sales
-- Targets
-- ColorFormats (データ モデルに読み込まれない)
+    - Salesperson
+    - SalespersonRegion
+    - Product
+    - Reseller
+    - Region
+    - Sales
+    - Targets
+    - ColorFormats (データ モデルに読み込まれない)
 
-**[閉じる]、&amp;[適用]** を選択してデータをモデルに読み込み、Power Query エディター ウィンドウを閉じます。
+1. **[閉じる]、&amp;[適用]** を選択してデータをモデルに読み込み、Power Query エディター ウィンドウを閉じます。
 
-![画像 326](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image83.png)
+    ![画像 326](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image83.png)
 
-右側に [フィルター]、[視覚化]、[データ] の各ペインがあるキャンバスが Power BI Desktop に表示されるようになりました。 [データ] ペインで、**7 つのテーブル**がデータ モデルに読み込まれたことを確認します。
+1. 右側に [フィルター]、[視覚化]、[データ] の各ペインがあるキャンバスが Power BI Desktop に表示されるようになりました。 [データ] ペインで、**7 つのテーブル**がデータ モデルに読み込まれたことを確認します。
 
-![図 3](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image84.png)
+    ![図 3](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image84.png)
 
 ## ラボが完了しました
