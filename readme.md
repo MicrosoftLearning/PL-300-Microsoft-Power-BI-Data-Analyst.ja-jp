@@ -1,3 +1,11 @@
+#README
+
+We've turned off the ability to report issues directly on this repo and do not monitor PRs.
+
+Provide feedback here: https://aka.ms/provide-feedback
+
+Or, if you are a trainer with a microsoft.com email address, please create a ticket in AzDO.
+
 # PL-300: Microsoft Power BI Data Analyst
 
 このリポジトリには、Microsoft コース [PL-300: Microsoft Power BI Data Analyst](https://docs.microsoft.com/en-us/learn/certifications/courses/PL-300T00) のハンズオン ラボの演習が含まれています。 ラボは、学習用の教材に付随し、説明されるテクノロジを使用して学習者が練習することができるように設計されています。
