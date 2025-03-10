@@ -51,7 +51,7 @@ Cost = 'Sales'[Quantity] * RELATED('Product'[Cost])
 
 ## クイック メジャーを作成する
 
-1. Sales テーブルにクイック メジャーを追加し、Cost 列を Profit 列から減算します。
+1. Sales テーブルにクイック メジャーを追加し、Cost 列を Sales 列から減算します。
 
 1. メジャーの名前を [Profit] に変更します。
 
