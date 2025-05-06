@@ -360,7 +360,7 @@ lab:
 
      ![画像 86](Linked_image_Files/07-design-report-in-power-bi-desktop_image66.png)
 
-1. もう一度ビジュアルの 1 つをポイントし、右上にある省略記号 (...) を選択して、メニュー オプションに注目します。 **[Chat in Teams](Teams でチャット)** 以外のオプションを 1 つずつ試します。
+1. もう一度ビジュアルの 1 つをポイントし、右上にある省略記号 (...) を選択して、メニュー オプションに注目します。 **[共有]** 内のものを除き、各オプションを試してみてください。
 
      ![画像 97](Linked_image_Files/07-design-report-in-power-bi-desktop_image67.png)
 
