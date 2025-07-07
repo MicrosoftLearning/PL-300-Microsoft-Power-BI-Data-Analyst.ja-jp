@@ -1,7 +1,7 @@
 ---
 demo:
   title: Power BI で行レベルのセキュリティを適用する
-  module: Deploy and manage Power BI service items
+  module: Secure data access in Power BI
 ---
 
 # Power BI で行レベルのセキュリティを適用する
