@@ -8,7 +8,9 @@ layout: home
 
 各ラボの演習とデモへのハイパーリンクを以下に示します。
 
-## ラボ
+> **注**:コンテンツにバグが見つかった場合は、[GitHub リポジトリに新しい問題を作成](https://github.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/issues/new/choose)してください。
+
+## ラボ エクササイズ
 
 {% assign labs = site.pages | where_exp:"page", "page.url contains '/Instructions/Labs'" %}
 | モジュール | ラボ |
@@ -19,7 +21,8 @@ layout: home
 ## デモ
 
 {% assign demos = site.pages | where_exp:"page", "page.url contains '/Instructions/Demos'" %}
-| モジュール | デモ |
-| --- | --- | 
-{% for activity in demos %} |{{ activity.demo.module }} | [{{ activity.demo.title }}]({{ site.github.url }}{{ activity.url }}) |
+
+| Demo |
+| --- |
+{% for activity in demos %}| [{{ activity.demo.title }}]({{ site.github.url }}{{ activity.url }}) |
 {% endfor %}
