@@ -1,6 +1,6 @@
 ---
 lab:
-  title: Power BI 内でダッシュボードを作成する
+  title: (省略可能) Power BI 内でダッシュボードを作成する
   module: Create dashboards in Power BI
 ---
 
@@ -24,6 +24,8 @@ lab:
 `https://github.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/raw/Main/Allfiles/Labs/12-create-power-bi-dashboard/12-create-dashboard.zip`
 
 フォルダーを **C:\Users\Student\Downloads\12-create-dashboard** フォルダーに展開します。
+
+> _**注**:レポートを発行するには、少なくとも **Power BI Free** ライセンスが必要です。 Microsoft Edge ブラウザーを開いてから、`https://app.powerbi.com` でサインインします。 パズルを解くか、無料の Fabric 試用版を開始するように求められたら、それをスキップしてブラウザーを閉じてかまいません。
 
 ## **レポートを発行する**
 
