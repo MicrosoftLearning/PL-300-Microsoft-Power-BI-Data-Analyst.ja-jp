@@ -100,10 +100,6 @@ lab:
 
     ![画像 9](Linked_image_Files/09-enhance-power-bi-reports_image29.png)
 
-1. **アイコン - Profit Margin** ウィンドウの **[適用先]** ドロップダウン リストで、**[値と合計]** を選択します。
-
-    ![画像 10](Linked_image_Files/09-enhance-power-bi-reports_image30a.png)
-
 1. **[アイコン - Profit Margin]** ウィンドウの **[アイコン レイアウト]** ドロップダウン リストで、**[データの右側]** を選択します。
 
     ![画像 11](Linked_image_Files/09-enhance-power-bi-reports_image30.png)
@@ -129,6 +125,10 @@ lab:
     ![画像 13](Linked_image_Files/09-enhance-power-bi-reports_image32.png)
 
     > _ルールは次のように解釈できます。利益率の値が 0 未満の場合は赤いひし形を表示します。それ以外の場合は、値が 0 以上であれば、緑の円を表示します。_
+
+1. **アイコン - Profit Margin** ウィンドウの **[適用先]** ドロップダウン リストで、**[値と合計]** を選択します。
+
+    ![画像 10](Linked_image_Files/09-enhance-power-bi-reports_image30a.png)
 
 1. **[OK]** を選択します。
 
@@ -249,6 +249,8 @@ lab:
 
 この演習では、レポートを Power BI サービスに発行し、発行したレポートの動作を調べます。
 
+> _**注**:レポートを発行するには、少なくとも **Power BI Free** ライセンスが必要です。 Microsoft Edge ブラウザーを開いてから、`https://app.powerbi.com` でサインインします。 パズルを解くか、無料の Fabric 試用版を開始するように求められたら、それをスキップしてブラウザーを閉じてかまいません。
+
 > _**注**:タスクを直接実行する Power BI サービスにアクセスできない場合でも、演習の残りの部分を確認できます。_
 
 1. _[概要]_ ページを選択します。
@@ -277,7 +279,7 @@ lab:
 
 1. ブラウザー ウィンドウの Power BI サービスの**ナビゲーション** ウィンドウ (左側にあり、折りたたまれている場合があります) で、**[マイ ワークスペース]** を選択します。
 
-1. レポートを確認するには、_[07-Starter-Sales Analysis]_ レポートを選択します。
+1. レポートを確認するには、_[09-Starter-Sales Analysis]_ レポートを選択します。
 
 1. ドリルスルー機能をテストするには、[概要] ページの _[Sum of Quantity by Category]_ 視覚エフェクトで _[Clothing]_ バーを右クリックし、**[ドリルスルー] > [Product Details]** を選択します。__
 
