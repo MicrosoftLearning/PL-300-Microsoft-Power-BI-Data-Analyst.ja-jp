@@ -18,7 +18,7 @@ lab:
 
 `https://github.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/raw/Main/Allfiles/Labs/11-secure-data-access/11-secure-data.zip`
 
-フォルダーを **C:\Users\Student\Downloads\11-secure-data** フォルダーに展開します。
+フォルダーを**C:\Users\Student\Downloads\11-secure-data** フォルダーに展開します。
 
 **11-Starter-Sales Analysis.pbix** ファイルを開きます。
 
@@ -34,7 +34,7 @@ lab:
 
 1. **[データ]** ペインで、**Salesperson (Performance)** テーブルを選択します。
 
-1. データを確認すると、Michael Blythe (EmployeeKey 281) の UPN の値が **`michael-blythe@adventureworks.com`** になっています。
+1. データを確認すると、Michael Blythe (EmployeeKey 281) の UPN の値が**`michael-blythe@adventureworks.com`** になっています。
     
     > ''Michael Blythe の担当地域が、米国北東部、米国中部、米国南東部の 3 つであることを思い出すかもしれません。''**
 
@@ -70,7 +70,7 @@ lab:
 
 1. **[ロールとして表示]** ウィンドウで **[その他のユーザー]** 項目を選択してから、対応するボックスに「**`michael-blythe@adventureworks.com`**」と入力します。
 
-1. **[営業担当者]** ロールを確認してから、 **[OK]** をクリックします。
+1. **[営業担当者]** ロールを確認してから、**[OK]** をクリックします。
     
     > "この構成により、**Salespeople** ロールと、Michael Blythe の名前を借りたユーザーが使用されることになります。"**
 
@@ -80,7 +80,7 @@ lab:
 
    ![画像 13](Linked_image_Files/11-secure-data-access_image30.png)
 
-1. テーブル ビジュアルでは、営業担当者 **Michael Blythe** のみが表示されていることに注目してください。
+1. テーブル ビジュアルでは、営業担当者**Michael Blythe** のみが表示されていることに注目してください。
 
    ![画像 5713](Linked_image_Files/11-secure-data-access_image31.png)
 
@@ -92,7 +92,7 @@ lab:
 
    ![画像 16](Linked_image_Files/11-secure-data-access_image33.png)
 
-1. **セキュリティ ロールの管理** ウィンドウで、**Salespeople** ロールの省略記号 (...) を選択し、**[削除]** を選択します。 削除するかどうかを確認するメッセージが表示されたら、 **[はい、削除します]** を選択します。
+1. **セキュリティ ロールの管理** ウィンドウで、**Salespeople** ロールの省略記号 (...) を選択し、**[削除]** を選択します。 削除するかどうかを確認するメッセージが表示されたら、**[はい、削除します]** を選択します。
 
    ![画像 34](Linked_image_Files/11-secure-data-access_image34.png)
 

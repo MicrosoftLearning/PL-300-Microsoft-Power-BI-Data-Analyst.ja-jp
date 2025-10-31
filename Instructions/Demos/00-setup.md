@@ -26,4 +26,4 @@ demo:
 
 1. Power BI Desktop を閉じます。
 
-> **注**: デモの資産は、PL-300 Power BI データ アナリスト [GitHub リポジトリ](https://github.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/tree/Main/Allfiles/Demo)にあります。
+> **注**: デモの資産は、PL-300 Power BI データ アナリスト[GitHub リポジトリ](https://github.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/tree/Main/Allfiles/Demo)にあります。
