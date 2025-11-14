@@ -25,7 +25,7 @@ lab:
 
 ### Microsoft 365 開発者アカウント
 
-一部の演習では、組織アカウントを使用して Power BI にログインする必要があります。 独自のものを使用できますが、アクセス権がない場合は、無料の [Microsoft 365 開発者アカウント](https://developer.microsoft.com/microsoft-365/dev-program)を作成できます。
+一部の演習では、組織アカウントを使用して Power BI にログインする必要があります。 独自のものを使用できますが、アクセス権がない場合は、無料の[Microsoft 365 開発者アカウント](https://developer.microsoft.com/microsoft-365/dev-program)を作成できます。
 
 ### SQL Server データベース エンジン
 
@@ -38,4 +38,4 @@ lab:
 
 ### Microsoft Edge
 
-1. 最新バージョンの [Microsoft Edge](https://microsoft.com/edge) をインストールして、Power BI サービスにオンラインでアクセスします。
+1. 最新バージョンの[Microsoft Edge](https://microsoft.com/edge) をインストールして、Power BI サービスにオンラインでアクセスします。

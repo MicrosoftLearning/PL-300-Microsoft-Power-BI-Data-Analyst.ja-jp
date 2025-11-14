@@ -25,7 +25,7 @@ lab:
 
 `https://github.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/raw/Main/Allfiles/Labs/07-create-visual-calculations/07-visual-calculations.zip`
 
-フォルダーを **C:\Users\Student\Downloads\07-visual-calculations** フォルダーに展開します。
+フォルダーを**C:\Users\Student\Downloads\07-visual-calculations** フォルダーに展開します。
 
 **07-Starter-Sales Analysis.pbix** ファイルを開きます。
 
@@ -39,13 +39,13 @@ lab:
 
    ![画像 01](Linked_image_Files/07-create-visual-calculations_image01.png)
 
-1. **[データ]** ペインで、**Date** テーブル内から **[Y 軸]** ウェル/エリアに **Year** フィールドをドラッグします。
+1. **[データ]** ペインで、**Date** テーブル内から **[Y 軸]** ウェル/エリアに**Year** フィールドをドラッグします。
 
 1. **Sales** テーブルから **[X 軸]** ウェル/エリアに **"Sales"** フィールドと **"Cost"** フィールドをドラッグします。
 
     > ビジュアルに Sales と Cost を追加すると、各フィールドの合計が自動的に計算されたことに注目してください。
 
-1. 3 点メニューから **[Year]**、**[昇順で並べ替え]** の順に選択して、結果の横棒グラフを **Year** の昇順に並べ替えます。
+1. 3 点メニューから **[Year]**、**[昇順で並べ替え]** の順に選択して、結果の横棒グラフを**Year** の昇順に並べ替えます。
 
    ![画像 02](Linked_image_Files/07-create-visual-calculations_image02.png)
 
@@ -73,13 +73,13 @@ lab:
 
    ![画像 05](Linked_image_Files/07-create-visual-calculations_image05.png)
 
-1. 数式バーで、`[Field]` プレースホルダーを `[Profit]` に 2 回置き換え、計算をコミットします。
+1. 数式バーで、`[Field]` プレースホルダーを`[Profit]` に 2 回置き換え、計算をコミットします。
 
-1. テンプレート メニューから **[累計]** を選択し、`[Field]` プレースホルダーを `[Profit]` に置き換えて、計算をコミットします。
+1. テンプレート メニューから **[累計]** を選択し、`[Field]` プレースホルダーを`[Profit]` に置き換えて、計算をコミットします。
 
     > **[累計]** は、値の合計を計算し、前の値に現在の値を追加するので、今年度と前年度の合計が表示されます。
 
-1. テンプレート メニューから **[移動平均]** を選択し、`[Field]` プレースホルダーを `[Profit]` に、`WindowSize` プレースホルダーを 2 に置き換えます。 次のような設定になります。
+1. テンプレート メニューから **[移動平均]** を選択し、`[Field]` プレースホルダーを`[Profit]` に、`WindowSize` プレースホルダーを 2 に置き換えます。 次のような設定になります。
 
     > **[移動平均]** は、値の合計を期間のサイズで割って、指定された期間に含まれる一連の値の平均を計算します。 期間のサイズを 2 に設定すると、2 つの連続する値の平均が計算されます。 この例では、値は年間利益なので、2019 年度の移動平均は 2018 年度と 2019 年度の利益の平均になります。
 
@@ -113,11 +113,11 @@ lab:
 
 1. 次のフィールドをビジュアル ウェル/領域に追加します。
 
-    - 行: **Product \| Category**
-    - 列: **Date \| Year**
-    - 値: **Sales \| Sales**
+    - 行:**Product\| Category**
+    - 列:**Date\| Year**
+    - 値:**Sales\| Sales**
 
-    > "このラボでは、フィールドを参照するために簡略表記を使用します。*次のようになります。**Date \| Year**。この例では、**Date** はテーブル名、**Year** はフィールド名です。"*
+    > "このラボでは、フィールドを参照するために簡略表記を使用します。*次のようになります。**Date\| Year**。この例では、**Date** はテーブル名、**Year** はフィールド名です。"*
 
 ## 計算を追加する
 
@@ -157,14 +157,14 @@ lab:
 
 1. 次のフィールドをビジュアル ウェル/領域に追加します。
 
-    - X 軸: **Date \| Year** および **Date \| Quarter**
-    - Y 軸: **Sales \| Sales**
+    - X 軸:**Date\| Year** および**Date\| Quarter**
+    - Y 軸:**Sales\| Sales**
 
 ## 累計を追加する
 
 1. 折れ線グラフを選択した状態で、**[新しいビジュアル計算]** のメニューを展開し、テンプレート オプションから **[累計]** を選択します。
 
-1. `[Field]` プレースホルダーを `[Sum of Sales]` に置き換え、変更をコミットします。 ビジュアルは次のようになります。
+1. `[Field]` プレースホルダーを`[Sum of Sales]` に置き換え、変更をコミットします。 ビジュアルは次のようになります。
 
    ![画像 09](Linked_image_Files/07-create-visual-calculations_image09.png)
 

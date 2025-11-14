@@ -1,10 +1,10 @@
 # PL-300: Microsoft Power BI Data Analyst
 
-このリポジトリには、Microsoft コース [PL-300: Microsoft Power BI Data Analyst](https://docs.microsoft.com/en-us/learn/certifications/courses/PL-300T00) のハンズオン ラボの演習が含まれています。 ラボは、学習用の教材に付随し、説明されるテクノロジを使用して学習者が練習することができるように設計されています。
+このリポジトリには、Microsoft コース[PL-300: Microsoft Power BI Data Analyst](https://docs.microsoft.com/en-us/learn/certifications/courses/PL-300T00) のハンズオン ラボの演習が含まれています。 ラボは、学習用の教材に付随し、説明されるテクノロジを使用して学習者が練習することができるように設計されています。
 
-- **あなたは MCT ですか?** - [MCT 向けの GitHub ユーザー ガイド](https://microsoftlearning.github.io/MCT-User-Guide/)をご覧ください
+- **あなたは MCT ですか?** -[MCT 向けの GitHub ユーザー ガイド](https://microsoftlearning.github.io/MCT-User-Guide/)をご覧ください
 - **ラボの手順を手動で作成する必要がありますか?** - 手順は、[MicrosoftLearning/Docker-Build](https://github.com/MicrosoftLearning/Docker-Build) リポジトリで確認できます
-- **どのラボがどのコース プレゼンテーションに対応しているか、復習が必要ですか?** - [GitHub ページ](https://microsoftlearning.github.io/PL-300-Microsoft-Power-BI-Data-Analyst/)をチェックアウトする
+- **どのラボがどのコース プレゼンテーションに対応しているか、復習が必要ですか?** -[GitHub ページ](https://microsoftlearning.github.io/PL-300-Microsoft-Power-BI-Data-Analyst/)をチェックアウトする
 
 ## ここでの内容
 

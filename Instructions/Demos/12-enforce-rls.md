@@ -12,15 +12,15 @@ demo:
 
 1. `D:\Demo\Data\**ManagerCategory**.xlsx` ファイルに基づいて新しいクエリを追加します。
 
-1. このファイルの **ManagerCategory** テーブルを使います。
+1. このファイルの**ManagerCategory** テーブルを使います。
 
 1. **[Manager]** 列を削除します。
 
 1. **Category** 列をセミコロン区切り記号で分割し、行に分割します (詳細オプション)。
 
-1. **Email** 列の値 **<ty-johnston@tailspintoys.com>** を (MySettings.txt ファイルの) 受信者アカウントに置き換えます。
+1. **Email** 列の値**<ty-johnston@tailspintoys.com>** を (MySettings.txt ファイルの) 受信者アカウントに置き換えます。
 
-1. このユーザーは **Collective pitch、Trainer、Warbird** という 3 つの製品カテゴリを表示できることに注目してください。
+1. このユーザーは**Collective pitch、Trainer、Warbird** という 3 つの製品カテゴリを表示できることに注目してください。
 
 1. 閉じてクエリを適用します。
 
