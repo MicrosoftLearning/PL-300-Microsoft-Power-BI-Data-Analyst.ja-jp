@@ -8,7 +8,10 @@ lab:
 
 ## ラボのストーリー
 
-このラボでは、営業担当者が確実に自分の担当地域の売上データだけを分析できるように、行レベルのセキュリティを適用します。 動的メソッドを使用して行レベル セキュリティを適用します。
+このラボでは、営業担当者が確実に自分の担当地域の売上データだけを分析できるように、行レベルのセキュリティを適用します。 学習内容は次のとおりです。
+
+- Power BI 内で動的な行レベル セキュリティ (RLS) を実装します。
+- USERPRINCIPALNAME() を使用してロールを作成してテストします。
 
 **この配信には約 20 分かかります。**
 
@@ -18,7 +21,7 @@ lab:
 
 `https://github.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/raw/Main/Allfiles/Labs/11-secure-data-access/11-secure-data.zip`
 
-フォルダーを**C:\Users\Student\Downloads\11-secure-data** フォルダーに展開します。
+フォルダーを **C:\Users\Student\Downloads\11-secure-data** フォルダーに展開します。
 
 **11-Starter-Sales Analysis.pbix** ファイルを開きます。
 
@@ -34,7 +37,7 @@ lab:
 
 1. **[データ]** ペインで、**Salesperson (Performance)** テーブルを選択します。
 
-1. データを確認すると、Michael Blythe (EmployeeKey 281) の UPN の値が**`michael-blythe@adventureworks.com`** になっています。
+1. データを確認すると、Michael Blythe (EmployeeKey 281) の UPN の値が **`michael-blythe@adventureworks.com`** になっています。
     
     > ''Michael Blythe の担当地域が、米国北東部、米国中部、米国南東部の 3 つであることを思い出すかもしれません。''**
 
@@ -48,7 +51,7 @@ lab:
 
    ![画像 5703](Linked_image_Files/11-secure-data-access_image23.png)
 
-1. フィルターを割り当てるには、**Salesperson (Performance)** テーブルを選択し、**[データのフィルター処理]** セクションで **[DAX エディターに切り替える]** を選択します。
+1. フィルターを割り当てるには、**Salesperson (Performance)** テーブルを選択し、**[ルール]** セクションで **[DAX エディターに切り替える]** を選択します。
 
    ![画像 5703](Linked_image_Files/11-secure-data-access_image24.png)
 
@@ -70,21 +73,21 @@ lab:
 
 1. **[ロールとして表示]** ウィンドウで **[その他のユーザー]** 項目を選択してから、対応するボックスに「**`michael-blythe@adventureworks.com`**」と入力します。
 
-1. **[営業担当者]** ロールを確認してから、**[OK]** をクリックします。
+1. **[営業担当者]** ロールを確認してから、 **[OK]** をクリックします。
     
     > "この構成により、**Salespeople** ロールと、Michael Blythe の名前を借りたユーザーが使用されることになります。"**
 
    ![画像 5709](Linked_image_Files/11-secure-data-access_image28.png)
 
-1. レポート ページの上に、テストのセキュリティ コンテキストを説明する黄色のバナーが表示されていることに注目してください。
+1. レポート ページの上に、テストのセキュリティ コンテキストを説明する赤色のバナーが表示されていることに注目してください。
 
    ![画像 13](Linked_image_Files/11-secure-data-access_image30.png)
 
-1. テーブル ビジュアルでは、営業担当者**Michael Blythe** のみが表示されていることに注目してください。
+1. テーブル ビジュアルでは、営業担当者 **Michael Blythe** のみが表示されていることに注目してください。
 
    ![画像 5713](Linked_image_Files/11-secure-data-access_image31.png)
 
-1. テストを停止するには、黄色のバナーの右側にある **[表示の停止]** を選択します。
+1. テストを停止するには、赤色のバナーの右側にある **[表示の停止]** を選択します。
 
    ![画像 5712](Linked_image_Files/11-secure-data-access_image32.png)
 
@@ -92,7 +95,7 @@ lab:
 
    ![画像 16](Linked_image_Files/11-secure-data-access_image33.png)
 
-1. **セキュリティ ロールの管理** ウィンドウで、**Salespeople** ロールの省略記号 (...) を選択し、**[削除]** を選択します。 削除するかどうかを確認するメッセージが表示されたら、**[はい、削除します]** を選択します。
+1. **セキュリティ ロールの管理** ウィンドウで、**Salespeople** ロールの省略記号 (...) を選択し、**[削除]** を選択します。 削除するかどうかを確認するメッセージが表示されたら、 **[はい、削除します]** を選択します。
 
    ![画像 34](Linked_image_Files/11-secure-data-access_image34.png)
 
