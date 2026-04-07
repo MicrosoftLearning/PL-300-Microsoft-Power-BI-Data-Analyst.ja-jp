@@ -2,6 +2,12 @@
 lab:
   title: Power BI での安全なデータ アクセス
   module: Secure data access in Power BI
+  description: このハンズオン ラボでは、Power BI で動的な行レベル セキュリティ (RLS) を実装し、ユーザー ID に基づいてデータ アクセスを制限する方法を学びます。 営業担当者が自分の担当地域の売上データのみを分析できるようにして、機密情報の保護とカスタマイズされたデータ ビューの提供を実現するセキュリティ ロールを、USERPRINCIPALNAME() 関数を使って作成してテストします。
+  duration: 20 minutes
+  level: 300
+  islab: true
+  primarytopics:
+    - Power BI
 ---
 
 # Power BI での安全なデータ アクセス

@@ -2,6 +2,12 @@
 lab:
   title: セマンティック モデルで DAX 計算を作成する
   module: Create DAX calculations in semantic models
+  description: このハンズオン ラボでは、計算テーブル、計算列、メジャーなど、セマンティック モデルを強化するための DAX (Data Analysis Expressions) 計算の作成について学びます。 データ モデルの分析機能を拡張するカスタム計算を構築するための DAX 式の作成を、オートコンプリートや IntelliSense などの機能を備えた数式バーを使って実際に経験します。
+  duration: 45 minutes
+  level: 400
+  islab: true
+  primarytopics:
+    - Power BI
 ---
 
 # セマンティック モデルで DAX 計算を作成する
