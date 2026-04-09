@@ -2,6 +2,12 @@
 lab:
   title: Power BI でセマンティック モデルを構成する
   module: Configure a semantic model in Power BI
+  description: このハンズオン ラボでは、テーブル間のリレーションシップを作成し、使いやすさとユーザー フレンドリさを向上させるテーブルと列のプロパティを構成して、データ モデルを開発します。 また、ドリルダウン分析用の階層の作成、一般的な計算のためのクイック メジャーの構築、複雑なデータ シナリオを処理するための多対多リレーションシップの構成についても学びます。
+  duration: 45 minutes
+  level: 300
+  islab: true
+  primarytopics:
+    - Power BI
 ---
 
 # Power BI でセマンティック モデルを構成する

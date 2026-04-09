@@ -2,6 +2,12 @@
 lab:
   title: Power BI レポートのデザインを強化する
   module: Enhance Power BI report designs for the user experience
+  description: このハンズオン ラボでは、詳細な分析のためのドリルスルー ページ、重要な分析情報を強調するための条件付き書式設定、ナビゲーションを向上させるための対話型のブックマークとボタンなど、高度なデザイン機能で Power BI レポートを強化します。 これらの高度な対話機能を通じて、より深い分析情報とより優れたユーザー エクスペリエンスを提供する、洗練されたユーザー フレンドリなレポートの作成を実際に経験します。
+  duration: 45 minutes
+  level: 300
+  islab: true
+  primarytopics:
+    - Power BI
 ---
 
 # Power BI レポートのデザインを強化する

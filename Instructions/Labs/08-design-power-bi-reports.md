@@ -2,6 +2,12 @@
 lab:
   title: Power BI レポートをデザインする
   module: Design Power BI reports
+  description: このハンズオン ラボでは、視覚エフェクトの構成、プロパティの書式設定、対話型エクスペリエンスを作成するためのスライサーの同期を行って、複数ページの Power BI レポートを設計します。 その後、レポートを Power BI サービスに発行し、クラウド環境で発効されたレポートとその視覚エフェクトを操作する方法を学びます。
+  duration: 45 minutes
+  level: 300
+  islab: true
+  primarytopics:
+    - Power BI
 ---
 
 # Power BI レポートをデザインする
