@@ -2,6 +2,12 @@
 lab:
   title: (省略可能) Power BI 内でダッシュボードを作成する
   module: Create dashboards in Power BI
+  description: このハンズオン ラボでは、既存のレポートからビジュアルを固定し、Q&A (自然言語クエリ) を使用してダッシュボード タイルを作成することで、Power BI サービス上で販売モニタリング用ダッシュボードを作成する方法を学びます。 複数のレポートから重要なメトリックスや分析情報を統合し、ビジネス パフォーマンスを監視するための、一目で把握しやすい単一のビューとしてまとめた対話型のダッシュボードを構築する実践的な経験を積むことができます。
+  duration: 30 minutes
+  level: 300
+  islab: true
+  primarytopics:
+    - Power BI
 ---
 
 # Power BI 内でダッシュボードを作成する
@@ -156,6 +162,8 @@ lab:
 1. エクスプローラーで、**C:\Users\Student\Downloads\12-create-dashboard** フォルダー内の **UpdateDatabase-2-AddSales.ps1** ファイルを右クリックし、**[PowerShell で実行]** を選択します。
 
     ![画像 28](Linked_image_Files/12-create-power-bi-dashboard_image46.png)
+
+    > ***注**: このスクリプトは 1 回だけ実行します。 複数回実行すると、主キー制約エラーが発生します。*
 
 1. 実行ポリシーを変更するよう求められた場合は、**A** キーを押します。
 
