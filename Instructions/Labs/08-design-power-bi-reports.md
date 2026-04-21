@@ -207,8 +207,8 @@ lab:
      - `Orders` (`Counts` フォルダーから)
      - `Sales`
      - `Cost`
-     - `Profit` (`Pricing` フォルダーから)
-     - `Profit Margin` (`Pricing` フォルダーから)
+     - `Profit`
+     - `Profit Margin`
 
     > "ビジュアルでは、これらのフィールドは、集計の種類を示すプレフィックス ("Sum of") を付けて表示されます。"__
 
